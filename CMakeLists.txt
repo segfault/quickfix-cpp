@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 
 set (quickfix_PROJECT_NAME quickfix)
 
@@ -59,11 +59,12 @@ message("-- Building with POSTGRESQL")
 endif()
 
 if (HAVE_PYTHON)
-  find_package(PythonLibs REQUIRED)
-  include_directories(${PYTHON_INCLUDE_DIRS})
-elseif (HAVE_PYTHON3)
-  find_package(PythonLibs 3 REQUIRED)
-  include_directories(${PYTHON_INCLUDE_DIRS})
+  find_package(Python REQUIRED Development)
+  include_directories(${Python_INCLUDE_DIRS})
+  include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/swig)
+
+  option(HAVE_PYTHON3 "Python3 is all" ON)
+  message("-- Building with Python")
 endif ()
 
 add_subdirectory(src)
@@ -86,4 +87,4 @@ file(REMOVE config.h)
 configure_file(cmake_config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/include/quickfix/config.h @ONLY)
 
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/spec/ DESTINATION share/quickfix FILES_MATCHING PATTERN "FIX*.xml")
- 
+
