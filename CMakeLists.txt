@@ -2,11 +2,20 @@ cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 
 set (quickfix_PROJECT_NAME quickfix)
 
+add_definitions(-DNOMINMAX)
+
 project(${quickfix_PROJECT_NAME} VERSION 0.1 LANGUAGES CXX C)
 message("-- Project name ${CMAKE_PROJECT_NAME}")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED OFF)
+
+if( MSVC AND STATIC_RUNTIME )
+  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
+  set(CMAKE_CXX_FLAGS_MINSIZEREL "${CMAKE_CXX_FLAGS_MINSIZEREL} /MT")
+  set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} /MT")
+  set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
+endif()
 
 if( CMAKE_CXX_STANDARD EQUAL 17 )
   option( HAVE_CXX17 "Using C++17" ON)
@@ -21,6 +30,7 @@ include(QuickfixPrebuildSetup)
 option(HAVE_SSL "Build with SSL")
 option(HAVE_MYSQL "Build with MySQL")
 option(HAVE_POSTGRESQL "Build with PostgreSQL")
+option(HAVE_ODBC "Build with ODBC")
 option(HAVE_PYTHON "Build with default Python version")
 option(HAVE_PYTHON3 "Build with default Python3 version")
 
@@ -56,6 +66,14 @@ find_package(PostgreSQL REQUIRED)
 include_directories(${PostgreSQL_INCLUDE_DIRS})
 
 message("-- Building with POSTGRESQL")
+endif()
+
+if(HAVE_ODBC)
+find_package(ODBC REQUIRED)
+add_definitions(-DHAVE_ODBC)
+include_directories(SYSTEM ${ODBC_INCLUDE_DIRS})
+
+message("-- Building with ODBC")
 endif()
 
 if (HAVE_PYTHON)

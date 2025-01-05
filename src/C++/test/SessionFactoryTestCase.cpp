@@ -18,24 +18,23 @@
 ****************************************************************************/
 
 #ifdef _MSC_VER
-#pragma warning( disable : 4503 4355 4786 )
+#pragma warning(disable : 4503 4355 4786)
 #include "stdafx.h"
 #else
 #include "config.h"
 #endif
 
-#include <SessionFactory.h>
 #include <Application.h>
 #include <MessageStore.h>
+#include <Session.h>
+#include <SessionFactory.h>
 
 #include "catch_amalgamated.hpp"
 
 using namespace FIX;
 
-TEST_CASE("SessionFactoryTests")
-{
-  SECTION("validConfiguration")
-  {
+TEST_CASE("SessionFactoryTests") {
+  SECTION("validConfiguration") {
     NullApplication application;
     MemoryStoreFactory messageStoreFactory;
     SessionFactory object(application, messageStoreFactory, 0);
@@ -50,8 +49,7 @@ TEST_CASE("SessionFactoryTests")
     object.destroy(object.create(sessionID, settings));
   }
 
-  SECTION("startDayAndEndDayAreDifferent")
-  {
+  SECTION("startDayAndEndDayAreDifferent") {
     NullApplication application;
     MemoryStoreFactory messageStoreFactory;
     SessionFactory object(application, messageStoreFactory, 0);
@@ -66,5 +64,40 @@ TEST_CASE("SessionFactoryTests")
     settings.setString(END_DAY, "Mon");
     settings.setString(HEARTBTINT, "30");
     object.destroy(object.create(sessionID, settings));
+  }
+
+  SECTION("nonStopSession") {
+    NullApplication application;
+    MemoryStoreFactory messageStoreFactory;
+    SessionFactory object(application, messageStoreFactory, 0);
+
+    SessionID sessionID("FIX.4.2", "SENDER", "TARGET");
+    Dictionary settings;
+    settings.setString(CONNECTION_TYPE, "initiator");
+    settings.setString(USE_DATA_DICTIONARY, "N");
+    settings.setString(NON_STOP_SESSION, "Y");
+    settings.setString(HEARTBTINT, "30");
+
+    Session *session = nullptr;
+    CHECK_NOTHROW(session = object.create(sessionID, settings));
+    CHECK(session->getIsNonStopSession());
+    object.destroy(session);
+  }
+
+  SECTION("wrongNonStopAndTime") {
+    NullApplication application;
+    MemoryStoreFactory messageStoreFactory;
+    SessionFactory object(application, messageStoreFactory, 0);
+
+    SessionID sessionID("FIX.4.2", "SENDER", "TARGET");
+    Dictionary settings;
+    settings.setString(CONNECTION_TYPE, "initiator");
+    settings.setString(USE_DATA_DICTIONARY, "N");
+    settings.setString(NON_STOP_SESSION, "Y");
+    settings.setString(START_TIME, "12:00:00");
+    settings.setString(END_TIME, "12:00:00");
+    settings.setString(HEARTBTINT, "30");
+
+    CHECK_THROWS(object.create(sessionID, settings));
   }
 }

@@ -13,9 +13,12 @@ all-local:
 
 clean-local:
 	$(MAKE) -f Makefile.ruby clean
+	rm -f Makefile.ruby
+	rm -f quickfix.bundle
 	rm -rf $(local_ruby_lib)
 
 install-exec-local:
+	mkdir -p $(RUBY_SITE_PACKAGES)
 	cp -f $(top_builddir)/lib/ruby/*.rb $(RUBY_SITE_PACKAGES)
 	cp -f $(top_builddir)/lib/ruby/quickfix.so $(RUBY_SITE_PACKAGES) || :
 	cp -f $(top_builddir)/lib/ruby/quickfix.bundle $(RUBY_SITE_PACKAGES) || :
