@@ -1,12 +1,12 @@
 %exception
 {
-  if(!tryPythonException([&]() mutable 
-  { 
+  if(!tryPythonException([&]() mutable
+  {
     $action
     return true;
   fail:
     return false;
-  })) 
+  }))
   {
     SWIG_fail;
   }
@@ -36,7 +36,7 @@
   {
     if( !PyDict_Check(resultobj) )
       resultobj = PyDict_New();
-    PyDict_SetItem( resultobj, PyLong_FromLong(PyDict_Size(resultobj)), PyLong_FromLong(*$1) );    
+    PyDict_SetItem( resultobj, PyLong_FromLong(PyDict_Size(resultobj)), PyLong_FromLong(*$1) );
   }
 }
 
