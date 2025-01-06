@@ -24,6 +24,8 @@
 #include "config.h"
 #endif
 
+#include "MessageStoreTestCase.h"
+#include "TestHelper.h"
 #include <Utility.h>
 
 #include "catch_amalgamated.hpp"
