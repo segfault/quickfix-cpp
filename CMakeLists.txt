@@ -61,11 +61,29 @@ include_directories(${MYSQL_INCLUDE_DIR})
 message("-- Building with MySQL")
 endif()
 
+if(WANT_MYSQL)
+find_package(MySQL)
+  if(MySQL_FOUND)
+  include_directories(${MYSQL_INCLUDE_DIR})
+
+  message("-- Building with MySQL")
+  endif()
+endif()
+
 if(HAVE_POSTGRESQL)
 find_package(PostgreSQL REQUIRED)
 include_directories(${PostgreSQL_INCLUDE_DIRS})
 
 message("-- Building with POSTGRESQL")
+endif()
+
+if(WANT_POSTGRESQL)
+find_package(PostgreSQL)
+  if(PostgreSQL_FOUND)
+  include_directories(${PostgreSQL_INCLUDE_DIRS})
+
+  message("-- Building with POSTGRESQL")
+  endif()
 endif()
 
 if(HAVE_ODBC)
@@ -76,8 +94,18 @@ include_directories(SYSTEM ${ODBC_INCLUDE_DIRS})
 message("-- Building with ODBC")
 endif()
 
+if(WANT_ODBC)
+find_package(ODBC)
+  if(ODBC_FOUND)
+    add_definitions(-DHAVE_ODBC)
+    include_directories(SYSTEM ${ODBC_INCLUDE_DIRS})
+
+    message("-- Building with ODBC")
+  endif()
+endif()
+
 if (HAVE_PYTHON)
-  find_package(Python REQUIRED Development)
+	find_package(Python COMPONENTS Interpreter Development.Module REQUIRED)
   include_directories(${Python_INCLUDE_DIRS})
   include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/swig)
 
