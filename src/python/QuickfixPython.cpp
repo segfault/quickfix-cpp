@@ -158948,10 +158948,10 @@ SWIGINTERN PyObject *NullStore_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject
 static PyMethodDef SwigMethods[] = {
 	 { "SWIG_PyInstanceMethod_New", SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { "SWIG_PyStaticMethod_New", SWIG_PyStaticMethod_New, METH_O, NULL},
-	 { "delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_O, "delete_SwigPyIterator(SwigPyIterator self)"},
-	 { "SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_O, "SwigPyIterator_value(SwigPyIterator self) -> PyObject *"},
+	 { "delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_O, "delete_SwigPyIterator(self)"},
+	 { "SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_O, "SwigPyIterator_value(self) -> PyObject *"},
 	 { "SwigPyIterator_incr", _wrap_SwigPyIterator_incr, METH_VARARGS, "\n"
-		"SwigPyIterator_incr(SwigPyIterator self, size_t n=1) -> SwigPyIterator\n"
+		"SwigPyIterator_incr(self, n=1) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -158959,7 +158959,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_decr", _wrap_SwigPyIterator_decr, METH_VARARGS, "\n"
-		"SwigPyIterator_decr(SwigPyIterator self, size_t n=1) -> SwigPyIterator\n"
+		"SwigPyIterator_decr(self, n=1) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -158967,7 +158967,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_distance", _wrap_SwigPyIterator_distance, METH_VARARGS, "\n"
-		"SwigPyIterator_distance(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"SwigPyIterator_distance(self, x) -> ptrdiff_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -158975,19 +158975,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_equal", _wrap_SwigPyIterator_equal, METH_VARARGS, "\n"
-		"SwigPyIterator_equal(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"SwigPyIterator_equal(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: swig::SwigPyIterator const &\n"
 		"\n"
 		""},
-	 { "SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_O, "SwigPyIterator_copy(SwigPyIterator self) -> SwigPyIterator"},
-	 { "SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_O, "SwigPyIterator_next(SwigPyIterator self) -> PyObject *"},
-	 { "SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_O, "SwigPyIterator___next__(SwigPyIterator self) -> PyObject *"},
-	 { "SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_O, "SwigPyIterator_previous(SwigPyIterator self) -> PyObject *"},
+	 { "SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_O, "SwigPyIterator_copy(self) -> SwigPyIterator"},
+	 { "SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_O, "SwigPyIterator_next(self) -> PyObject *"},
+	 { "SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_O, "SwigPyIterator___next__(self) -> PyObject *"},
+	 { "SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_O, "SwigPyIterator_previous(self) -> PyObject *"},
 	 { "SwigPyIterator_advance", _wrap_SwigPyIterator_advance, METH_VARARGS, "\n"
-		"SwigPyIterator_advance(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator_advance(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -158995,7 +158995,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___eq__", _wrap_SwigPyIterator___eq__, METH_VARARGS, "\n"
-		"SwigPyIterator___eq__(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"SwigPyIterator___eq__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159003,7 +159003,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___ne__", _wrap_SwigPyIterator___ne__, METH_VARARGS, "\n"
-		"SwigPyIterator___ne__(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"SwigPyIterator___ne__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159011,7 +159011,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___iadd__", _wrap_SwigPyIterator___iadd__, METH_VARARGS, "\n"
-		"SwigPyIterator___iadd__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___iadd__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159019,7 +159019,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___isub__", _wrap_SwigPyIterator___isub__, METH_VARARGS, "\n"
-		"SwigPyIterator___isub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___isub__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159027,7 +159027,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___add__", _wrap_SwigPyIterator___add__, METH_VARARGS, "\n"
-		"SwigPyIterator___add__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___add__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159035,13 +159035,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___sub__", _wrap_SwigPyIterator___sub__, METH_VARARGS, "\n"
-		"SwigPyIterator___sub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"SwigPyIterator___sub__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"n: ptrdiff_t\n"
 		"\n"
-		"SwigPyIterator___sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"SwigPyIterator___sub__(self, x) -> ptrdiff_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159049,12 +159049,12 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_O, NULL},
-	 { "VectorString_iterator", _wrap_VectorString_iterator, METH_O, "VectorString_iterator(VectorString self) -> SwigPyIterator"},
-	 { "VectorString___nonzero__", _wrap_VectorString___nonzero__, METH_O, "VectorString___nonzero__(VectorString self) -> bool"},
-	 { "VectorString___bool__", _wrap_VectorString___bool__, METH_O, "VectorString___bool__(VectorString self) -> bool"},
-	 { "VectorString___len__", _wrap_VectorString___len__, METH_O, "VectorString___len__(VectorString self) -> std::vector< std::string >::size_type"},
+	 { "VectorString_iterator", _wrap_VectorString_iterator, METH_O, "VectorString_iterator(self) -> SwigPyIterator"},
+	 { "VectorString___nonzero__", _wrap_VectorString___nonzero__, METH_O, "VectorString___nonzero__(self) -> bool"},
+	 { "VectorString___bool__", _wrap_VectorString___bool__, METH_O, "VectorString___bool__(self) -> bool"},
+	 { "VectorString___len__", _wrap_VectorString___len__, METH_O, "VectorString___len__(self) -> std::vector< std::string >::size_type"},
 	 { "VectorString___getslice__", _wrap_VectorString___getslice__, METH_VARARGS, "\n"
-		"VectorString___getslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j) -> VectorString\n"
+		"VectorString___getslice__(self, i, j) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159063,14 +159063,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString___setslice__", _wrap_VectorString___setslice__, METH_VARARGS, "\n"
-		"VectorString___setslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j)\n"
+		"VectorString___setslice__(self, i, j)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"i: std::vector< std::string >::difference_type\n"
 		"j: std::vector< std::string >::difference_type\n"
 		"\n"
-		"VectorString___setslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j, VectorString v)\n"
+		"VectorString___setslice__(self, i, j, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159080,7 +159080,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString___delslice__", _wrap_VectorString___delslice__, METH_VARARGS, "\n"
-		"VectorString___delslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j)\n"
+		"VectorString___delslice__(self, i, j)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159089,13 +159089,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString___delitem__", _wrap_VectorString___delitem__, METH_VARARGS, "\n"
-		"VectorString___delitem__(VectorString self, std::vector< std::string >::difference_type i)\n"
+		"VectorString___delitem__(self, i)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"i: std::vector< std::string >::difference_type\n"
 		"\n"
-		"VectorString___delitem__(VectorString self, PySliceObject * slice)\n"
+		"VectorString___delitem__(self, slice)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159103,13 +159103,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString___getitem__", _wrap_VectorString___getitem__, METH_VARARGS, "\n"
-		"VectorString___getitem__(VectorString self, PySliceObject * slice) -> VectorString\n"
+		"VectorString___getitem__(self, slice) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"\n"
-		"VectorString___getitem__(VectorString self, std::vector< std::string >::difference_type i) -> std::vector< std::string >::value_type const &\n"
+		"VectorString___getitem__(self, i) -> std::vector< std::string >::value_type const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159117,20 +159117,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString___setitem__", _wrap_VectorString___setitem__, METH_VARARGS, "\n"
-		"VectorString___setitem__(VectorString self, PySliceObject * slice, VectorString v)\n"
+		"VectorString___setitem__(self, slice, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"v: std::vector< std::string,std::allocator< std::string > > const &\n"
 		"\n"
-		"VectorString___setitem__(VectorString self, PySliceObject * slice)\n"
+		"VectorString___setitem__(self, slice)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"\n"
-		"VectorString___setitem__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::value_type const & x)\n"
+		"VectorString___setitem__(self, i, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159138,40 +159138,40 @@ static PyMethodDef SwigMethods[] = {
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_pop", _wrap_VectorString_pop, METH_O, "VectorString_pop(VectorString self) -> std::vector< std::string >::value_type"},
+	 { "VectorString_pop", _wrap_VectorString_pop, METH_O, "VectorString_pop(self) -> std::vector< std::string >::value_type"},
 	 { "VectorString_append", _wrap_VectorString_append, METH_VARARGS, "\n"
-		"VectorString_append(VectorString self, std::vector< std::string >::value_type const & x)\n"
+		"VectorString_append(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_empty", _wrap_VectorString_empty, METH_O, "VectorString_empty(VectorString self) -> bool"},
-	 { "VectorString_size", _wrap_VectorString_size, METH_O, "VectorString_size(VectorString self) -> std::vector< std::string >::size_type"},
+	 { "VectorString_empty", _wrap_VectorString_empty, METH_O, "VectorString_empty(self) -> bool"},
+	 { "VectorString_size", _wrap_VectorString_size, METH_O, "VectorString_size(self) -> std::vector< std::string >::size_type"},
 	 { "VectorString_swap", _wrap_VectorString_swap, METH_VARARGS, "\n"
-		"VectorString_swap(VectorString self, VectorString v)\n"
+		"VectorString_swap(self, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"v: std::vector< std::string > &\n"
 		"\n"
 		""},
-	 { "VectorString_begin", _wrap_VectorString_begin, METH_O, "VectorString_begin(VectorString self) -> std::vector< std::string >::iterator"},
-	 { "VectorString_end", _wrap_VectorString_end, METH_O, "VectorString_end(VectorString self) -> std::vector< std::string >::iterator"},
-	 { "VectorString_rbegin", _wrap_VectorString_rbegin, METH_O, "VectorString_rbegin(VectorString self) -> std::vector< std::string >::reverse_iterator"},
-	 { "VectorString_rend", _wrap_VectorString_rend, METH_O, "VectorString_rend(VectorString self) -> std::vector< std::string >::reverse_iterator"},
-	 { "VectorString_clear", _wrap_VectorString_clear, METH_O, "VectorString_clear(VectorString self)"},
-	 { "VectorString_get_allocator", _wrap_VectorString_get_allocator, METH_O, "VectorString_get_allocator(VectorString self) -> std::vector< std::string >::allocator_type"},
-	 { "VectorString_pop_back", _wrap_VectorString_pop_back, METH_O, "VectorString_pop_back(VectorString self)"},
+	 { "VectorString_begin", _wrap_VectorString_begin, METH_O, "VectorString_begin(self) -> std::vector< std::string >::iterator"},
+	 { "VectorString_end", _wrap_VectorString_end, METH_O, "VectorString_end(self) -> std::vector< std::string >::iterator"},
+	 { "VectorString_rbegin", _wrap_VectorString_rbegin, METH_O, "VectorString_rbegin(self) -> std::vector< std::string >::reverse_iterator"},
+	 { "VectorString_rend", _wrap_VectorString_rend, METH_O, "VectorString_rend(self) -> std::vector< std::string >::reverse_iterator"},
+	 { "VectorString_clear", _wrap_VectorString_clear, METH_O, "VectorString_clear(self)"},
+	 { "VectorString_get_allocator", _wrap_VectorString_get_allocator, METH_O, "VectorString_get_allocator(self) -> std::vector< std::string >::allocator_type"},
+	 { "VectorString_pop_back", _wrap_VectorString_pop_back, METH_O, "VectorString_pop_back(self)"},
 	 { "VectorString_erase", _wrap_VectorString_erase, METH_VARARGS, "\n"
-		"VectorString_erase(VectorString self, std::vector< std::string >::iterator pos) -> std::vector< std::string >::iterator\n"
+		"VectorString_erase(self, pos) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::vector< std::string >::iterator\n"
 		"\n"
-		"VectorString_erase(VectorString self, std::vector< std::string >::iterator first, std::vector< std::string >::iterator last) -> std::vector< std::string >::iterator\n"
+		"VectorString_erase(self, first, last) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159181,19 +159181,19 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "new_VectorString", _wrap_new_VectorString, METH_VARARGS, "\n"
 		"VectorString()\n"
-		"VectorString(VectorString other)\n"
+		"VectorString(other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::vector< std::string > const &\n"
 		"\n"
-		"VectorString(std::vector< std::string >::size_type size)\n"
+		"VectorString(size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"size: std::vector< std::string >::size_type\n"
 		"\n"
-		"new_VectorString(std::vector< std::string >::size_type size, std::vector< std::string >::value_type const & value) -> VectorString\n"
+		"new_VectorString(size, value) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159202,17 +159202,17 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString_push_back", _wrap_VectorString_push_back, METH_VARARGS, "\n"
-		"VectorString_push_back(VectorString self, std::vector< std::string >::value_type const & x)\n"
+		"VectorString_push_back(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_front", _wrap_VectorString_front, METH_O, "VectorString_front(VectorString self) -> std::vector< std::string >::value_type const &"},
-	 { "VectorString_back", _wrap_VectorString_back, METH_O, "VectorString_back(VectorString self) -> std::vector< std::string >::value_type const &"},
+	 { "VectorString_front", _wrap_VectorString_front, METH_O, "VectorString_front(self) -> std::vector< std::string >::value_type const &"},
+	 { "VectorString_back", _wrap_VectorString_back, METH_O, "VectorString_back(self) -> std::vector< std::string >::value_type const &"},
 	 { "VectorString_assign", _wrap_VectorString_assign, METH_VARARGS, "\n"
-		"VectorString_assign(VectorString self, std::vector< std::string >::size_type n, std::vector< std::string >::value_type const & x)\n"
+		"VectorString_assign(self, n, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159221,13 +159221,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString_resize", _wrap_VectorString_resize, METH_VARARGS, "\n"
-		"VectorString_resize(VectorString self, std::vector< std::string >::size_type new_size)\n"
+		"VectorString_resize(self, new_size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"new_size: std::vector< std::string >::size_type\n"
 		"\n"
-		"VectorString_resize(VectorString self, std::vector< std::string >::size_type new_size, std::vector< std::string >::value_type const & x)\n"
+		"VectorString_resize(self, new_size, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159236,14 +159236,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString_insert", _wrap_VectorString_insert, METH_VARARGS, "\n"
-		"VectorString_insert(VectorString self, std::vector< std::string >::iterator pos, std::vector< std::string >::value_type const & x) -> std::vector< std::string >::iterator\n"
+		"VectorString_insert(self, pos, x) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::vector< std::string >::iterator\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
-		"VectorString_insert(VectorString self, std::vector< std::string >::iterator pos, std::vector< std::string >::size_type n, std::vector< std::string >::value_type const & x)\n"
+		"VectorString_insert(self, pos, n, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159253,28 +159253,28 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "VectorString_reserve", _wrap_VectorString_reserve, METH_VARARGS, "\n"
-		"VectorString_reserve(VectorString self, std::vector< std::string >::size_type n)\n"
+		"VectorString_reserve(self, n)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"n: std::vector< std::string >::size_type\n"
 		"\n"
 		""},
-	 { "VectorString_capacity", _wrap_VectorString_capacity, METH_O, "VectorString_capacity(VectorString self) -> std::vector< std::string >::size_type"},
-	 { "delete_VectorString", _wrap_delete_VectorString, METH_O, "delete_VectorString(VectorString self)"},
+	 { "VectorString_capacity", _wrap_VectorString_capacity, METH_O, "VectorString_capacity(self) -> std::vector< std::string >::size_type"},
+	 { "delete_VectorString", _wrap_delete_VectorString, METH_O, "delete_VectorString(self)"},
 	 { "VectorString_swigregister", VectorString_swigregister, METH_O, NULL},
 	 { "VectorString_swiginit", VectorString_swiginit, METH_VARARGS, NULL},
 	 { "new_IntArray", _wrap_new_IntArray, METH_O, "\n"
-		"new_IntArray(size_t nelements) -> IntArray\n"
+		"new_IntArray(nelements) -> IntArray\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"nelements: size_t\n"
 		"\n"
 		""},
-	 { "delete_IntArray", _wrap_delete_IntArray, METH_O, "delete_IntArray(IntArray self)"},
+	 { "delete_IntArray", _wrap_delete_IntArray, METH_O, "delete_IntArray(self)"},
 	 { "IntArray___getitem__", _wrap_IntArray___getitem__, METH_VARARGS, "\n"
-		"IntArray___getitem__(IntArray self, size_t index) -> int\n"
+		"IntArray___getitem__(self, index) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159282,7 +159282,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "IntArray___setitem__", _wrap_IntArray___setitem__, METH_VARARGS, "\n"
-		"IntArray___setitem__(IntArray self, size_t index, int value)\n"
+		"IntArray___setitem__(self, index, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159290,9 +159290,9 @@ static PyMethodDef SwigMethods[] = {
 		"value: int\n"
 		"\n"
 		""},
-	 { "IntArray_cast", _wrap_IntArray_cast, METH_O, "IntArray_cast(IntArray self) -> int *"},
+	 { "IntArray_cast", _wrap_IntArray_cast, METH_O, "IntArray_cast(self) -> int *"},
 	 { "IntArray_frompointer", _wrap_IntArray_frompointer, METH_O, "\n"
-		"IntArray_frompointer(int * t) -> IntArray\n"
+		"IntArray_frompointer(t) -> IntArray\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159301,12 +159301,12 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "IntArray_swigregister", IntArray_swigregister, METH_O, NULL},
 	 { "IntArray_swiginit", IntArray_swiginit, METH_VARARGS, NULL},
-	 { "SessionIDSet_iterator", _wrap_SessionIDSet_iterator, METH_O, "SessionIDSet_iterator(SessionIDSet self) -> SwigPyIterator"},
-	 { "SessionIDSet___nonzero__", _wrap_SessionIDSet___nonzero__, METH_O, "SessionIDSet___nonzero__(SessionIDSet self) -> bool"},
-	 { "SessionIDSet___bool__", _wrap_SessionIDSet___bool__, METH_O, "SessionIDSet___bool__(SessionIDSet self) -> bool"},
-	 { "SessionIDSet___len__", _wrap_SessionIDSet___len__, METH_O, "SessionIDSet___len__(SessionIDSet self) -> std::set< FIX::SessionID >::size_type"},
+	 { "SessionIDSet_iterator", _wrap_SessionIDSet_iterator, METH_O, "SessionIDSet_iterator(self) -> SwigPyIterator"},
+	 { "SessionIDSet___nonzero__", _wrap_SessionIDSet___nonzero__, METH_O, "SessionIDSet___nonzero__(self) -> bool"},
+	 { "SessionIDSet___bool__", _wrap_SessionIDSet___bool__, METH_O, "SessionIDSet___bool__(self) -> bool"},
+	 { "SessionIDSet___len__", _wrap_SessionIDSet___len__, METH_O, "SessionIDSet___len__(self) -> std::set< FIX::SessionID >::size_type"},
 	 { "SessionIDSet_append", _wrap_SessionIDSet_append, METH_VARARGS, "\n"
-		"SessionIDSet_append(SessionIDSet self, SessionID x)\n"
+		"SessionIDSet_append(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159314,7 +159314,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet___contains__", _wrap_SessionIDSet___contains__, METH_VARARGS, "\n"
-		"SessionIDSet___contains__(SessionIDSet self, SessionID x) -> bool\n"
+		"SessionIDSet___contains__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159322,7 +159322,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet___getitem__", _wrap_SessionIDSet___getitem__, METH_VARARGS, "\n"
-		"SessionIDSet___getitem__(SessionIDSet self, std::set< FIX::SessionID >::difference_type i) -> SessionID\n"
+		"SessionIDSet___getitem__(self, i) -> SessionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159330,7 +159330,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_add", _wrap_SessionIDSet_add, METH_VARARGS, "\n"
-		"SessionIDSet_add(SessionIDSet self, SessionID x)\n"
+		"SessionIDSet_add(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159338,7 +159338,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_discard", _wrap_SessionIDSet_discard, METH_VARARGS, "\n"
-		"SessionIDSet_discard(SessionIDSet self, SessionID x)\n"
+		"SessionIDSet_discard(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159346,25 +159346,25 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_SessionIDSet", _wrap_new_SessionIDSet, METH_VARARGS, "\n"
-		"SessionIDSet(std::less< FIX::SessionID > const & other)\n"
+		"SessionIDSet(other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::less< FIX::SessionID > const &\n"
 		"\n"
 		"SessionIDSet()\n"
-		"new_SessionIDSet(SessionIDSet other) -> SessionIDSet\n"
+		"new_SessionIDSet(other) -> SessionIDSet\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::set< FIX::SessionID > const &\n"
 		"\n"
 		""},
-	 { "SessionIDSet_empty", _wrap_SessionIDSet_empty, METH_O, "SessionIDSet_empty(SessionIDSet self) -> bool"},
-	 { "SessionIDSet_size", _wrap_SessionIDSet_size, METH_O, "SessionIDSet_size(SessionIDSet self) -> std::set< FIX::SessionID >::size_type"},
-	 { "SessionIDSet_clear", _wrap_SessionIDSet_clear, METH_O, "SessionIDSet_clear(SessionIDSet self)"},
+	 { "SessionIDSet_empty", _wrap_SessionIDSet_empty, METH_O, "SessionIDSet_empty(self) -> bool"},
+	 { "SessionIDSet_size", _wrap_SessionIDSet_size, METH_O, "SessionIDSet_size(self) -> std::set< FIX::SessionID >::size_type"},
+	 { "SessionIDSet_clear", _wrap_SessionIDSet_clear, METH_O, "SessionIDSet_clear(self)"},
 	 { "SessionIDSet_swap", _wrap_SessionIDSet_swap, METH_VARARGS, "\n"
-		"SessionIDSet_swap(SessionIDSet self, SessionIDSet v)\n"
+		"SessionIDSet_swap(self, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159372,31 +159372,31 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_count", _wrap_SessionIDSet_count, METH_VARARGS, "\n"
-		"SessionIDSet_count(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::size_type\n"
+		"SessionIDSet_count(self, x) -> std::set< FIX::SessionID >::size_type\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::set< FIX::SessionID >::key_type const &\n"
 		"\n"
 		""},
-	 { "SessionIDSet_begin", _wrap_SessionIDSet_begin, METH_O, "SessionIDSet_begin(SessionIDSet self) -> std::set< FIX::SessionID >::iterator"},
-	 { "SessionIDSet_end", _wrap_SessionIDSet_end, METH_O, "SessionIDSet_end(SessionIDSet self) -> std::set< FIX::SessionID >::iterator"},
-	 { "SessionIDSet_rbegin", _wrap_SessionIDSet_rbegin, METH_O, "SessionIDSet_rbegin(SessionIDSet self) -> std::set< FIX::SessionID >::reverse_iterator"},
-	 { "SessionIDSet_rend", _wrap_SessionIDSet_rend, METH_O, "SessionIDSet_rend(SessionIDSet self) -> std::set< FIX::SessionID >::reverse_iterator"},
+	 { "SessionIDSet_begin", _wrap_SessionIDSet_begin, METH_O, "SessionIDSet_begin(self) -> std::set< FIX::SessionID >::iterator"},
+	 { "SessionIDSet_end", _wrap_SessionIDSet_end, METH_O, "SessionIDSet_end(self) -> std::set< FIX::SessionID >::iterator"},
+	 { "SessionIDSet_rbegin", _wrap_SessionIDSet_rbegin, METH_O, "SessionIDSet_rbegin(self) -> std::set< FIX::SessionID >::reverse_iterator"},
+	 { "SessionIDSet_rend", _wrap_SessionIDSet_rend, METH_O, "SessionIDSet_rend(self) -> std::set< FIX::SessionID >::reverse_iterator"},
 	 { "SessionIDSet_erase", _wrap_SessionIDSet_erase, METH_VARARGS, "\n"
-		"SessionIDSet_erase(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::size_type\n"
+		"SessionIDSet_erase(self, x) -> std::set< FIX::SessionID >::size_type\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::set< FIX::SessionID >::key_type const &\n"
 		"\n"
-		"SessionIDSet_erase(SessionIDSet self, std::set< FIX::SessionID >::iterator pos)\n"
+		"SessionIDSet_erase(self, pos)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::set< FIX::SessionID >::iterator\n"
 		"\n"
-		"SessionIDSet_erase(SessionIDSet self, std::set< FIX::SessionID >::iterator first, std::set< FIX::SessionID >::iterator last)\n"
+		"SessionIDSet_erase(self, first, last)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159405,7 +159405,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_find", _wrap_SessionIDSet_find, METH_VARARGS, "\n"
-		"SessionIDSet_find(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"SessionIDSet_find(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159413,7 +159413,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_lower_bound", _wrap_SessionIDSet_lower_bound, METH_VARARGS, "\n"
-		"SessionIDSet_lower_bound(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"SessionIDSet_lower_bound(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159421,7 +159421,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_upper_bound", _wrap_SessionIDSet_upper_bound, METH_VARARGS, "\n"
-		"SessionIDSet_upper_bound(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"SessionIDSet_upper_bound(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159429,7 +159429,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_equal_range", _wrap_SessionIDSet_equal_range, METH_VARARGS, "\n"
-		"SessionIDSet_equal_range(SessionIDSet self, SessionID x) -> std::pair< std::set< FIX::SessionID >::iterator,std::set< FIX::SessionID >::iterator >\n"
+		"SessionIDSet_equal_range(self, x) -> std::pair< std::set< FIX::SessionID >::iterator,std::set< FIX::SessionID >::iterator >\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159437,18 +159437,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_insert", _wrap_SessionIDSet_insert, METH_VARARGS, "\n"
-		"SessionIDSet_insert(SessionIDSet self, SessionID __x) -> std::pair< std::set< FIX::SessionID >::iterator,bool >\n"
+		"SessionIDSet_insert(self, __x) -> std::pair< std::set< FIX::SessionID >::iterator,bool >\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"__x: std::set< FIX::SessionID >::value_type const &\n"
 		"\n"
 		""},
-	 { "delete_SessionIDSet", _wrap_delete_SessionIDSet, METH_O, "delete_SessionIDSet(SessionIDSet self)"},
+	 { "delete_SessionIDSet", _wrap_delete_SessionIDSet, METH_O, "delete_SessionIDSet(self)"},
 	 { "SessionIDSet_swigregister", SessionIDSet_swigregister, METH_O, NULL},
 	 { "SessionIDSet_swiginit", SessionIDSet_swiginit, METH_VARARGS, NULL},
 	 { "new_FIXException", _wrap_new_FIXException, METH_VARARGS, "\n"
-		"new_FIXException(std::string const & type, std::string const & detail) -> FIXException\n"
+		"new_FIXException(type, detail) -> FIXException\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159456,30 +159456,30 @@ static PyMethodDef SwigMethods[] = {
 		"detail: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_FIXException", _wrap_delete_FIXException, METH_O, "delete_FIXException(FIXException self)"},
+	 { "delete_FIXException", _wrap_delete_FIXException, METH_O, "delete_FIXException(self)"},
 	 { "FIXException_type_set", _wrap_FIXException_type_set, METH_VARARGS, "\n"
-		"FIXException_type_set(FIXException self, std::string const & type)\n"
+		"FIXException_type_set(self, type)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"type: std::string const &\n"
 		"\n"
 		""},
-	 { "FIXException_type_get", _wrap_FIXException_type_get, METH_O, "FIXException_type_get(FIXException self) -> std::string const &"},
+	 { "FIXException_type_get", _wrap_FIXException_type_get, METH_O, "FIXException_type_get(self) -> std::string const &"},
 	 { "FIXException_detail_set", _wrap_FIXException_detail_set, METH_VARARGS, "\n"
-		"FIXException_detail_set(FIXException self, std::string const & detail)\n"
+		"FIXException_detail_set(self, detail)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"detail: std::string const &\n"
 		"\n"
 		""},
-	 { "FIXException_detail_get", _wrap_FIXException_detail_get, METH_O, "FIXException_detail_get(FIXException self) -> std::string const &"},
-	 { "FIXException___str__", _wrap_FIXException___str__, METH_O, "FIXException___str__(FIXException self) -> std::string"},
+	 { "FIXException_detail_get", _wrap_FIXException_detail_get, METH_O, "FIXException_detail_get(self) -> std::string const &"},
+	 { "FIXException___str__", _wrap_FIXException___str__, METH_O, "FIXException___str__(self) -> std::string"},
 	 { "FIXException_swigregister", FIXException_swigregister, METH_O, NULL},
 	 { "FIXException_swiginit", FIXException_swiginit, METH_VARARGS, NULL},
 	 { "new_DataDictionaryNotFound", _wrap_new_DataDictionaryNotFound, METH_VARARGS, "\n"
-		"DataDictionaryNotFound(std::string const & version, std::string const & what=\"\")\n"
+		"DataDictionaryNotFound(version, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159487,20 +159487,20 @@ static PyMethodDef SwigMethods[] = {
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DataDictionaryNotFound", _wrap_delete_DataDictionaryNotFound, METH_O, "delete_DataDictionaryNotFound(DataDictionaryNotFound self)"},
+	 { "delete_DataDictionaryNotFound", _wrap_delete_DataDictionaryNotFound, METH_O, "delete_DataDictionaryNotFound(self)"},
 	 { "DataDictionaryNotFound_version_set", _wrap_DataDictionaryNotFound_version_set, METH_VARARGS, "\n"
-		"DataDictionaryNotFound_version_set(DataDictionaryNotFound self, std::string const & version)\n"
+		"DataDictionaryNotFound_version_set(self, version)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"version: std::string const &\n"
 		"\n"
 		""},
-	 { "DataDictionaryNotFound_version_get", _wrap_DataDictionaryNotFound_version_get, METH_O, "DataDictionaryNotFound_version_get(DataDictionaryNotFound self) -> std::string const &"},
+	 { "DataDictionaryNotFound_version_get", _wrap_DataDictionaryNotFound_version_get, METH_O, "DataDictionaryNotFound_version_get(self) -> std::string const &"},
 	 { "DataDictionaryNotFound_swigregister", DataDictionaryNotFound_swigregister, METH_O, NULL},
 	 { "DataDictionaryNotFound_swiginit", DataDictionaryNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldNotFound", _wrap_new_FieldNotFound, METH_VARARGS, "\n"
-		"FieldNotFound(int field=0, std::string const & what=\"\")\n"
+		"FieldNotFound(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159509,74 +159509,74 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldNotFound_field_set", _wrap_FieldNotFound_field_set, METH_VARARGS, "\n"
-		"FieldNotFound_field_set(FieldNotFound self, int field)\n"
+		"FieldNotFound_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "FieldNotFound_field_get", _wrap_FieldNotFound_field_get, METH_O, "FieldNotFound_field_get(FieldNotFound self) -> int"},
-	 { "delete_FieldNotFound", _wrap_delete_FieldNotFound, METH_O, "delete_FieldNotFound(FieldNotFound self)"},
+	 { "FieldNotFound_field_get", _wrap_FieldNotFound_field_get, METH_O, "FieldNotFound_field_get(self) -> int"},
+	 { "delete_FieldNotFound", _wrap_delete_FieldNotFound, METH_O, "delete_FieldNotFound(self)"},
 	 { "FieldNotFound_swigregister", FieldNotFound_swigregister, METH_O, NULL},
 	 { "FieldNotFound_swiginit", FieldNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldConvertError", _wrap_new_FieldConvertError, METH_VARARGS, "\n"
-		"FieldConvertError(std::string const & what=\"\")\n"
+		"FieldConvertError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_FieldConvertError", _wrap_delete_FieldConvertError, METH_O, "delete_FieldConvertError(FieldConvertError self)"},
+	 { "delete_FieldConvertError", _wrap_delete_FieldConvertError, METH_O, "delete_FieldConvertError(self)"},
 	 { "FieldConvertError_swigregister", FieldConvertError_swigregister, METH_O, NULL},
 	 { "FieldConvertError_swiginit", FieldConvertError_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageParseError", _wrap_new_MessageParseError, METH_VARARGS, "\n"
-		"MessageParseError(std::string const & what=\"\")\n"
+		"MessageParseError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_MessageParseError", _wrap_delete_MessageParseError, METH_O, "delete_MessageParseError(MessageParseError self)"},
+	 { "delete_MessageParseError", _wrap_delete_MessageParseError, METH_O, "delete_MessageParseError(self)"},
 	 { "MessageParseError_swigregister", MessageParseError_swigregister, METH_O, NULL},
 	 { "MessageParseError_swiginit", MessageParseError_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidMessage", _wrap_new_InvalidMessage, METH_VARARGS, "\n"
-		"InvalidMessage(std::string const & what=\"\")\n"
+		"InvalidMessage(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_InvalidMessage", _wrap_delete_InvalidMessage, METH_O, "delete_InvalidMessage(InvalidMessage self)"},
+	 { "delete_InvalidMessage", _wrap_delete_InvalidMessage, METH_O, "delete_InvalidMessage(self)"},
 	 { "InvalidMessage_swigregister", InvalidMessage_swigregister, METH_O, NULL},
 	 { "InvalidMessage_swiginit", InvalidMessage_swiginit, METH_VARARGS, NULL},
 	 { "new_ConfigError", _wrap_new_ConfigError, METH_VARARGS, "\n"
-		"ConfigError(std::string const & what=\"\")\n"
+		"ConfigError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_ConfigError", _wrap_delete_ConfigError, METH_O, "delete_ConfigError(ConfigError self)"},
+	 { "delete_ConfigError", _wrap_delete_ConfigError, METH_O, "delete_ConfigError(self)"},
 	 { "ConfigError_swigregister", ConfigError_swigregister, METH_O, NULL},
 	 { "ConfigError_swiginit", ConfigError_swiginit, METH_VARARGS, NULL},
 	 { "new_RuntimeError", _wrap_new_RuntimeError, METH_VARARGS, "\n"
-		"RuntimeError(std::string const & what=\"\")\n"
+		"RuntimeError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_RuntimeError", _wrap_delete_RuntimeError, METH_O, "delete_RuntimeError(RuntimeError self)"},
+	 { "delete_RuntimeError", _wrap_delete_RuntimeError, METH_O, "delete_RuntimeError(self)"},
 	 { "RuntimeError_swigregister", RuntimeError_swigregister, METH_O, NULL},
 	 { "RuntimeError_swiginit", RuntimeError_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidTagNumber", _wrap_new_InvalidTagNumber, METH_VARARGS, "\n"
-		"InvalidTagNumber(int field=0, std::string const & what=\"\")\n"
+		"InvalidTagNumber(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159585,19 +159585,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "InvalidTagNumber_field_set", _wrap_InvalidTagNumber_field_set, METH_VARARGS, "\n"
-		"InvalidTagNumber_field_set(InvalidTagNumber self, int field)\n"
+		"InvalidTagNumber_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "InvalidTagNumber_field_get", _wrap_InvalidTagNumber_field_get, METH_O, "InvalidTagNumber_field_get(InvalidTagNumber self) -> int"},
-	 { "delete_InvalidTagNumber", _wrap_delete_InvalidTagNumber, METH_O, "delete_InvalidTagNumber(InvalidTagNumber self)"},
+	 { "InvalidTagNumber_field_get", _wrap_InvalidTagNumber_field_get, METH_O, "InvalidTagNumber_field_get(self) -> int"},
+	 { "delete_InvalidTagNumber", _wrap_delete_InvalidTagNumber, METH_O, "delete_InvalidTagNumber(self)"},
 	 { "InvalidTagNumber_swigregister", InvalidTagNumber_swigregister, METH_O, NULL},
 	 { "InvalidTagNumber_swiginit", InvalidTagNumber_swiginit, METH_VARARGS, NULL},
 	 { "new_RequiredTagMissing", _wrap_new_RequiredTagMissing, METH_VARARGS, "\n"
-		"RequiredTagMissing(int field=0, std::string const & what=\"\")\n"
+		"RequiredTagMissing(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159606,19 +159606,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "RequiredTagMissing_field_set", _wrap_RequiredTagMissing_field_set, METH_VARARGS, "\n"
-		"RequiredTagMissing_field_set(RequiredTagMissing self, int field)\n"
+		"RequiredTagMissing_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RequiredTagMissing_field_get", _wrap_RequiredTagMissing_field_get, METH_O, "RequiredTagMissing_field_get(RequiredTagMissing self) -> int"},
-	 { "delete_RequiredTagMissing", _wrap_delete_RequiredTagMissing, METH_O, "delete_RequiredTagMissing(RequiredTagMissing self)"},
+	 { "RequiredTagMissing_field_get", _wrap_RequiredTagMissing_field_get, METH_O, "RequiredTagMissing_field_get(self) -> int"},
+	 { "delete_RequiredTagMissing", _wrap_delete_RequiredTagMissing, METH_O, "delete_RequiredTagMissing(self)"},
 	 { "RequiredTagMissing_swigregister", RequiredTagMissing_swigregister, METH_O, NULL},
 	 { "RequiredTagMissing_swiginit", RequiredTagMissing_swiginit, METH_VARARGS, NULL},
 	 { "new_TagNotDefinedForMessage", _wrap_new_TagNotDefinedForMessage, METH_VARARGS, "\n"
-		"TagNotDefinedForMessage(int field=0, std::string const & what=\"\")\n"
+		"TagNotDefinedForMessage(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159627,19 +159627,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "TagNotDefinedForMessage_field_set", _wrap_TagNotDefinedForMessage_field_set, METH_VARARGS, "\n"
-		"TagNotDefinedForMessage_field_set(TagNotDefinedForMessage self, int field)\n"
+		"TagNotDefinedForMessage_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "TagNotDefinedForMessage_field_get", _wrap_TagNotDefinedForMessage_field_get, METH_O, "TagNotDefinedForMessage_field_get(TagNotDefinedForMessage self) -> int"},
-	 { "delete_TagNotDefinedForMessage", _wrap_delete_TagNotDefinedForMessage, METH_O, "delete_TagNotDefinedForMessage(TagNotDefinedForMessage self)"},
+	 { "TagNotDefinedForMessage_field_get", _wrap_TagNotDefinedForMessage_field_get, METH_O, "TagNotDefinedForMessage_field_get(self) -> int"},
+	 { "delete_TagNotDefinedForMessage", _wrap_delete_TagNotDefinedForMessage, METH_O, "delete_TagNotDefinedForMessage(self)"},
 	 { "TagNotDefinedForMessage_swigregister", TagNotDefinedForMessage_swigregister, METH_O, NULL},
 	 { "TagNotDefinedForMessage_swiginit", TagNotDefinedForMessage_swiginit, METH_VARARGS, NULL},
 	 { "new_NoTagValue", _wrap_new_NoTagValue, METH_VARARGS, "\n"
-		"NoTagValue(int field=0, std::string const & what=\"\")\n"
+		"NoTagValue(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159648,19 +159648,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NoTagValue_field_set", _wrap_NoTagValue_field_set, METH_VARARGS, "\n"
-		"NoTagValue_field_set(NoTagValue self, int field)\n"
+		"NoTagValue_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "NoTagValue_field_get", _wrap_NoTagValue_field_get, METH_O, "NoTagValue_field_get(NoTagValue self) -> int"},
-	 { "delete_NoTagValue", _wrap_delete_NoTagValue, METH_O, "delete_NoTagValue(NoTagValue self)"},
+	 { "NoTagValue_field_get", _wrap_NoTagValue_field_get, METH_O, "NoTagValue_field_get(self) -> int"},
+	 { "delete_NoTagValue", _wrap_delete_NoTagValue, METH_O, "delete_NoTagValue(self)"},
 	 { "NoTagValue_swigregister", NoTagValue_swigregister, METH_O, NULL},
 	 { "NoTagValue_swiginit", NoTagValue_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectTagValue", _wrap_new_IncorrectTagValue, METH_VARARGS, "\n"
-		"IncorrectTagValue(int field=0, std::string const & what=\"\")\n"
+		"IncorrectTagValue(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159669,19 +159669,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "IncorrectTagValue_field_set", _wrap_IncorrectTagValue_field_set, METH_VARARGS, "\n"
-		"IncorrectTagValue_field_set(IncorrectTagValue self, int field)\n"
+		"IncorrectTagValue_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "IncorrectTagValue_field_get", _wrap_IncorrectTagValue_field_get, METH_O, "IncorrectTagValue_field_get(IncorrectTagValue self) -> int"},
-	 { "delete_IncorrectTagValue", _wrap_delete_IncorrectTagValue, METH_O, "delete_IncorrectTagValue(IncorrectTagValue self)"},
+	 { "IncorrectTagValue_field_get", _wrap_IncorrectTagValue_field_get, METH_O, "IncorrectTagValue_field_get(self) -> int"},
+	 { "delete_IncorrectTagValue", _wrap_delete_IncorrectTagValue, METH_O, "delete_IncorrectTagValue(self)"},
 	 { "IncorrectTagValue_swigregister", IncorrectTagValue_swigregister, METH_O, NULL},
 	 { "IncorrectTagValue_swiginit", IncorrectTagValue_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectDataFormat", _wrap_new_IncorrectDataFormat, METH_VARARGS, "\n"
-		"IncorrectDataFormat(int field=0, std::string const & what=\"\")\n"
+		"IncorrectDataFormat(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159690,74 +159690,74 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "IncorrectDataFormat_field_set", _wrap_IncorrectDataFormat_field_set, METH_VARARGS, "\n"
-		"IncorrectDataFormat_field_set(IncorrectDataFormat self, int field)\n"
+		"IncorrectDataFormat_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "IncorrectDataFormat_field_get", _wrap_IncorrectDataFormat_field_get, METH_O, "IncorrectDataFormat_field_get(IncorrectDataFormat self) -> int"},
-	 { "delete_IncorrectDataFormat", _wrap_delete_IncorrectDataFormat, METH_O, "delete_IncorrectDataFormat(IncorrectDataFormat self)"},
+	 { "IncorrectDataFormat_field_get", _wrap_IncorrectDataFormat_field_get, METH_O, "IncorrectDataFormat_field_get(self) -> int"},
+	 { "delete_IncorrectDataFormat", _wrap_delete_IncorrectDataFormat, METH_O, "delete_IncorrectDataFormat(self)"},
 	 { "IncorrectDataFormat_swigregister", IncorrectDataFormat_swigregister, METH_O, NULL},
 	 { "IncorrectDataFormat_swiginit", IncorrectDataFormat_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectMessageStructure", _wrap_new_IncorrectMessageStructure, METH_VARARGS, "\n"
-		"IncorrectMessageStructure(std::string const & what=\"\")\n"
+		"IncorrectMessageStructure(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_IncorrectMessageStructure", _wrap_delete_IncorrectMessageStructure, METH_O, "delete_IncorrectMessageStructure(IncorrectMessageStructure self)"},
+	 { "delete_IncorrectMessageStructure", _wrap_delete_IncorrectMessageStructure, METH_O, "delete_IncorrectMessageStructure(self)"},
 	 { "IncorrectMessageStructure_swigregister", IncorrectMessageStructure_swigregister, METH_O, NULL},
 	 { "IncorrectMessageStructure_swiginit", IncorrectMessageStructure_swiginit, METH_VARARGS, NULL},
 	 { "new_DuplicateFieldNumber", _wrap_new_DuplicateFieldNumber, METH_VARARGS, "\n"
-		"DuplicateFieldNumber(std::string const & what=\"\")\n"
+		"DuplicateFieldNumber(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DuplicateFieldNumber", _wrap_delete_DuplicateFieldNumber, METH_O, "delete_DuplicateFieldNumber(DuplicateFieldNumber self)"},
+	 { "delete_DuplicateFieldNumber", _wrap_delete_DuplicateFieldNumber, METH_O, "delete_DuplicateFieldNumber(self)"},
 	 { "DuplicateFieldNumber_swigregister", DuplicateFieldNumber_swigregister, METH_O, NULL},
 	 { "DuplicateFieldNumber_swiginit", DuplicateFieldNumber_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidMessageType", _wrap_new_InvalidMessageType, METH_VARARGS, "\n"
-		"InvalidMessageType(std::string const & what=\"\")\n"
+		"InvalidMessageType(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_InvalidMessageType", _wrap_delete_InvalidMessageType, METH_O, "delete_InvalidMessageType(InvalidMessageType self)"},
+	 { "delete_InvalidMessageType", _wrap_delete_InvalidMessageType, METH_O, "delete_InvalidMessageType(self)"},
 	 { "InvalidMessageType_swigregister", InvalidMessageType_swigregister, METH_O, NULL},
 	 { "InvalidMessageType_swiginit", InvalidMessageType_swiginit, METH_VARARGS, NULL},
 	 { "new_UnsupportedMessageType", _wrap_new_UnsupportedMessageType, METH_VARARGS, "\n"
-		"UnsupportedMessageType(std::string const & what=\"\")\n"
+		"UnsupportedMessageType(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_UnsupportedMessageType", _wrap_delete_UnsupportedMessageType, METH_O, "delete_UnsupportedMessageType(UnsupportedMessageType self)"},
+	 { "delete_UnsupportedMessageType", _wrap_delete_UnsupportedMessageType, METH_O, "delete_UnsupportedMessageType(self)"},
 	 { "UnsupportedMessageType_swigregister", UnsupportedMessageType_swigregister, METH_O, NULL},
 	 { "UnsupportedMessageType_swiginit", UnsupportedMessageType_swiginit, METH_VARARGS, NULL},
 	 { "new_UnsupportedVersion", _wrap_new_UnsupportedVersion, METH_VARARGS, "\n"
-		"UnsupportedVersion(std::string const & what=\"\")\n"
+		"UnsupportedVersion(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_UnsupportedVersion", _wrap_delete_UnsupportedVersion, METH_O, "delete_UnsupportedVersion(UnsupportedVersion self)"},
+	 { "delete_UnsupportedVersion", _wrap_delete_UnsupportedVersion, METH_O, "delete_UnsupportedVersion(self)"},
 	 { "UnsupportedVersion_swigregister", UnsupportedVersion_swigregister, METH_O, NULL},
 	 { "UnsupportedVersion_swiginit", UnsupportedVersion_swiginit, METH_VARARGS, NULL},
 	 { "new_TagOutOfOrder", _wrap_new_TagOutOfOrder, METH_VARARGS, "\n"
-		"TagOutOfOrder(int field=0, std::string const & what=\"\")\n"
+		"TagOutOfOrder(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159766,19 +159766,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "TagOutOfOrder_field_set", _wrap_TagOutOfOrder_field_set, METH_VARARGS, "\n"
-		"TagOutOfOrder_field_set(TagOutOfOrder self, int field)\n"
+		"TagOutOfOrder_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "TagOutOfOrder_field_get", _wrap_TagOutOfOrder_field_get, METH_O, "TagOutOfOrder_field_get(TagOutOfOrder self) -> int"},
-	 { "delete_TagOutOfOrder", _wrap_delete_TagOutOfOrder, METH_O, "delete_TagOutOfOrder(TagOutOfOrder self)"},
+	 { "TagOutOfOrder_field_get", _wrap_TagOutOfOrder_field_get, METH_O, "TagOutOfOrder_field_get(self) -> int"},
+	 { "delete_TagOutOfOrder", _wrap_delete_TagOutOfOrder, METH_O, "delete_TagOutOfOrder(self)"},
 	 { "TagOutOfOrder_swigregister", TagOutOfOrder_swigregister, METH_O, NULL},
 	 { "TagOutOfOrder_swiginit", TagOutOfOrder_swiginit, METH_VARARGS, NULL},
 	 { "new_RepeatedTag", _wrap_new_RepeatedTag, METH_VARARGS, "\n"
-		"RepeatedTag(int field=0, std::string const & what=\"\")\n"
+		"RepeatedTag(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159787,19 +159787,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "RepeatedTag_field_set", _wrap_RepeatedTag_field_set, METH_VARARGS, "\n"
-		"RepeatedTag_field_set(RepeatedTag self, int field)\n"
+		"RepeatedTag_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RepeatedTag_field_get", _wrap_RepeatedTag_field_get, METH_O, "RepeatedTag_field_get(RepeatedTag self) -> int"},
-	 { "delete_RepeatedTag", _wrap_delete_RepeatedTag, METH_O, "delete_RepeatedTag(RepeatedTag self)"},
+	 { "RepeatedTag_field_get", _wrap_RepeatedTag_field_get, METH_O, "RepeatedTag_field_get(self) -> int"},
+	 { "delete_RepeatedTag", _wrap_delete_RepeatedTag, METH_O, "delete_RepeatedTag(self)"},
 	 { "RepeatedTag_swigregister", RepeatedTag_swigregister, METH_O, NULL},
 	 { "RepeatedTag_swiginit", RepeatedTag_swiginit, METH_VARARGS, NULL},
 	 { "new_RepeatingGroupCountMismatch", _wrap_new_RepeatingGroupCountMismatch, METH_VARARGS, "\n"
-		"RepeatingGroupCountMismatch(int field=0, std::string const & what=\"\")\n"
+		"RepeatingGroupCountMismatch(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159808,64 +159808,64 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "RepeatingGroupCountMismatch_field_set", _wrap_RepeatingGroupCountMismatch_field_set, METH_VARARGS, "\n"
-		"RepeatingGroupCountMismatch_field_set(RepeatingGroupCountMismatch self, int field)\n"
+		"RepeatingGroupCountMismatch_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RepeatingGroupCountMismatch_field_get", _wrap_RepeatingGroupCountMismatch_field_get, METH_O, "RepeatingGroupCountMismatch_field_get(RepeatingGroupCountMismatch self) -> int"},
-	 { "delete_RepeatingGroupCountMismatch", _wrap_delete_RepeatingGroupCountMismatch, METH_O, "delete_RepeatingGroupCountMismatch(RepeatingGroupCountMismatch self)"},
+	 { "RepeatingGroupCountMismatch_field_get", _wrap_RepeatingGroupCountMismatch_field_get, METH_O, "RepeatingGroupCountMismatch_field_get(self) -> int"},
+	 { "delete_RepeatingGroupCountMismatch", _wrap_delete_RepeatingGroupCountMismatch, METH_O, "delete_RepeatingGroupCountMismatch(self)"},
 	 { "RepeatingGroupCountMismatch_swigregister", RepeatingGroupCountMismatch_swigregister, METH_O, NULL},
 	 { "RepeatingGroupCountMismatch_swiginit", RepeatingGroupCountMismatch_swiginit, METH_VARARGS, NULL},
 	 { "new_DoNotSend", _wrap_new_DoNotSend, METH_VARARGS, "\n"
-		"DoNotSend(std::string const & what=\"\")\n"
+		"DoNotSend(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DoNotSend", _wrap_delete_DoNotSend, METH_O, "delete_DoNotSend(DoNotSend self)"},
+	 { "delete_DoNotSend", _wrap_delete_DoNotSend, METH_O, "delete_DoNotSend(self)"},
 	 { "DoNotSend_swigregister", DoNotSend_swigregister, METH_O, NULL},
 	 { "DoNotSend_swiginit", DoNotSend_swiginit, METH_VARARGS, NULL},
 	 { "new_RejectLogon", _wrap_new_RejectLogon, METH_VARARGS, "\n"
-		"RejectLogon(std::string const & what=\"\")\n"
+		"RejectLogon(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_RejectLogon", _wrap_delete_RejectLogon, METH_O, "delete_RejectLogon(RejectLogon self)"},
+	 { "delete_RejectLogon", _wrap_delete_RejectLogon, METH_O, "delete_RejectLogon(self)"},
 	 { "RejectLogon_swigregister", RejectLogon_swigregister, METH_O, NULL},
 	 { "RejectLogon_swiginit", RejectLogon_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionNotFound", _wrap_new_SessionNotFound, METH_VARARGS, "\n"
-		"SessionNotFound(std::string const & what=\"\")\n"
+		"SessionNotFound(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SessionNotFound", _wrap_delete_SessionNotFound, METH_O, "delete_SessionNotFound(SessionNotFound self)"},
+	 { "delete_SessionNotFound", _wrap_delete_SessionNotFound, METH_O, "delete_SessionNotFound(self)"},
 	 { "SessionNotFound_swigregister", SessionNotFound_swigregister, METH_O, NULL},
 	 { "SessionNotFound_swiginit", SessionNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_IOException", _wrap_new_IOException, METH_VARARGS, "\n"
-		"IOException(std::string const & what=\"\")\n"
+		"IOException(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_IOException", _wrap_delete_IOException, METH_O, "delete_IOException(IOException self)"},
+	 { "delete_IOException", _wrap_delete_IOException, METH_O, "delete_IOException(self)"},
 	 { "IOException_swigregister", IOException_swigregister, METH_O, NULL},
 	 { "IOException_swiginit", IOException_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketException", _wrap_new_SocketException, METH_VARARGS, "\n"
 		"SocketException()\n"
-		"new_SocketException(std::string const & what) -> SocketException\n"
+		"new_SocketException(what) -> SocketException\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159873,78 +159873,78 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SocketException_errorToWhat", _wrap_SocketException_errorToWhat, METH_NOARGS, "SocketException_errorToWhat() -> std::string"},
-	 { "delete_SocketException", _wrap_delete_SocketException, METH_O, "delete_SocketException(SocketException self)"},
+	 { "delete_SocketException", _wrap_delete_SocketException, METH_O, "delete_SocketException(self)"},
 	 { "SocketException_swigregister", SocketException_swigregister, METH_O, NULL},
 	 { "SocketException_swiginit", SocketException_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketSendFailed", _wrap_new_SocketSendFailed, METH_VARARGS, "\n"
 		"SocketSendFailed()\n"
-		"new_SocketSendFailed(std::string const & what) -> SocketSendFailed\n"
+		"new_SocketSendFailed(what) -> SocketSendFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketSendFailed", _wrap_delete_SocketSendFailed, METH_O, "delete_SocketSendFailed(SocketSendFailed self)"},
+	 { "delete_SocketSendFailed", _wrap_delete_SocketSendFailed, METH_O, "delete_SocketSendFailed(self)"},
 	 { "SocketSendFailed_swigregister", SocketSendFailed_swigregister, METH_O, NULL},
 	 { "SocketSendFailed_swiginit", SocketSendFailed_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketRecvFailed", _wrap_new_SocketRecvFailed, METH_VARARGS, "\n"
-		"SocketRecvFailed(ssize_t size)\n"
+		"SocketRecvFailed(size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"size: ssize_t\n"
 		"\n"
-		"new_SocketRecvFailed(std::string const & what) -> SocketRecvFailed\n"
+		"new_SocketRecvFailed(what) -> SocketRecvFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketRecvFailed", _wrap_delete_SocketRecvFailed, METH_O, "delete_SocketRecvFailed(SocketRecvFailed self)"},
+	 { "delete_SocketRecvFailed", _wrap_delete_SocketRecvFailed, METH_O, "delete_SocketRecvFailed(self)"},
 	 { "SocketRecvFailed_swigregister", SocketRecvFailed_swigregister, METH_O, NULL},
 	 { "SocketRecvFailed_swiginit", SocketRecvFailed_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketCloseFailed", _wrap_new_SocketCloseFailed, METH_VARARGS, "\n"
 		"SocketCloseFailed()\n"
-		"new_SocketCloseFailed(std::string const & what) -> SocketCloseFailed\n"
+		"new_SocketCloseFailed(what) -> SocketCloseFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketCloseFailed", _wrap_delete_SocketCloseFailed, METH_O, "delete_SocketCloseFailed(SocketCloseFailed self)"},
+	 { "delete_SocketCloseFailed", _wrap_delete_SocketCloseFailed, METH_O, "delete_SocketCloseFailed(self)"},
 	 { "SocketCloseFailed_swigregister", SocketCloseFailed_swigregister, METH_O, NULL},
 	 { "SocketCloseFailed_swiginit", SocketCloseFailed_swiginit, METH_VARARGS, NULL},
 	 { "DateTime_m_date_set", _wrap_DateTime_m_date_set, METH_VARARGS, "\n"
-		"DateTime_m_date_set(DateTime self, int m_date)\n"
+		"DateTime_m_date_set(self, m_date)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_date: int\n"
 		"\n"
 		""},
-	 { "DateTime_m_date_get", _wrap_DateTime_m_date_get, METH_O, "DateTime_m_date_get(DateTime self) -> int"},
+	 { "DateTime_m_date_get", _wrap_DateTime_m_date_get, METH_O, "DateTime_m_date_get(self) -> int"},
 	 { "DateTime_m_time_set", _wrap_DateTime_m_time_set, METH_VARARGS, "\n"
-		"DateTime_m_time_set(DateTime self, int64_t m_time)\n"
+		"DateTime_m_time_set(self, m_time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_time: int64_t\n"
 		"\n"
 		""},
-	 { "DateTime_m_time_get", _wrap_DateTime_m_time_get, METH_O, "DateTime_m_time_get(DateTime self) -> int64_t"},
+	 { "DateTime_m_time_get", _wrap_DateTime_m_time_get, METH_O, "DateTime_m_time_get(self) -> int64_t"},
 	 { "new_DateTime", _wrap_new_DateTime, METH_VARARGS, "\n"
 		"DateTime()\n"
-		"DateTime(int date, int64_t time)\n"
+		"DateTime(date, time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"date: int\n"
 		"time: int64_t\n"
 		"\n"
-		"DateTime(int year, int month, int day, int hour, int minute, int second, int millis)\n"
+		"DateTime(year, month, day, hour, minute, second, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159956,7 +159956,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millis: int\n"
 		"\n"
-		"new_DateTime(int year, int month, int day, int hour, int minute, int second, int fraction, int precision) -> DateTime\n"
+		"new_DateTime(year, month, day, hour, minute, second, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -159970,31 +159970,31 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "delete_DateTime", _wrap_delete_DateTime, METH_O, "delete_DateTime(DateTime self)"},
-	 { "DateTime_getYear", _wrap_DateTime_getYear, METH_O, "DateTime_getYear(DateTime self) -> int"},
-	 { "DateTime_getMonth", _wrap_DateTime_getMonth, METH_O, "DateTime_getMonth(DateTime self) -> int"},
-	 { "DateTime_getDay", _wrap_DateTime_getDay, METH_O, "DateTime_getDay(DateTime self) -> int"},
-	 { "DateTime_getDate", _wrap_DateTime_getDate, METH_O, "DateTime_getDate(DateTime self) -> int"},
-	 { "DateTime_getJulianDate", _wrap_DateTime_getJulianDate, METH_O, "DateTime_getJulianDate(DateTime self) -> int"},
-	 { "DateTime_getHour", _wrap_DateTime_getHour, METH_O, "DateTime_getHour(DateTime self) -> int"},
-	 { "DateTime_getMinute", _wrap_DateTime_getMinute, METH_O, "DateTime_getMinute(DateTime self) -> int"},
-	 { "DateTime_getSecond", _wrap_DateTime_getSecond, METH_O, "DateTime_getSecond(DateTime self) -> int"},
-	 { "DateTime_getMillisecond", _wrap_DateTime_getMillisecond, METH_O, "DateTime_getMillisecond(DateTime self) -> int"},
-	 { "DateTime_getMicrosecond", _wrap_DateTime_getMicrosecond, METH_O, "DateTime_getMicrosecond(DateTime self) -> int"},
-	 { "DateTime_getNanosecond", _wrap_DateTime_getNanosecond, METH_O, "DateTime_getNanosecond(DateTime self) -> unsigned int"},
+	 { "delete_DateTime", _wrap_delete_DateTime, METH_O, "delete_DateTime(self)"},
+	 { "DateTime_getYear", _wrap_DateTime_getYear, METH_O, "DateTime_getYear(self) -> int"},
+	 { "DateTime_getMonth", _wrap_DateTime_getMonth, METH_O, "DateTime_getMonth(self) -> int"},
+	 { "DateTime_getDay", _wrap_DateTime_getDay, METH_O, "DateTime_getDay(self) -> int"},
+	 { "DateTime_getDate", _wrap_DateTime_getDate, METH_O, "DateTime_getDate(self) -> int"},
+	 { "DateTime_getJulianDate", _wrap_DateTime_getJulianDate, METH_O, "DateTime_getJulianDate(self) -> int"},
+	 { "DateTime_getHour", _wrap_DateTime_getHour, METH_O, "DateTime_getHour(self) -> int"},
+	 { "DateTime_getMinute", _wrap_DateTime_getMinute, METH_O, "DateTime_getMinute(self) -> int"},
+	 { "DateTime_getSecond", _wrap_DateTime_getSecond, METH_O, "DateTime_getSecond(self) -> int"},
+	 { "DateTime_getMillisecond", _wrap_DateTime_getMillisecond, METH_O, "DateTime_getMillisecond(self) -> int"},
+	 { "DateTime_getMicrosecond", _wrap_DateTime_getMicrosecond, METH_O, "DateTime_getMicrosecond(self) -> int"},
+	 { "DateTime_getNanosecond", _wrap_DateTime_getNanosecond, METH_O, "DateTime_getNanosecond(self) -> unsigned int"},
 	 { "DateTime_getFraction", _wrap_DateTime_getFraction, METH_VARARGS, "\n"
-		"DateTime_getFraction(DateTime self, int precision) -> int\n"
+		"DateTime_getFraction(self, precision) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"precision: int\n"
 		"\n"
 		""},
-	 { "DateTime_getWeekDay", _wrap_DateTime_getWeekDay, METH_O, "DateTime_getWeekDay(DateTime self) -> int"},
-	 { "DateTime_getTimeT", _wrap_DateTime_getTimeT, METH_O, "DateTime_getTimeT(DateTime self) -> time_t"},
-	 { "DateTime_getTmUtc", _wrap_DateTime_getTmUtc, METH_O, "DateTime_getTmUtc(DateTime self) -> tm"},
+	 { "DateTime_getWeekDay", _wrap_DateTime_getWeekDay, METH_O, "DateTime_getWeekDay(self) -> int"},
+	 { "DateTime_getTimeT", _wrap_DateTime_getTimeT, METH_O, "DateTime_getTimeT(self) -> time_t"},
+	 { "DateTime_getTmUtc", _wrap_DateTime_getTmUtc, METH_O, "DateTime_getTmUtc(self) -> tm"},
 	 { "DateTime_setYMD", _wrap_DateTime_setYMD, METH_VARARGS, "\n"
-		"DateTime_setYMD(DateTime self, int year, int month, int day)\n"
+		"DateTime_setYMD(self, year, month, day)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160004,7 +160004,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setHMS", _wrap_DateTime_setHMS, METH_VARARGS, "\n"
-		"DateTime_setHMS(DateTime self, int hour, int minute, int second, int millis)\n"
+		"DateTime_setHMS(self, hour, minute, second, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160013,7 +160013,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millis: int\n"
 		"\n"
-		"DateTime_setHMS(DateTime self, int hour, int minute, int second, int fraction, int precision)\n"
+		"DateTime_setHMS(self, hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160025,7 +160025,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setHour", _wrap_DateTime_setHour, METH_VARARGS, "\n"
-		"DateTime_setHour(DateTime self, int hour)\n"
+		"DateTime_setHour(self, hour)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160033,7 +160033,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setMinute", _wrap_DateTime_setMinute, METH_VARARGS, "\n"
-		"DateTime_setMinute(DateTime self, int min)\n"
+		"DateTime_setMinute(self, min)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160041,7 +160041,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setSecond", _wrap_DateTime_setSecond, METH_VARARGS, "\n"
-		"DateTime_setSecond(DateTime self, int sec)\n"
+		"DateTime_setSecond(self, sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160049,7 +160049,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setMillisecond", _wrap_DateTime_setMillisecond, METH_VARARGS, "\n"
-		"DateTime_setMillisecond(DateTime self, int millis)\n"
+		"DateTime_setMillisecond(self, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160057,7 +160057,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setMicrosecond", _wrap_DateTime_setMicrosecond, METH_VARARGS, "\n"
-		"DateTime_setMicrosecond(DateTime self, int micros)\n"
+		"DateTime_setMicrosecond(self, micros)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160065,7 +160065,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setNanosecond", _wrap_DateTime_setNanosecond, METH_VARARGS, "\n"
-		"DateTime_setNanosecond(DateTime self, int nanos)\n"
+		"DateTime_setNanosecond(self, nanos)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160073,7 +160073,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_setFraction", _wrap_DateTime_setFraction, METH_VARARGS, "\n"
-		"DateTime_setFraction(DateTime self, int fraction, int precision)\n"
+		"DateTime_setFraction(self, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160081,17 +160081,17 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "DateTime_clearDate", _wrap_DateTime_clearDate, METH_O, "DateTime_clearDate(DateTime self)"},
-	 { "DateTime_clearTime", _wrap_DateTime_clearTime, METH_O, "DateTime_clearTime(DateTime self)"},
+	 { "DateTime_clearDate", _wrap_DateTime_clearDate, METH_O, "DateTime_clearDate(self)"},
+	 { "DateTime_clearTime", _wrap_DateTime_clearTime, METH_O, "DateTime_clearTime(self)"},
 	 { "DateTime_set", _wrap_DateTime_set, METH_VARARGS, "\n"
-		"DateTime_set(DateTime self, int date, int64_t time)\n"
+		"DateTime_set(self, date, time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"date: int\n"
 		"time: int64_t\n"
 		"\n"
-		"DateTime_set(DateTime self, DateTime other)\n"
+		"DateTime_set(self, other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160099,7 +160099,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime___iadd__", _wrap_DateTime___iadd__, METH_VARARGS, "\n"
-		"DateTime___iadd__(DateTime self, int seconds)\n"
+		"DateTime___iadd__(self, seconds)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160107,7 +160107,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_convertToNanos", _wrap_DateTime_convertToNanos, METH_VARARGS, "\n"
-		"DateTime_convertToNanos(int fraction, int precision) -> int\n"
+		"DateTime_convertToNanos(fraction, precision) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160116,7 +160116,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_makeHMS", _wrap_DateTime_makeHMS, METH_VARARGS, "\n"
-		"DateTime_makeHMS(int hour, int minute, int second, int nanos) -> int64_t\n"
+		"DateTime_makeHMS(hour, minute, second, nanos) -> int64_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160129,14 +160129,14 @@ static PyMethodDef SwigMethods[] = {
 	 { "DateTime_nowUtc", _wrap_DateTime_nowUtc, METH_NOARGS, "DateTime_nowUtc() -> DateTime"},
 	 { "DateTime_nowLocal", _wrap_DateTime_nowLocal, METH_NOARGS, "DateTime_nowLocal() -> DateTime"},
 	 { "DateTime_fromUtcTimeT", _wrap_DateTime_fromUtcTimeT, METH_VARARGS, "\n"
-		"DateTime_fromUtcTimeT(time_t t, int millis=0) -> DateTime\n"
+		"DateTime_fromUtcTimeT(t, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"t: time_t\n"
 		"millis: int\n"
 		"\n"
-		"DateTime_fromUtcTimeT(time_t t, int fraction, int precision) -> DateTime\n"
+		"DateTime_fromUtcTimeT(t, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160146,14 +160146,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_fromLocalTimeT", _wrap_DateTime_fromLocalTimeT, METH_VARARGS, "\n"
-		"DateTime_fromLocalTimeT(time_t t, int millis=0) -> DateTime\n"
+		"DateTime_fromLocalTimeT(t, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"t: time_t\n"
 		"millis: int\n"
 		"\n"
-		"DateTime_fromLocalTimeT(time_t t, int fraction, int precision) -> DateTime\n"
+		"DateTime_fromLocalTimeT(t, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160163,14 +160163,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_fromTm", _wrap_DateTime_fromTm, METH_VARARGS, "\n"
-		"DateTime_fromTm(tm const & tm, int millis=0) -> DateTime\n"
+		"DateTime_fromTm(tm, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tm: tm const &\n"
 		"millis: int\n"
 		"\n"
-		"DateTime_fromTm(tm const & tm, int fraction, int precision) -> DateTime\n"
+		"DateTime_fromTm(tm, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160180,7 +160180,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DateTime_julianDate", _wrap_DateTime_julianDate, METH_VARARGS, "\n"
-		"DateTime_julianDate(int year, int month, int day) -> int\n"
+		"DateTime_julianDate(year, month, day) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160192,7 +160192,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "DateTime_swigregister", DateTime_swigregister, METH_O, NULL},
 	 { "DateTime_swiginit", DateTime_swiginit, METH_VARARGS, NULL},
 	 { "__sub__", _wrap___sub__, METH_VARARGS, "\n"
-		"__sub__(DateTime lhs, DateTime rhs) -> int\n"
+		"__sub__(lhs, rhs) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160203,13 +160203,13 @@ static PyMethodDef SwigMethods[] = {
 	 { "UtcTimeStamp_now", _wrap_UtcTimeStamp_now, METH_NOARGS, "UtcTimeStamp_now() -> UtcTimeStamp"},
 	 { "new_UtcTimeStamp", _wrap_new_UtcTimeStamp, METH_VARARGS, "\n"
 		"UtcTimeStamp()\n"
-		"UtcTimeStamp(DateTime dateTime)\n"
+		"UtcTimeStamp(dateTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dateTime: FIX::DateTime\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int millisecond=0)\n"
+		"UtcTimeStamp(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160218,7 +160218,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int fraction, int precision)\n"
+		"UtcTimeStamp(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160228,7 +160228,7 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int date, int month, int year)\n"
+		"UtcTimeStamp(hour, minute, second, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160239,7 +160239,7 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int millisecond, int date, int month, int year)\n"
+		"UtcTimeStamp(hour, minute, second, millisecond, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160251,7 +160251,7 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int fraction, int date, int month, int year, int precision)\n"
+		"UtcTimeStamp(hour, minute, second, fraction, date, month, year, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160264,14 +160264,14 @@ static PyMethodDef SwigMethods[] = {
 		"year: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(time_t time, int millisecond=0)\n"
+		"UtcTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeStamp(time_t time, int fraction, int precision)\n"
+		"UtcTimeStamp(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160279,14 +160279,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(tm const * time, int millisecond=0)\n"
+		"UtcTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_UtcTimeStamp(tm const * time, int fraction, int precision) -> UtcTimeStamp\n"
+		"new_UtcTimeStamp(time, fraction, precision) -> UtcTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160295,14 +160295,14 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "UtcTimeStamp_setCurrent", _wrap_UtcTimeStamp_setCurrent, METH_O, "UtcTimeStamp_setCurrent(UtcTimeStamp self)"},
-	 { "UtcTimeStamp_getDateTime", _wrap_UtcTimeStamp_getDateTime, METH_O, "UtcTimeStamp_getDateTime(UtcTimeStamp self) -> PyObject *"},
-	 { "delete_UtcTimeStamp", _wrap_delete_UtcTimeStamp, METH_O, "delete_UtcTimeStamp(UtcTimeStamp self)"},
+	 { "UtcTimeStamp_setCurrent", _wrap_UtcTimeStamp_setCurrent, METH_O, "UtcTimeStamp_setCurrent(self)"},
+	 { "UtcTimeStamp_getDateTime", _wrap_UtcTimeStamp_getDateTime, METH_O, "UtcTimeStamp_getDateTime(self) -> PyObject *"},
+	 { "delete_UtcTimeStamp", _wrap_delete_UtcTimeStamp, METH_O, "delete_UtcTimeStamp(self)"},
 	 { "UtcTimeStamp_swigregister", UtcTimeStamp_swigregister, METH_O, NULL},
 	 { "UtcTimeStamp_swiginit", UtcTimeStamp_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalTimeStamp", _wrap_new_LocalTimeStamp, METH_VARARGS, "\n"
 		"LocalTimeStamp()\n"
-		"LocalTimeStamp(int hour, int minute, int second, int millisecond=0)\n"
+		"LocalTimeStamp(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160311,7 +160311,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int fraction, int precision)\n"
+		"LocalTimeStamp(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160321,7 +160321,7 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int date, int month, int year)\n"
+		"LocalTimeStamp(hour, minute, second, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160332,7 +160332,7 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int millisecond, int date, int month, int year)\n"
+		"LocalTimeStamp(hour, minute, second, millisecond, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160344,7 +160344,7 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int fraction, int date, int month, int year, int precision)\n"
+		"LocalTimeStamp(hour, minute, second, fraction, date, month, year, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160357,14 +160357,14 @@ static PyMethodDef SwigMethods[] = {
 		"year: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(time_t time, int millisecond=0)\n"
+		"LocalTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeStamp(time_t time, int fraction, int precision)\n"
+		"LocalTimeStamp(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160372,14 +160372,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(tm const * time, int millisecond=0)\n"
+		"LocalTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_LocalTimeStamp(tm const * time, int fraction, int precision) -> LocalTimeStamp\n"
+		"new_LocalTimeStamp(time, fraction, precision) -> LocalTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160388,19 +160388,19 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "LocalTimeStamp_setCurrent", _wrap_LocalTimeStamp_setCurrent, METH_O, "LocalTimeStamp_setCurrent(LocalTimeStamp self)"},
-	 { "delete_LocalTimeStamp", _wrap_delete_LocalTimeStamp, METH_O, "delete_LocalTimeStamp(LocalTimeStamp self)"},
+	 { "LocalTimeStamp_setCurrent", _wrap_LocalTimeStamp_setCurrent, METH_O, "LocalTimeStamp_setCurrent(self)"},
+	 { "delete_LocalTimeStamp", _wrap_delete_LocalTimeStamp, METH_O, "delete_LocalTimeStamp(self)"},
 	 { "LocalTimeStamp_swigregister", LocalTimeStamp_swigregister, METH_O, NULL},
 	 { "LocalTimeStamp_swiginit", LocalTimeStamp_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeOnly", _wrap_new_UtcTimeOnly, METH_VARARGS, "\n"
 		"UtcTimeOnly()\n"
-		"UtcTimeOnly(DateTime val)\n"
+		"UtcTimeOnly(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"UtcTimeOnly(int hour, int minute, int second, int millisecond=0)\n"
+		"UtcTimeOnly(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160409,7 +160409,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeOnly(int hour, int minute, int second, int fraction, int precision)\n"
+		"UtcTimeOnly(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160419,14 +160419,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnly(time_t time, int millisecond=0)\n"
+		"UtcTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeOnly(time_t time, int fraction, int precision)\n"
+		"UtcTimeOnly(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160434,14 +160434,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnly(tm const * time, int millisecond=0)\n"
+		"UtcTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_UtcTimeOnly(tm const * time, int fraction, int precision) -> UtcTimeOnly\n"
+		"new_UtcTimeOnly(time, fraction, precision) -> UtcTimeOnly\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160450,19 +160450,19 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "UtcTimeOnly_setCurrent", _wrap_UtcTimeOnly_setCurrent, METH_O, "UtcTimeOnly_setCurrent(UtcTimeOnly self)"},
-	 { "delete_UtcTimeOnly", _wrap_delete_UtcTimeOnly, METH_O, "delete_UtcTimeOnly(UtcTimeOnly self)"},
+	 { "UtcTimeOnly_setCurrent", _wrap_UtcTimeOnly_setCurrent, METH_O, "UtcTimeOnly_setCurrent(self)"},
+	 { "delete_UtcTimeOnly", _wrap_delete_UtcTimeOnly, METH_O, "delete_UtcTimeOnly(self)"},
 	 { "UtcTimeOnly_swigregister", UtcTimeOnly_swigregister, METH_O, NULL},
 	 { "UtcTimeOnly_swiginit", UtcTimeOnly_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalTimeOnly", _wrap_new_LocalTimeOnly, METH_VARARGS, "\n"
 		"LocalTimeOnly()\n"
-		"LocalTimeOnly(DateTime val)\n"
+		"LocalTimeOnly(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"LocalTimeOnly(int hour, int minute, int second, int millisecond=0)\n"
+		"LocalTimeOnly(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160471,7 +160471,7 @@ static PyMethodDef SwigMethods[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeOnly(int hour, int minute, int second, int fraction, int precision)\n"
+		"LocalTimeOnly(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160481,14 +160481,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeOnly(time_t time, int millisecond=0)\n"
+		"LocalTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeOnly(time_t time, int fraction, int precision)\n"
+		"LocalTimeOnly(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160496,14 +160496,14 @@ static PyMethodDef SwigMethods[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeOnly(tm const * time, int millisecond=0)\n"
+		"LocalTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_LocalTimeOnly(tm const * time, int fraction, int precision) -> LocalTimeOnly\n"
+		"new_LocalTimeOnly(time, fraction, precision) -> LocalTimeOnly\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160512,19 +160512,19 @@ static PyMethodDef SwigMethods[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "LocalTimeOnly_setCurrent", _wrap_LocalTimeOnly_setCurrent, METH_O, "LocalTimeOnly_setCurrent(LocalTimeOnly self)"},
-	 { "delete_LocalTimeOnly", _wrap_delete_LocalTimeOnly, METH_O, "delete_LocalTimeOnly(LocalTimeOnly self)"},
+	 { "LocalTimeOnly_setCurrent", _wrap_LocalTimeOnly_setCurrent, METH_O, "LocalTimeOnly_setCurrent(self)"},
+	 { "delete_LocalTimeOnly", _wrap_delete_LocalTimeOnly, METH_O, "delete_LocalTimeOnly(self)"},
 	 { "LocalTimeOnly_swigregister", LocalTimeOnly_swigregister, METH_O, NULL},
 	 { "LocalTimeOnly_swiginit", LocalTimeOnly_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcDate", _wrap_new_UtcDate, METH_VARARGS, "\n"
 		"UtcDate()\n"
-		"UtcDate(DateTime val)\n"
+		"UtcDate(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"UtcDate(int date, int month, int year)\n"
+		"UtcDate(date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160532,32 +160532,32 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcDate(int sec)\n"
+		"UtcDate(sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sec: int\n"
 		"\n"
-		"new_UtcDate(tm const * time) -> UtcDate\n"
+		"new_UtcDate(time) -> UtcDate\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"\n"
 		""},
-	 { "UtcDate_setCurrent", _wrap_UtcDate_setCurrent, METH_O, "UtcDate_setCurrent(UtcDate self)"},
-	 { "delete_UtcDate", _wrap_delete_UtcDate, METH_O, "delete_UtcDate(UtcDate self)"},
+	 { "UtcDate_setCurrent", _wrap_UtcDate_setCurrent, METH_O, "UtcDate_setCurrent(self)"},
+	 { "delete_UtcDate", _wrap_delete_UtcDate, METH_O, "delete_UtcDate(self)"},
 	 { "UtcDate_swigregister", UtcDate_swigregister, METH_O, NULL},
 	 { "UtcDate_swiginit", UtcDate_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalDate", _wrap_new_LocalDate, METH_VARARGS, "\n"
 		"LocalDate()\n"
-		"LocalDate(DateTime val)\n"
+		"LocalDate(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"LocalDate(int date, int month, int year)\n"
+		"LocalDate(date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160565,33 +160565,33 @@ static PyMethodDef SwigMethods[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalDate(int sec)\n"
+		"LocalDate(sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sec: int\n"
 		"\n"
-		"new_LocalDate(tm const * time) -> LocalDate\n"
+		"new_LocalDate(time) -> LocalDate\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"\n"
 		""},
-	 { "LocalDate_setCurrent", _wrap_LocalDate_setCurrent, METH_O, "LocalDate_setCurrent(LocalDate self)"},
-	 { "delete_LocalDate", _wrap_delete_LocalDate, METH_O, "delete_LocalDate(LocalDate self)"},
+	 { "LocalDate_setCurrent", _wrap_LocalDate_setCurrent, METH_O, "LocalDate_setCurrent(self)"},
+	 { "delete_LocalDate", _wrap_delete_LocalDate, METH_O, "delete_LocalDate(self)"},
 	 { "LocalDate_swigregister", LocalDate_swigregister, METH_O, NULL},
 	 { "LocalDate_swiginit", LocalDate_swiginit, METH_VARARGS, NULL},
-	 { "delete_FieldBase", _wrap_delete_FieldBase, METH_O, "delete_FieldBase(FieldBase self)"},
+	 { "delete_FieldBase", _wrap_delete_FieldBase, METH_O, "delete_FieldBase(self)"},
 	 { "new_FieldBase", _wrap_new_FieldBase, METH_VARARGS, "\n"
-		"FieldBase(int tag, std::string const & string)\n"
+		"FieldBase(tag, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"string: std::string const &\n"
 		"\n"
-		"new_FieldBase(FieldBase rhs) -> FieldBase\n"
+		"new_FieldBase(rhs) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160599,7 +160599,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldBase_swap", _wrap_FieldBase_swap, METH_VARARGS, "\n"
-		"FieldBase_swap(FieldBase self, FieldBase rhs)\n"
+		"FieldBase_swap(self, rhs)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160607,7 +160607,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldBase_setTag", _wrap_FieldBase_setTag, METH_VARARGS, "\n"
-		"FieldBase_setTag(FieldBase self, int tag)\n"
+		"FieldBase_setTag(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160615,7 +160615,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldBase_setField", _wrap_FieldBase_setField, METH_VARARGS, "\n"
-		"FieldBase_setField(FieldBase self, int field)\n"
+		"FieldBase_setField(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160623,32 +160623,32 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldBase_setString", _wrap_FieldBase_setString, METH_VARARGS, "\n"
-		"FieldBase_setString(FieldBase self, std::string const & string)\n"
+		"FieldBase_setString(self, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"\n"
 		""},
-	 { "FieldBase_getTag", _wrap_FieldBase_getTag, METH_O, "FieldBase_getTag(FieldBase self) -> int"},
-	 { "FieldBase_getField", _wrap_FieldBase_getField, METH_O, "FieldBase_getField(FieldBase self) -> int"},
-	 { "FieldBase_getString", _wrap_FieldBase_getString, METH_O, "FieldBase_getString(FieldBase self) -> std::string const &"},
-	 { "FieldBase_getFixString", _wrap_FieldBase_getFixString, METH_O, "FieldBase_getFixString(FieldBase self) -> std::string const &"},
-	 { "FieldBase_getLength", _wrap_FieldBase_getLength, METH_O, "FieldBase_getLength(FieldBase self) -> int"},
-	 { "FieldBase_getTotal", _wrap_FieldBase_getTotal, METH_O, "FieldBase_getTotal(FieldBase self) -> int"},
+	 { "FieldBase_getTag", _wrap_FieldBase_getTag, METH_O, "FieldBase_getTag(self) -> int"},
+	 { "FieldBase_getField", _wrap_FieldBase_getField, METH_O, "FieldBase_getField(self) -> int"},
+	 { "FieldBase_getString", _wrap_FieldBase_getString, METH_O, "FieldBase_getString(self) -> std::string const &"},
+	 { "FieldBase_getFixString", _wrap_FieldBase_getFixString, METH_O, "FieldBase_getFixString(self) -> std::string const &"},
+	 { "FieldBase_getLength", _wrap_FieldBase_getLength, METH_O, "FieldBase_getLength(self) -> int"},
+	 { "FieldBase_getTotal", _wrap_FieldBase_getTotal, METH_O, "FieldBase_getTotal(self) -> int"},
 	 { "FieldBase___lt__", _wrap_FieldBase___lt__, METH_VARARGS, "\n"
-		"FieldBase___lt__(FieldBase self, FieldBase field) -> bool\n"
+		"FieldBase___lt__(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
 		""},
-	 { "FieldBase___str__", _wrap_FieldBase___str__, METH_O, "FieldBase___str__(FieldBase self) -> std::string"},
+	 { "FieldBase___str__", _wrap_FieldBase___str__, METH_O, "FieldBase___str__(self) -> std::string"},
 	 { "FieldBase_swigregister", FieldBase_swigregister, METH_O, NULL},
 	 { "FieldBase_swiginit", FieldBase_swiginit, METH_VARARGS, NULL},
 	 { "swap", _wrap_swap, METH_VARARGS, "\n"
-		"swap(FieldBase lhs, FieldBase rhs)\n"
+		"swap(lhs, rhs)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160657,14 +160657,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_StringField", _wrap_new_StringField, METH_VARARGS, "\n"
-		"StringField(int field, std::string const & data)\n"
+		"StringField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: std::string const &\n"
 		"\n"
-		"new_StringField(int field) -> StringField\n"
+		"new_StringField(field) -> StringField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160672,16 +160672,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField_setValue", _wrap_StringField_setValue, METH_VARARGS, "\n"
-		"StringField_setValue(StringField self, std::string const & value)\n"
+		"StringField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: std::string const &\n"
 		"\n"
 		""},
-	 { "StringField_getValue", _wrap_StringField_getValue, METH_O, "StringField_getValue(StringField self) -> std::string const &"},
+	 { "StringField_getValue", _wrap_StringField_getValue, METH_O, "StringField_getValue(self) -> std::string const &"},
 	 { "StringField___lt__", _wrap_StringField___lt__, METH_VARARGS, "\n"
-		"StringField___lt__(StringField self, StringField rhs) -> bool\n"
+		"StringField___lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160689,7 +160689,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField___gt__", _wrap_StringField___gt__, METH_VARARGS, "\n"
-		"StringField___gt__(StringField self, StringField rhs) -> bool\n"
+		"StringField___gt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160697,7 +160697,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField___eq__", _wrap_StringField___eq__, METH_VARARGS, "\n"
-		"StringField___eq__(StringField self, StringField rhs) -> bool\n"
+		"StringField___eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160705,7 +160705,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField___ne__", _wrap_StringField___ne__, METH_VARARGS, "\n"
-		"StringField___ne__(StringField self, StringField rhs) -> bool\n"
+		"StringField___ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160713,7 +160713,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField___le__", _wrap_StringField___le__, METH_VARARGS, "\n"
-		"StringField___le__(StringField self, StringField rhs) -> bool\n"
+		"StringField___le__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160721,7 +160721,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "StringField___ge__", _wrap_StringField___ge__, METH_VARARGS, "\n"
-		"StringField___ge__(StringField self, StringField rhs) -> bool\n"
+		"StringField___ge__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160729,35 +160729,35 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__gt__", _wrap___gt__, METH_VARARGS, "\n"
-		"__gt__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__gt__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__gt__(StringField arg1, char const * arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__gt__(char const * arg1, StringField arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__gt__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__gt__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160766,35 +160766,35 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__le__", _wrap___le__, METH_VARARGS, "\n"
-		"__le__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__le__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__le__(StringField arg1, char const * arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__le__(char const * arg1, StringField arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__le__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__le__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160803,35 +160803,35 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__ge__", _wrap___ge__, METH_VARARGS, "\n"
-		"__ge__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__ge__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__ge__(StringField arg1, char const * arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__ge__(char const * arg1, StringField arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ge__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__ge__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160839,18 +160839,18 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::StringField const &\n"
 		"\n"
 		""},
-	 { "delete_StringField", _wrap_delete_StringField, METH_O, "delete_StringField(StringField self)"},
+	 { "delete_StringField", _wrap_delete_StringField, METH_O, "delete_StringField(self)"},
 	 { "StringField_swigregister", StringField_swigregister, METH_O, NULL},
 	 { "StringField_swiginit", StringField_swiginit, METH_VARARGS, NULL},
 	 { "new_CharField", _wrap_new_CharField, METH_VARARGS, "\n"
-		"CharField(int field, char data)\n"
+		"CharField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: char\n"
 		"\n"
-		"new_CharField(int field) -> CharField\n"
+		"new_CharField(field) -> CharField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160858,19 +160858,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "CharField_setValue", _wrap_CharField_setValue, METH_VARARGS, "\n"
-		"CharField_setValue(CharField self, char value)\n"
+		"CharField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: char\n"
 		"\n"
 		""},
-	 { "CharField_getValue", _wrap_CharField_getValue, METH_O, "CharField_getValue(CharField self) -> char"},
-	 { "delete_CharField", _wrap_delete_CharField, METH_O, "delete_CharField(CharField self)"},
+	 { "CharField_getValue", _wrap_CharField_getValue, METH_O, "CharField_getValue(self) -> char"},
+	 { "delete_CharField", _wrap_delete_CharField, METH_O, "delete_CharField(self)"},
 	 { "CharField_swigregister", CharField_swigregister, METH_O, NULL},
 	 { "CharField_swiginit", CharField_swiginit, METH_VARARGS, NULL},
 	 { "new_DoubleField", _wrap_new_DoubleField, METH_VARARGS, "\n"
-		"DoubleField(int field, double data, int padding=0)\n"
+		"DoubleField(field, data, padding=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160878,7 +160878,7 @@ static PyMethodDef SwigMethods[] = {
 		"data: double\n"
 		"padding: int\n"
 		"\n"
-		"new_DoubleField(int field) -> DoubleField\n"
+		"new_DoubleField(field) -> DoubleField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160886,7 +160886,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DoubleField_setValue", _wrap_DoubleField_setValue, METH_VARARGS, "\n"
-		"DoubleField_setValue(DoubleField self, double value, int padding=0)\n"
+		"DoubleField_setValue(self, value, padding=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160894,19 +160894,19 @@ static PyMethodDef SwigMethods[] = {
 		"padding: int\n"
 		"\n"
 		""},
-	 { "DoubleField_getValue", _wrap_DoubleField_getValue, METH_O, "DoubleField_getValue(DoubleField self) -> double"},
-	 { "delete_DoubleField", _wrap_delete_DoubleField, METH_O, "delete_DoubleField(DoubleField self)"},
+	 { "DoubleField_getValue", _wrap_DoubleField_getValue, METH_O, "DoubleField_getValue(self) -> double"},
+	 { "delete_DoubleField", _wrap_delete_DoubleField, METH_O, "delete_DoubleField(self)"},
 	 { "DoubleField_swigregister", DoubleField_swigregister, METH_O, NULL},
 	 { "DoubleField_swiginit", DoubleField_swiginit, METH_VARARGS, NULL},
 	 { "new_IntField", _wrap_new_IntField, METH_VARARGS, "\n"
-		"IntField(int field, int data)\n"
+		"IntField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int\n"
 		"\n"
-		"new_IntField(int field) -> IntField\n"
+		"new_IntField(field) -> IntField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160914,26 +160914,26 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "IntField_setValue", _wrap_IntField_setValue, METH_VARARGS, "\n"
-		"IntField_setValue(IntField self, int value)\n"
+		"IntField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "IntField_getValue", _wrap_IntField_getValue, METH_O, "IntField_getValue(IntField self) -> int"},
-	 { "delete_IntField", _wrap_delete_IntField, METH_O, "delete_IntField(IntField self)"},
+	 { "IntField_getValue", _wrap_IntField_getValue, METH_O, "IntField_getValue(self) -> int"},
+	 { "delete_IntField", _wrap_delete_IntField, METH_O, "delete_IntField(self)"},
 	 { "IntField_swigregister", IntField_swigregister, METH_O, NULL},
 	 { "IntField_swiginit", IntField_swiginit, METH_VARARGS, NULL},
 	 { "new_Int64Field", _wrap_new_Int64Field, METH_VARARGS, "\n"
-		"Int64Field(int field, int64_t data)\n"
+		"Int64Field(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int64_t\n"
 		"\n"
-		"new_Int64Field(int field) -> Int64Field\n"
+		"new_Int64Field(field) -> Int64Field\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160941,26 +160941,26 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Int64Field_setValue", _wrap_Int64Field_setValue, METH_VARARGS, "\n"
-		"Int64Field_setValue(Int64Field self, int64_t value)\n"
+		"Int64Field_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int64_t\n"
 		"\n"
 		""},
-	 { "Int64Field_getValue", _wrap_Int64Field_getValue, METH_O, "Int64Field_getValue(Int64Field self) -> int64_t"},
-	 { "delete_Int64Field", _wrap_delete_Int64Field, METH_O, "delete_Int64Field(Int64Field self)"},
+	 { "Int64Field_getValue", _wrap_Int64Field_getValue, METH_O, "Int64Field_getValue(self) -> int64_t"},
+	 { "delete_Int64Field", _wrap_delete_Int64Field, METH_O, "delete_Int64Field(self)"},
 	 { "Int64Field_swigregister", Int64Field_swigregister, METH_O, NULL},
 	 { "Int64Field_swiginit", Int64Field_swiginit, METH_VARARGS, NULL},
 	 { "new_UInt64Field", _wrap_new_UInt64Field, METH_VARARGS, "\n"
-		"UInt64Field(int field, uint64_t data)\n"
+		"UInt64Field(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: uint64_t\n"
 		"\n"
-		"new_UInt64Field(int field) -> UInt64Field\n"
+		"new_UInt64Field(field) -> UInt64Field\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160968,26 +160968,26 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UInt64Field_setValue", _wrap_UInt64Field_setValue, METH_VARARGS, "\n"
-		"UInt64Field_setValue(UInt64Field self, uint64_t value)\n"
+		"UInt64Field_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: uint64_t\n"
 		"\n"
 		""},
-	 { "UInt64Field_getValue", _wrap_UInt64Field_getValue, METH_O, "UInt64Field_getValue(UInt64Field self) -> uint64_t"},
-	 { "delete_UInt64Field", _wrap_delete_UInt64Field, METH_O, "delete_UInt64Field(UInt64Field self)"},
+	 { "UInt64Field_getValue", _wrap_UInt64Field_getValue, METH_O, "UInt64Field_getValue(self) -> uint64_t"},
+	 { "delete_UInt64Field", _wrap_delete_UInt64Field, METH_O, "delete_UInt64Field(self)"},
 	 { "UInt64Field_swigregister", UInt64Field_swigregister, METH_O, NULL},
 	 { "UInt64Field_swiginit", UInt64Field_swiginit, METH_VARARGS, NULL},
 	 { "new_BoolField", _wrap_new_BoolField, METH_VARARGS, "\n"
-		"BoolField(int field, bool data)\n"
+		"BoolField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: bool\n"
 		"\n"
-		"new_BoolField(int field) -> BoolField\n"
+		"new_BoolField(field) -> BoolField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -160995,20 +160995,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "BoolField_setValue", _wrap_BoolField_setValue, METH_VARARGS, "\n"
-		"BoolField_setValue(BoolField self, bool value)\n"
+		"BoolField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "BoolField_getValue", _wrap_BoolField_getValue, METH_O, "BoolField_getValue(BoolField self) -> bool"},
-	 { "BoolField___nonzero__", _wrap_BoolField___nonzero__, METH_O, "BoolField___nonzero__(BoolField self) -> bool"},
-	 { "delete_BoolField", _wrap_delete_BoolField, METH_O, "delete_BoolField(BoolField self)"},
+	 { "BoolField_getValue", _wrap_BoolField_getValue, METH_O, "BoolField_getValue(self) -> bool"},
+	 { "BoolField___nonzero__", _wrap_BoolField___nonzero__, METH_O, "BoolField___nonzero__(self) -> bool"},
+	 { "delete_BoolField", _wrap_delete_BoolField, METH_O, "delete_BoolField(self)"},
 	 { "BoolField_swigregister", BoolField_swigregister, METH_O, NULL},
 	 { "BoolField_swiginit", BoolField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeStampField", _wrap_new_UtcTimeStampField, METH_VARARGS, "\n"
-		"UtcTimeStampField(int field, UtcTimeStamp data, int precision=0)\n"
+		"UtcTimeStampField(field, data, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161016,7 +161016,7 @@ static PyMethodDef SwigMethods[] = {
 		"data: FIX::UtcTimeStamp const &\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStampField(int field, int precision=0)\n"
+		"UtcTimeStampField(field, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161025,16 +161025,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField_setValue", _wrap_UtcTimeStampField_setValue, METH_VARARGS, "\n"
-		"UtcTimeStampField_setValue(UtcTimeStampField self, UtcTimeStamp value)\n"
+		"UtcTimeStampField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "UtcTimeStampField_getValue", _wrap_UtcTimeStampField_getValue, METH_O, "UtcTimeStampField_getValue(UtcTimeStampField self) -> UtcTimeStamp"},
+	 { "UtcTimeStampField_getValue", _wrap_UtcTimeStampField_getValue, METH_O, "UtcTimeStampField_getValue(self) -> UtcTimeStamp"},
 	 { "UtcTimeStampField___lt__", _wrap_UtcTimeStampField___lt__, METH_VARARGS, "\n"
-		"UtcTimeStampField___lt__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"UtcTimeStampField___lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161042,7 +161042,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField___eq__", _wrap_UtcTimeStampField___eq__, METH_VARARGS, "\n"
-		"UtcTimeStampField___eq__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"UtcTimeStampField___eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161050,25 +161050,25 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField___ne__", _wrap_UtcTimeStampField___ne__, METH_VARARGS, "\n"
-		"UtcTimeStampField___ne__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"UtcTimeStampField___ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcTimeStampField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcTimeStampField", _wrap_delete_UtcTimeStampField, METH_O, "delete_UtcTimeStampField(UtcTimeStampField self)"},
+	 { "delete_UtcTimeStampField", _wrap_delete_UtcTimeStampField, METH_O, "delete_UtcTimeStampField(self)"},
 	 { "UtcTimeStampField_swigregister", UtcTimeStampField_swigregister, METH_O, NULL},
 	 { "UtcTimeStampField_swiginit", UtcTimeStampField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcDateField", _wrap_new_UtcDateField, METH_VARARGS, "\n"
-		"UtcDateField(int field, UtcDate data)\n"
+		"UtcDateField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: FIX::UtcDate const &\n"
 		"\n"
-		"new_UtcDateField(int field) -> UtcDateField\n"
+		"new_UtcDateField(field) -> UtcDateField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161076,16 +161076,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcDateField_setValue", _wrap_UtcDateField_setValue, METH_VARARGS, "\n"
-		"UtcDateField_setValue(UtcDateField self, UtcDate value)\n"
+		"UtcDateField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcDate const &\n"
 		"\n"
 		""},
-	 { "UtcDateField_getValue", _wrap_UtcDateField_getValue, METH_O, "UtcDateField_getValue(UtcDateField self) -> UtcDate"},
+	 { "UtcDateField_getValue", _wrap_UtcDateField_getValue, METH_O, "UtcDateField_getValue(self) -> UtcDate"},
 	 { "UtcDateField___lt__", _wrap_UtcDateField___lt__, METH_VARARGS, "\n"
-		"UtcDateField___lt__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"UtcDateField___lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161093,7 +161093,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcDateField___eq__", _wrap_UtcDateField___eq__, METH_VARARGS, "\n"
-		"UtcDateField___eq__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"UtcDateField___eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161101,18 +161101,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcDateField___ne__", _wrap_UtcDateField___ne__, METH_VARARGS, "\n"
-		"UtcDateField___ne__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"UtcDateField___ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcDateField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcDateField", _wrap_delete_UtcDateField, METH_O, "delete_UtcDateField(UtcDateField self)"},
+	 { "delete_UtcDateField", _wrap_delete_UtcDateField, METH_O, "delete_UtcDateField(self)"},
 	 { "UtcDateField_swigregister", UtcDateField_swigregister, METH_O, NULL},
 	 { "UtcDateField_swiginit", UtcDateField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeOnlyField", _wrap_new_UtcTimeOnlyField, METH_VARARGS, "\n"
-		"UtcTimeOnlyField(int field, UtcTimeOnly data, int precision=0)\n"
+		"UtcTimeOnlyField(field, data, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161120,7 +161120,7 @@ static PyMethodDef SwigMethods[] = {
 		"data: FIX::UtcTimeOnly const &\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnlyField(int field, int precision=0)\n"
+		"UtcTimeOnlyField(field, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161129,16 +161129,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField_setValue", _wrap_UtcTimeOnlyField_setValue, METH_VARARGS, "\n"
-		"UtcTimeOnlyField_setValue(UtcTimeOnlyField self, UtcTimeOnly value)\n"
+		"UtcTimeOnlyField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcTimeOnly const &\n"
 		"\n"
 		""},
-	 { "UtcTimeOnlyField_getValue", _wrap_UtcTimeOnlyField_getValue, METH_O, "UtcTimeOnlyField_getValue(UtcTimeOnlyField self) -> UtcTimeOnly"},
+	 { "UtcTimeOnlyField_getValue", _wrap_UtcTimeOnlyField_getValue, METH_O, "UtcTimeOnlyField_getValue(self) -> UtcTimeOnly"},
 	 { "UtcTimeOnlyField___lt__", _wrap_UtcTimeOnlyField___lt__, METH_VARARGS, "\n"
-		"UtcTimeOnlyField___lt__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"UtcTimeOnlyField___lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161146,7 +161146,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField___eq__", _wrap_UtcTimeOnlyField___eq__, METH_VARARGS, "\n"
-		"UtcTimeOnlyField___eq__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"UtcTimeOnlyField___eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161154,25 +161154,25 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField___ne__", _wrap_UtcTimeOnlyField___ne__, METH_VARARGS, "\n"
-		"UtcTimeOnlyField___ne__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"UtcTimeOnlyField___ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcTimeOnlyField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcTimeOnlyField", _wrap_delete_UtcTimeOnlyField, METH_O, "delete_UtcTimeOnlyField(UtcTimeOnlyField self)"},
+	 { "delete_UtcTimeOnlyField", _wrap_delete_UtcTimeOnlyField, METH_O, "delete_UtcTimeOnlyField(self)"},
 	 { "UtcTimeOnlyField_swigregister", UtcTimeOnlyField_swigregister, METH_O, NULL},
 	 { "UtcTimeOnlyField_swiginit", UtcTimeOnlyField_swiginit, METH_VARARGS, NULL},
 	 { "new_CheckSumField", _wrap_new_CheckSumField, METH_VARARGS, "\n"
-		"CheckSumField(int field, int data)\n"
+		"CheckSumField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int\n"
 		"\n"
-		"new_CheckSumField(int field) -> CheckSumField\n"
+		"new_CheckSumField(field) -> CheckSumField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161180,53 +161180,53 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "CheckSumField_setValue", _wrap_CheckSumField_setValue, METH_VARARGS, "\n"
-		"CheckSumField_setValue(CheckSumField self, int value)\n"
+		"CheckSumField_setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "CheckSumField_getValue", _wrap_CheckSumField_getValue, METH_O, "CheckSumField_getValue(CheckSumField self) -> int"},
-	 { "delete_CheckSumField", _wrap_delete_CheckSumField, METH_O, "delete_CheckSumField(CheckSumField self)"},
+	 { "CheckSumField_getValue", _wrap_CheckSumField_getValue, METH_O, "CheckSumField_getValue(self) -> int"},
+	 { "delete_CheckSumField", _wrap_delete_CheckSumField, METH_O, "delete_CheckSumField(self)"},
 	 { "CheckSumField_swigregister", CheckSumField_swigregister, METH_O, NULL},
 	 { "CheckSumField_swiginit", CheckSumField_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldMap", _wrap_new_FieldMap, METH_VARARGS, "\n"
-		"FieldMap(message_order const & order=message_order(message_order::normal))\n"
+		"FieldMap(order=message_order(message_order::normal))\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"order: message_order const &\n"
 		"\n"
-		"FieldMap(int const [] order)\n"
+		"FieldMap(order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"order: int const []\n"
 		"\n"
-		"FieldMap(FieldMap copy)\n"
+		"FieldMap(copy)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::FieldMap const &\n"
 		"\n"
-		"new_FieldMap(FieldMap rhs) -> FieldMap\n"
+		"new_FieldMap(rhs) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::FieldMap &&\n"
 		"\n"
 		""},
-	 { "delete_FieldMap", _wrap_delete_FieldMap, METH_O, "delete_FieldMap(FieldMap self)"},
+	 { "delete_FieldMap", _wrap_delete_FieldMap, METH_O, "delete_FieldMap(self)"},
 	 { "FieldMap_setField", _wrap_FieldMap_setField, METH_VARARGS, "\n"
-		"FieldMap_setField(FieldMap self, FieldBase field, bool overwrite=True)\n"
+		"FieldMap_setField(self, field, overwrite=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"overwrite: bool\n"
 		"\n"
-		"FieldMap_setField(FieldMap self, int tag, std::string const & value)\n"
+		"FieldMap_setField(self, tag, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161235,7 +161235,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldIfSet", _wrap_FieldMap_getFieldIfSet, METH_VARARGS, "\n"
-		"FieldMap_getFieldIfSet(FieldMap self, FieldBase field) -> bool\n"
+		"FieldMap_getFieldIfSet(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161243,13 +161243,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getField", _wrap_FieldMap_getField, METH_VARARGS, "\n"
-		"FieldMap_getField(FieldMap self, FieldBase field) -> FieldBase\n"
+		"FieldMap_getField(self, field) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase &\n"
 		"\n"
-		"FieldMap_getField(FieldMap self, int tag) -> std::string const &\n"
+		"FieldMap_getField(self, tag) -> std::string const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161257,7 +161257,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldRef", _wrap_FieldMap_getFieldRef, METH_VARARGS, "\n"
-		"FieldMap_getFieldRef(FieldMap self, int tag) -> FieldBase\n"
+		"FieldMap_getFieldRef(self, tag) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161265,7 +161265,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldPtr", _wrap_FieldMap_getFieldPtr, METH_VARARGS, "\n"
-		"FieldMap_getFieldPtr(FieldMap self, int tag) -> FieldBase\n"
+		"FieldMap_getFieldPtr(self, tag) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161273,13 +161273,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_isSetField", _wrap_FieldMap_isSetField, METH_VARARGS, "\n"
-		"FieldMap_isSetField(FieldMap self, FieldBase field) -> bool\n"
+		"FieldMap_isSetField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
-		"FieldMap_isSetField(FieldMap self, int tag) -> bool\n"
+		"FieldMap_isSetField(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161287,7 +161287,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_removeField", _wrap_FieldMap_removeField, METH_VARARGS, "\n"
-		"FieldMap_removeField(FieldMap self, int tag)\n"
+		"FieldMap_removeField(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161295,7 +161295,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_addGroup", _wrap_FieldMap_addGroup, METH_VARARGS, "\n"
-		"FieldMap_addGroup(FieldMap self, int tag, FieldMap group, bool setCount=True)\n"
+		"FieldMap_addGroup(self, tag, group, setCount=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161305,7 +161305,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_addGroupPtr", _wrap_FieldMap_addGroupPtr, METH_VARARGS, "\n"
-		"FieldMap_addGroupPtr(FieldMap self, int tag, FieldMap group, bool setCount=True)\n"
+		"FieldMap_addGroupPtr(self, tag, group, setCount=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161315,7 +161315,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_replaceGroup", _wrap_FieldMap_replaceGroup, METH_VARARGS, "\n"
-		"FieldMap_replaceGroup(FieldMap self, int num, int tag, FieldMap group)\n"
+		"FieldMap_replaceGroup(self, num, tag, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161325,7 +161325,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroup", _wrap_FieldMap_getGroup, METH_VARARGS, "\n"
-		"FieldMap_getGroup(FieldMap self, int num, int tag, FieldMap group) -> FieldMap\n"
+		"FieldMap_getGroup(self, num, tag, group) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161335,7 +161335,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroupRef", _wrap_FieldMap_getGroupRef, METH_VARARGS, "\n"
-		"FieldMap_getGroupRef(FieldMap self, int num, int tag) -> FieldMap\n"
+		"FieldMap_getGroupRef(self, num, tag) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161344,7 +161344,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroupPtr", _wrap_FieldMap_getGroupPtr, METH_VARARGS, "\n"
-		"FieldMap_getGroupPtr(FieldMap self, int num, int tag) -> FieldMap\n"
+		"FieldMap_getGroupPtr(self, num, tag) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161352,16 +161352,16 @@ static PyMethodDef SwigMethods[] = {
 		"tag: int\n"
 		"\n"
 		""},
-	 { "FieldMap_groups", _wrap_FieldMap_groups, METH_O, "FieldMap_groups(FieldMap self) -> FIX::FieldMap::Groups const &"},
+	 { "FieldMap_groups", _wrap_FieldMap_groups, METH_O, "FieldMap_groups(self) -> FIX::FieldMap::Groups const &"},
 	 { "FieldMap_removeGroup", _wrap_FieldMap_removeGroup, METH_VARARGS, "\n"
-		"FieldMap_removeGroup(FieldMap self, int num, int tag)\n"
+		"FieldMap_removeGroup(self, num, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: int\n"
 		"tag: int\n"
 		"\n"
-		"FieldMap_removeGroup(FieldMap self, int tag)\n"
+		"FieldMap_removeGroup(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161369,13 +161369,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_hasGroup", _wrap_FieldMap_hasGroup, METH_VARARGS, "\n"
-		"FieldMap_hasGroup(FieldMap self, int tag) -> bool\n"
+		"FieldMap_hasGroup(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"\n"
-		"FieldMap_hasGroup(FieldMap self, int num, int tag) -> bool\n"
+		"FieldMap_hasGroup(self, num, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161384,18 +161384,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_groupCount", _wrap_FieldMap_groupCount, METH_VARARGS, "\n"
-		"FieldMap_groupCount(FieldMap self, int tag) -> size_t\n"
+		"FieldMap_groupCount(self, tag) -> size_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"\n"
 		""},
-	 { "FieldMap_clear", _wrap_FieldMap_clear, METH_O, "FieldMap_clear(FieldMap self)"},
-	 { "FieldMap_isEmpty", _wrap_FieldMap_isEmpty, METH_O, "FieldMap_isEmpty(FieldMap self) -> bool"},
-	 { "FieldMap_totalFields", _wrap_FieldMap_totalFields, METH_O, "FieldMap_totalFields(FieldMap self) -> size_t"},
+	 { "FieldMap_clear", _wrap_FieldMap_clear, METH_O, "FieldMap_clear(self)"},
+	 { "FieldMap_isEmpty", _wrap_FieldMap_isEmpty, METH_O, "FieldMap_isEmpty(self) -> bool"},
+	 { "FieldMap_totalFields", _wrap_FieldMap_totalFields, METH_O, "FieldMap_totalFields(self) -> size_t"},
 	 { "FieldMap_calculateString", _wrap_FieldMap_calculateString, METH_VARARGS, "\n"
-		"FieldMap_calculateString(FieldMap self, std::string & arg2) -> std::string &\n"
+		"FieldMap_calculateString(self, arg2) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161403,7 +161403,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_calculateLength", _wrap_FieldMap_calculateLength, METH_VARARGS, "\n"
-		"FieldMap_calculateLength(FieldMap self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> int\n"
+		"FieldMap_calculateLength(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161413,7 +161413,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_calculateTotal", _wrap_FieldMap_calculateTotal, METH_VARARGS, "\n"
-		"FieldMap_calculateTotal(FieldMap self, int checkSumField=FIELD::CheckSum) -> int\n"
+		"FieldMap_calculateTotal(self, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161421,26 +161421,26 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FieldMap_begin", _wrap_FieldMap_begin, METH_VARARGS, "\n"
-		"FieldMap_begin(FieldMap self) -> FIX::FieldMap::iterator\n"
-		"FieldMap_begin(FieldMap self) -> FIX::FieldMap::const_iterator\n"
+		"FieldMap_begin(self) -> FIX::FieldMap::iterator\n"
+		"FieldMap_begin(self) -> FIX::FieldMap::const_iterator\n"
 		""},
 	 { "FieldMap_end", _wrap_FieldMap_end, METH_VARARGS, "\n"
-		"FieldMap_end(FieldMap self) -> FIX::FieldMap::iterator\n"
-		"FieldMap_end(FieldMap self) -> FIX::FieldMap::const_iterator\n"
+		"FieldMap_end(self) -> FIX::FieldMap::iterator\n"
+		"FieldMap_end(self) -> FIX::FieldMap::const_iterator\n"
 		""},
 	 { "FieldMap_g_begin", _wrap_FieldMap_g_begin, METH_VARARGS, "\n"
-		"FieldMap_g_begin(FieldMap self) -> FIX::FieldMap::g_iterator\n"
-		"FieldMap_g_begin(FieldMap self) -> FIX::FieldMap::g_const_iterator\n"
+		"FieldMap_g_begin(self) -> FIX::FieldMap::g_iterator\n"
+		"FieldMap_g_begin(self) -> FIX::FieldMap::g_const_iterator\n"
 		""},
 	 { "FieldMap_g_end", _wrap_FieldMap_g_end, METH_VARARGS, "\n"
-		"FieldMap_g_end(FieldMap self) -> FIX::FieldMap::g_iterator\n"
-		"FieldMap_g_end(FieldMap self) -> FIX::FieldMap::g_const_iterator\n"
+		"FieldMap_g_end(self) -> FIX::FieldMap::g_iterator\n"
+		"FieldMap_g_end(self) -> FIX::FieldMap::g_const_iterator\n"
 		""},
 	 { "FieldMap_swigregister", FieldMap_swigregister, METH_O, NULL},
 	 { "FieldMap_swiginit", FieldMap_swiginit, METH_VARARGS, NULL},
 	 { "new_Header", _wrap_new_Header, METH_VARARGS, "\n"
 		"Header()\n"
-		"new_Header(message_order const & order) -> Header\n"
+		"new_Header(order) -> Header\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161448,7 +161448,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Header_addGroup", _wrap_Header_addGroup, METH_VARARGS, "\n"
-		"Header_addGroup(Header self, Group group)\n"
+		"Header_addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161456,7 +161456,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Header_replaceGroup", _wrap_Header_replaceGroup, METH_VARARGS, "\n"
-		"Header_replaceGroup(Header self, unsigned int num, Group group)\n"
+		"Header_replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161465,7 +161465,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Header_getGroup", _wrap_Header_getGroup, METH_VARARGS, "\n"
-		"Header_getGroup(Header self, unsigned int num, Group group) -> Group &\n"
+		"Header_getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161474,14 +161474,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Header_removeGroup", _wrap_Header_removeGroup, METH_VARARGS, "\n"
-		"Header_removeGroup(Header self, unsigned int num, Group group)\n"
+		"Header_removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Header_removeGroup(Header self, Group group)\n"
+		"Header_removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161489,13 +161489,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Header_hasGroup", _wrap_Header_hasGroup, METH_VARARGS, "\n"
-		"Header_hasGroup(Header self, Group group) -> bool\n"
+		"Header_hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Header_hasGroup(Header self, unsigned int num, Group group) -> bool\n"
+		"Header_hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161503,12 +161503,12 @@ static PyMethodDef SwigMethods[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Header", _wrap_delete_Header, METH_O, "delete_Header(Header self)"},
+	 { "delete_Header", _wrap_delete_Header, METH_O, "delete_Header(self)"},
 	 { "Header_swigregister", Header_swigregister, METH_O, NULL},
 	 { "Header_swiginit", Header_swiginit, METH_VARARGS, NULL},
 	 { "new_Trailer", _wrap_new_Trailer, METH_VARARGS, "\n"
 		"Trailer()\n"
-		"new_Trailer(message_order const & order) -> Trailer\n"
+		"new_Trailer(order) -> Trailer\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161516,7 +161516,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Trailer_addGroup", _wrap_Trailer_addGroup, METH_VARARGS, "\n"
-		"Trailer_addGroup(Trailer self, Group group)\n"
+		"Trailer_addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161524,7 +161524,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Trailer_replaceGroup", _wrap_Trailer_replaceGroup, METH_VARARGS, "\n"
-		"Trailer_replaceGroup(Trailer self, unsigned int num, Group group)\n"
+		"Trailer_replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161533,7 +161533,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Trailer_getGroup", _wrap_Trailer_getGroup, METH_VARARGS, "\n"
-		"Trailer_getGroup(Trailer self, unsigned int num, Group group) -> Group &\n"
+		"Trailer_getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161542,14 +161542,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Trailer_removeGroup", _wrap_Trailer_removeGroup, METH_VARARGS, "\n"
-		"Trailer_removeGroup(Trailer self, unsigned int num, Group group)\n"
+		"Trailer_removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Trailer_removeGroup(Trailer self, Group group)\n"
+		"Trailer_removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161557,13 +161557,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Trailer_hasGroup", _wrap_Trailer_hasGroup, METH_VARARGS, "\n"
-		"Trailer_hasGroup(Trailer self, Group group) -> bool\n"
+		"Trailer_hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Trailer_hasGroup(Trailer self, unsigned int num, Group group) -> bool\n"
+		"Trailer_hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161571,12 +161571,12 @@ static PyMethodDef SwigMethods[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Trailer", _wrap_delete_Trailer, METH_O, "delete_Trailer(Trailer self)"},
+	 { "delete_Trailer", _wrap_delete_Trailer, METH_O, "delete_Trailer(self)"},
 	 { "Trailer_swigregister", Trailer_swigregister, METH_O, NULL},
 	 { "Trailer_swiginit", Trailer_swiginit, METH_VARARGS, NULL},
 	 { "new_Message", _wrap_new_Message, METH_VARARGS, "\n"
 		"Message()\n"
-		"Message(message_order const & hdrOrder, message_order const & trlOrder, message_order const & order)\n"
+		"Message(hdrOrder, trlOrder, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161584,14 +161584,14 @@ static PyMethodDef SwigMethods[] = {
 		"trlOrder: message_order const &\n"
 		"order: message_order const &\n"
 		"\n"
-		"Message(std::string const & string, bool validate=True)\n"
+		"Message(string, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(std::string const & string, DataDictionary dataDictionary, bool validate=True)\n"
+		"Message(string, dataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161599,7 +161599,7 @@ static PyMethodDef SwigMethods[] = {
 		"dataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(std::string const & string, DataDictionary sessionDataDictionary, DataDictionary applicationDataDictionary, bool validate=True)\n"
+		"Message(string, sessionDataDictionary, applicationDataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161608,7 +161608,7 @@ static PyMethodDef SwigMethods[] = {
 		"applicationDataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(message_order const & headerOrder, message_order const & trailerOrder, message_order const & order, std::string const & string, DataDictionary dataDictionary, bool validate=True)\n"
+		"Message(headerOrder, trailerOrder, order, string, dataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161619,7 +161619,7 @@ static PyMethodDef SwigMethods[] = {
 		"dataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(message_order const & headerOrder, message_order const & trailerOrder, message_order const & order, std::string const & string, DataDictionary sessionDataDictionary, DataDictionary applicationDataDictionary, bool validate=True)\n"
+		"Message(headerOrder, trailerOrder, order, string, sessionDataDictionary, applicationDataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161631,22 +161631,22 @@ static PyMethodDef SwigMethods[] = {
 		"applicationDataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(Message arg1)\n"
+		"Message(arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::Message const &\n"
 		"\n"
-		"new_Message(Message arg1) -> Message\n"
+		"new_Message(arg1) -> Message\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::Message &&\n"
 		"\n"
 		""},
-	 { "delete_Message", _wrap_delete_Message, METH_O, "delete_Message(Message self)"},
+	 { "delete_Message", _wrap_delete_Message, METH_O, "delete_Message(self)"},
 	 { "Message_InitializeXML", _wrap_Message_InitializeXML, METH_O, "\n"
-		"Message_InitializeXML(std::string const & string) -> bool\n"
+		"Message_InitializeXML(string) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161654,7 +161654,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_addGroup", _wrap_Message_addGroup, METH_VARARGS, "\n"
-		"Message_addGroup(Message self, Group group)\n"
+		"Message_addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161662,7 +161662,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_replaceGroup", _wrap_Message_replaceGroup, METH_VARARGS, "\n"
-		"Message_replaceGroup(Message self, unsigned int num, Group group)\n"
+		"Message_replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161671,7 +161671,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_getGroup", _wrap_Message_getGroup, METH_VARARGS, "\n"
-		"Message_getGroup(Message self, unsigned int num, Group group) -> Group &\n"
+		"Message_getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161680,14 +161680,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_removeGroup", _wrap_Message_removeGroup, METH_VARARGS, "\n"
-		"Message_removeGroup(Message self, unsigned int num, Group group)\n"
+		"Message_removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Message_removeGroup(Message self, Group group)\n"
+		"Message_removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161695,13 +161695,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_hasGroup", _wrap_Message_hasGroup, METH_VARARGS, "\n"
-		"Message_hasGroup(Message self, Group group) -> bool\n"
+		"Message_hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Message_hasGroup(Message self, unsigned int num, Group group) -> bool\n"
+		"Message_hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161710,7 +161710,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_toString", _wrap_Message_toString, METH_VARARGS, "\n"
-		"Message_toString(Message self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> std::string\n"
+		"Message_toString(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161718,7 +161718,7 @@ static PyMethodDef SwigMethods[] = {
 		"bodyLengthField: int\n"
 		"checkSumField: int\n"
 		"\n"
-		"Message_toString(Message self, std::string & arg2, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> std::string\n"
+		"Message_toString(self, arg2, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161729,8 +161729,8 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_toXML", _wrap_Message_toXML, METH_VARARGS, "\n"
-		"Message_toXML(Message self) -> std::string\n"
-		"Message_toXML(Message self, std::string & arg2) -> std::string &\n"
+		"Message_toXML(self) -> std::string\n"
+		"Message_toXML(self, arg2) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161738,7 +161738,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_reverseRoute", _wrap_Message_reverseRoute, METH_VARARGS, "\n"
-		"Message_reverseRoute(Message self, Header arg2)\n"
+		"Message_reverseRoute(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161746,20 +161746,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_setString", _wrap_Message_setString, METH_VARARGS, "\n"
-		"Message_setString(Message self, std::string const & string)\n"
+		"Message_setString(self, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"\n"
-		"Message_setString(Message self, std::string const & string, bool validate)\n"
+		"Message_setString(self, string, validate)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message_setString(Message self, std::string const & string, bool validate, DataDictionary pDataDictionary)\n"
+		"Message_setString(self, string, validate, pDataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161767,7 +161767,7 @@ static PyMethodDef SwigMethods[] = {
 		"validate: bool\n"
 		"pDataDictionary: FIX::DataDictionary const *\n"
 		"\n"
-		"Message_setString(Message self, std::string const & string, bool validate, DataDictionary pSessionDataDictionary, DataDictionary pApplicationDataDictionary)\n"
+		"Message_setString(self, string, validate, pSessionDataDictionary, pApplicationDataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161778,7 +161778,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_setGroup", _wrap_Message_setGroup, METH_VARARGS, "\n"
-		"Message_setGroup(Message self, std::string const & msg, FieldBase field, std::string const & string, std::string::size_type & pos, FieldMap map, DataDictionary const & dataDictionary)\n"
+		"Message_setGroup(self, msg, field, string, pos, map, dataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161791,7 +161791,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_setStringHeader", _wrap_Message_setStringHeader, METH_VARARGS, "\n"
-		"Message_setStringHeader(Message self, std::string const & string) -> bool\n"
+		"Message_setStringHeader(self, string) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161799,15 +161799,15 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_getHeader", _wrap_Message_getHeader, METH_VARARGS, "\n"
-		"Message_getHeader(Message self) -> Header\n"
-		"Message_getHeader(Message self) -> Header\n"
+		"Message_getHeader(self) -> Header\n"
+		"Message_getHeader(self) -> Header\n"
 		""},
 	 { "Message_getTrailer", _wrap_Message_getTrailer, METH_VARARGS, "\n"
-		"Message_getTrailer(Message self) -> Trailer\n"
-		"Message_getTrailer(Message self) -> Trailer\n"
+		"Message_getTrailer(self) -> Trailer\n"
+		"Message_getTrailer(self) -> Trailer\n"
 		""},
 	 { "Message_hasValidStructure", _wrap_Message_hasValidStructure, METH_VARARGS, "\n"
-		"Message_hasValidStructure(Message self, int & tag) -> bool\n"
+		"Message_hasValidStructure(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161815,7 +161815,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_bodyLength", _wrap_Message_bodyLength, METH_VARARGS, "\n"
-		"Message_bodyLength(Message self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> int\n"
+		"Message_bodyLength(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161825,19 +161825,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_checkSum", _wrap_Message_checkSum, METH_VARARGS, "\n"
-		"Message_checkSum(Message self, int checkSumField=FIELD::CheckSum) -> int\n"
+		"Message_checkSum(self, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"checkSumField: int\n"
 		"\n"
 		""},
-	 { "Message_isAdmin", _wrap_Message_isAdmin, METH_O, "Message_isAdmin(Message self) -> bool"},
-	 { "Message_isApp", _wrap_Message_isApp, METH_O, "Message_isApp(Message self) -> bool"},
-	 { "Message_isEmpty", _wrap_Message_isEmpty, METH_O, "Message_isEmpty(Message self) -> bool"},
-	 { "Message_clear", _wrap_Message_clear, METH_O, "Message_clear(Message self)"},
+	 { "Message_isAdmin", _wrap_Message_isAdmin, METH_O, "Message_isAdmin(self) -> bool"},
+	 { "Message_isApp", _wrap_Message_isApp, METH_O, "Message_isApp(self) -> bool"},
+	 { "Message_isEmpty", _wrap_Message_isEmpty, METH_O, "Message_isEmpty(self) -> bool"},
+	 { "Message_clear", _wrap_Message_clear, METH_O, "Message_clear(self)"},
 	 { "Message_isAdminMsgType", _wrap_Message_isAdminMsgType, METH_O, "\n"
-		"Message_isAdminMsgType(MsgType const & msgType) -> bool\n"
+		"Message_isAdminMsgType(msgType) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161845,7 +161845,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_toApplVerID", _wrap_Message_toApplVerID, METH_O, "\n"
-		"Message_toApplVerID(BeginString const & value) -> ApplVerID\n"
+		"Message_toApplVerID(value) -> ApplVerID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161853,7 +161853,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_toBeginString", _wrap_Message_toBeginString, METH_O, "\n"
-		"Message_toBeginString(ApplVerID const & applVerID) -> BeginString\n"
+		"Message_toBeginString(applVerID) -> BeginString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161861,20 +161861,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_isHeaderField", _wrap_Message_isHeaderField, METH_VARARGS, "\n"
-		"Message_isHeaderField(int field) -> bool\n"
+		"Message_isHeaderField(field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
-		"Message_isHeaderField(FieldBase field, DataDictionary const * pD=None) -> bool\n"
+		"Message_isHeaderField(field, pD=None) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"pD: DataDictionary const *\n"
 		"\n"
-		"Message_isHeaderField(int field, DataDictionary const * pD) -> bool\n"
+		"Message_isHeaderField(field, pD) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161883,20 +161883,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_isTrailerField", _wrap_Message_isTrailerField, METH_VARARGS, "\n"
-		"Message_isTrailerField(int field) -> bool\n"
+		"Message_isTrailerField(field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
-		"Message_isTrailerField(FieldBase field, DataDictionary const * pD=None) -> bool\n"
+		"Message_isTrailerField(field, pD=None) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"pD: DataDictionary const *\n"
 		"\n"
-		"Message_isTrailerField(int field, DataDictionary const * pD) -> bool\n"
+		"Message_isTrailerField(field, pD) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161905,7 +161905,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_getSessionID", _wrap_Message_getSessionID, METH_VARARGS, "\n"
-		"Message_getSessionID(Message self, std::string const & qualifier=\"\") -> SessionID\n"
+		"Message_getSessionID(self, qualifier=\"\") -> SessionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161913,18 +161913,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Message_setSessionID", _wrap_Message_setSessionID, METH_VARARGS, "\n"
-		"Message_setSessionID(Message self, SessionID const & sessionID)\n"
+		"Message_setSessionID(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sessionID: SessionID const &\n"
 		"\n"
 		""},
-	 { "Message___str__", _wrap_Message___str__, METH_O, "Message___str__(Message self) -> std::string"},
+	 { "Message___str__", _wrap_Message___str__, METH_O, "Message___str__(self) -> std::string"},
 	 { "Message_swigregister", Message_swigregister, METH_O, NULL},
 	 { "Message_swiginit", Message_swiginit, METH_VARARGS, NULL},
 	 { "identifyType", _wrap_identifyType, METH_O, "\n"
-		"identifyType(std::string const & message) -> MsgType\n"
+		"identifyType(message) -> MsgType\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161932,14 +161932,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_Group", _wrap_new_Group, METH_VARARGS, "\n"
-		"Group(int field, int delim)\n"
+		"Group(field, delim)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"delim: int\n"
 		"\n"
-		"Group(int field, int delim, int const [] order)\n"
+		"Group(field, delim, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161947,7 +161947,7 @@ static PyMethodDef SwigMethods[] = {
 		"delim: int\n"
 		"order: int const []\n"
 		"\n"
-		"Group(int field, int delim, message_order const & order)\n"
+		"Group(field, delim, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161955,17 +161955,17 @@ static PyMethodDef SwigMethods[] = {
 		"delim: int\n"
 		"order: message_order const &\n"
 		"\n"
-		"new_Group(Group copy) -> Group\n"
+		"new_Group(copy) -> Group\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "Group_field", _wrap_Group_field, METH_O, "Group_field(Group self) -> int"},
-	 { "Group_delim", _wrap_Group_delim, METH_O, "Group_delim(Group self) -> int"},
+	 { "Group_field", _wrap_Group_field, METH_O, "Group_field(self) -> int"},
+	 { "Group_delim", _wrap_Group_delim, METH_O, "Group_delim(self) -> int"},
 	 { "Group_addGroup", _wrap_Group_addGroup, METH_VARARGS, "\n"
-		"Group_addGroup(Group self, Group group)\n"
+		"Group_addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161973,7 +161973,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Group_replaceGroup", _wrap_Group_replaceGroup, METH_VARARGS, "\n"
-		"Group_replaceGroup(Group self, unsigned int num, Group group)\n"
+		"Group_replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161982,7 +161982,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Group_getGroup", _wrap_Group_getGroup, METH_VARARGS, "\n"
-		"Group_getGroup(Group self, unsigned int num, Group group) -> Group\n"
+		"Group_getGroup(self, num, group) -> Group\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -161991,14 +161991,14 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Group_removeGroup", _wrap_Group_removeGroup, METH_VARARGS, "\n"
-		"Group_removeGroup(Group self, unsigned int num, Group group)\n"
+		"Group_removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Group_removeGroup(Group self, Group group)\n"
+		"Group_removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162006,13 +162006,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Group_hasGroup", _wrap_Group_hasGroup, METH_VARARGS, "\n"
-		"Group_hasGroup(Group self, Group group) -> bool\n"
+		"Group_hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"Group_hasGroup(Group self, unsigned int num, Group group) -> bool\n"
+		"Group_hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162020,48 +162020,48 @@ static PyMethodDef SwigMethods[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Group", _wrap_delete_Group, METH_O, "delete_Group(Group self)"},
+	 { "delete_Group", _wrap_delete_Group, METH_O, "delete_Group(self)"},
 	 { "Group_swigregister", Group_swigregister, METH_O, NULL},
 	 { "Group_swiginit", Group_swiginit, METH_VARARGS, NULL},
 	 { "new_BeginString", _wrap_new_BeginString, METH_VARARGS, "\n"
 		"BeginString()\n"
-		"new_BeginString(FIX::STRING const & value) -> BeginString\n"
+		"new_BeginString(value) -> BeginString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_BeginString", _wrap_delete_BeginString, METH_O, "delete_BeginString(BeginString self)"},
+	 { "delete_BeginString", _wrap_delete_BeginString, METH_O, "delete_BeginString(self)"},
 	 { "BeginString_swigregister", BeginString_swigregister, METH_O, NULL},
 	 { "BeginString_swiginit", BeginString_swiginit, METH_VARARGS, NULL},
 	 { "new_SenderCompID", _wrap_new_SenderCompID, METH_VARARGS, "\n"
 		"SenderCompID()\n"
-		"new_SenderCompID(FIX::STRING const & value) -> SenderCompID\n"
+		"new_SenderCompID(value) -> SenderCompID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_SenderCompID", _wrap_delete_SenderCompID, METH_O, "delete_SenderCompID(SenderCompID self)"},
+	 { "delete_SenderCompID", _wrap_delete_SenderCompID, METH_O, "delete_SenderCompID(self)"},
 	 { "SenderCompID_swigregister", SenderCompID_swigregister, METH_O, NULL},
 	 { "SenderCompID_swiginit", SenderCompID_swiginit, METH_VARARGS, NULL},
 	 { "new_TargetCompID", _wrap_new_TargetCompID, METH_VARARGS, "\n"
 		"TargetCompID()\n"
-		"new_TargetCompID(FIX::STRING const & value) -> TargetCompID\n"
+		"new_TargetCompID(value) -> TargetCompID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_TargetCompID", _wrap_delete_TargetCompID, METH_O, "delete_TargetCompID(TargetCompID self)"},
+	 { "delete_TargetCompID", _wrap_delete_TargetCompID, METH_O, "delete_TargetCompID(self)"},
 	 { "TargetCompID_swigregister", TargetCompID_swigregister, METH_O, NULL},
 	 { "TargetCompID_swiginit", TargetCompID_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionID", _wrap_new_SessionID, METH_VARARGS, "\n"
 		"SessionID()\n"
-		"SessionID(std::string const & beginString, std::string const & senderCompID, std::string const & targetCompID, std::string const & sessionQualifier=\"\")\n"
+		"SessionID(beginString, senderCompID, targetCompID, sessionQualifier=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162071,14 +162071,14 @@ static PyMethodDef SwigMethods[] = {
 		"sessionQualifier: std::string const &\n"
 		"\n"
 		""},
-	 { "SessionID_getBeginString", _wrap_SessionID_getBeginString, METH_O, "SessionID_getBeginString(SessionID self) -> BeginString"},
-	 { "SessionID_getSenderCompID", _wrap_SessionID_getSenderCompID, METH_O, "SessionID_getSenderCompID(SessionID self) -> SenderCompID"},
-	 { "SessionID_getTargetCompID", _wrap_SessionID_getTargetCompID, METH_O, "SessionID_getTargetCompID(SessionID self) -> TargetCompID"},
-	 { "SessionID_getSessionQualifier", _wrap_SessionID_getSessionQualifier, METH_O, "SessionID_getSessionQualifier(SessionID self) -> std::string const &"},
-	 { "SessionID_isFIXT", _wrap_SessionID_isFIXT, METH_O, "SessionID_isFIXT(SessionID self) -> bool const"},
-	 { "SessionID_toStringFrozen", _wrap_SessionID_toStringFrozen, METH_O, "SessionID_toStringFrozen(SessionID self) -> std::string const &"},
+	 { "SessionID_getBeginString", _wrap_SessionID_getBeginString, METH_O, "SessionID_getBeginString(self) -> BeginString"},
+	 { "SessionID_getSenderCompID", _wrap_SessionID_getSenderCompID, METH_O, "SessionID_getSenderCompID(self) -> SenderCompID"},
+	 { "SessionID_getTargetCompID", _wrap_SessionID_getTargetCompID, METH_O, "SessionID_getTargetCompID(self) -> TargetCompID"},
+	 { "SessionID_getSessionQualifier", _wrap_SessionID_getSessionQualifier, METH_O, "SessionID_getSessionQualifier(self) -> std::string const &"},
+	 { "SessionID_isFIXT", _wrap_SessionID_isFIXT, METH_O, "SessionID_isFIXT(self) -> bool const"},
+	 { "SessionID_toStringFrozen", _wrap_SessionID_toStringFrozen, METH_O, "SessionID_toStringFrozen(self) -> std::string const &"},
 	 { "SessionID_fromString", _wrap_SessionID_fromString, METH_VARARGS, "\n"
-		"SessionID_fromString(SessionID self, std::string const & str)\n"
+		"SessionID_fromString(self, str)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162086,21 +162086,21 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionID_toString", _wrap_SessionID_toString, METH_VARARGS, "\n"
-		"SessionID_toString(SessionID self) -> std::string\n"
-		"SessionID_toString(SessionID self, std::string & str) -> std::string &\n"
+		"SessionID_toString(self) -> std::string\n"
+		"SessionID_toString(self, str) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"str: std::string &\n"
 		"\n"
 		""},
-	 { "SessionID___invert__", _wrap_SessionID___invert__, METH_O, "SessionID___invert__(SessionID self) -> SessionID"},
-	 { "SessionID___str__", _wrap_SessionID___str__, METH_O, "SessionID___str__(SessionID self) -> std::string"},
-	 { "delete_SessionID", _wrap_delete_SessionID, METH_O, "delete_SessionID(SessionID self)"},
+	 { "SessionID___invert__", _wrap_SessionID___invert__, METH_O, "SessionID___invert__(self) -> SessionID"},
+	 { "SessionID___str__", _wrap_SessionID___str__, METH_O, "SessionID___str__(self) -> std::string"},
+	 { "delete_SessionID", _wrap_delete_SessionID, METH_O, "delete_SessionID(self)"},
 	 { "SessionID_swigregister", SessionID_swigregister, METH_O, NULL},
 	 { "SessionID_swiginit", SessionID_swiginit, METH_VARARGS, NULL},
 	 { "new_Dictionary", _wrap_new_Dictionary, METH_VARARGS, "\n"
-		"Dictionary(std::string const & name)\n"
+		"Dictionary(name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162108,11 +162108,11 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"new_Dictionary() -> Dictionary\n"
 		""},
-	 { "delete_Dictionary", _wrap_delete_Dictionary, METH_O, "delete_Dictionary(Dictionary self)"},
-	 { "Dictionary_getName", _wrap_Dictionary_getName, METH_O, "Dictionary_getName(Dictionary self) -> std::string"},
-	 { "Dictionary_size", _wrap_Dictionary_size, METH_O, "Dictionary_size(Dictionary self) -> size_t"},
+	 { "delete_Dictionary", _wrap_delete_Dictionary, METH_O, "delete_Dictionary(self)"},
+	 { "Dictionary_getName", _wrap_Dictionary_getName, METH_O, "Dictionary_getName(self) -> std::string"},
+	 { "Dictionary_size", _wrap_Dictionary_size, METH_O, "Dictionary_size(self) -> size_t"},
 	 { "Dictionary_getString", _wrap_Dictionary_getString, METH_VARARGS, "\n"
-		"Dictionary_getString(Dictionary self, std::string const & arg2, bool capitalize=False) -> std::string\n"
+		"Dictionary_getString(self, arg2, capitalize=False) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162121,7 +162121,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_getInt", _wrap_Dictionary_getInt, METH_VARARGS, "\n"
-		"Dictionary_getInt(Dictionary self, std::string const & arg2) -> int\n"
+		"Dictionary_getInt(self, arg2) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162129,7 +162129,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_getDouble", _wrap_Dictionary_getDouble, METH_VARARGS, "\n"
-		"Dictionary_getDouble(Dictionary self, std::string const & arg2) -> double\n"
+		"Dictionary_getDouble(self, arg2) -> double\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162137,7 +162137,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_getBool", _wrap_Dictionary_getBool, METH_VARARGS, "\n"
-		"Dictionary_getBool(Dictionary self, std::string const & arg2) -> bool\n"
+		"Dictionary_getBool(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162145,7 +162145,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_getDay", _wrap_Dictionary_getDay, METH_VARARGS, "\n"
-		"Dictionary_getDay(Dictionary self, std::string const & arg2) -> int\n"
+		"Dictionary_getDay(self, arg2) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162153,7 +162153,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_setString", _wrap_Dictionary_setString, METH_VARARGS, "\n"
-		"Dictionary_setString(Dictionary self, std::string const & arg2, std::string const & arg3)\n"
+		"Dictionary_setString(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162162,7 +162162,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_setInt", _wrap_Dictionary_setInt, METH_VARARGS, "\n"
-		"Dictionary_setInt(Dictionary self, std::string const & arg2, int arg3)\n"
+		"Dictionary_setInt(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162171,7 +162171,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_setDouble", _wrap_Dictionary_setDouble, METH_VARARGS, "\n"
-		"Dictionary_setDouble(Dictionary self, std::string const & arg2, double arg3)\n"
+		"Dictionary_setDouble(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162180,7 +162180,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_setBool", _wrap_Dictionary_setBool, METH_VARARGS, "\n"
-		"Dictionary_setBool(Dictionary self, std::string const & arg2, bool arg3)\n"
+		"Dictionary_setBool(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162189,7 +162189,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_setDay", _wrap_Dictionary_setDay, METH_VARARGS, "\n"
-		"Dictionary_setDay(Dictionary self, std::string const & arg2, int arg3)\n"
+		"Dictionary_setDay(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162198,7 +162198,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_has", _wrap_Dictionary_has, METH_VARARGS, "\n"
-		"Dictionary_has(Dictionary self, std::string const & arg2) -> bool\n"
+		"Dictionary_has(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162206,27 +162206,27 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Dictionary_merge", _wrap_Dictionary_merge, METH_VARARGS, "\n"
-		"Dictionary_merge(Dictionary self, Dictionary arg2)\n"
+		"Dictionary_merge(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Dictionary const &\n"
 		"\n"
 		""},
-	 { "Dictionary_begin", _wrap_Dictionary_begin, METH_O, "Dictionary_begin(Dictionary self) -> FIX::Dictionary::iterator"},
-	 { "Dictionary_end", _wrap_Dictionary_end, METH_O, "Dictionary_end(Dictionary self) -> FIX::Dictionary::iterator"},
+	 { "Dictionary_begin", _wrap_Dictionary_begin, METH_O, "Dictionary_begin(self) -> FIX::Dictionary::iterator"},
+	 { "Dictionary_end", _wrap_Dictionary_end, METH_O, "Dictionary_end(self) -> FIX::Dictionary::iterator"},
 	 { "Dictionary_swigregister", Dictionary_swigregister, METH_O, NULL},
 	 { "Dictionary_swiginit", Dictionary_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionSettings", _wrap_new_SessionSettings, METH_VARARGS, "\n"
 		"SessionSettings()\n"
-		"SessionSettings(std::istream & stream, bool resolveEnvVars=False)\n"
+		"SessionSettings(stream, resolveEnvVars=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"resolveEnvVars: bool\n"
 		"\n"
-		"SessionSettings(std::string const & file, bool resolveEnvVars=False)\n"
+		"SessionSettings(file, resolveEnvVars=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162235,7 +162235,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionSettings_has", _wrap_SessionSettings_has, METH_VARARGS, "\n"
-		"SessionSettings_has(SessionSettings self, SessionID arg2) -> bool const\n"
+		"SessionSettings_has(self, arg2) -> bool const\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162243,40 +162243,40 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionSettings_get", _wrap_SessionSettings_get, METH_VARARGS, "\n"
-		"SessionSettings_get(SessionSettings self, SessionID arg2) -> Dictionary\n"
+		"SessionSettings_get(self, arg2) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"SessionSettings_get(SessionSettings self) -> Dictionary\n"
+		"SessionSettings_get(self) -> Dictionary\n"
 		""},
 	 { "SessionSettings_set", _wrap_SessionSettings_set, METH_VARARGS, "\n"
-		"SessionSettings_set(SessionSettings self, SessionID arg2, Dictionary arg3)\n"
+		"SessionSettings_set(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SessionID const &\n"
 		"arg3: FIX::Dictionary\n"
 		"\n"
-		"SessionSettings_set(SessionSettings self, Dictionary defaults)\n"
+		"SessionSettings_set(self, defaults)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"defaults: FIX::Dictionary const &\n"
 		"\n"
 		""},
-	 { "SessionSettings_size", _wrap_SessionSettings_size, METH_O, "SessionSettings_size(SessionSettings self) -> size_t"},
-	 { "SessionSettings_getSessions", _wrap_SessionSettings_getSessions, METH_O, "SessionSettings_getSessions(SessionSettings self) -> SessionIDSet"},
+	 { "SessionSettings_size", _wrap_SessionSettings_size, METH_O, "SessionSettings_size(self) -> size_t"},
+	 { "SessionSettings_getSessions", _wrap_SessionSettings_getSessions, METH_O, "SessionSettings_getSessions(self) -> SessionIDSet"},
 	 { "__rshift__", _wrap___rshift__, METH_VARARGS, "\n"
-		"__rshift__(std::istream & arg1, SessionID arg2) -> std::istream\n"
+		"__rshift__(arg1, arg2) -> std::istream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::istream &\n"
 		"arg2: FIX::SessionID &\n"
 		"\n"
-		"__rshift__(std::istream & arg1, SessionSettings arg2) -> std::istream &\n"
+		"__rshift__(arg1, arg2) -> std::istream &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162285,28 +162285,28 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__lshift__", _wrap___lshift__, METH_VARARGS, "\n"
-		"__lshift__(std::ostream & stream, FieldBase field) -> std::ostream\n"
+		"__lshift__(stream, field) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::ostream &\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
-		"__lshift__(std::ostream & stream, Message message) -> std::ostream\n"
+		"__lshift__(stream, message) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::ostream &\n"
 		"message: FIX::Message const &\n"
 		"\n"
-		"__lshift__(std::ostream & arg1, SessionID arg2) -> std::ostream\n"
+		"__lshift__(arg1, arg2) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::ostream &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__lshift__(std::ostream & arg1, SessionSettings arg2) -> std::ostream &\n"
+		"__lshift__(arg1, arg2) -> std::ostream &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162315,18 +162315,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SessionSettings_setFromString", _wrap_SessionSettings_setFromString, METH_VARARGS, "\n"
-		"SessionSettings_setFromString(SessionSettings self, std::string const & str)\n"
+		"SessionSettings_setFromString(self, str)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"str: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SessionSettings", _wrap_delete_SessionSettings, METH_O, "delete_SessionSettings(SessionSettings self)"},
+	 { "delete_SessionSettings", _wrap_delete_SessionSettings, METH_O, "delete_SessionSettings(self)"},
 	 { "SessionSettings_swigregister", SessionSettings_swigregister, METH_O, NULL},
 	 { "SessionSettings_swiginit", SessionSettings_swiginit, METH_VARARGS, NULL},
 	 { "new_Session", _wrap_new_Session, METH_VARARGS, "\n"
-		"new_Session(std::function< FIX::UtcTimeStamp () > timestamper, Application & arg2, MessageStoreFactory & arg3, SessionID arg4, DataDictionaryProvider const & arg5, TimeRange const & arg6, int heartBtInt, LogFactory * pLogFactory) -> Session\n"
+		"new_Session(timestamper, arg2, arg3, arg4, arg5, arg6, heartBtInt, pLogFactory) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162340,25 +162340,25 @@ static PyMethodDef SwigMethods[] = {
 		"pLogFactory: LogFactory *\n"
 		"\n"
 		""},
-	 { "delete_Session", _wrap_delete_Session, METH_O, "delete_Session(Session self)"},
-	 { "Session_logon", _wrap_Session_logon, METH_O, "Session_logon(Session self)"},
+	 { "delete_Session", _wrap_delete_Session, METH_O, "delete_Session(self)"},
+	 { "Session_logon", _wrap_Session_logon, METH_O, "Session_logon(self)"},
 	 { "Session_logout", _wrap_Session_logout, METH_VARARGS, "\n"
-		"Session_logout(Session self, std::string const & reason=\"\")\n"
+		"Session_logout(self, reason=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"reason: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_isEnabled", _wrap_Session_isEnabled, METH_O, "Session_isEnabled(Session self) -> bool"},
-	 { "Session_sentLogon", _wrap_Session_sentLogon, METH_O, "Session_sentLogon(Session self) -> bool"},
-	 { "Session_sentLogout", _wrap_Session_sentLogout, METH_O, "Session_sentLogout(Session self) -> bool"},
-	 { "Session_receivedLogon", _wrap_Session_receivedLogon, METH_O, "Session_receivedLogon(Session self) -> bool"},
-	 { "Session_isLoggedOn", _wrap_Session_isLoggedOn, METH_O, "Session_isLoggedOn(Session self) -> bool"},
-	 { "Session_reset", _wrap_Session_reset, METH_O, "Session_reset(Session self)"},
-	 { "Session_refresh", _wrap_Session_refresh, METH_O, "Session_refresh(Session self)"},
+	 { "Session_isEnabled", _wrap_Session_isEnabled, METH_O, "Session_isEnabled(self) -> bool"},
+	 { "Session_sentLogon", _wrap_Session_sentLogon, METH_O, "Session_sentLogon(self) -> bool"},
+	 { "Session_sentLogout", _wrap_Session_sentLogout, METH_O, "Session_sentLogout(self) -> bool"},
+	 { "Session_receivedLogon", _wrap_Session_receivedLogon, METH_O, "Session_receivedLogon(self) -> bool"},
+	 { "Session_isLoggedOn", _wrap_Session_isLoggedOn, METH_O, "Session_isLoggedOn(self) -> bool"},
+	 { "Session_reset", _wrap_Session_reset, METH_O, "Session_reset(self)"},
+	 { "Session_refresh", _wrap_Session_refresh, METH_O, "Session_refresh(self)"},
 	 { "Session_setNextSenderMsgSeqNum", _wrap_Session_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"Session_setNextSenderMsgSeqNum(Session self, FIX::SEQNUM num)\n"
+		"Session_setNextSenderMsgSeqNum(self, num)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162366,39 +162366,39 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_setNextTargetMsgSeqNum", _wrap_Session_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"Session_setNextTargetMsgSeqNum(Session self, FIX::SEQNUM num)\n"
+		"Session_setNextTargetMsgSeqNum(self, num)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "Session_getSessionID", _wrap_Session_getSessionID, METH_O, "Session_getSessionID(Session self) -> SessionID"},
+	 { "Session_getSessionID", _wrap_Session_getSessionID, METH_O, "Session_getSessionID(self) -> SessionID"},
 	 { "Session_setDataDictionaryProvider", _wrap_Session_setDataDictionaryProvider, METH_VARARGS, "\n"
-		"Session_setDataDictionaryProvider(Session self, DataDictionaryProvider const & dataDictionaryProvider)\n"
+		"Session_setDataDictionaryProvider(self, dataDictionaryProvider)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dataDictionaryProvider: DataDictionaryProvider const &\n"
 		"\n"
 		""},
-	 { "Session_getDataDictionaryProvider", _wrap_Session_getDataDictionaryProvider, METH_O, "Session_getDataDictionaryProvider(Session self) -> DataDictionaryProvider const &"},
+	 { "Session_getDataDictionaryProvider", _wrap_Session_getDataDictionaryProvider, METH_O, "Session_getDataDictionaryProvider(self) -> DataDictionaryProvider const &"},
 	 { "Session_sendToTarget", _wrap_Session_sendToTarget, METH_VARARGS, "\n"
-		"Session_sendToTarget(Message message, std::string const & qualifier=\"\") -> bool\n"
+		"Session_sendToTarget(message, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message &\n"
 		"qualifier: std::string const &\n"
 		"\n"
-		"Session_sendToTarget(Message message, SessionID sessionID) -> bool\n"
+		"Session_sendToTarget(message, sessionID) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message &\n"
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
-		"Session_sendToTarget(Message arg1, SenderCompID senderCompID, TargetCompID targetCompID, std::string const & qualifier=\"\") -> bool\n"
+		"Session_sendToTarget(arg1, senderCompID, targetCompID, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162407,7 +162407,7 @@ static PyMethodDef SwigMethods[] = {
 		"targetCompID: FIX::TargetCompID const &\n"
 		"qualifier: std::string const &\n"
 		"\n"
-		"Session_sendToTarget(Message message, std::string const & senderCompID, std::string const & targetCompID, std::string const & qualifier=\"\") -> bool\n"
+		"Session_sendToTarget(message, senderCompID, targetCompID, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162419,7 +162419,7 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "Session_getSessions", _wrap_Session_getSessions, METH_NOARGS, "Session_getSessions() -> SessionIDSet"},
 	 { "Session_doesSessionExist", _wrap_Session_doesSessionExist, METH_O, "\n"
-		"Session_doesSessionExist(SessionID arg1) -> bool\n"
+		"Session_doesSessionExist(arg1) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162427,13 +162427,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_lookupSession", _wrap_Session_lookupSession, METH_VARARGS, "\n"
-		"Session_lookupSession(SessionID arg1) -> Session\n"
+		"Session_lookupSession(arg1) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"\n"
-		"Session_lookupSession(std::string const & arg1, bool reverse=False) -> Session\n"
+		"Session_lookupSession(arg1, reverse=False) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162442,7 +162442,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_isSessionRegistered", _wrap_Session_isSessionRegistered, METH_O, "\n"
-		"Session_isSessionRegistered(SessionID arg1) -> bool\n"
+		"Session_isSessionRegistered(arg1) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162450,7 +162450,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_registerSession", _wrap_Session_registerSession, METH_O, "\n"
-		"Session_registerSession(SessionID arg1) -> Session\n"
+		"Session_registerSession(arg1) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162458,7 +162458,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_unregisterSession", _wrap_Session_unregisterSession, METH_O, "\n"
-		"Session_unregisterSession(SessionID arg1)\n"
+		"Session_unregisterSession(arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162467,7 +162467,7 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "Session_numSessions", _wrap_Session_numSessions, METH_NOARGS, "Session_numSessions() -> size_t"},
 	 { "Session_isSessionTime", _wrap_Session_isSessionTime, METH_VARARGS, "\n"
-		"Session_isSessionTime(Session self, UtcTimeStamp now) -> bool\n"
+		"Session_isSessionTime(self, now) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162475,198 +162475,198 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_isLogonTime", _wrap_Session_isLogonTime, METH_VARARGS, "\n"
-		"Session_isLogonTime(Session self, UtcTimeStamp now) -> bool\n"
+		"Session_isLogonTime(self, now) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "Session_isInitiator", _wrap_Session_isInitiator, METH_O, "Session_isInitiator(Session self) -> bool"},
-	 { "Session_isAcceptor", _wrap_Session_isAcceptor, METH_O, "Session_isAcceptor(Session self) -> bool"},
-	 { "Session_getLogonTime", _wrap_Session_getLogonTime, METH_O, "Session_getLogonTime(Session self) -> TimeRange const &"},
+	 { "Session_isInitiator", _wrap_Session_isInitiator, METH_O, "Session_isInitiator(self) -> bool"},
+	 { "Session_isAcceptor", _wrap_Session_isAcceptor, METH_O, "Session_isAcceptor(self) -> bool"},
+	 { "Session_getLogonTime", _wrap_Session_getLogonTime, METH_O, "Session_getLogonTime(self) -> TimeRange const &"},
 	 { "Session_setLogonTime", _wrap_Session_setLogonTime, METH_VARARGS, "\n"
-		"Session_setLogonTime(Session self, TimeRange const & value)\n"
+		"Session_setLogonTime(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: TimeRange const &\n"
 		"\n"
 		""},
-	 { "Session_getSenderDefaultApplVerID", _wrap_Session_getSenderDefaultApplVerID, METH_O, "Session_getSenderDefaultApplVerID(Session self) -> std::string const &"},
+	 { "Session_getSenderDefaultApplVerID", _wrap_Session_getSenderDefaultApplVerID, METH_O, "Session_getSenderDefaultApplVerID(self) -> std::string const &"},
 	 { "Session_setSenderDefaultApplVerID", _wrap_Session_setSenderDefaultApplVerID, METH_VARARGS, "\n"
-		"Session_setSenderDefaultApplVerID(Session self, std::string const & senderDefaultApplVerID)\n"
+		"Session_setSenderDefaultApplVerID(self, senderDefaultApplVerID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"senderDefaultApplVerID: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getTargetDefaultApplVerID", _wrap_Session_getTargetDefaultApplVerID, METH_O, "Session_getTargetDefaultApplVerID(Session self) -> std::string const &"},
+	 { "Session_getTargetDefaultApplVerID", _wrap_Session_getTargetDefaultApplVerID, METH_O, "Session_getTargetDefaultApplVerID(self) -> std::string const &"},
 	 { "Session_setTargetDefaultApplVerID", _wrap_Session_setTargetDefaultApplVerID, METH_VARARGS, "\n"
-		"Session_setTargetDefaultApplVerID(Session self, std::string const & targetDefaultApplVerID)\n"
+		"Session_setTargetDefaultApplVerID(self, targetDefaultApplVerID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"targetDefaultApplVerID: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getSendRedundantResendRequests", _wrap_Session_getSendRedundantResendRequests, METH_O, "Session_getSendRedundantResendRequests(Session self) -> bool"},
+	 { "Session_getSendRedundantResendRequests", _wrap_Session_getSendRedundantResendRequests, METH_O, "Session_getSendRedundantResendRequests(self) -> bool"},
 	 { "Session_setSendRedundantResendRequests", _wrap_Session_setSendRedundantResendRequests, METH_VARARGS, "\n"
-		"Session_setSendRedundantResendRequests(Session self, bool value)\n"
+		"Session_setSendRedundantResendRequests(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getCheckCompId", _wrap_Session_getCheckCompId, METH_O, "Session_getCheckCompId(Session self) -> bool"},
+	 { "Session_getCheckCompId", _wrap_Session_getCheckCompId, METH_O, "Session_getCheckCompId(self) -> bool"},
 	 { "Session_setCheckCompId", _wrap_Session_setCheckCompId, METH_VARARGS, "\n"
-		"Session_setCheckCompId(Session self, bool value)\n"
+		"Session_setCheckCompId(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getCheckLatency", _wrap_Session_getCheckLatency, METH_O, "Session_getCheckLatency(Session self) -> bool"},
+	 { "Session_getCheckLatency", _wrap_Session_getCheckLatency, METH_O, "Session_getCheckLatency(self) -> bool"},
 	 { "Session_setCheckLatency", _wrap_Session_setCheckLatency, METH_VARARGS, "\n"
-		"Session_setCheckLatency(Session self, bool value)\n"
+		"Session_setCheckLatency(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getMaxLatency", _wrap_Session_getMaxLatency, METH_O, "Session_getMaxLatency(Session self) -> int"},
+	 { "Session_getMaxLatency", _wrap_Session_getMaxLatency, METH_O, "Session_getMaxLatency(self) -> int"},
 	 { "Session_setMaxLatency", _wrap_Session_setMaxLatency, METH_VARARGS, "\n"
-		"Session_setMaxLatency(Session self, int value)\n"
+		"Session_setMaxLatency(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getLogonTimeout", _wrap_Session_getLogonTimeout, METH_O, "Session_getLogonTimeout(Session self) -> int"},
+	 { "Session_getLogonTimeout", _wrap_Session_getLogonTimeout, METH_O, "Session_getLogonTimeout(self) -> int"},
 	 { "Session_setLogonTimeout", _wrap_Session_setLogonTimeout, METH_VARARGS, "\n"
-		"Session_setLogonTimeout(Session self, int value)\n"
+		"Session_setLogonTimeout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getLogoutTimeout", _wrap_Session_getLogoutTimeout, METH_O, "Session_getLogoutTimeout(Session self) -> int"},
+	 { "Session_getLogoutTimeout", _wrap_Session_getLogoutTimeout, METH_O, "Session_getLogoutTimeout(self) -> int"},
 	 { "Session_setLogoutTimeout", _wrap_Session_setLogoutTimeout, METH_VARARGS, "\n"
-		"Session_setLogoutTimeout(Session self, int value)\n"
+		"Session_setLogoutTimeout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getResetOnLogon", _wrap_Session_getResetOnLogon, METH_O, "Session_getResetOnLogon(Session self) -> bool"},
+	 { "Session_getResetOnLogon", _wrap_Session_getResetOnLogon, METH_O, "Session_getResetOnLogon(self) -> bool"},
 	 { "Session_setResetOnLogon", _wrap_Session_setResetOnLogon, METH_VARARGS, "\n"
-		"Session_setResetOnLogon(Session self, bool value)\n"
+		"Session_setResetOnLogon(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getResetOnLogout", _wrap_Session_getResetOnLogout, METH_O, "Session_getResetOnLogout(Session self) -> bool"},
+	 { "Session_getResetOnLogout", _wrap_Session_getResetOnLogout, METH_O, "Session_getResetOnLogout(self) -> bool"},
 	 { "Session_setResetOnLogout", _wrap_Session_setResetOnLogout, METH_VARARGS, "\n"
-		"Session_setResetOnLogout(Session self, bool value)\n"
+		"Session_setResetOnLogout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getResetOnDisconnect", _wrap_Session_getResetOnDisconnect, METH_O, "Session_getResetOnDisconnect(Session self) -> bool"},
+	 { "Session_getResetOnDisconnect", _wrap_Session_getResetOnDisconnect, METH_O, "Session_getResetOnDisconnect(self) -> bool"},
 	 { "Session_setResetOnDisconnect", _wrap_Session_setResetOnDisconnect, METH_VARARGS, "\n"
-		"Session_setResetOnDisconnect(Session self, bool value)\n"
+		"Session_setResetOnDisconnect(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getRefreshOnLogon", _wrap_Session_getRefreshOnLogon, METH_O, "Session_getRefreshOnLogon(Session self) -> bool"},
+	 { "Session_getRefreshOnLogon", _wrap_Session_getRefreshOnLogon, METH_O, "Session_getRefreshOnLogon(self) -> bool"},
 	 { "Session_setRefreshOnLogon", _wrap_Session_setRefreshOnLogon, METH_VARARGS, "\n"
-		"Session_setRefreshOnLogon(Session self, bool value)\n"
+		"Session_setRefreshOnLogon(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getMillisecondsInTimeStamp", _wrap_Session_getMillisecondsInTimeStamp, METH_O, "Session_getMillisecondsInTimeStamp(Session self) -> bool"},
+	 { "Session_getMillisecondsInTimeStamp", _wrap_Session_getMillisecondsInTimeStamp, METH_O, "Session_getMillisecondsInTimeStamp(self) -> bool"},
 	 { "Session_setMillisecondsInTimeStamp", _wrap_Session_setMillisecondsInTimeStamp, METH_VARARGS, "\n"
-		"Session_setMillisecondsInTimeStamp(Session self, bool value)\n"
+		"Session_setMillisecondsInTimeStamp(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getTimestampPrecision", _wrap_Session_getTimestampPrecision, METH_O, "Session_getTimestampPrecision(Session self) -> int"},
+	 { "Session_getTimestampPrecision", _wrap_Session_getTimestampPrecision, METH_O, "Session_getTimestampPrecision(self) -> int"},
 	 { "Session_setTimestampPrecision", _wrap_Session_setTimestampPrecision, METH_VARARGS, "\n"
-		"Session_setTimestampPrecision(Session self, int precision)\n"
+		"Session_setTimestampPrecision(self, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"precision: int\n"
 		"\n"
 		""},
-	 { "Session_getSupportedTimestampPrecision", _wrap_Session_getSupportedTimestampPrecision, METH_O, "Session_getSupportedTimestampPrecision(Session self) -> int"},
+	 { "Session_getSupportedTimestampPrecision", _wrap_Session_getSupportedTimestampPrecision, METH_O, "Session_getSupportedTimestampPrecision(self) -> int"},
 	 { "Session_supportsSubSecondTimestamps", _wrap_Session_supportsSubSecondTimestamps, METH_O, "\n"
-		"Session_supportsSubSecondTimestamps(std::string const & beginString) -> bool\n"
+		"Session_supportsSubSecondTimestamps(beginString) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"beginString: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getPersistMessages", _wrap_Session_getPersistMessages, METH_O, "Session_getPersistMessages(Session self) -> bool"},
+	 { "Session_getPersistMessages", _wrap_Session_getPersistMessages, METH_O, "Session_getPersistMessages(self) -> bool"},
 	 { "Session_setPersistMessages", _wrap_Session_setPersistMessages, METH_VARARGS, "\n"
-		"Session_setPersistMessages(Session self, bool value)\n"
+		"Session_setPersistMessages(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getValidateLengthAndChecksum", _wrap_Session_getValidateLengthAndChecksum, METH_O, "Session_getValidateLengthAndChecksum(Session self) -> bool"},
+	 { "Session_getValidateLengthAndChecksum", _wrap_Session_getValidateLengthAndChecksum, METH_O, "Session_getValidateLengthAndChecksum(self) -> bool"},
 	 { "Session_setValidateLengthAndChecksum", _wrap_Session_setValidateLengthAndChecksum, METH_VARARGS, "\n"
-		"Session_setValidateLengthAndChecksum(Session self, bool value)\n"
+		"Session_setValidateLengthAndChecksum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getSendNextExpectedMsgSeqNum", _wrap_Session_getSendNextExpectedMsgSeqNum, METH_O, "Session_getSendNextExpectedMsgSeqNum(Session self) -> bool"},
+	 { "Session_getSendNextExpectedMsgSeqNum", _wrap_Session_getSendNextExpectedMsgSeqNum, METH_O, "Session_getSendNextExpectedMsgSeqNum(self) -> bool"},
 	 { "Session_setSendNextExpectedMsgSeqNum", _wrap_Session_setSendNextExpectedMsgSeqNum, METH_VARARGS, "\n"
-		"Session_setSendNextExpectedMsgSeqNum(Session self, bool value)\n"
+		"Session_setSendNextExpectedMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getIsNonStopSession", _wrap_Session_getIsNonStopSession, METH_O, "Session_getIsNonStopSession(Session self) -> bool"},
+	 { "Session_getIsNonStopSession", _wrap_Session_getIsNonStopSession, METH_O, "Session_getIsNonStopSession(self) -> bool"},
 	 { "Session_setIsNonStopSession", _wrap_Session_setIsNonStopSession, METH_VARARGS, "\n"
-		"Session_setIsNonStopSession(Session self, bool value)\n"
+		"Session_setIsNonStopSession(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getAllowedRemoteAddresses", _wrap_Session_getAllowedRemoteAddresses, METH_O, "Session_getAllowedRemoteAddresses(Session self) -> std::set< std::string,std::less< std::string >,std::allocator< std::string > > const &"},
+	 { "Session_getAllowedRemoteAddresses", _wrap_Session_getAllowedRemoteAddresses, METH_O, "Session_getAllowedRemoteAddresses(self) -> std::set< std::string,std::less< std::string >,std::allocator< std::string > > const &"},
 	 { "Session_setAllowedRemoteAddresses", _wrap_Session_setAllowedRemoteAddresses, METH_VARARGS, "\n"
-		"Session_setAllowedRemoteAddresses(Session self, std::set< std::string,std::less< std::string >,std::allocator< std::string > > const & value)\n"
+		"Session_setAllowedRemoteAddresses(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162674,7 +162674,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_inAllowedRemoteAddresses", _wrap_Session_inAllowedRemoteAddresses, METH_VARARGS, "\n"
-		"Session_inAllowedRemoteAddresses(Session self, std::string const & value) -> bool\n"
+		"Session_inAllowedRemoteAddresses(self, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162682,7 +162682,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_setResponder", _wrap_Session_setResponder, METH_VARARGS, "\n"
-		"Session_setResponder(Session self, Responder * pR)\n"
+		"Session_setResponder(self, pR)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162690,7 +162690,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_send", _wrap_Session_send, METH_VARARGS, "\n"
-		"Session_send(Session self, Message arg2) -> bool\n"
+		"Session_send(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162698,13 +162698,13 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Session_next", _wrap_Session_next, METH_VARARGS, "\n"
-		"Session_next(Session self, UtcTimeStamp now)\n"
+		"Session_next(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
-		"Session_next(Session self, std::string const & arg2, UtcTimeStamp now, bool queued=False)\n"
+		"Session_next(self, arg2, now, queued=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162712,7 +162712,7 @@ static PyMethodDef SwigMethods[] = {
 		"now: FIX::UtcTimeStamp const &\n"
 		"queued: bool\n"
 		"\n"
-		"Session_next(Session self, Message arg2, UtcTimeStamp now, bool queued=False)\n"
+		"Session_next(self, arg2, now, queued=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162721,17 +162721,17 @@ static PyMethodDef SwigMethods[] = {
 		"queued: bool\n"
 		"\n"
 		""},
-	 { "Session_disconnect", _wrap_Session_disconnect, METH_O, "Session_disconnect(Session self)"},
-	 { "Session_getExpectedSenderNum", _wrap_Session_getExpectedSenderNum, METH_O, "Session_getExpectedSenderNum(Session self) -> FIX::SEQNUM"},
-	 { "Session_getExpectedTargetNum", _wrap_Session_getExpectedTargetNum, METH_O, "Session_getExpectedTargetNum(Session self) -> FIX::SEQNUM"},
-	 { "Session_getLog", _wrap_Session_getLog, METH_O, "Session_getLog(Session self) -> Log *"},
-	 { "Session_getStore", _wrap_Session_getStore, METH_O, "Session_getStore(Session self) -> MessageStore const *"},
+	 { "Session_disconnect", _wrap_Session_disconnect, METH_O, "Session_disconnect(self)"},
+	 { "Session_getExpectedSenderNum", _wrap_Session_getExpectedSenderNum, METH_O, "Session_getExpectedSenderNum(self) -> FIX::SEQNUM"},
+	 { "Session_getExpectedTargetNum", _wrap_Session_getExpectedTargetNum, METH_O, "Session_getExpectedTargetNum(self) -> FIX::SEQNUM"},
+	 { "Session_getLog", _wrap_Session_getLog, METH_O, "Session_getLog(self) -> Log *"},
+	 { "Session_getStore", _wrap_Session_getStore, METH_O, "Session_getStore(self) -> MessageStore const *"},
 	 { "Session_swigregister", Session_swigregister, METH_O, NULL},
 	 { "Session_swiginit", Session_swiginit, METH_VARARGS, NULL},
-	 { "delete_LogFactory", _wrap_delete_LogFactory, METH_O, "delete_LogFactory(LogFactory self)"},
+	 { "delete_LogFactory", _wrap_delete_LogFactory, METH_O, "delete_LogFactory(self)"},
 	 { "LogFactory_create", _wrap_LogFactory_create, METH_VARARGS, "\n"
-		"LogFactory_create(LogFactory self) -> Log\n"
-		"LogFactory_create(LogFactory self, SessionID arg0) -> Log\n"
+		"LogFactory_create(self) -> Log\n"
+		"LogFactory_create(self, arg0) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162739,7 +162739,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "LogFactory_destroy", _wrap_LogFactory_destroy, METH_VARARGS, "\n"
-		"LogFactory_destroy(LogFactory self, Log arg0)\n"
+		"LogFactory_destroy(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162747,7 +162747,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_LogFactory", _wrap_new_LogFactory, METH_O, "\n"
-		"new_LogFactory(PyObject * _self) -> LogFactory\n"
+		"new_LogFactory(_self) -> LogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162758,13 +162758,13 @@ static PyMethodDef SwigMethods[] = {
 	 { "LogFactory_swigregister", LogFactory_swigregister, METH_O, NULL},
 	 { "LogFactory_swiginit", LogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_ScreenLogFactory", _wrap_new_ScreenLogFactory, METH_VARARGS, "\n"
-		"ScreenLogFactory(SessionSettings settings)\n"
+		"ScreenLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings\n"
 		"\n"
-		"new_ScreenLogFactory(bool incoming, bool outgoing, bool event) -> ScreenLogFactory\n"
+		"new_ScreenLogFactory(incoming, outgoing, event) -> ScreenLogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162774,8 +162774,8 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "ScreenLogFactory_create", _wrap_ScreenLogFactory_create, METH_VARARGS, "\n"
-		"ScreenLogFactory_create(ScreenLogFactory self) -> Log\n"
-		"ScreenLogFactory_create(ScreenLogFactory self, SessionID arg2) -> Log\n"
+		"ScreenLogFactory_create(self) -> Log\n"
+		"ScreenLogFactory_create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162783,21 +162783,21 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "ScreenLogFactory_destroy", _wrap_ScreenLogFactory_destroy, METH_VARARGS, "\n"
-		"ScreenLogFactory_destroy(ScreenLogFactory self, Log log)\n"
+		"ScreenLogFactory_destroy(self, log)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"log: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_ScreenLogFactory", _wrap_delete_ScreenLogFactory, METH_O, "delete_ScreenLogFactory(ScreenLogFactory self)"},
+	 { "delete_ScreenLogFactory", _wrap_delete_ScreenLogFactory, METH_O, "delete_ScreenLogFactory(self)"},
 	 { "ScreenLogFactory_swigregister", ScreenLogFactory_swigregister, METH_O, NULL},
 	 { "ScreenLogFactory_swiginit", ScreenLogFactory_swiginit, METH_VARARGS, NULL},
-	 { "delete_Log", _wrap_delete_Log, METH_O, "delete_Log(Log self)"},
-	 { "Log_clear", _wrap_Log_clear, METH_O, "Log_clear(Log self)"},
-	 { "Log_backup", _wrap_Log_backup, METH_O, "Log_backup(Log self)"},
+	 { "delete_Log", _wrap_delete_Log, METH_O, "delete_Log(self)"},
+	 { "Log_clear", _wrap_Log_clear, METH_O, "Log_clear(self)"},
+	 { "Log_backup", _wrap_Log_backup, METH_O, "Log_backup(self)"},
 	 { "Log_onIncoming", _wrap_Log_onIncoming, METH_VARARGS, "\n"
-		"Log_onIncoming(Log self, std::string const & arg0)\n"
+		"Log_onIncoming(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162805,7 +162805,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Log_onOutgoing", _wrap_Log_onOutgoing, METH_VARARGS, "\n"
-		"Log_onOutgoing(Log self, std::string const & arg0)\n"
+		"Log_onOutgoing(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162813,7 +162813,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Log_onEvent", _wrap_Log_onEvent, METH_VARARGS, "\n"
-		"Log_onEvent(Log self, std::string const & arg0)\n"
+		"Log_onEvent(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162821,7 +162821,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_Log", _wrap_new_Log, METH_O, "\n"
-		"new_Log(PyObject * _self) -> Log\n"
+		"new_Log(_self) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162831,10 +162831,10 @@ static PyMethodDef SwigMethods[] = {
 	 { "disown_Log", _wrap_disown_Log, METH_O, NULL},
 	 { "Log_swigregister", Log_swigregister, METH_O, NULL},
 	 { "Log_swiginit", Log_swiginit, METH_VARARGS, NULL},
-	 { "NullLog_clear", _wrap_NullLog_clear, METH_O, "NullLog_clear(NullLog self)"},
-	 { "NullLog_backup", _wrap_NullLog_backup, METH_O, "NullLog_backup(NullLog self)"},
+	 { "NullLog_clear", _wrap_NullLog_clear, METH_O, "NullLog_clear(self)"},
+	 { "NullLog_backup", _wrap_NullLog_backup, METH_O, "NullLog_backup(self)"},
 	 { "NullLog_onIncoming", _wrap_NullLog_onIncoming, METH_VARARGS, "\n"
-		"NullLog_onIncoming(NullLog self, std::string const & arg2)\n"
+		"NullLog_onIncoming(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162842,7 +162842,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullLog_onOutgoing", _wrap_NullLog_onOutgoing, METH_VARARGS, "\n"
-		"NullLog_onOutgoing(NullLog self, std::string const & arg2)\n"
+		"NullLog_onOutgoing(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162850,7 +162850,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullLog_onEvent", _wrap_NullLog_onEvent, METH_VARARGS, "\n"
-		"NullLog_onEvent(NullLog self, std::string const & arg2)\n"
+		"NullLog_onEvent(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162858,11 +162858,11 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_NullLog", _wrap_new_NullLog, METH_NOARGS, "new_NullLog() -> NullLog"},
-	 { "delete_NullLog", _wrap_delete_NullLog, METH_O, "delete_NullLog(NullLog self)"},
+	 { "delete_NullLog", _wrap_delete_NullLog, METH_O, "delete_NullLog(self)"},
 	 { "NullLog_swigregister", NullLog_swigregister, METH_O, NULL},
 	 { "NullLog_swiginit", NullLog_swiginit, METH_VARARGS, NULL},
 	 { "new_ScreenLog", _wrap_new_ScreenLog, METH_VARARGS, "\n"
-		"ScreenLog(bool incoming, bool outgoing, bool event)\n"
+		"ScreenLog(incoming, outgoing, event)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162870,7 +162870,7 @@ static PyMethodDef SwigMethods[] = {
 		"outgoing: bool\n"
 		"event: bool\n"
 		"\n"
-		"new_ScreenLog(SessionID sessionID, bool incoming, bool outgoing, bool event) -> ScreenLog\n"
+		"new_ScreenLog(sessionID, incoming, outgoing, event) -> ScreenLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162880,10 +162880,10 @@ static PyMethodDef SwigMethods[] = {
 		"event: bool\n"
 		"\n"
 		""},
-	 { "ScreenLog_clear", _wrap_ScreenLog_clear, METH_O, "ScreenLog_clear(ScreenLog self)"},
-	 { "ScreenLog_backup", _wrap_ScreenLog_backup, METH_O, "ScreenLog_backup(ScreenLog self)"},
+	 { "ScreenLog_clear", _wrap_ScreenLog_clear, METH_O, "ScreenLog_clear(self)"},
+	 { "ScreenLog_backup", _wrap_ScreenLog_backup, METH_O, "ScreenLog_backup(self)"},
 	 { "ScreenLog_onIncoming", _wrap_ScreenLog_onIncoming, METH_VARARGS, "\n"
-		"ScreenLog_onIncoming(ScreenLog self, std::string const & value)\n"
+		"ScreenLog_onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162891,7 +162891,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "ScreenLog_onOutgoing", _wrap_ScreenLog_onOutgoing, METH_VARARGS, "\n"
-		"ScreenLog_onOutgoing(ScreenLog self, std::string const & value)\n"
+		"ScreenLog_onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162899,30 +162899,30 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "ScreenLog_onEvent", _wrap_ScreenLog_onEvent, METH_VARARGS, "\n"
-		"ScreenLog_onEvent(ScreenLog self, std::string const & value)\n"
+		"ScreenLog_onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_ScreenLog", _wrap_delete_ScreenLog, METH_O, "delete_ScreenLog(ScreenLog self)"},
+	 { "delete_ScreenLog", _wrap_delete_ScreenLog, METH_O, "delete_ScreenLog(self)"},
 	 { "ScreenLog_swigregister", ScreenLog_swigregister, METH_O, NULL},
 	 { "ScreenLog_swiginit", ScreenLog_swiginit, METH_VARARGS, NULL},
 	 { "new_FileLogFactory", _wrap_new_FileLogFactory, METH_VARARGS, "\n"
-		"FileLogFactory(SessionSettings settings)\n"
+		"FileLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"FileLogFactory(std::string const & path)\n"
+		"FileLogFactory(path)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"\n"
-		"new_FileLogFactory(std::string const & path, std::string const & backupPath) -> FileLogFactory\n"
+		"new_FileLogFactory(path, backupPath) -> FileLogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162931,8 +162931,8 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileLogFactory_create", _wrap_FileLogFactory_create, METH_VARARGS, "\n"
-		"FileLogFactory_create(FileLogFactory self) -> Log\n"
-		"FileLogFactory_create(FileLogFactory self, SessionID arg2) -> Log\n"
+		"FileLogFactory_create(self) -> Log\n"
+		"FileLogFactory_create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162940,38 +162940,38 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileLogFactory_destroy", _wrap_FileLogFactory_destroy, METH_VARARGS, "\n"
-		"FileLogFactory_destroy(FileLogFactory self, Log log)\n"
+		"FileLogFactory_destroy(self, log)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"log: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_FileLogFactory", _wrap_delete_FileLogFactory, METH_O, "delete_FileLogFactory(FileLogFactory self)"},
+	 { "delete_FileLogFactory", _wrap_delete_FileLogFactory, METH_O, "delete_FileLogFactory(self)"},
 	 { "FileLogFactory_swigregister", FileLogFactory_swigregister, METH_O, NULL},
 	 { "FileLogFactory_swiginit", FileLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_FileLog", _wrap_new_FileLog, METH_VARARGS, "\n"
-		"FileLog(std::string const & path)\n"
+		"FileLog(path)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"\n"
-		"FileLog(std::string const & path, std::string const & backupPath)\n"
+		"FileLog(path, backupPath)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"backupPath: std::string const &\n"
 		"\n"
-		"FileLog(std::string const & path, SessionID sessionID)\n"
+		"FileLog(path, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
-		"new_FileLog(std::string const & path, std::string const & backupPath, SessionID sessionID) -> FileLog\n"
+		"new_FileLog(path, backupPath, sessionID) -> FileLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162980,11 +162980,11 @@ static PyMethodDef SwigMethods[] = {
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "delete_FileLog", _wrap_delete_FileLog, METH_O, "delete_FileLog(FileLog self)"},
-	 { "FileLog_clear", _wrap_FileLog_clear, METH_O, "FileLog_clear(FileLog self)"},
-	 { "FileLog_backup", _wrap_FileLog_backup, METH_O, "FileLog_backup(FileLog self)"},
+	 { "delete_FileLog", _wrap_delete_FileLog, METH_O, "delete_FileLog(self)"},
+	 { "FileLog_clear", _wrap_FileLog_clear, METH_O, "FileLog_clear(self)"},
+	 { "FileLog_backup", _wrap_FileLog_backup, METH_O, "FileLog_backup(self)"},
 	 { "FileLog_onIncoming", _wrap_FileLog_onIncoming, METH_VARARGS, "\n"
-		"FileLog_onIncoming(FileLog self, std::string const & value)\n"
+		"FileLog_onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -162992,7 +162992,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileLog_onOutgoing", _wrap_FileLog_onOutgoing, METH_VARARGS, "\n"
-		"FileLog_onOutgoing(FileLog self, std::string const & value)\n"
+		"FileLog_onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163000,7 +163000,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileLog_onEvent", _wrap_FileLog_onEvent, METH_VARARGS, "\n"
-		"FileLog_onEvent(FileLog self, std::string const & value)\n"
+		"FileLog_onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163009,9 +163009,9 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "FileLog_swigregister", FileLog_swigregister, METH_O, NULL},
 	 { "FileLog_swiginit", FileLog_swiginit, METH_VARARGS, NULL},
-	 { "delete_MessageStoreFactory", _wrap_delete_MessageStoreFactory, METH_O, "delete_MessageStoreFactory(MessageStoreFactory self)"},
+	 { "delete_MessageStoreFactory", _wrap_delete_MessageStoreFactory, METH_O, "delete_MessageStoreFactory(self)"},
 	 { "MessageStoreFactory_create", _wrap_MessageStoreFactory_create, METH_VARARGS, "\n"
-		"MessageStoreFactory_create(MessageStoreFactory self, UtcTimeStamp now, SessionID arg3) -> MessageStore\n"
+		"MessageStoreFactory_create(self, now, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163020,7 +163020,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactory_destroy", _wrap_MessageStoreFactory_destroy, METH_VARARGS, "\n"
-		"MessageStoreFactory_destroy(MessageStoreFactory self, MessageStore arg2)\n"
+		"MessageStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163029,7 +163029,7 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { "MessageStoreFactory_swigregister", MessageStoreFactory_swigregister, METH_O, NULL},
 	 { "MemoryStoreFactory_create", _wrap_MemoryStoreFactory_create, METH_VARARGS, "\n"
-		"MemoryStoreFactory_create(MemoryStoreFactory self, UtcTimeStamp now, SessionID arg3) -> MessageStore\n"
+		"MemoryStoreFactory_create(self, now, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163038,7 +163038,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MemoryStoreFactory_destroy", _wrap_MemoryStoreFactory_destroy, METH_VARARGS, "\n"
-		"MemoryStoreFactory_destroy(MemoryStoreFactory self, MessageStore arg2)\n"
+		"MemoryStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163046,12 +163046,12 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_MemoryStoreFactory", _wrap_new_MemoryStoreFactory, METH_NOARGS, "new_MemoryStoreFactory() -> MemoryStoreFactory"},
-	 { "delete_MemoryStoreFactory", _wrap_delete_MemoryStoreFactory, METH_O, "delete_MemoryStoreFactory(MemoryStoreFactory self)"},
+	 { "delete_MemoryStoreFactory", _wrap_delete_MemoryStoreFactory, METH_O, "delete_MemoryStoreFactory(self)"},
 	 { "MemoryStoreFactory_swigregister", MemoryStoreFactory_swigregister, METH_O, NULL},
 	 { "MemoryStoreFactory_swiginit", MemoryStoreFactory_swiginit, METH_VARARGS, NULL},
-	 { "delete_MessageStore", _wrap_delete_MessageStore, METH_O, "delete_MessageStore(MessageStore self)"},
+	 { "delete_MessageStore", _wrap_delete_MessageStore, METH_O, "delete_MessageStore(self)"},
 	 { "MessageStore_set", _wrap_MessageStore_set, METH_VARARGS, "\n"
-		"MessageStore_set(MessageStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"MessageStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163060,7 +163060,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStore_get", _wrap_MessageStore_get, METH_VARARGS, "\n"
-		"MessageStore_get(MessageStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"MessageStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163069,10 +163069,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MessageStore_getNextSenderMsgSeqNum", _wrap_MessageStore_getNextSenderMsgSeqNum, METH_O, "MessageStore_getNextSenderMsgSeqNum(MessageStore self) -> FIX::SEQNUM"},
-	 { "MessageStore_getNextTargetMsgSeqNum", _wrap_MessageStore_getNextTargetMsgSeqNum, METH_O, "MessageStore_getNextTargetMsgSeqNum(MessageStore self) -> FIX::SEQNUM"},
+	 { "MessageStore_getNextSenderMsgSeqNum", _wrap_MessageStore_getNextSenderMsgSeqNum, METH_O, "MessageStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MessageStore_getNextTargetMsgSeqNum", _wrap_MessageStore_getNextTargetMsgSeqNum, METH_O, "MessageStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MessageStore_setNextSenderMsgSeqNum", _wrap_MessageStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStore_setNextSenderMsgSeqNum(MessageStore self, FIX::SEQNUM arg2)\n"
+		"MessageStore_setNextSenderMsgSeqNum(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163080,28 +163080,28 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStore_setNextTargetMsgSeqNum", _wrap_MessageStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStore_setNextTargetMsgSeqNum(MessageStore self, FIX::SEQNUM arg2)\n"
+		"MessageStore_setNextTargetMsgSeqNum(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MessageStore_incrNextSenderMsgSeqNum", _wrap_MessageStore_incrNextSenderMsgSeqNum, METH_O, "MessageStore_incrNextSenderMsgSeqNum(MessageStore self)"},
-	 { "MessageStore_incrNextTargetMsgSeqNum", _wrap_MessageStore_incrNextTargetMsgSeqNum, METH_O, "MessageStore_incrNextTargetMsgSeqNum(MessageStore self)"},
-	 { "MessageStore_getCreationTime", _wrap_MessageStore_getCreationTime, METH_O, "MessageStore_getCreationTime(MessageStore self) -> UtcTimeStamp"},
+	 { "MessageStore_incrNextSenderMsgSeqNum", _wrap_MessageStore_incrNextSenderMsgSeqNum, METH_O, "MessageStore_incrNextSenderMsgSeqNum(self)"},
+	 { "MessageStore_incrNextTargetMsgSeqNum", _wrap_MessageStore_incrNextTargetMsgSeqNum, METH_O, "MessageStore_incrNextTargetMsgSeqNum(self)"},
+	 { "MessageStore_getCreationTime", _wrap_MessageStore_getCreationTime, METH_O, "MessageStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "MessageStore_reset", _wrap_MessageStore_reset, METH_VARARGS, "\n"
-		"MessageStore_reset(MessageStore self, UtcTimeStamp now)\n"
+		"MessageStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MessageStore_refresh", _wrap_MessageStore_refresh, METH_O, "MessageStore_refresh(MessageStore self)"},
+	 { "MessageStore_refresh", _wrap_MessageStore_refresh, METH_O, "MessageStore_refresh(self)"},
 	 { "MessageStore_swigregister", MessageStore_swigregister, METH_O, NULL},
 	 { "new_MemoryStore", _wrap_new_MemoryStore, METH_O, "\n"
-		"new_MemoryStore(UtcTimeStamp now) -> MemoryStore\n"
+		"new_MemoryStore(now) -> MemoryStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163109,7 +163109,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MemoryStore_set", _wrap_MemoryStore_set, METH_VARARGS, "\n"
-		"MemoryStore_set(MemoryStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"MemoryStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163118,7 +163118,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MemoryStore_get", _wrap_MemoryStore_get, METH_VARARGS, "\n"
-		"MemoryStore_get(MemoryStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"MemoryStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163127,10 +163127,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MemoryStore_getNextSenderMsgSeqNum", _wrap_MemoryStore_getNextSenderMsgSeqNum, METH_O, "MemoryStore_getNextSenderMsgSeqNum(MemoryStore self) -> FIX::SEQNUM"},
-	 { "MemoryStore_getNextTargetMsgSeqNum", _wrap_MemoryStore_getNextTargetMsgSeqNum, METH_O, "MemoryStore_getNextTargetMsgSeqNum(MemoryStore self) -> FIX::SEQNUM"},
+	 { "MemoryStore_getNextSenderMsgSeqNum", _wrap_MemoryStore_getNextSenderMsgSeqNum, METH_O, "MemoryStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MemoryStore_getNextTargetMsgSeqNum", _wrap_MemoryStore_getNextTargetMsgSeqNum, METH_O, "MemoryStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MemoryStore_setNextSenderMsgSeqNum", _wrap_MemoryStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MemoryStore_setNextSenderMsgSeqNum(MemoryStore self, FIX::SEQNUM value)\n"
+		"MemoryStore_setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163138,38 +163138,38 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MemoryStore_setNextTargetMsgSeqNum", _wrap_MemoryStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MemoryStore_setNextTargetMsgSeqNum(MemoryStore self, FIX::SEQNUM value)\n"
+		"MemoryStore_setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MemoryStore_incrNextSenderMsgSeqNum", _wrap_MemoryStore_incrNextSenderMsgSeqNum, METH_O, "MemoryStore_incrNextSenderMsgSeqNum(MemoryStore self)"},
-	 { "MemoryStore_incrNextTargetMsgSeqNum", _wrap_MemoryStore_incrNextTargetMsgSeqNum, METH_O, "MemoryStore_incrNextTargetMsgSeqNum(MemoryStore self)"},
+	 { "MemoryStore_incrNextSenderMsgSeqNum", _wrap_MemoryStore_incrNextSenderMsgSeqNum, METH_O, "MemoryStore_incrNextSenderMsgSeqNum(self)"},
+	 { "MemoryStore_incrNextTargetMsgSeqNum", _wrap_MemoryStore_incrNextTargetMsgSeqNum, METH_O, "MemoryStore_incrNextTargetMsgSeqNum(self)"},
 	 { "MemoryStore_setCreationTime", _wrap_MemoryStore_setCreationTime, METH_VARARGS, "\n"
-		"MemoryStore_setCreationTime(MemoryStore self, UtcTimeStamp creationTime)\n"
+		"MemoryStore_setCreationTime(self, creationTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"creationTime: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MemoryStore_getCreationTime", _wrap_MemoryStore_getCreationTime, METH_O, "MemoryStore_getCreationTime(MemoryStore self) -> UtcTimeStamp"},
+	 { "MemoryStore_getCreationTime", _wrap_MemoryStore_getCreationTime, METH_O, "MemoryStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "MemoryStore_reset", _wrap_MemoryStore_reset, METH_VARARGS, "\n"
-		"MemoryStore_reset(MemoryStore self, UtcTimeStamp now)\n"
+		"MemoryStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MemoryStore_refresh", _wrap_MemoryStore_refresh, METH_O, "MemoryStore_refresh(MemoryStore self)"},
-	 { "delete_MemoryStore", _wrap_delete_MemoryStore, METH_O, "delete_MemoryStore(MemoryStore self)"},
+	 { "MemoryStore_refresh", _wrap_MemoryStore_refresh, METH_O, "MemoryStore_refresh(self)"},
+	 { "delete_MemoryStore", _wrap_delete_MemoryStore, METH_O, "delete_MemoryStore(self)"},
 	 { "MemoryStore_swigregister", MemoryStore_swigregister, METH_O, NULL},
 	 { "MemoryStore_swiginit", MemoryStore_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageStoreFactoryExceptionWrapper", _wrap_new_MessageStoreFactoryExceptionWrapper, METH_O, "\n"
-		"new_MessageStoreFactoryExceptionWrapper(MessageStoreFactory pFactory) -> MessageStoreFactoryExceptionWrapper\n"
+		"new_MessageStoreFactoryExceptionWrapper(pFactory) -> MessageStoreFactoryExceptionWrapper\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163177,7 +163177,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactoryExceptionWrapper_create", _wrap_MessageStoreFactoryExceptionWrapper_create, METH_VARARGS, "\n"
-		"MessageStoreFactoryExceptionWrapper_create(MessageStoreFactoryExceptionWrapper self, UtcTimeStamp now, SessionID arg3, bool & arg4, ConfigError arg5) -> MessageStore\n"
+		"MessageStoreFactoryExceptionWrapper_create(self, now, arg3, arg4, arg5) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163188,27 +163188,27 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactoryExceptionWrapper_destroy", _wrap_MessageStoreFactoryExceptionWrapper_destroy, METH_VARARGS, "\n"
-		"MessageStoreFactoryExceptionWrapper_destroy(MessageStoreFactoryExceptionWrapper self, MessageStore arg2)\n"
+		"MessageStoreFactoryExceptionWrapper_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MessageStoreFactoryExceptionWrapper", _wrap_delete_MessageStoreFactoryExceptionWrapper, METH_O, "delete_MessageStoreFactoryExceptionWrapper(MessageStoreFactoryExceptionWrapper self)"},
+	 { "delete_MessageStoreFactoryExceptionWrapper", _wrap_delete_MessageStoreFactoryExceptionWrapper, METH_O, "delete_MessageStoreFactoryExceptionWrapper(self)"},
 	 { "MessageStoreFactoryExceptionWrapper_swigregister", MessageStoreFactoryExceptionWrapper_swigregister, METH_O, NULL},
 	 { "MessageStoreFactoryExceptionWrapper_swiginit", MessageStoreFactoryExceptionWrapper_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageStoreExceptionWrapper", _wrap_new_MessageStoreExceptionWrapper, METH_O, "\n"
-		"new_MessageStoreExceptionWrapper(MessageStore pStore) -> MessageStoreExceptionWrapper\n"
+		"new_MessageStoreExceptionWrapper(pStore) -> MessageStoreExceptionWrapper\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pStore: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MessageStoreExceptionWrapper", _wrap_delete_MessageStoreExceptionWrapper, METH_O, "delete_MessageStoreExceptionWrapper(MessageStoreExceptionWrapper self)"},
+	 { "delete_MessageStoreExceptionWrapper", _wrap_delete_MessageStoreExceptionWrapper, METH_O, "delete_MessageStoreExceptionWrapper(self)"},
 	 { "MessageStoreExceptionWrapper_set", _wrap_MessageStoreExceptionWrapper_set, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_set(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, std::string const & arg3, bool & arg4, IOException arg5) -> bool\n"
+		"MessageStoreExceptionWrapper_set(self, arg2, arg3, arg4, arg5) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163219,7 +163219,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_get", _wrap_MessageStoreExceptionWrapper_get, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_get(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4, bool & arg5, IOException arg6)\n"
+		"MessageStoreExceptionWrapper_get(self, arg2, arg3, arg4, arg5, arg6)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163231,7 +163231,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_getNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_getNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> FIX::SEQNUM\n"
+		"MessageStoreExceptionWrapper_getNextSenderMsgSeqNum(self, arg2, arg3) -> FIX::SEQNUM\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163240,7 +163240,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_getNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_getNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> FIX::SEQNUM\n"
+		"MessageStoreExceptionWrapper_getNextTargetMsgSeqNum(self, arg2, arg3) -> FIX::SEQNUM\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163249,7 +163249,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_setNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_setNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, bool & arg3, IOException arg4)\n"
+		"MessageStoreExceptionWrapper_setNextSenderMsgSeqNum(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163259,7 +163259,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_setNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_setNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, bool & arg3, IOException arg4)\n"
+		"MessageStoreExceptionWrapper_setNextTargetMsgSeqNum(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163269,7 +163269,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163278,7 +163278,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163287,7 +163287,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getCreationTime", _wrap_MessageStoreExceptionWrapper_getCreationTime, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_getCreationTime(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> UtcTimeStamp\n"
+		"MessageStoreExceptionWrapper_getCreationTime(self, arg2, arg3) -> UtcTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163296,7 +163296,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_reset", _wrap_MessageStoreExceptionWrapper_reset, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_reset(MessageStoreExceptionWrapper self, UtcTimeStamp arg2, bool & arg3, IOException arg4)\n"
+		"MessageStoreExceptionWrapper_reset(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163306,7 +163306,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_refresh", _wrap_MessageStoreExceptionWrapper_refresh, METH_VARARGS, "\n"
-		"MessageStoreExceptionWrapper_refresh(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"MessageStoreExceptionWrapper_refresh(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163317,13 +163317,13 @@ static PyMethodDef SwigMethods[] = {
 	 { "MessageStoreExceptionWrapper_swigregister", MessageStoreExceptionWrapper_swigregister, METH_O, NULL},
 	 { "MessageStoreExceptionWrapper_swiginit", MessageStoreExceptionWrapper_swiginit, METH_VARARGS, NULL},
 	 { "new_FileStoreFactory", _wrap_new_FileStoreFactory, METH_VARARGS, "\n"
-		"FileStoreFactory(SessionSettings settings)\n"
+		"FileStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"new_FileStoreFactory(std::string const & path) -> FileStoreFactory\n"
+		"new_FileStoreFactory(path) -> FileStoreFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163331,7 +163331,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileStoreFactory_create", _wrap_FileStoreFactory_create, METH_VARARGS, "\n"
-		"FileStoreFactory_create(FileStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"FileStoreFactory_create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163340,18 +163340,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileStoreFactory_destroy", _wrap_FileStoreFactory_destroy, METH_VARARGS, "\n"
-		"FileStoreFactory_destroy(FileStoreFactory self, MessageStore arg2)\n"
+		"FileStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_FileStoreFactory", _wrap_delete_FileStoreFactory, METH_O, "delete_FileStoreFactory(FileStoreFactory self)"},
+	 { "delete_FileStoreFactory", _wrap_delete_FileStoreFactory, METH_O, "delete_FileStoreFactory(self)"},
 	 { "FileStoreFactory_swigregister", FileStoreFactory_swigregister, METH_O, NULL},
 	 { "FileStoreFactory_swiginit", FileStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_FileStore", _wrap_new_FileStore, METH_VARARGS, "\n"
-		"new_FileStore(UtcTimeStamp now, std::string arg2, SessionID sessionID) -> FileStore\n"
+		"new_FileStore(now, arg2, sessionID) -> FileStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163360,9 +163360,9 @@ static PyMethodDef SwigMethods[] = {
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "delete_FileStore", _wrap_delete_FileStore, METH_O, "delete_FileStore(FileStore self)"},
+	 { "delete_FileStore", _wrap_delete_FileStore, METH_O, "delete_FileStore(self)"},
 	 { "FileStore_set", _wrap_FileStore_set, METH_VARARGS, "\n"
-		"FileStore_set(FileStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"FileStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163371,7 +163371,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileStore_get", _wrap_FileStore_get, METH_VARARGS, "\n"
-		"FileStore_get(FileStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"FileStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163380,10 +163380,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "FileStore_getNextSenderMsgSeqNum", _wrap_FileStore_getNextSenderMsgSeqNum, METH_O, "FileStore_getNextSenderMsgSeqNum(FileStore self) -> FIX::SEQNUM"},
-	 { "FileStore_getNextTargetMsgSeqNum", _wrap_FileStore_getNextTargetMsgSeqNum, METH_O, "FileStore_getNextTargetMsgSeqNum(FileStore self) -> FIX::SEQNUM"},
+	 { "FileStore_getNextSenderMsgSeqNum", _wrap_FileStore_getNextSenderMsgSeqNum, METH_O, "FileStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "FileStore_getNextTargetMsgSeqNum", _wrap_FileStore_getNextTargetMsgSeqNum, METH_O, "FileStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "FileStore_setNextSenderMsgSeqNum", _wrap_FileStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"FileStore_setNextSenderMsgSeqNum(FileStore self, FIX::SEQNUM value)\n"
+		"FileStore_setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163391,30 +163391,30 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "FileStore_setNextTargetMsgSeqNum", _wrap_FileStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"FileStore_setNextTargetMsgSeqNum(FileStore self, FIX::SEQNUM value)\n"
+		"FileStore_setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "FileStore_incrNextSenderMsgSeqNum", _wrap_FileStore_incrNextSenderMsgSeqNum, METH_O, "FileStore_incrNextSenderMsgSeqNum(FileStore self)"},
-	 { "FileStore_incrNextTargetMsgSeqNum", _wrap_FileStore_incrNextTargetMsgSeqNum, METH_O, "FileStore_incrNextTargetMsgSeqNum(FileStore self)"},
-	 { "FileStore_getCreationTime", _wrap_FileStore_getCreationTime, METH_O, "FileStore_getCreationTime(FileStore self) -> UtcTimeStamp"},
+	 { "FileStore_incrNextSenderMsgSeqNum", _wrap_FileStore_incrNextSenderMsgSeqNum, METH_O, "FileStore_incrNextSenderMsgSeqNum(self)"},
+	 { "FileStore_incrNextTargetMsgSeqNum", _wrap_FileStore_incrNextTargetMsgSeqNum, METH_O, "FileStore_incrNextTargetMsgSeqNum(self)"},
+	 { "FileStore_getCreationTime", _wrap_FileStore_getCreationTime, METH_O, "FileStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "FileStore_reset", _wrap_FileStore_reset, METH_VARARGS, "\n"
-		"FileStore_reset(FileStore self, UtcTimeStamp now)\n"
+		"FileStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "FileStore_refresh", _wrap_FileStore_refresh, METH_O, "FileStore_refresh(FileStore self)"},
+	 { "FileStore_refresh", _wrap_FileStore_refresh, METH_O, "FileStore_refresh(self)"},
 	 { "FileStore_swigregister", FileStore_swigregister, METH_O, NULL},
 	 { "FileStore_swiginit", FileStore_swiginit, METH_VARARGS, NULL},
-	 { "delete_Application", _wrap_delete_Application, METH_O, "delete_Application(Application self)"},
+	 { "delete_Application", _wrap_delete_Application, METH_O, "delete_Application(self)"},
 	 { "Application_onCreate", _wrap_Application_onCreate, METH_VARARGS, "\n"
-		"Application_onCreate(Application self, SessionID arg0)\n"
+		"Application_onCreate(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163422,7 +163422,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_onLogon", _wrap_Application_onLogon, METH_VARARGS, "\n"
-		"Application_onLogon(Application self, SessionID arg0)\n"
+		"Application_onLogon(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163430,7 +163430,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_onLogout", _wrap_Application_onLogout, METH_VARARGS, "\n"
-		"Application_onLogout(Application self, SessionID arg0)\n"
+		"Application_onLogout(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163438,7 +163438,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_toAdmin", _wrap_Application_toAdmin, METH_VARARGS, "\n"
-		"Application_toAdmin(Application self, Message arg0, SessionID arg1)\n"
+		"Application_toAdmin(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163447,7 +163447,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_toApp", _wrap_Application_toApp, METH_VARARGS, "\n"
-		"Application_toApp(Application self, Message arg0, SessionID arg1)\n"
+		"Application_toApp(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163456,7 +163456,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_fromAdmin", _wrap_Application_fromAdmin, METH_VARARGS, "\n"
-		"Application_fromAdmin(Application self, Message arg0, SessionID arg1)\n"
+		"Application_fromAdmin(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163465,7 +163465,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Application_fromApp", _wrap_Application_fromApp, METH_VARARGS, "\n"
-		"Application_fromApp(Application self, Message arg0, SessionID arg1)\n"
+		"Application_fromApp(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163474,7 +163474,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_Application", _wrap_new_Application, METH_O, "\n"
-		"new_Application(PyObject * _self) -> Application\n"
+		"new_Application(_self) -> Application\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163485,7 +163485,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "Application_swigregister", Application_swigregister, METH_O, NULL},
 	 { "Application_swiginit", Application_swiginit, METH_VARARGS, NULL},
 	 { "new_SynchronizedApplication", _wrap_new_SynchronizedApplication, METH_O, "\n"
-		"new_SynchronizedApplication(Application app) -> SynchronizedApplication\n"
+		"new_SynchronizedApplication(app) -> SynchronizedApplication\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163493,7 +163493,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onCreate", _wrap_SynchronizedApplication_onCreate, METH_VARARGS, "\n"
-		"SynchronizedApplication_onCreate(SynchronizedApplication self, SessionID sessionID)\n"
+		"SynchronizedApplication_onCreate(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163501,7 +163501,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onLogon", _wrap_SynchronizedApplication_onLogon, METH_VARARGS, "\n"
-		"SynchronizedApplication_onLogon(SynchronizedApplication self, SessionID sessionID)\n"
+		"SynchronizedApplication_onLogon(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163509,7 +163509,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onLogout", _wrap_SynchronizedApplication_onLogout, METH_VARARGS, "\n"
-		"SynchronizedApplication_onLogout(SynchronizedApplication self, SessionID sessionID)\n"
+		"SynchronizedApplication_onLogout(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163517,7 +163517,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_toAdmin", _wrap_SynchronizedApplication_toAdmin, METH_VARARGS, "\n"
-		"SynchronizedApplication_toAdmin(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"SynchronizedApplication_toAdmin(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163526,7 +163526,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_toApp", _wrap_SynchronizedApplication_toApp, METH_VARARGS, "\n"
-		"SynchronizedApplication_toApp(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"SynchronizedApplication_toApp(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163535,7 +163535,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_fromAdmin", _wrap_SynchronizedApplication_fromAdmin, METH_VARARGS, "\n"
-		"SynchronizedApplication_fromAdmin(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"SynchronizedApplication_fromAdmin(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163544,7 +163544,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_fromApp", _wrap_SynchronizedApplication_fromApp, METH_VARARGS, "\n"
-		"SynchronizedApplication_fromApp(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"SynchronizedApplication_fromApp(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163553,54 +163553,54 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_m_mutex_set", _wrap_SynchronizedApplication_m_mutex_set, METH_VARARGS, "\n"
-		"SynchronizedApplication_m_mutex_set(SynchronizedApplication self, Mutex m_mutex)\n"
+		"SynchronizedApplication_m_mutex_set(self, m_mutex)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_mutex: Mutex\n"
 		"\n"
 		""},
-	 { "SynchronizedApplication_m_mutex_get", _wrap_SynchronizedApplication_m_mutex_get, METH_O, "SynchronizedApplication_m_mutex_get(SynchronizedApplication self) -> Mutex"},
-	 { "SynchronizedApplication_app", _wrap_SynchronizedApplication_app, METH_O, "SynchronizedApplication_app(SynchronizedApplication self) -> Application"},
+	 { "SynchronizedApplication_m_mutex_get", _wrap_SynchronizedApplication_m_mutex_get, METH_O, "SynchronizedApplication_m_mutex_get(self) -> Mutex"},
+	 { "SynchronizedApplication_app", _wrap_SynchronizedApplication_app, METH_O, "SynchronizedApplication_app(self) -> Application"},
 	 { "SynchronizedApplication_m_app_set", _wrap_SynchronizedApplication_m_app_set, METH_VARARGS, "\n"
-		"SynchronizedApplication_m_app_set(SynchronizedApplication self, Application m_app)\n"
+		"SynchronizedApplication_m_app_set(self, m_app)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_app: FIX::Application &\n"
 		"\n"
 		""},
-	 { "SynchronizedApplication_m_app_get", _wrap_SynchronizedApplication_m_app_get, METH_O, "SynchronizedApplication_m_app_get(SynchronizedApplication self) -> Application"},
-	 { "delete_SynchronizedApplication", _wrap_delete_SynchronizedApplication, METH_O, "delete_SynchronizedApplication(SynchronizedApplication self)"},
+	 { "SynchronizedApplication_m_app_get", _wrap_SynchronizedApplication_m_app_get, METH_O, "SynchronizedApplication_m_app_get(self) -> Application"},
+	 { "delete_SynchronizedApplication", _wrap_delete_SynchronizedApplication, METH_O, "delete_SynchronizedApplication(self)"},
 	 { "SynchronizedApplication_swigregister", SynchronizedApplication_swigregister, METH_O, NULL},
 	 { "SynchronizedApplication_swiginit", SynchronizedApplication_swiginit, METH_VARARGS, NULL},
 	 { "new_NullApplication", _wrap_new_NullApplication, METH_NOARGS, "new_NullApplication() -> NullApplication"},
-	 { "delete_NullApplication", _wrap_delete_NullApplication, METH_O, "delete_NullApplication(NullApplication self)"},
+	 { "delete_NullApplication", _wrap_delete_NullApplication, METH_O, "delete_NullApplication(self)"},
 	 { "NullApplication_swigregister", NullApplication_swigregister, METH_O, NULL},
 	 { "NullApplication_swiginit", NullApplication_swiginit, METH_VARARGS, NULL},
-	 { "delete_Initiator", _wrap_delete_Initiator, METH_O, "delete_Initiator(Initiator self)"},
-	 { "Initiator_start", _wrap_Initiator_start, METH_O, "Initiator_start(Initiator self)"},
-	 { "Initiator_block", _wrap_Initiator_block, METH_O, "Initiator_block(Initiator self)"},
-	 { "Initiator_poll", _wrap_Initiator_poll, METH_O, "Initiator_poll(Initiator self) -> bool"},
+	 { "delete_Initiator", _wrap_delete_Initiator, METH_O, "delete_Initiator(self)"},
+	 { "Initiator_start", _wrap_Initiator_start, METH_O, "Initiator_start(self)"},
+	 { "Initiator_block", _wrap_Initiator_block, METH_O, "Initiator_block(self)"},
+	 { "Initiator_poll", _wrap_Initiator_poll, METH_O, "Initiator_poll(self) -> bool"},
 	 { "Initiator_stop", _wrap_Initiator_stop, METH_VARARGS, "\n"
-		"Initiator_stop(Initiator self, bool force=False)\n"
+		"Initiator_stop(self, force=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"force: bool\n"
 		"\n"
 		""},
-	 { "Initiator_isLoggedOn", _wrap_Initiator_isLoggedOn, METH_O, "Initiator_isLoggedOn(Initiator self) -> bool"},
-	 { "Initiator_getSessions", _wrap_Initiator_getSessions, METH_O, "Initiator_getSessions(Initiator self) -> SessionIDSet"},
+	 { "Initiator_isLoggedOn", _wrap_Initiator_isLoggedOn, METH_O, "Initiator_isLoggedOn(self) -> bool"},
+	 { "Initiator_getSessions", _wrap_Initiator_getSessions, METH_O, "Initiator_getSessions(self) -> SessionIDSet"},
 	 { "Initiator_getSession", _wrap_Initiator_getSession, METH_VARARGS, "\n"
-		"Initiator_getSession(Initiator self, SessionID sessionID, Responder & arg3) -> Session\n"
+		"Initiator_getSession(self, sessionID, arg3) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sessionID: FIX::SessionID const &\n"
 		"arg3: Responder &\n"
 		"\n"
-		"Initiator_getSession(Initiator self, SessionID sessionID) -> Session\n"
+		"Initiator_getSession(self, sessionID) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163608,7 +163608,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Initiator_getSessionSettings", _wrap_Initiator_getSessionSettings, METH_VARARGS, "\n"
-		"Initiator_getSessionSettings(Initiator self, SessionID sessionID) -> Dictionary\n"
+		"Initiator_getSessionSettings(self, sessionID) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163616,20 +163616,20 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Initiator_has", _wrap_Initiator_has, METH_VARARGS, "\n"
-		"Initiator_has(Initiator self, SessionID id) -> bool\n"
+		"Initiator_has(self, id) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "Initiator_isStopped", _wrap_Initiator_isStopped, METH_O, "Initiator_isStopped(Initiator self) -> bool"},
-	 { "Initiator_getApplication", _wrap_Initiator_getApplication, METH_O, "Initiator_getApplication(Initiator self) -> Application"},
-	 { "Initiator_getMessageStoreFactory", _wrap_Initiator_getMessageStoreFactory, METH_O, "Initiator_getMessageStoreFactory(Initiator self) -> MessageStoreFactory"},
-	 { "Initiator_getLog", _wrap_Initiator_getLog, METH_O, "Initiator_getLog(Initiator self) -> Log"},
+	 { "Initiator_isStopped", _wrap_Initiator_isStopped, METH_O, "Initiator_isStopped(self) -> bool"},
+	 { "Initiator_getApplication", _wrap_Initiator_getApplication, METH_O, "Initiator_getApplication(self) -> Application"},
+	 { "Initiator_getMessageStoreFactory", _wrap_Initiator_getMessageStoreFactory, METH_O, "Initiator_getMessageStoreFactory(self) -> MessageStoreFactory"},
+	 { "Initiator_getLog", _wrap_Initiator_getLog, METH_O, "Initiator_getLog(self) -> Log"},
 	 { "Initiator_swigregister", Initiator_swigregister, METH_O, NULL},
 	 { "new_SocketInitiatorBase", _wrap_new_SocketInitiatorBase, METH_VARARGS, "\n"
-		"SocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163637,7 +163637,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SocketInitiatorBase\n"
+		"new_SocketInitiatorBase(arg1, arg2, arg3, arg4) -> SocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163647,33 +163647,33 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SocketInitiatorBase", _wrap_delete_SocketInitiatorBase, METH_O, "delete_SocketInitiatorBase(SocketInitiatorBase self)"},
+	 { "delete_SocketInitiatorBase", _wrap_delete_SocketInitiatorBase, METH_O, "delete_SocketInitiatorBase(self)"},
 	 { "SocketInitiatorBase_swigregister", SocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "SocketInitiatorBase_swiginit", SocketInitiatorBase_swiginit, METH_VARARGS, NULL},
-	 { "delete_Acceptor", _wrap_delete_Acceptor, METH_O, "delete_Acceptor(Acceptor self)"},
-	 { "Acceptor_getLog", _wrap_Acceptor_getLog, METH_O, "Acceptor_getLog(Acceptor self) -> Log"},
-	 { "Acceptor_start", _wrap_Acceptor_start, METH_O, "Acceptor_start(Acceptor self)"},
-	 { "Acceptor_block", _wrap_Acceptor_block, METH_O, "Acceptor_block(Acceptor self)"},
-	 { "Acceptor_poll", _wrap_Acceptor_poll, METH_O, "Acceptor_poll(Acceptor self) -> bool"},
+	 { "delete_Acceptor", _wrap_delete_Acceptor, METH_O, "delete_Acceptor(self)"},
+	 { "Acceptor_getLog", _wrap_Acceptor_getLog, METH_O, "Acceptor_getLog(self) -> Log"},
+	 { "Acceptor_start", _wrap_Acceptor_start, METH_O, "Acceptor_start(self)"},
+	 { "Acceptor_block", _wrap_Acceptor_block, METH_O, "Acceptor_block(self)"},
+	 { "Acceptor_poll", _wrap_Acceptor_poll, METH_O, "Acceptor_poll(self) -> bool"},
 	 { "Acceptor_stop", _wrap_Acceptor_stop, METH_VARARGS, "\n"
-		"Acceptor_stop(Acceptor self, bool force=False)\n"
+		"Acceptor_stop(self, force=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"force: bool\n"
 		"\n"
 		""},
-	 { "Acceptor_isLoggedOn", _wrap_Acceptor_isLoggedOn, METH_O, "Acceptor_isLoggedOn(Acceptor self) -> bool"},
-	 { "Acceptor_getSessions", _wrap_Acceptor_getSessions, METH_O, "Acceptor_getSessions(Acceptor self) -> SessionIDSet"},
+	 { "Acceptor_isLoggedOn", _wrap_Acceptor_isLoggedOn, METH_O, "Acceptor_isLoggedOn(self) -> bool"},
+	 { "Acceptor_getSessions", _wrap_Acceptor_getSessions, METH_O, "Acceptor_getSessions(self) -> SessionIDSet"},
 	 { "Acceptor_getSession", _wrap_Acceptor_getSession, METH_VARARGS, "\n"
-		"Acceptor_getSession(Acceptor self, std::string const & msg, Responder & arg3) -> Session\n"
+		"Acceptor_getSession(self, msg, arg3) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"msg: std::string const &\n"
 		"arg3: Responder &\n"
 		"\n"
-		"Acceptor_getSession(Acceptor self, SessionID sessionID) -> Session\n"
+		"Acceptor_getSession(self, sessionID) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163681,7 +163681,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Acceptor_getSessionSettings", _wrap_Acceptor_getSessionSettings, METH_VARARGS, "\n"
-		"Acceptor_getSessionSettings(Acceptor self, SessionID sessionID) -> Dictionary\n"
+		"Acceptor_getSessionSettings(self, sessionID) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163689,19 +163689,19 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "Acceptor_has", _wrap_Acceptor_has, METH_VARARGS, "\n"
-		"Acceptor_has(Acceptor self, SessionID id) -> bool\n"
+		"Acceptor_has(self, id) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "Acceptor_isStopped", _wrap_Acceptor_isStopped, METH_O, "Acceptor_isStopped(Acceptor self) -> bool"},
-	 { "Acceptor_getApplication", _wrap_Acceptor_getApplication, METH_O, "Acceptor_getApplication(Acceptor self) -> Application"},
-	 { "Acceptor_getMessageStoreFactory", _wrap_Acceptor_getMessageStoreFactory, METH_O, "Acceptor_getMessageStoreFactory(Acceptor self) -> MessageStoreFactory"},
+	 { "Acceptor_isStopped", _wrap_Acceptor_isStopped, METH_O, "Acceptor_isStopped(self) -> bool"},
+	 { "Acceptor_getApplication", _wrap_Acceptor_getApplication, METH_O, "Acceptor_getApplication(self) -> Application"},
+	 { "Acceptor_getMessageStoreFactory", _wrap_Acceptor_getMessageStoreFactory, METH_O, "Acceptor_getMessageStoreFactory(self) -> MessageStoreFactory"},
 	 { "Acceptor_swigregister", Acceptor_swigregister, METH_O, NULL},
 	 { "new_SocketAcceptorBase", _wrap_new_SocketAcceptorBase, METH_VARARGS, "\n"
-		"SocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163709,7 +163709,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SocketAcceptorBase\n"
+		"new_SocketAcceptorBase(arg1, arg2, arg3, arg4) -> SocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163719,26 +163719,26 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SocketAcceptorBase", _wrap_delete_SocketAcceptorBase, METH_O, "delete_SocketAcceptorBase(SocketAcceptorBase self)"},
-	 { "SocketAcceptorBase_sessionToPort", _wrap_SocketAcceptorBase_sessionToPort, METH_O, "SocketAcceptorBase_sessionToPort(SocketAcceptorBase self) -> FIX::SocketAcceptor::SessionToPort const &"},
+	 { "delete_SocketAcceptorBase", _wrap_delete_SocketAcceptorBase, METH_O, "delete_SocketAcceptorBase(self)"},
+	 { "SocketAcceptorBase_sessionToPort", _wrap_SocketAcceptorBase_sessionToPort, METH_O, "SocketAcceptorBase_sessionToPort(self) -> FIX::SocketAcceptor::SessionToPort const &"},
 	 { "SocketAcceptorBase_swigregister", SocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "SocketAcceptorBase_swiginit", SocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_DataDictionary", _wrap_new_DataDictionary, METH_VARARGS, "\n"
 		"DataDictionary()\n"
-		"DataDictionary(DataDictionary copy)\n"
+		"DataDictionary(copy)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::DataDictionary const &\n"
 		"\n"
-		"DataDictionary(std::istream & stream, bool preserveMsgFldsOrder=False)\n"
+		"DataDictionary(stream, preserveMsgFldsOrder=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"preserveMsgFldsOrder: bool\n"
 		"\n"
-		"DataDictionary(std::string const & url, bool preserveMsgFldsOrder=False)\n"
+		"DataDictionary(url, preserveMsgFldsOrder=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163746,9 +163746,9 @@ static PyMethodDef SwigMethods[] = {
 		"preserveMsgFldsOrder: bool\n"
 		"\n"
 		""},
-	 { "delete_DataDictionary", _wrap_delete_DataDictionary, METH_O, "delete_DataDictionary(DataDictionary self)"},
+	 { "delete_DataDictionary", _wrap_delete_DataDictionary, METH_O, "delete_DataDictionary(self)"},
 	 { "DataDictionary_readFromURL", _wrap_DataDictionary_readFromURL, METH_VARARGS, "\n"
-		"DataDictionary_readFromURL(DataDictionary self, std::string const & url)\n"
+		"DataDictionary_readFromURL(self, url)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163756,7 +163756,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_readFromDocument", _wrap_DataDictionary_readFromDocument, METH_VARARGS, "\n"
-		"DataDictionary_readFromDocument(DataDictionary self, DOMDocumentPtr const & pDoc)\n"
+		"DataDictionary_readFromDocument(self, pDoc)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163764,18 +163764,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_readFromStream", _wrap_DataDictionary_readFromStream, METH_VARARGS, "\n"
-		"DataDictionary_readFromStream(DataDictionary self, std::istream & stream)\n"
+		"DataDictionary_readFromStream(self, stream)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"\n"
 		""},
-	 { "DataDictionary_getOrderedFields", _wrap_DataDictionary_getOrderedFields, METH_O, "DataDictionary_getOrderedFields(DataDictionary self) -> message_order const &"},
-	 { "DataDictionary_getHeaderOrderedFields", _wrap_DataDictionary_getHeaderOrderedFields, METH_O, "DataDictionary_getHeaderOrderedFields(DataDictionary self) -> message_order const &"},
-	 { "DataDictionary_getTrailerOrderedFields", _wrap_DataDictionary_getTrailerOrderedFields, METH_O, "DataDictionary_getTrailerOrderedFields(DataDictionary self) -> message_order const &"},
+	 { "DataDictionary_getOrderedFields", _wrap_DataDictionary_getOrderedFields, METH_O, "DataDictionary_getOrderedFields(self) -> message_order const &"},
+	 { "DataDictionary_getHeaderOrderedFields", _wrap_DataDictionary_getHeaderOrderedFields, METH_O, "DataDictionary_getHeaderOrderedFields(self) -> message_order const &"},
+	 { "DataDictionary_getTrailerOrderedFields", _wrap_DataDictionary_getTrailerOrderedFields, METH_O, "DataDictionary_getTrailerOrderedFields(self) -> message_order const &"},
 	 { "DataDictionary_getMessageOrderedFields", _wrap_DataDictionary_getMessageOrderedFields, METH_VARARGS, "\n"
-		"DataDictionary_getMessageOrderedFields(DataDictionary self, std::string const & msgType) -> message_order const &\n"
+		"DataDictionary_getMessageOrderedFields(self, msgType) -> message_order const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163783,16 +163783,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_setVersion", _wrap_DataDictionary_setVersion, METH_VARARGS, "\n"
-		"DataDictionary_setVersion(DataDictionary self, std::string const & beginString)\n"
+		"DataDictionary_setVersion(self, beginString)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"beginString: std::string const &\n"
 		"\n"
 		""},
-	 { "DataDictionary_getVersion", _wrap_DataDictionary_getVersion, METH_O, "DataDictionary_getVersion(DataDictionary self) -> std::string"},
+	 { "DataDictionary_getVersion", _wrap_DataDictionary_getVersion, METH_O, "DataDictionary_getVersion(self) -> std::string"},
 	 { "DataDictionary_addField", _wrap_DataDictionary_addField, METH_VARARGS, "\n"
-		"DataDictionary_addField(DataDictionary self, int field)\n"
+		"DataDictionary_addField(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163800,7 +163800,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldName", _wrap_DataDictionary_addFieldName, METH_VARARGS, "\n"
-		"DataDictionary_addFieldName(DataDictionary self, int field, std::string const & name)\n"
+		"DataDictionary_addFieldName(self, field, name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163809,7 +163809,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldName", _wrap_DataDictionary_getFieldName, METH_VARARGS, "\n"
-		"DataDictionary_getFieldName(DataDictionary self, int field, std::string & name) -> bool\n"
+		"DataDictionary_getFieldName(self, field, name) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163818,7 +163818,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldTag", _wrap_DataDictionary_getFieldTag, METH_VARARGS, "\n"
-		"DataDictionary_getFieldTag(DataDictionary self, std::string const & name, int & field) -> bool\n"
+		"DataDictionary_getFieldTag(self, name, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163827,7 +163827,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addValueName", _wrap_DataDictionary_addValueName, METH_VARARGS, "\n"
-		"DataDictionary_addValueName(DataDictionary self, int field, std::string const & value, std::string const & name)\n"
+		"DataDictionary_addValueName(self, field, value, name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163837,7 +163837,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getValueName", _wrap_DataDictionary_getValueName, METH_VARARGS, "\n"
-		"DataDictionary_getValueName(DataDictionary self, int field, std::string const & value, std::string & name) -> bool\n"
+		"DataDictionary_getValueName(self, field, value, name) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163847,7 +163847,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getNameValue", _wrap_DataDictionary_getNameValue, METH_VARARGS, "\n"
-		"DataDictionary_getNameValue(DataDictionary self, int field, std::string const & name, std::string & value) -> bool\n"
+		"DataDictionary_getNameValue(self, field, name, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163857,7 +163857,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isField", _wrap_DataDictionary_isField, METH_VARARGS, "\n"
-		"DataDictionary_isField(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_isField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163865,7 +163865,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addMsgType", _wrap_DataDictionary_addMsgType, METH_VARARGS, "\n"
-		"DataDictionary_addMsgType(DataDictionary self, std::string const & msgType)\n"
+		"DataDictionary_addMsgType(self, msgType)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163873,7 +163873,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMsgType", _wrap_DataDictionary_isMsgType, METH_VARARGS, "\n"
-		"DataDictionary_isMsgType(DataDictionary self, std::string const & msgType) -> bool\n"
+		"DataDictionary_isMsgType(self, msgType) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163881,7 +163881,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addMsgField", _wrap_DataDictionary_addMsgField, METH_VARARGS, "\n"
-		"DataDictionary_addMsgField(DataDictionary self, std::string const & msgType, int field)\n"
+		"DataDictionary_addMsgField(self, msgType, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163890,7 +163890,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMsgField", _wrap_DataDictionary_isMsgField, METH_VARARGS, "\n"
-		"DataDictionary_isMsgField(DataDictionary self, std::string const & msgType, int field) -> bool\n"
+		"DataDictionary_isMsgField(self, msgType, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163899,7 +163899,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addHeaderField", _wrap_DataDictionary_addHeaderField, METH_VARARGS, "\n"
-		"DataDictionary_addHeaderField(DataDictionary self, int field, bool required)\n"
+		"DataDictionary_addHeaderField(self, field, required)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163908,7 +163908,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isHeaderField", _wrap_DataDictionary_isHeaderField, METH_VARARGS, "\n"
-		"DataDictionary_isHeaderField(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_isHeaderField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163916,7 +163916,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addTrailerField", _wrap_DataDictionary_addTrailerField, METH_VARARGS, "\n"
-		"DataDictionary_addTrailerField(DataDictionary self, int field, bool required)\n"
+		"DataDictionary_addTrailerField(self, field, required)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163925,7 +163925,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isTrailerField", _wrap_DataDictionary_isTrailerField, METH_VARARGS, "\n"
-		"DataDictionary_isTrailerField(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_isTrailerField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163933,7 +163933,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldType", _wrap_DataDictionary_addFieldType, METH_VARARGS, "\n"
-		"DataDictionary_addFieldType(DataDictionary self, int field, FIX::TYPE::Type type)\n"
+		"DataDictionary_addFieldType(self, field, type)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163942,7 +163942,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldType", _wrap_DataDictionary_getFieldType, METH_VARARGS, "\n"
-		"DataDictionary_getFieldType(DataDictionary self, int field, FIX::TYPE::Type & type) -> bool\n"
+		"DataDictionary_getFieldType(self, field, type) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163951,7 +163951,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addRequiredField", _wrap_DataDictionary_addRequiredField, METH_VARARGS, "\n"
-		"DataDictionary_addRequiredField(DataDictionary self, std::string const & msgType, int field)\n"
+		"DataDictionary_addRequiredField(self, msgType, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163960,7 +163960,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isRequiredField", _wrap_DataDictionary_isRequiredField, METH_VARARGS, "\n"
-		"DataDictionary_isRequiredField(DataDictionary self, std::string const & msgType, int field) -> bool\n"
+		"DataDictionary_isRequiredField(self, msgType, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163969,7 +163969,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldValue", _wrap_DataDictionary_addFieldValue, METH_VARARGS, "\n"
-		"DataDictionary_addFieldValue(DataDictionary self, int field, std::string const & value)\n"
+		"DataDictionary_addFieldValue(self, field, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163978,7 +163978,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_hasFieldValue", _wrap_DataDictionary_hasFieldValue, METH_VARARGS, "\n"
-		"DataDictionary_hasFieldValue(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_hasFieldValue(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163986,7 +163986,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isFieldValue", _wrap_DataDictionary_isFieldValue, METH_VARARGS, "\n"
-		"DataDictionary_isFieldValue(DataDictionary self, int field, std::string const & value) -> bool\n"
+		"DataDictionary_isFieldValue(self, field, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -163995,7 +163995,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addGroup", _wrap_DataDictionary_addGroup, METH_VARARGS, "\n"
-		"DataDictionary_addGroup(DataDictionary self, std::string const & msg, int field, int delim, DataDictionary dataDictionary)\n"
+		"DataDictionary_addGroup(self, msg, field, delim, dataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164006,7 +164006,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isGroup", _wrap_DataDictionary_isGroup, METH_VARARGS, "\n"
-		"DataDictionary_isGroup(DataDictionary self, std::string const & msg, int field) -> bool\n"
+		"DataDictionary_isGroup(self, msg, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164015,7 +164015,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getGroup", _wrap_DataDictionary_getGroup, METH_VARARGS, "\n"
-		"DataDictionary_getGroup(DataDictionary self, std::string const & msg, int field, int & delim, FIX::DataDictionary const *& pDataDictionary) -> bool\n"
+		"DataDictionary_getGroup(self, msg, field, delim, pDataDictionary) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164026,7 +164026,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isDataField", _wrap_DataDictionary_isDataField, METH_VARARGS, "\n"
-		"DataDictionary_isDataField(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_isDataField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164034,7 +164034,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMultipleValueField", _wrap_DataDictionary_isMultipleValueField, METH_VARARGS, "\n"
-		"DataDictionary_isMultipleValueField(DataDictionary self, int field) -> bool\n"
+		"DataDictionary_isMultipleValueField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164042,7 +164042,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkFieldsOutOfOrder", _wrap_DataDictionary_checkFieldsOutOfOrder, METH_VARARGS, "\n"
-		"DataDictionary_checkFieldsOutOfOrder(DataDictionary self, bool value)\n"
+		"DataDictionary_checkFieldsOutOfOrder(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164050,7 +164050,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkFieldsHaveValues", _wrap_DataDictionary_checkFieldsHaveValues, METH_VARARGS, "\n"
-		"DataDictionary_checkFieldsHaveValues(DataDictionary self, bool value)\n"
+		"DataDictionary_checkFieldsHaveValues(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164058,7 +164058,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkUserDefinedFields", _wrap_DataDictionary_checkUserDefinedFields, METH_VARARGS, "\n"
-		"DataDictionary_checkUserDefinedFields(DataDictionary self, bool value)\n"
+		"DataDictionary_checkUserDefinedFields(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164066,7 +164066,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_allowUnknownMsgFields", _wrap_DataDictionary_allowUnknownMsgFields, METH_VARARGS, "\n"
-		"DataDictionary_allowUnknownMsgFields(DataDictionary self, bool value)\n"
+		"DataDictionary_allowUnknownMsgFields(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164074,16 +164074,16 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "DataDictionary_preserveMessageFieldsOrder", _wrap_DataDictionary_preserveMessageFieldsOrder, METH_VARARGS, "\n"
-		"DataDictionary_preserveMessageFieldsOrder(DataDictionary self, bool value)\n"
+		"DataDictionary_preserveMessageFieldsOrder(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "DataDictionary_isMessageFieldsOrderPreserved", _wrap_DataDictionary_isMessageFieldsOrderPreserved, METH_O, "DataDictionary_isMessageFieldsOrderPreserved(DataDictionary self) -> bool"},
+	 { "DataDictionary_isMessageFieldsOrderPreserved", _wrap_DataDictionary_isMessageFieldsOrderPreserved, METH_O, "DataDictionary_isMessageFieldsOrderPreserved(self) -> bool"},
 	 { "DataDictionary_validate", _wrap_DataDictionary_validate, METH_VARARGS, "\n"
-		"DataDictionary_validate(DataDictionary self, Message message, DataDictionary pSessionDD, DataDictionary pAppID)\n"
+		"DataDictionary_validate(self, message, pSessionDD, pAppID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164091,13 +164091,13 @@ static PyMethodDef SwigMethods[] = {
 		"pSessionDD: FIX::DataDictionary const *const\n"
 		"pAppID: FIX::DataDictionary const *const\n"
 		"\n"
-		"DataDictionary_validate(DataDictionary self, Message message)\n"
+		"DataDictionary_validate(self, message)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message const &\n"
 		"\n"
-		"DataDictionary_validate(DataDictionary self, Message message, bool bodyOnly)\n"
+		"DataDictionary_validate(self, message, bodyOnly)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164108,7 +164108,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "DataDictionary_swigregister", DataDictionary_swigregister, METH_O, NULL},
 	 { "DataDictionary_swiginit", DataDictionary_swiginit, METH_VARARGS, NULL},
 	 { "new_SSLSocketAcceptorBase", _wrap_new_SSLSocketAcceptorBase, METH_VARARGS, "\n"
-		"SSLSocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SSLSocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164116,7 +164116,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SSLSocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SSLSocketAcceptorBase\n"
+		"new_SSLSocketAcceptorBase(arg1, arg2, arg3, arg4) -> SSLSocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164126,9 +164126,9 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SSLSocketAcceptorBase", _wrap_delete_SSLSocketAcceptorBase, METH_O, "delete_SSLSocketAcceptorBase(SSLSocketAcceptorBase self)"},
+	 { "delete_SSLSocketAcceptorBase", _wrap_delete_SSLSocketAcceptorBase, METH_O, "delete_SSLSocketAcceptorBase(self)"},
 	 { "SSLSocketAcceptorBase_setPassword", _wrap_SSLSocketAcceptorBase_setPassword, METH_VARARGS, "\n"
-		"SSLSocketAcceptorBase_setPassword(SSLSocketAcceptorBase self, std::string const & pwd)\n"
+		"SSLSocketAcceptorBase_setPassword(self, pwd)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164136,7 +164136,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SSLSocketAcceptorBase_passwordHandleCallback", _wrap_SSLSocketAcceptorBase_passwordHandleCallback, METH_VARARGS, "\n"
-		"SSLSocketAcceptorBase_passwordHandleCallback(SSLSocketAcceptorBase self, char * buf, size_t bufsize, int verify) -> int\n"
+		"SSLSocketAcceptorBase_passwordHandleCallback(self, buf, bufsize, verify) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164146,7 +164146,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SSLSocketAcceptorBase_passPhraseHandleCB", _wrap_SSLSocketAcceptorBase_passPhraseHandleCB, METH_VARARGS, "\n"
-		"SSLSocketAcceptorBase_passPhraseHandleCB(char * buf, int bufsize, int verify, void * instance) -> int\n"
+		"SSLSocketAcceptorBase_passPhraseHandleCB(buf, bufsize, verify, instance) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164159,7 +164159,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "SSLSocketAcceptorBase_swigregister", SSLSocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "SSLSocketAcceptorBase_swiginit", SSLSocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_SSLSocketInitiatorBase", _wrap_new_SSLSocketInitiatorBase, METH_VARARGS, "\n"
-		"SSLSocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SSLSocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164167,7 +164167,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SSLSocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SSLSocketInitiatorBase\n"
+		"new_SSLSocketInitiatorBase(arg1, arg2, arg3, arg4) -> SSLSocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164177,9 +164177,9 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SSLSocketInitiatorBase", _wrap_delete_SSLSocketInitiatorBase, METH_O, "delete_SSLSocketInitiatorBase(SSLSocketInitiatorBase self)"},
+	 { "delete_SSLSocketInitiatorBase", _wrap_delete_SSLSocketInitiatorBase, METH_O, "delete_SSLSocketInitiatorBase(self)"},
 	 { "SSLSocketInitiatorBase_setPassword", _wrap_SSLSocketInitiatorBase_setPassword, METH_VARARGS, "\n"
-		"SSLSocketInitiatorBase_setPassword(SSLSocketInitiatorBase self, std::string const & pwd)\n"
+		"SSLSocketInitiatorBase_setPassword(self, pwd)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164187,7 +164187,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_setCertAndKey", _wrap_SSLSocketInitiatorBase_setCertAndKey, METH_VARARGS, "\n"
-		"SSLSocketInitiatorBase_setCertAndKey(SSLSocketInitiatorBase self, X509 * cert, RSA * key)\n"
+		"SSLSocketInitiatorBase_setCertAndKey(self, cert, key)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164196,7 +164196,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_passwordHandleCallback", _wrap_SSLSocketInitiatorBase_passwordHandleCallback, METH_VARARGS, "\n"
-		"SSLSocketInitiatorBase_passwordHandleCallback(SSLSocketInitiatorBase self, char * buf, size_t bufsize, int verify) -> int\n"
+		"SSLSocketInitiatorBase_passwordHandleCallback(self, buf, bufsize, verify) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164206,7 +164206,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_passwordHandleCB", _wrap_SSLSocketInitiatorBase_passwordHandleCB, METH_VARARGS, "\n"
-		"SSLSocketInitiatorBase_passwordHandleCB(char * buf, int bufsize, int verify, void * instance) -> int\n"
+		"SSLSocketInitiatorBase_passwordHandleCB(buf, bufsize, verify, instance) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164219,7 +164219,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "SSLSocketInitiatorBase_swigregister", SSLSocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "SSLSocketInitiatorBase_swiginit", SSLSocketInitiatorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_DatabaseConnectionID", _wrap_new_DatabaseConnectionID, METH_VARARGS, "\n"
-		"new_DatabaseConnectionID(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> DatabaseConnectionID\n"
+		"new_DatabaseConnectionID(database, user, password, host, port) -> DatabaseConnectionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164231,49 +164231,49 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__lt__", _wrap___lt__, METH_VARARGS, "\n"
-		"__lt__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__lt__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__lt__(StringField arg1, char const * arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__lt__(char const * arg1, StringField arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__lt__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__lt__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__lt__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__lt__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164282,49 +164282,49 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__eq__", _wrap___eq__, METH_VARARGS, "\n"
-		"__eq__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__eq__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__eq__(StringField arg1, char const * arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__eq__(char const * arg1, StringField arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__eq__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__eq__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__eq__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__eq__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164333,49 +164333,49 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "__ne__", _wrap___ne__, METH_VARARGS, "\n"
-		"__ne__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__ne__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__ne__(StringField arg1, char const * arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__ne__(char const * arg1, StringField arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ne__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__ne__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ne__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__ne__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164383,36 +164383,36 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::DatabaseConnectionID const &\n"
 		"\n"
 		""},
-	 { "DatabaseConnectionID_getDatabase", _wrap_DatabaseConnectionID_getDatabase, METH_O, "DatabaseConnectionID_getDatabase(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getUser", _wrap_DatabaseConnectionID_getUser, METH_O, "DatabaseConnectionID_getUser(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getPassword", _wrap_DatabaseConnectionID_getPassword, METH_O, "DatabaseConnectionID_getPassword(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getHost", _wrap_DatabaseConnectionID_getHost, METH_O, "DatabaseConnectionID_getHost(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getPort", _wrap_DatabaseConnectionID_getPort, METH_O, "DatabaseConnectionID_getPort(DatabaseConnectionID self) -> short"},
-	 { "delete_DatabaseConnectionID", _wrap_delete_DatabaseConnectionID, METH_O, "delete_DatabaseConnectionID(DatabaseConnectionID self)"},
+	 { "DatabaseConnectionID_getDatabase", _wrap_DatabaseConnectionID_getDatabase, METH_O, "DatabaseConnectionID_getDatabase(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getUser", _wrap_DatabaseConnectionID_getUser, METH_O, "DatabaseConnectionID_getUser(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getPassword", _wrap_DatabaseConnectionID_getPassword, METH_O, "DatabaseConnectionID_getPassword(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getHost", _wrap_DatabaseConnectionID_getHost, METH_O, "DatabaseConnectionID_getHost(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getPort", _wrap_DatabaseConnectionID_getPort, METH_O, "DatabaseConnectionID_getPort(self) -> short"},
+	 { "delete_DatabaseConnectionID", _wrap_delete_DatabaseConnectionID, METH_O, "delete_DatabaseConnectionID(self)"},
 	 { "DatabaseConnectionID_swigregister", DatabaseConnectionID_swigregister, METH_O, NULL},
 	 { "DatabaseConnectionID_swiginit", DatabaseConnectionID_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLQuery", _wrap_new_MySQLQuery, METH_O, "\n"
-		"new_MySQLQuery(std::string const & query) -> MySQLQuery\n"
+		"new_MySQLQuery(query) -> MySQLQuery\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"query: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_MySQLQuery", _wrap_delete_MySQLQuery, METH_O, "delete_MySQLQuery(MySQLQuery self)"},
+	 { "delete_MySQLQuery", _wrap_delete_MySQLQuery, METH_O, "delete_MySQLQuery(self)"},
 	 { "MySQLQuery_execute", _wrap_MySQLQuery_execute, METH_VARARGS, "\n"
-		"MySQLQuery_execute(MySQLQuery self, MYSQL * pConnection) -> bool\n"
+		"MySQLQuery_execute(self, pConnection) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pConnection: MYSQL *\n"
 		"\n"
 		""},
-	 { "MySQLQuery_success", _wrap_MySQLQuery_success, METH_O, "MySQLQuery_success(MySQLQuery self) -> bool"},
-	 { "MySQLQuery_rows", _wrap_MySQLQuery_rows, METH_O, "MySQLQuery_rows(MySQLQuery self) -> int"},
-	 { "MySQLQuery_reason", _wrap_MySQLQuery_reason, METH_O, "MySQLQuery_reason(MySQLQuery self) -> std::string const &"},
+	 { "MySQLQuery_success", _wrap_MySQLQuery_success, METH_O, "MySQLQuery_success(self) -> bool"},
+	 { "MySQLQuery_rows", _wrap_MySQLQuery_rows, METH_O, "MySQLQuery_rows(self) -> int"},
+	 { "MySQLQuery_reason", _wrap_MySQLQuery_reason, METH_O, "MySQLQuery_reason(self) -> std::string const &"},
 	 { "MySQLQuery_getValue", _wrap_MySQLQuery_getValue, METH_VARARGS, "\n"
-		"MySQLQuery_getValue(MySQLQuery self, int row, int column) -> char *\n"
+		"MySQLQuery_getValue(self, row, column) -> char *\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164420,17 +164420,17 @@ static PyMethodDef SwigMethods[] = {
 		"column: int\n"
 		"\n"
 		""},
-	 { "MySQLQuery_throwException", _wrap_MySQLQuery_throwException, METH_O, "MySQLQuery_throwException(MySQLQuery self)"},
+	 { "MySQLQuery_throwException", _wrap_MySQLQuery_throwException, METH_O, "MySQLQuery_throwException(self)"},
 	 { "MySQLQuery_swigregister", MySQLQuery_swigregister, METH_O, NULL},
 	 { "MySQLQuery_swiginit", MySQLQuery_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLConnection", _wrap_new_MySQLConnection, METH_VARARGS, "\n"
-		"MySQLConnection(DatabaseConnectionID id)\n"
+		"MySQLConnection(id)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::DatabaseConnectionID const &\n"
 		"\n"
-		"new_MySQLConnection(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLConnection\n"
+		"new_MySQLConnection(database, user, password, host, port) -> MySQLConnection\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164441,12 +164441,12 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLConnection", _wrap_delete_MySQLConnection, METH_O, "delete_MySQLConnection(MySQLConnection self)"},
-	 { "MySQLConnection_connectionID", _wrap_MySQLConnection_connectionID, METH_O, "MySQLConnection_connectionID(MySQLConnection self) -> DatabaseConnectionID"},
-	 { "MySQLConnection_connected", _wrap_MySQLConnection_connected, METH_O, "MySQLConnection_connected(MySQLConnection self) -> bool"},
-	 { "MySQLConnection_reconnect", _wrap_MySQLConnection_reconnect, METH_O, "MySQLConnection_reconnect(MySQLConnection self) -> bool"},
+	 { "delete_MySQLConnection", _wrap_delete_MySQLConnection, METH_O, "delete_MySQLConnection(self)"},
+	 { "MySQLConnection_connectionID", _wrap_MySQLConnection_connectionID, METH_O, "MySQLConnection_connectionID(self) -> DatabaseConnectionID"},
+	 { "MySQLConnection_connected", _wrap_MySQLConnection_connected, METH_O, "MySQLConnection_connected(self) -> bool"},
+	 { "MySQLConnection_reconnect", _wrap_MySQLConnection_reconnect, METH_O, "MySQLConnection_reconnect(self) -> bool"},
 	 { "MySQLConnection_execute", _wrap_MySQLConnection_execute, METH_VARARGS, "\n"
-		"MySQLConnection_execute(MySQLConnection self, MySQLQuery pQuery) -> bool\n"
+		"MySQLConnection_execute(self, pQuery) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164456,19 +164456,19 @@ static PyMethodDef SwigMethods[] = {
 	 { "MySQLConnection_swigregister", MySQLConnection_swigregister, METH_O, NULL},
 	 { "MySQLConnection_swiginit", MySQLConnection_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLStoreFactory", _wrap_new_MySQLStoreFactory, METH_VARARGS, "\n"
-		"MySQLStoreFactory(SessionSettings settings)\n"
+		"MySQLStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"MySQLStoreFactory(Dictionary dictionary)\n"
+		"MySQLStoreFactory(dictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dictionary: FIX::Dictionary const &\n"
 		"\n"
-		"MySQLStoreFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLStoreFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164481,7 +164481,7 @@ static PyMethodDef SwigMethods[] = {
 		"new_MySQLStoreFactory() -> MySQLStoreFactory\n"
 		""},
 	 { "MySQLStoreFactory_create", _wrap_MySQLStoreFactory_create, METH_VARARGS, "\n"
-		"MySQLStoreFactory_create(MySQLStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"MySQLStoreFactory_create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164490,18 +164490,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLStoreFactory_destroy", _wrap_MySQLStoreFactory_destroy, METH_VARARGS, "\n"
-		"MySQLStoreFactory_destroy(MySQLStoreFactory self, MessageStore arg2)\n"
+		"MySQLStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MySQLStoreFactory", _wrap_delete_MySQLStoreFactory, METH_O, "delete_MySQLStoreFactory(MySQLStoreFactory self)"},
+	 { "delete_MySQLStoreFactory", _wrap_delete_MySQLStoreFactory, METH_O, "delete_MySQLStoreFactory(self)"},
 	 { "MySQLStoreFactory_swigregister", MySQLStoreFactory_swigregister, METH_O, NULL},
 	 { "MySQLStoreFactory_swiginit", MySQLStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLStore", _wrap_new_MySQLStore, METH_VARARGS, "\n"
-		"MySQLStore(UtcTimeStamp now, SessionID sessionID, DatabaseConnectionID connection, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLStore(now, sessionID, connection, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164510,7 +164510,7 @@ static PyMethodDef SwigMethods[] = {
 		"connection: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"new_MySQLStore(UtcTimeStamp now, SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLStore\n"
+		"new_MySQLStore(now, sessionID, database, user, password, host, port) -> MySQLStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164523,9 +164523,9 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLStore", _wrap_delete_MySQLStore, METH_O, "delete_MySQLStore(MySQLStore self)"},
+	 { "delete_MySQLStore", _wrap_delete_MySQLStore, METH_O, "delete_MySQLStore(self)"},
 	 { "MySQLStore_set", _wrap_MySQLStore_set, METH_VARARGS, "\n"
-		"MySQLStore_set(MySQLStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"MySQLStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164534,7 +164534,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLStore_get", _wrap_MySQLStore_get, METH_VARARGS, "\n"
-		"MySQLStore_get(MySQLStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"MySQLStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164543,10 +164543,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MySQLStore_getNextSenderMsgSeqNum", _wrap_MySQLStore_getNextSenderMsgSeqNum, METH_O, "MySQLStore_getNextSenderMsgSeqNum(MySQLStore self) -> FIX::SEQNUM"},
-	 { "MySQLStore_getNextTargetMsgSeqNum", _wrap_MySQLStore_getNextTargetMsgSeqNum, METH_O, "MySQLStore_getNextTargetMsgSeqNum(MySQLStore self) -> FIX::SEQNUM"},
+	 { "MySQLStore_getNextSenderMsgSeqNum", _wrap_MySQLStore_getNextSenderMsgSeqNum, METH_O, "MySQLStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MySQLStore_getNextTargetMsgSeqNum", _wrap_MySQLStore_getNextTargetMsgSeqNum, METH_O, "MySQLStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MySQLStore_setNextSenderMsgSeqNum", _wrap_MySQLStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"MySQLStore_setNextSenderMsgSeqNum(MySQLStore self, FIX::SEQNUM value)\n"
+		"MySQLStore_setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164554,29 +164554,29 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLStore_setNextTargetMsgSeqNum", _wrap_MySQLStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"MySQLStore_setNextTargetMsgSeqNum(MySQLStore self, FIX::SEQNUM value)\n"
+		"MySQLStore_setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MySQLStore_incrNextSenderMsgSeqNum", _wrap_MySQLStore_incrNextSenderMsgSeqNum, METH_O, "MySQLStore_incrNextSenderMsgSeqNum(MySQLStore self)"},
-	 { "MySQLStore_incrNextTargetMsgSeqNum", _wrap_MySQLStore_incrNextTargetMsgSeqNum, METH_O, "MySQLStore_incrNextTargetMsgSeqNum(MySQLStore self)"},
-	 { "MySQLStore_getCreationTime", _wrap_MySQLStore_getCreationTime, METH_O, "MySQLStore_getCreationTime(MySQLStore self) -> UtcTimeStamp"},
+	 { "MySQLStore_incrNextSenderMsgSeqNum", _wrap_MySQLStore_incrNextSenderMsgSeqNum, METH_O, "MySQLStore_incrNextSenderMsgSeqNum(self)"},
+	 { "MySQLStore_incrNextTargetMsgSeqNum", _wrap_MySQLStore_incrNextTargetMsgSeqNum, METH_O, "MySQLStore_incrNextTargetMsgSeqNum(self)"},
+	 { "MySQLStore_getCreationTime", _wrap_MySQLStore_getCreationTime, METH_O, "MySQLStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "MySQLStore_reset", _wrap_MySQLStore_reset, METH_VARARGS, "\n"
-		"MySQLStore_reset(MySQLStore self, UtcTimeStamp now)\n"
+		"MySQLStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MySQLStore_refresh", _wrap_MySQLStore_refresh, METH_O, "MySQLStore_refresh(MySQLStore self)"},
+	 { "MySQLStore_refresh", _wrap_MySQLStore_refresh, METH_O, "MySQLStore_refresh(self)"},
 	 { "MySQLStore_swigregister", MySQLStore_swigregister, METH_O, NULL},
 	 { "MySQLStore_swiginit", MySQLStore_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLLog", _wrap_new_MySQLLog, METH_VARARGS, "\n"
-		"MySQLLog(SessionID sessionID, DatabaseConnectionID connectionID, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLLog(sessionID, connectionID, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164584,14 +164584,14 @@ static PyMethodDef SwigMethods[] = {
 		"connectionID: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"MySQLLog(DatabaseConnectionID connectionID, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLLog(connectionID, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"connectionID: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"MySQLLog(SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLLog(sessionID, database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164602,7 +164602,7 @@ static PyMethodDef SwigMethods[] = {
 		"host: std::string const &\n"
 		"port: short\n"
 		"\n"
-		"new_MySQLLog(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLLog\n"
+		"new_MySQLLog(database, user, password, host, port) -> MySQLLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164613,11 +164613,11 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLLog", _wrap_delete_MySQLLog, METH_O, "delete_MySQLLog(MySQLLog self)"},
-	 { "MySQLLog_clear", _wrap_MySQLLog_clear, METH_O, "MySQLLog_clear(MySQLLog self)"},
-	 { "MySQLLog_backup", _wrap_MySQLLog_backup, METH_O, "MySQLLog_backup(MySQLLog self)"},
+	 { "delete_MySQLLog", _wrap_delete_MySQLLog, METH_O, "delete_MySQLLog(self)"},
+	 { "MySQLLog_clear", _wrap_MySQLLog_clear, METH_O, "MySQLLog_clear(self)"},
+	 { "MySQLLog_backup", _wrap_MySQLLog_backup, METH_O, "MySQLLog_backup(self)"},
 	 { "MySQLLog_setIncomingTable", _wrap_MySQLLog_setIncomingTable, METH_VARARGS, "\n"
-		"MySQLLog_setIncomingTable(MySQLLog self, std::string const & incomingTable)\n"
+		"MySQLLog_setIncomingTable(self, incomingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164625,7 +164625,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLog_setOutgoingTable", _wrap_MySQLLog_setOutgoingTable, METH_VARARGS, "\n"
-		"MySQLLog_setOutgoingTable(MySQLLog self, std::string const & outgoingTable)\n"
+		"MySQLLog_setOutgoingTable(self, outgoingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164633,7 +164633,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLog_setEventTable", _wrap_MySQLLog_setEventTable, METH_VARARGS, "\n"
-		"MySQLLog_setEventTable(MySQLLog self, std::string const & eventTable)\n"
+		"MySQLLog_setEventTable(self, eventTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164641,7 +164641,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onIncoming", _wrap_MySQLLog_onIncoming, METH_VARARGS, "\n"
-		"MySQLLog_onIncoming(MySQLLog self, std::string const & value)\n"
+		"MySQLLog_onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164649,7 +164649,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onOutgoing", _wrap_MySQLLog_onOutgoing, METH_VARARGS, "\n"
-		"MySQLLog_onOutgoing(MySQLLog self, std::string const & value)\n"
+		"MySQLLog_onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164657,7 +164657,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onEvent", _wrap_MySQLLog_onEvent, METH_VARARGS, "\n"
-		"MySQLLog_onEvent(MySQLLog self, std::string const & value)\n"
+		"MySQLLog_onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164667,13 +164667,13 @@ static PyMethodDef SwigMethods[] = {
 	 { "MySQLLog_swigregister", MySQLLog_swigregister, METH_O, NULL},
 	 { "MySQLLog_swiginit", MySQLLog_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLLogFactory", _wrap_new_MySQLLogFactory, METH_VARARGS, "\n"
-		"MySQLLogFactory(SessionSettings settings)\n"
+		"MySQLLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"MySQLLogFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLLogFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164686,8 +164686,8 @@ static PyMethodDef SwigMethods[] = {
 		"new_MySQLLogFactory() -> MySQLLogFactory\n"
 		""},
 	 { "MySQLLogFactory_create", _wrap_MySQLLogFactory_create, METH_VARARGS, "\n"
-		"MySQLLogFactory_create(MySQLLogFactory self) -> Log\n"
-		"MySQLLogFactory_create(MySQLLogFactory self, SessionID arg2) -> Log\n"
+		"MySQLLogFactory_create(self) -> Log\n"
+		"MySQLLogFactory_create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164695,38 +164695,38 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "MySQLLogFactory_destroy", _wrap_MySQLLogFactory_destroy, METH_VARARGS, "\n"
-		"MySQLLogFactory_destroy(MySQLLogFactory self, Log arg2)\n"
+		"MySQLLogFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_MySQLLogFactory", _wrap_delete_MySQLLogFactory, METH_O, "delete_MySQLLogFactory(MySQLLogFactory self)"},
+	 { "delete_MySQLLogFactory", _wrap_delete_MySQLLogFactory, METH_O, "delete_MySQLLogFactory(self)"},
 	 { "MySQLLogFactory_swigregister", MySQLLogFactory_swigregister, METH_O, NULL},
 	 { "MySQLLogFactory_swiginit", MySQLLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLQuery", _wrap_new_PostgreSQLQuery, METH_O, "\n"
-		"new_PostgreSQLQuery(std::string const & query) -> PostgreSQLQuery\n"
+		"new_PostgreSQLQuery(query) -> PostgreSQLQuery\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"query: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLQuery", _wrap_delete_PostgreSQLQuery, METH_O, "delete_PostgreSQLQuery(PostgreSQLQuery self)"},
+	 { "delete_PostgreSQLQuery", _wrap_delete_PostgreSQLQuery, METH_O, "delete_PostgreSQLQuery(self)"},
 	 { "PostgreSQLQuery_execute", _wrap_PostgreSQLQuery_execute, METH_VARARGS, "\n"
-		"PostgreSQLQuery_execute(PostgreSQLQuery self, PGconn * pConnection) -> bool\n"
+		"PostgreSQLQuery_execute(self, pConnection) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pConnection: PGconn *\n"
 		"\n"
 		""},
-	 { "PostgreSQLQuery_success", _wrap_PostgreSQLQuery_success, METH_O, "PostgreSQLQuery_success(PostgreSQLQuery self) -> bool"},
-	 { "PostgreSQLQuery_rows", _wrap_PostgreSQLQuery_rows, METH_O, "PostgreSQLQuery_rows(PostgreSQLQuery self) -> int"},
-	 { "PostgreSQLQuery_reason", _wrap_PostgreSQLQuery_reason, METH_O, "PostgreSQLQuery_reason(PostgreSQLQuery self) -> char *"},
+	 { "PostgreSQLQuery_success", _wrap_PostgreSQLQuery_success, METH_O, "PostgreSQLQuery_success(self) -> bool"},
+	 { "PostgreSQLQuery_rows", _wrap_PostgreSQLQuery_rows, METH_O, "PostgreSQLQuery_rows(self) -> int"},
+	 { "PostgreSQLQuery_reason", _wrap_PostgreSQLQuery_reason, METH_O, "PostgreSQLQuery_reason(self) -> char *"},
 	 { "PostgreSQLQuery_getValue", _wrap_PostgreSQLQuery_getValue, METH_VARARGS, "\n"
-		"PostgreSQLQuery_getValue(PostgreSQLQuery self, int row, int column) -> char *\n"
+		"PostgreSQLQuery_getValue(self, row, column) -> char *\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164734,17 +164734,17 @@ static PyMethodDef SwigMethods[] = {
 		"column: int\n"
 		"\n"
 		""},
-	 { "PostgreSQLQuery_throwException", _wrap_PostgreSQLQuery_throwException, METH_O, "PostgreSQLQuery_throwException(PostgreSQLQuery self)"},
+	 { "PostgreSQLQuery_throwException", _wrap_PostgreSQLQuery_throwException, METH_O, "PostgreSQLQuery_throwException(self)"},
 	 { "PostgreSQLQuery_swigregister", PostgreSQLQuery_swigregister, METH_O, NULL},
 	 { "PostgreSQLQuery_swiginit", PostgreSQLQuery_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLConnection", _wrap_new_PostgreSQLConnection, METH_VARARGS, "\n"
-		"PostgreSQLConnection(DatabaseConnectionID id)\n"
+		"PostgreSQLConnection(id)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::DatabaseConnectionID const &\n"
 		"\n"
-		"new_PostgreSQLConnection(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLConnection\n"
+		"new_PostgreSQLConnection(database, user, password, host, port) -> PostgreSQLConnection\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164755,12 +164755,12 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLConnection", _wrap_delete_PostgreSQLConnection, METH_O, "delete_PostgreSQLConnection(PostgreSQLConnection self)"},
-	 { "PostgreSQLConnection_connectionID", _wrap_PostgreSQLConnection_connectionID, METH_O, "PostgreSQLConnection_connectionID(PostgreSQLConnection self) -> DatabaseConnectionID"},
-	 { "PostgreSQLConnection_connected", _wrap_PostgreSQLConnection_connected, METH_O, "PostgreSQLConnection_connected(PostgreSQLConnection self) -> bool"},
-	 { "PostgreSQLConnection_reconnect", _wrap_PostgreSQLConnection_reconnect, METH_O, "PostgreSQLConnection_reconnect(PostgreSQLConnection self) -> bool"},
+	 { "delete_PostgreSQLConnection", _wrap_delete_PostgreSQLConnection, METH_O, "delete_PostgreSQLConnection(self)"},
+	 { "PostgreSQLConnection_connectionID", _wrap_PostgreSQLConnection_connectionID, METH_O, "PostgreSQLConnection_connectionID(self) -> DatabaseConnectionID"},
+	 { "PostgreSQLConnection_connected", _wrap_PostgreSQLConnection_connected, METH_O, "PostgreSQLConnection_connected(self) -> bool"},
+	 { "PostgreSQLConnection_reconnect", _wrap_PostgreSQLConnection_reconnect, METH_O, "PostgreSQLConnection_reconnect(self) -> bool"},
 	 { "PostgreSQLConnection_execute", _wrap_PostgreSQLConnection_execute, METH_VARARGS, "\n"
-		"PostgreSQLConnection_execute(PostgreSQLConnection self, PostgreSQLQuery pQuery) -> bool\n"
+		"PostgreSQLConnection_execute(self, pQuery) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164770,19 +164770,19 @@ static PyMethodDef SwigMethods[] = {
 	 { "PostgreSQLConnection_swigregister", PostgreSQLConnection_swigregister, METH_O, NULL},
 	 { "PostgreSQLConnection_swiginit", PostgreSQLConnection_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLStoreFactory", _wrap_new_PostgreSQLStoreFactory, METH_VARARGS, "\n"
-		"PostgreSQLStoreFactory(SessionSettings settings)\n"
+		"PostgreSQLStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"PostgreSQLStoreFactory(Dictionary dictionary)\n"
+		"PostgreSQLStoreFactory(dictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dictionary: FIX::Dictionary const &\n"
 		"\n"
-		"PostgreSQLStoreFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLStoreFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164795,7 +164795,7 @@ static PyMethodDef SwigMethods[] = {
 		"new_PostgreSQLStoreFactory() -> PostgreSQLStoreFactory\n"
 		""},
 	 { "PostgreSQLStoreFactory_create", _wrap_PostgreSQLStoreFactory_create, METH_VARARGS, "\n"
-		"PostgreSQLStoreFactory_create(PostgreSQLStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"PostgreSQLStoreFactory_create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164804,18 +164804,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStoreFactory_destroy", _wrap_PostgreSQLStoreFactory_destroy, METH_VARARGS, "\n"
-		"PostgreSQLStoreFactory_destroy(PostgreSQLStoreFactory self, MessageStore arg2)\n"
+		"PostgreSQLStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLStoreFactory", _wrap_delete_PostgreSQLStoreFactory, METH_O, "delete_PostgreSQLStoreFactory(PostgreSQLStoreFactory self)"},
+	 { "delete_PostgreSQLStoreFactory", _wrap_delete_PostgreSQLStoreFactory, METH_O, "delete_PostgreSQLStoreFactory(self)"},
 	 { "PostgreSQLStoreFactory_swigregister", PostgreSQLStoreFactory_swigregister, METH_O, NULL},
 	 { "PostgreSQLStoreFactory_swiginit", PostgreSQLStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLStore", _wrap_new_PostgreSQLStore, METH_VARARGS, "\n"
-		"PostgreSQLStore(UtcTimeStamp now, SessionID sessionID, DatabaseConnectionID connection, FIX::PostgreSQLConnectionPool * pool)\n"
+		"PostgreSQLStore(now, sessionID, connection, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164824,7 +164824,7 @@ static PyMethodDef SwigMethods[] = {
 		"connection: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"new_PostgreSQLStore(UtcTimeStamp now, SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLStore\n"
+		"new_PostgreSQLStore(now, sessionID, database, user, password, host, port) -> PostgreSQLStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164837,9 +164837,9 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLStore", _wrap_delete_PostgreSQLStore, METH_O, "delete_PostgreSQLStore(PostgreSQLStore self)"},
+	 { "delete_PostgreSQLStore", _wrap_delete_PostgreSQLStore, METH_O, "delete_PostgreSQLStore(self)"},
 	 { "PostgreSQLStore_set", _wrap_PostgreSQLStore_set, METH_VARARGS, "\n"
-		"PostgreSQLStore_set(PostgreSQLStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"PostgreSQLStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164848,7 +164848,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStore_get", _wrap_PostgreSQLStore_get, METH_VARARGS, "\n"
-		"PostgreSQLStore_get(PostgreSQLStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"PostgreSQLStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164857,10 +164857,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_getNextSenderMsgSeqNum", _wrap_PostgreSQLStore_getNextSenderMsgSeqNum, METH_O, "PostgreSQLStore_getNextSenderMsgSeqNum(PostgreSQLStore self) -> FIX::SEQNUM"},
-	 { "PostgreSQLStore_getNextTargetMsgSeqNum", _wrap_PostgreSQLStore_getNextTargetMsgSeqNum, METH_O, "PostgreSQLStore_getNextTargetMsgSeqNum(PostgreSQLStore self) -> FIX::SEQNUM"},
+	 { "PostgreSQLStore_getNextSenderMsgSeqNum", _wrap_PostgreSQLStore_getNextSenderMsgSeqNum, METH_O, "PostgreSQLStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "PostgreSQLStore_getNextTargetMsgSeqNum", _wrap_PostgreSQLStore_getNextTargetMsgSeqNum, METH_O, "PostgreSQLStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "PostgreSQLStore_setNextSenderMsgSeqNum", _wrap_PostgreSQLStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"PostgreSQLStore_setNextSenderMsgSeqNum(PostgreSQLStore self, FIX::SEQNUM value)\n"
+		"PostgreSQLStore_setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164868,29 +164868,29 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStore_setNextTargetMsgSeqNum", _wrap_PostgreSQLStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"PostgreSQLStore_setNextTargetMsgSeqNum(PostgreSQLStore self, FIX::SEQNUM value)\n"
+		"PostgreSQLStore_setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_incrNextSenderMsgSeqNum", _wrap_PostgreSQLStore_incrNextSenderMsgSeqNum, METH_O, "PostgreSQLStore_incrNextSenderMsgSeqNum(PostgreSQLStore self)"},
-	 { "PostgreSQLStore_incrNextTargetMsgSeqNum", _wrap_PostgreSQLStore_incrNextTargetMsgSeqNum, METH_O, "PostgreSQLStore_incrNextTargetMsgSeqNum(PostgreSQLStore self)"},
-	 { "PostgreSQLStore_getCreationTime", _wrap_PostgreSQLStore_getCreationTime, METH_O, "PostgreSQLStore_getCreationTime(PostgreSQLStore self) -> UtcTimeStamp"},
+	 { "PostgreSQLStore_incrNextSenderMsgSeqNum", _wrap_PostgreSQLStore_incrNextSenderMsgSeqNum, METH_O, "PostgreSQLStore_incrNextSenderMsgSeqNum(self)"},
+	 { "PostgreSQLStore_incrNextTargetMsgSeqNum", _wrap_PostgreSQLStore_incrNextTargetMsgSeqNum, METH_O, "PostgreSQLStore_incrNextTargetMsgSeqNum(self)"},
+	 { "PostgreSQLStore_getCreationTime", _wrap_PostgreSQLStore_getCreationTime, METH_O, "PostgreSQLStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "PostgreSQLStore_reset", _wrap_PostgreSQLStore_reset, METH_VARARGS, "\n"
-		"PostgreSQLStore_reset(PostgreSQLStore self, UtcTimeStamp now)\n"
+		"PostgreSQLStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_refresh", _wrap_PostgreSQLStore_refresh, METH_O, "PostgreSQLStore_refresh(PostgreSQLStore self)"},
+	 { "PostgreSQLStore_refresh", _wrap_PostgreSQLStore_refresh, METH_O, "PostgreSQLStore_refresh(self)"},
 	 { "PostgreSQLStore_swigregister", PostgreSQLStore_swigregister, METH_O, NULL},
 	 { "PostgreSQLStore_swiginit", PostgreSQLStore_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLLog", _wrap_new_PostgreSQLLog, METH_VARARGS, "\n"
-		"PostgreSQLLog(SessionID s, DatabaseConnectionID d, FIX::PostgreSQLConnectionPool * p)\n"
+		"PostgreSQLLog(s, d, p)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164898,14 +164898,14 @@ static PyMethodDef SwigMethods[] = {
 		"d: FIX::DatabaseConnectionID const &\n"
 		"p: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"PostgreSQLLog(DatabaseConnectionID d, FIX::PostgreSQLConnectionPool * p)\n"
+		"PostgreSQLLog(d, p)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"d: FIX::DatabaseConnectionID const &\n"
 		"p: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"PostgreSQLLog(SessionID s, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLLog(s, database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164916,7 +164916,7 @@ static PyMethodDef SwigMethods[] = {
 		"host: std::string const &\n"
 		"port: short\n"
 		"\n"
-		"new_PostgreSQLLog(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLLog\n"
+		"new_PostgreSQLLog(database, user, password, host, port) -> PostgreSQLLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164927,11 +164927,11 @@ static PyMethodDef SwigMethods[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLLog", _wrap_delete_PostgreSQLLog, METH_O, "delete_PostgreSQLLog(PostgreSQLLog self)"},
-	 { "PostgreSQLLog_clear", _wrap_PostgreSQLLog_clear, METH_O, "PostgreSQLLog_clear(PostgreSQLLog self)"},
-	 { "PostgreSQLLog_backup", _wrap_PostgreSQLLog_backup, METH_O, "PostgreSQLLog_backup(PostgreSQLLog self)"},
+	 { "delete_PostgreSQLLog", _wrap_delete_PostgreSQLLog, METH_O, "delete_PostgreSQLLog(self)"},
+	 { "PostgreSQLLog_clear", _wrap_PostgreSQLLog_clear, METH_O, "PostgreSQLLog_clear(self)"},
+	 { "PostgreSQLLog_backup", _wrap_PostgreSQLLog_backup, METH_O, "PostgreSQLLog_backup(self)"},
 	 { "PostgreSQLLog_setIncomingTable", _wrap_PostgreSQLLog_setIncomingTable, METH_VARARGS, "\n"
-		"PostgreSQLLog_setIncomingTable(PostgreSQLLog self, std::string const & incomingTable)\n"
+		"PostgreSQLLog_setIncomingTable(self, incomingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164939,7 +164939,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_setOutgoingTable", _wrap_PostgreSQLLog_setOutgoingTable, METH_VARARGS, "\n"
-		"PostgreSQLLog_setOutgoingTable(PostgreSQLLog self, std::string const & outgoingTable)\n"
+		"PostgreSQLLog_setOutgoingTable(self, outgoingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164947,7 +164947,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_setEventTable", _wrap_PostgreSQLLog_setEventTable, METH_VARARGS, "\n"
-		"PostgreSQLLog_setEventTable(PostgreSQLLog self, std::string const & eventTable)\n"
+		"PostgreSQLLog_setEventTable(self, eventTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164955,7 +164955,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onIncoming", _wrap_PostgreSQLLog_onIncoming, METH_VARARGS, "\n"
-		"PostgreSQLLog_onIncoming(PostgreSQLLog self, std::string const & value)\n"
+		"PostgreSQLLog_onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164963,7 +164963,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onOutgoing", _wrap_PostgreSQLLog_onOutgoing, METH_VARARGS, "\n"
-		"PostgreSQLLog_onOutgoing(PostgreSQLLog self, std::string const & value)\n"
+		"PostgreSQLLog_onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164971,7 +164971,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onEvent", _wrap_PostgreSQLLog_onEvent, METH_VARARGS, "\n"
-		"PostgreSQLLog_onEvent(PostgreSQLLog self, std::string const & value)\n"
+		"PostgreSQLLog_onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -164981,13 +164981,13 @@ static PyMethodDef SwigMethods[] = {
 	 { "PostgreSQLLog_swigregister", PostgreSQLLog_swigregister, METH_O, NULL},
 	 { "PostgreSQLLog_swiginit", PostgreSQLLog_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLLogFactory", _wrap_new_PostgreSQLLogFactory, METH_VARARGS, "\n"
-		"PostgreSQLLogFactory(SessionSettings settings)\n"
+		"PostgreSQLLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"PostgreSQLLogFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLLogFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165000,8 +165000,8 @@ static PyMethodDef SwigMethods[] = {
 		"new_PostgreSQLLogFactory() -> PostgreSQLLogFactory\n"
 		""},
 	 { "PostgreSQLLogFactory_create", _wrap_PostgreSQLLogFactory_create, METH_VARARGS, "\n"
-		"PostgreSQLLogFactory_create(PostgreSQLLogFactory self) -> Log\n"
-		"PostgreSQLLogFactory_create(PostgreSQLLogFactory self, SessionID arg2) -> Log\n"
+		"PostgreSQLLogFactory_create(self) -> Log\n"
+		"PostgreSQLLogFactory_create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165009,18 +165009,18 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLogFactory_destroy", _wrap_PostgreSQLLogFactory_destroy, METH_VARARGS, "\n"
-		"PostgreSQLLogFactory_destroy(PostgreSQLLogFactory self, Log arg2)\n"
+		"PostgreSQLLogFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLLogFactory", _wrap_delete_PostgreSQLLogFactory, METH_O, "delete_PostgreSQLLogFactory(PostgreSQLLogFactory self)"},
+	 { "delete_PostgreSQLLogFactory", _wrap_delete_PostgreSQLLogFactory, METH_O, "delete_PostgreSQLLogFactory(self)"},
 	 { "PostgreSQLLogFactory_swigregister", PostgreSQLLogFactory_swigregister, METH_O, NULL},
 	 { "PostgreSQLLogFactory_swiginit", PostgreSQLLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_ThreadedSocketAcceptorBase", _wrap_new_ThreadedSocketAcceptorBase, METH_VARARGS, "\n"
-		"ThreadedSocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"ThreadedSocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165028,7 +165028,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_ThreadedSocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> ThreadedSocketAcceptorBase\n"
+		"new_ThreadedSocketAcceptorBase(arg1, arg2, arg3, arg4) -> ThreadedSocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165038,11 +165038,11 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_ThreadedSocketAcceptorBase", _wrap_delete_ThreadedSocketAcceptorBase, METH_O, "delete_ThreadedSocketAcceptorBase(ThreadedSocketAcceptorBase self)"},
+	 { "delete_ThreadedSocketAcceptorBase", _wrap_delete_ThreadedSocketAcceptorBase, METH_O, "delete_ThreadedSocketAcceptorBase(self)"},
 	 { "ThreadedSocketAcceptorBase_swigregister", ThreadedSocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "ThreadedSocketAcceptorBase_swiginit", ThreadedSocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_ThreadedSocketInitiatorBase", _wrap_new_ThreadedSocketInitiatorBase, METH_VARARGS, "\n"
-		"ThreadedSocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"ThreadedSocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165050,7 +165050,7 @@ static PyMethodDef SwigMethods[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_ThreadedSocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> ThreadedSocketInitiatorBase\n"
+		"new_ThreadedSocketInitiatorBase(arg1, arg2, arg3, arg4) -> ThreadedSocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165060,11 +165060,11 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_ThreadedSocketInitiatorBase", _wrap_delete_ThreadedSocketInitiatorBase, METH_O, "delete_ThreadedSocketInitiatorBase(ThreadedSocketInitiatorBase self)"},
+	 { "delete_ThreadedSocketInitiatorBase", _wrap_delete_ThreadedSocketInitiatorBase, METH_O, "delete_ThreadedSocketInitiatorBase(self)"},
 	 { "ThreadedSocketInitiatorBase_swigregister", ThreadedSocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "ThreadedSocketInitiatorBase_swiginit", ThreadedSocketInitiatorBase_swiginit, METH_VARARGS, NULL},
 	 { "NullStoreFactory_create", _wrap_NullStoreFactory_create, METH_VARARGS, "\n"
-		"NullStoreFactory_create(NullStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"NullStoreFactory_create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165073,7 +165073,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullStoreFactory_destroy", _wrap_NullStoreFactory_destroy, METH_VARARGS, "\n"
-		"NullStoreFactory_destroy(NullStoreFactory self, MessageStore arg2)\n"
+		"NullStoreFactory_destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165081,11 +165081,11 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "new_NullStoreFactory", _wrap_new_NullStoreFactory, METH_NOARGS, "new_NullStoreFactory() -> NullStoreFactory"},
-	 { "delete_NullStoreFactory", _wrap_delete_NullStoreFactory, METH_O, "delete_NullStoreFactory(NullStoreFactory self)"},
+	 { "delete_NullStoreFactory", _wrap_delete_NullStoreFactory, METH_O, "delete_NullStoreFactory(self)"},
 	 { "NullStoreFactory_swigregister", NullStoreFactory_swigregister, METH_O, NULL},
 	 { "NullStoreFactory_swiginit", NullStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_NullStore", _wrap_new_NullStore, METH_O, "\n"
-		"new_NullStore(UtcTimeStamp now) -> NullStore\n"
+		"new_NullStore(now) -> NullStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165093,7 +165093,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullStore_set", _wrap_NullStore_set, METH_VARARGS, "\n"
-		"NullStore_set(NullStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"NullStore_set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165102,7 +165102,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullStore_get", _wrap_NullStore_get, METH_VARARGS, "\n"
-		"NullStore_get(NullStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"NullStore_get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165111,10 +165111,10 @@ static PyMethodDef SwigMethods[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "NullStore_getNextSenderMsgSeqNum", _wrap_NullStore_getNextSenderMsgSeqNum, METH_O, "NullStore_getNextSenderMsgSeqNum(NullStore self) -> FIX::SEQNUM"},
-	 { "NullStore_getNextTargetMsgSeqNum", _wrap_NullStore_getNextTargetMsgSeqNum, METH_O, "NullStore_getNextTargetMsgSeqNum(NullStore self) -> FIX::SEQNUM"},
+	 { "NullStore_getNextSenderMsgSeqNum", _wrap_NullStore_getNextSenderMsgSeqNum, METH_O, "NullStore_getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "NullStore_getNextTargetMsgSeqNum", _wrap_NullStore_getNextTargetMsgSeqNum, METH_O, "NullStore_getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "NullStore_setNextSenderMsgSeqNum", _wrap_NullStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"NullStore_setNextSenderMsgSeqNum(NullStore self, FIX::SEQNUM value)\n"
+		"NullStore_setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165122,34 +165122,34 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		""},
 	 { "NullStore_setNextTargetMsgSeqNum", _wrap_NullStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"NullStore_setNextTargetMsgSeqNum(NullStore self, FIX::SEQNUM value)\n"
+		"NullStore_setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "NullStore_incrNextSenderMsgSeqNum", _wrap_NullStore_incrNextSenderMsgSeqNum, METH_O, "NullStore_incrNextSenderMsgSeqNum(NullStore self)"},
-	 { "NullStore_incrNextTargetMsgSeqNum", _wrap_NullStore_incrNextTargetMsgSeqNum, METH_O, "NullStore_incrNextTargetMsgSeqNum(NullStore self)"},
+	 { "NullStore_incrNextSenderMsgSeqNum", _wrap_NullStore_incrNextSenderMsgSeqNum, METH_O, "NullStore_incrNextSenderMsgSeqNum(self)"},
+	 { "NullStore_incrNextTargetMsgSeqNum", _wrap_NullStore_incrNextTargetMsgSeqNum, METH_O, "NullStore_incrNextTargetMsgSeqNum(self)"},
 	 { "NullStore_setCreationTime", _wrap_NullStore_setCreationTime, METH_VARARGS, "\n"
-		"NullStore_setCreationTime(NullStore self, UtcTimeStamp creationTime)\n"
+		"NullStore_setCreationTime(self, creationTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"creationTime: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "NullStore_getCreationTime", _wrap_NullStore_getCreationTime, METH_O, "NullStore_getCreationTime(NullStore self) -> UtcTimeStamp"},
+	 { "NullStore_getCreationTime", _wrap_NullStore_getCreationTime, METH_O, "NullStore_getCreationTime(self) -> UtcTimeStamp"},
 	 { "NullStore_reset", _wrap_NullStore_reset, METH_VARARGS, "\n"
-		"NullStore_reset(NullStore self, UtcTimeStamp now)\n"
+		"NullStore_reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "NullStore_refresh", _wrap_NullStore_refresh, METH_O, "NullStore_refresh(NullStore self)"},
-	 { "delete_NullStore", _wrap_delete_NullStore, METH_O, "delete_NullStore(NullStore self)"},
+	 { "NullStore_refresh", _wrap_NullStore_refresh, METH_O, "NullStore_refresh(self)"},
+	 { "delete_NullStore", _wrap_delete_NullStore, METH_O, "delete_NullStore(self)"},
 	 { "NullStore_swigregister", NullStore_swigregister, METH_O, NULL},
 	 { "NullStore_swiginit", NullStore_swiginit, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
@@ -165158,10 +165158,10 @@ static PyMethodDef SwigMethods[] = {
 static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "SWIG_PyInstanceMethod_New", SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { "SWIG_PyStaticMethod_New", SWIG_PyStaticMethod_New, METH_O, NULL},
-	 { "delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_O, "delete_SwigPyIterator(SwigPyIterator self)"},
-	 { "SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_O, "value(SwigPyIterator self) -> PyObject *"},
+	 { "delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_O, "delete_SwigPyIterator(self)"},
+	 { "SwigPyIterator_value", _wrap_SwigPyIterator_value, METH_O, "value(self) -> PyObject *"},
 	 { "SwigPyIterator_incr", _wrap_SwigPyIterator_incr, METH_VARARGS, "\n"
-		"incr(SwigPyIterator self, size_t n=1) -> SwigPyIterator\n"
+		"incr(self, n=1) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165169,7 +165169,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_decr", _wrap_SwigPyIterator_decr, METH_VARARGS, "\n"
-		"decr(SwigPyIterator self, size_t n=1) -> SwigPyIterator\n"
+		"decr(self, n=1) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165177,7 +165177,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_distance", _wrap_SwigPyIterator_distance, METH_VARARGS, "\n"
-		"distance(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"distance(self, x) -> ptrdiff_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165185,19 +165185,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_equal", _wrap_SwigPyIterator_equal, METH_VARARGS, "\n"
-		"equal(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"equal(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: swig::SwigPyIterator const &\n"
 		"\n"
 		""},
-	 { "SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_O, "copy(SwigPyIterator self) -> SwigPyIterator"},
-	 { "SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_O, "next(SwigPyIterator self) -> PyObject *"},
-	 { "SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_O, "__next__(SwigPyIterator self) -> PyObject *"},
-	 { "SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_O, "previous(SwigPyIterator self) -> PyObject *"},
+	 { "SwigPyIterator_copy", _wrap_SwigPyIterator_copy, METH_O, "copy(self) -> SwigPyIterator"},
+	 { "SwigPyIterator_next", _wrap_SwigPyIterator_next, METH_O, "next(self) -> PyObject *"},
+	 { "SwigPyIterator___next__", _wrap_SwigPyIterator___next__, METH_O, "__next__(self) -> PyObject *"},
+	 { "SwigPyIterator_previous", _wrap_SwigPyIterator_previous, METH_O, "previous(self) -> PyObject *"},
 	 { "SwigPyIterator_advance", _wrap_SwigPyIterator_advance, METH_VARARGS, "\n"
-		"advance(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"advance(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165205,7 +165205,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___eq__", _wrap_SwigPyIterator___eq__, METH_VARARGS, "\n"
-		"__eq__(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"__eq__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165213,7 +165213,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___ne__", _wrap_SwigPyIterator___ne__, METH_VARARGS, "\n"
-		"__ne__(SwigPyIterator self, SwigPyIterator x) -> bool\n"
+		"__ne__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165221,7 +165221,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___iadd__", _wrap_SwigPyIterator___iadd__, METH_VARARGS, "\n"
-		"__iadd__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"__iadd__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165229,7 +165229,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___isub__", _wrap_SwigPyIterator___isub__, METH_VARARGS, "\n"
-		"__isub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"__isub__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165237,7 +165237,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___add__", _wrap_SwigPyIterator___add__, METH_VARARGS, "\n"
-		"__add__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"__add__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165245,13 +165245,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator___sub__", _wrap_SwigPyIterator___sub__, METH_VARARGS, "\n"
-		"__sub__(SwigPyIterator self, ptrdiff_t n) -> SwigPyIterator\n"
+		"__sub__(self, n) -> SwigPyIterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"n: ptrdiff_t\n"
 		"\n"
-		"__sub__(SwigPyIterator self, SwigPyIterator x) -> ptrdiff_t\n"
+		"__sub__(self, x) -> ptrdiff_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165259,12 +165259,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_O, NULL},
-	 { "VectorString_iterator", _wrap_VectorString_iterator, METH_O, "iterator(VectorString self) -> SwigPyIterator"},
-	 { "VectorString___nonzero__", _wrap_VectorString___nonzero__, METH_O, "__nonzero__(VectorString self) -> bool"},
-	 { "VectorString___bool__", _wrap_VectorString___bool__, METH_O, "__bool__(VectorString self) -> bool"},
-	 { "VectorString___len__", _wrap_VectorString___len__, METH_O, "__len__(VectorString self) -> std::vector< std::string >::size_type"},
+	 { "VectorString_iterator", _wrap_VectorString_iterator, METH_O, "iterator(self) -> SwigPyIterator"},
+	 { "VectorString___nonzero__", _wrap_VectorString___nonzero__, METH_O, "__nonzero__(self) -> bool"},
+	 { "VectorString___bool__", _wrap_VectorString___bool__, METH_O, "__bool__(self) -> bool"},
+	 { "VectorString___len__", _wrap_VectorString___len__, METH_O, "__len__(self) -> std::vector< std::string >::size_type"},
 	 { "VectorString___getslice__", _wrap_VectorString___getslice__, METH_VARARGS, "\n"
-		"__getslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j) -> VectorString\n"
+		"__getslice__(self, i, j) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165273,14 +165273,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString___setslice__", _wrap_VectorString___setslice__, METH_VARARGS, "\n"
-		"__setslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j)\n"
+		"__setslice__(self, i, j)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"i: std::vector< std::string >::difference_type\n"
 		"j: std::vector< std::string >::difference_type\n"
 		"\n"
-		"__setslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j, VectorString v)\n"
+		"__setslice__(self, i, j, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165290,7 +165290,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString___delslice__", _wrap_VectorString___delslice__, METH_VARARGS, "\n"
-		"__delslice__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::difference_type j)\n"
+		"__delslice__(self, i, j)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165299,13 +165299,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString___delitem__", _wrap_VectorString___delitem__, METH_VARARGS, "\n"
-		"__delitem__(VectorString self, std::vector< std::string >::difference_type i)\n"
+		"__delitem__(self, i)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"i: std::vector< std::string >::difference_type\n"
 		"\n"
-		"__delitem__(VectorString self, PySliceObject * slice)\n"
+		"__delitem__(self, slice)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165313,13 +165313,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString___getitem__", _wrap_VectorString___getitem__, METH_VARARGS, "\n"
-		"__getitem__(VectorString self, PySliceObject * slice) -> VectorString\n"
+		"__getitem__(self, slice) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"\n"
-		"__getitem__(VectorString self, std::vector< std::string >::difference_type i) -> std::vector< std::string >::value_type const &\n"
+		"__getitem__(self, i) -> std::vector< std::string >::value_type const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165327,20 +165327,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString___setitem__", _wrap_VectorString___setitem__, METH_VARARGS, "\n"
-		"__setitem__(VectorString self, PySliceObject * slice, VectorString v)\n"
+		"__setitem__(self, slice, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"v: std::vector< std::string,std::allocator< std::string > > const &\n"
 		"\n"
-		"__setitem__(VectorString self, PySliceObject * slice)\n"
+		"__setitem__(self, slice)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"slice: PySliceObject *\n"
 		"\n"
-		"__setitem__(VectorString self, std::vector< std::string >::difference_type i, std::vector< std::string >::value_type const & x)\n"
+		"__setitem__(self, i, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165348,40 +165348,40 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_pop", _wrap_VectorString_pop, METH_O, "pop(VectorString self) -> std::vector< std::string >::value_type"},
+	 { "VectorString_pop", _wrap_VectorString_pop, METH_O, "pop(self) -> std::vector< std::string >::value_type"},
 	 { "VectorString_append", _wrap_VectorString_append, METH_VARARGS, "\n"
-		"append(VectorString self, std::vector< std::string >::value_type const & x)\n"
+		"append(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_empty", _wrap_VectorString_empty, METH_O, "empty(VectorString self) -> bool"},
-	 { "VectorString_size", _wrap_VectorString_size, METH_O, "size(VectorString self) -> std::vector< std::string >::size_type"},
+	 { "VectorString_empty", _wrap_VectorString_empty, METH_O, "empty(self) -> bool"},
+	 { "VectorString_size", _wrap_VectorString_size, METH_O, "size(self) -> std::vector< std::string >::size_type"},
 	 { "VectorString_swap", _wrap_VectorString_swap, METH_VARARGS, "\n"
-		"swap(VectorString self, VectorString v)\n"
+		"swap(self, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"v: std::vector< std::string > &\n"
 		"\n"
 		""},
-	 { "VectorString_begin", _wrap_VectorString_begin, METH_O, "begin(VectorString self) -> std::vector< std::string >::iterator"},
-	 { "VectorString_end", _wrap_VectorString_end, METH_O, "end(VectorString self) -> std::vector< std::string >::iterator"},
-	 { "VectorString_rbegin", _wrap_VectorString_rbegin, METH_O, "rbegin(VectorString self) -> std::vector< std::string >::reverse_iterator"},
-	 { "VectorString_rend", _wrap_VectorString_rend, METH_O, "rend(VectorString self) -> std::vector< std::string >::reverse_iterator"},
-	 { "VectorString_clear", _wrap_VectorString_clear, METH_O, "clear(VectorString self)"},
-	 { "VectorString_get_allocator", _wrap_VectorString_get_allocator, METH_O, "get_allocator(VectorString self) -> std::vector< std::string >::allocator_type"},
-	 { "VectorString_pop_back", _wrap_VectorString_pop_back, METH_O, "pop_back(VectorString self)"},
+	 { "VectorString_begin", _wrap_VectorString_begin, METH_O, "begin(self) -> std::vector< std::string >::iterator"},
+	 { "VectorString_end", _wrap_VectorString_end, METH_O, "end(self) -> std::vector< std::string >::iterator"},
+	 { "VectorString_rbegin", _wrap_VectorString_rbegin, METH_O, "rbegin(self) -> std::vector< std::string >::reverse_iterator"},
+	 { "VectorString_rend", _wrap_VectorString_rend, METH_O, "rend(self) -> std::vector< std::string >::reverse_iterator"},
+	 { "VectorString_clear", _wrap_VectorString_clear, METH_O, "clear(self)"},
+	 { "VectorString_get_allocator", _wrap_VectorString_get_allocator, METH_O, "get_allocator(self) -> std::vector< std::string >::allocator_type"},
+	 { "VectorString_pop_back", _wrap_VectorString_pop_back, METH_O, "pop_back(self)"},
 	 { "VectorString_erase", _wrap_VectorString_erase, METH_VARARGS, "\n"
-		"erase(VectorString self, std::vector< std::string >::iterator pos) -> std::vector< std::string >::iterator\n"
+		"erase(self, pos) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::vector< std::string >::iterator\n"
 		"\n"
-		"erase(VectorString self, std::vector< std::string >::iterator first, std::vector< std::string >::iterator last) -> std::vector< std::string >::iterator\n"
+		"erase(self, first, last) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165391,19 +165391,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "new_VectorString", _wrap_new_VectorString, METH_VARARGS, "\n"
 		"VectorString()\n"
-		"VectorString(VectorString other)\n"
+		"VectorString(other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::vector< std::string > const &\n"
 		"\n"
-		"VectorString(std::vector< std::string >::size_type size)\n"
+		"VectorString(size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"size: std::vector< std::string >::size_type\n"
 		"\n"
-		"new_VectorString(std::vector< std::string >::size_type size, std::vector< std::string >::value_type const & value) -> VectorString\n"
+		"new_VectorString(size, value) -> VectorString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165412,17 +165412,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString_push_back", _wrap_VectorString_push_back, METH_VARARGS, "\n"
-		"push_back(VectorString self, std::vector< std::string >::value_type const & x)\n"
+		"push_back(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
 		""},
-	 { "VectorString_front", _wrap_VectorString_front, METH_O, "front(VectorString self) -> std::vector< std::string >::value_type const &"},
-	 { "VectorString_back", _wrap_VectorString_back, METH_O, "back(VectorString self) -> std::vector< std::string >::value_type const &"},
+	 { "VectorString_front", _wrap_VectorString_front, METH_O, "front(self) -> std::vector< std::string >::value_type const &"},
+	 { "VectorString_back", _wrap_VectorString_back, METH_O, "back(self) -> std::vector< std::string >::value_type const &"},
 	 { "VectorString_assign", _wrap_VectorString_assign, METH_VARARGS, "\n"
-		"assign(VectorString self, std::vector< std::string >::size_type n, std::vector< std::string >::value_type const & x)\n"
+		"assign(self, n, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165431,13 +165431,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString_resize", _wrap_VectorString_resize, METH_VARARGS, "\n"
-		"resize(VectorString self, std::vector< std::string >::size_type new_size)\n"
+		"resize(self, new_size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"new_size: std::vector< std::string >::size_type\n"
 		"\n"
-		"resize(VectorString self, std::vector< std::string >::size_type new_size, std::vector< std::string >::value_type const & x)\n"
+		"resize(self, new_size, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165446,14 +165446,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString_insert", _wrap_VectorString_insert, METH_VARARGS, "\n"
-		"insert(VectorString self, std::vector< std::string >::iterator pos, std::vector< std::string >::value_type const & x) -> std::vector< std::string >::iterator\n"
+		"insert(self, pos, x) -> std::vector< std::string >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::vector< std::string >::iterator\n"
 		"x: std::vector< std::string >::value_type const &\n"
 		"\n"
-		"insert(VectorString self, std::vector< std::string >::iterator pos, std::vector< std::string >::size_type n, std::vector< std::string >::value_type const & x)\n"
+		"insert(self, pos, n, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165463,28 +165463,28 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "VectorString_reserve", _wrap_VectorString_reserve, METH_VARARGS, "\n"
-		"reserve(VectorString self, std::vector< std::string >::size_type n)\n"
+		"reserve(self, n)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"n: std::vector< std::string >::size_type\n"
 		"\n"
 		""},
-	 { "VectorString_capacity", _wrap_VectorString_capacity, METH_O, "capacity(VectorString self) -> std::vector< std::string >::size_type"},
-	 { "delete_VectorString", _wrap_delete_VectorString, METH_O, "delete_VectorString(VectorString self)"},
+	 { "VectorString_capacity", _wrap_VectorString_capacity, METH_O, "capacity(self) -> std::vector< std::string >::size_type"},
+	 { "delete_VectorString", _wrap_delete_VectorString, METH_O, "delete_VectorString(self)"},
 	 { "VectorString_swigregister", VectorString_swigregister, METH_O, NULL},
 	 { "VectorString_swiginit", VectorString_swiginit, METH_VARARGS, NULL},
 	 { "new_IntArray", _wrap_new_IntArray, METH_O, "\n"
-		"new_IntArray(size_t nelements) -> IntArray\n"
+		"new_IntArray(nelements) -> IntArray\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"nelements: size_t\n"
 		"\n"
 		""},
-	 { "delete_IntArray", _wrap_delete_IntArray, METH_O, "delete_IntArray(IntArray self)"},
+	 { "delete_IntArray", _wrap_delete_IntArray, METH_O, "delete_IntArray(self)"},
 	 { "IntArray___getitem__", _wrap_IntArray___getitem__, METH_VARARGS, "\n"
-		"__getitem__(IntArray self, size_t index) -> int\n"
+		"__getitem__(self, index) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165492,7 +165492,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "IntArray___setitem__", _wrap_IntArray___setitem__, METH_VARARGS, "\n"
-		"__setitem__(IntArray self, size_t index, int value)\n"
+		"__setitem__(self, index, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165500,9 +165500,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"value: int\n"
 		"\n"
 		""},
-	 { "IntArray_cast", _wrap_IntArray_cast, METH_O, "cast(IntArray self) -> int *"},
+	 { "IntArray_cast", _wrap_IntArray_cast, METH_O, "cast(self) -> int *"},
 	 { "IntArray_frompointer", _wrap_IntArray_frompointer, METH_O, "\n"
-		"frompointer(int * t) -> IntArray\n"
+		"frompointer(t) -> IntArray\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165511,12 +165511,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "IntArray_swigregister", IntArray_swigregister, METH_O, NULL},
 	 { "IntArray_swiginit", IntArray_swiginit, METH_VARARGS, NULL},
-	 { "SessionIDSet_iterator", _wrap_SessionIDSet_iterator, METH_O, "iterator(SessionIDSet self) -> SwigPyIterator"},
-	 { "SessionIDSet___nonzero__", _wrap_SessionIDSet___nonzero__, METH_O, "__nonzero__(SessionIDSet self) -> bool"},
-	 { "SessionIDSet___bool__", _wrap_SessionIDSet___bool__, METH_O, "__bool__(SessionIDSet self) -> bool"},
-	 { "SessionIDSet___len__", _wrap_SessionIDSet___len__, METH_O, "__len__(SessionIDSet self) -> std::set< FIX::SessionID >::size_type"},
+	 { "SessionIDSet_iterator", _wrap_SessionIDSet_iterator, METH_O, "iterator(self) -> SwigPyIterator"},
+	 { "SessionIDSet___nonzero__", _wrap_SessionIDSet___nonzero__, METH_O, "__nonzero__(self) -> bool"},
+	 { "SessionIDSet___bool__", _wrap_SessionIDSet___bool__, METH_O, "__bool__(self) -> bool"},
+	 { "SessionIDSet___len__", _wrap_SessionIDSet___len__, METH_O, "__len__(self) -> std::set< FIX::SessionID >::size_type"},
 	 { "SessionIDSet_append", _wrap_SessionIDSet_append, METH_VARARGS, "\n"
-		"append(SessionIDSet self, SessionID x)\n"
+		"append(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165524,7 +165524,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet___contains__", _wrap_SessionIDSet___contains__, METH_VARARGS, "\n"
-		"__contains__(SessionIDSet self, SessionID x) -> bool\n"
+		"__contains__(self, x) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165532,7 +165532,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet___getitem__", _wrap_SessionIDSet___getitem__, METH_VARARGS, "\n"
-		"__getitem__(SessionIDSet self, std::set< FIX::SessionID >::difference_type i) -> SessionID\n"
+		"__getitem__(self, i) -> SessionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165540,7 +165540,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_add", _wrap_SessionIDSet_add, METH_VARARGS, "\n"
-		"add(SessionIDSet self, SessionID x)\n"
+		"add(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165548,7 +165548,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_discard", _wrap_SessionIDSet_discard, METH_VARARGS, "\n"
-		"discard(SessionIDSet self, SessionID x)\n"
+		"discard(self, x)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165556,25 +165556,25 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_SessionIDSet", _wrap_new_SessionIDSet, METH_VARARGS, "\n"
-		"SessionIDSet(std::less< FIX::SessionID > const & other)\n"
+		"SessionIDSet(other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::less< FIX::SessionID > const &\n"
 		"\n"
 		"SessionIDSet()\n"
-		"new_SessionIDSet(SessionIDSet other) -> SessionIDSet\n"
+		"new_SessionIDSet(other) -> SessionIDSet\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"other: std::set< FIX::SessionID > const &\n"
 		"\n"
 		""},
-	 { "SessionIDSet_empty", _wrap_SessionIDSet_empty, METH_O, "empty(SessionIDSet self) -> bool"},
-	 { "SessionIDSet_size", _wrap_SessionIDSet_size, METH_O, "size(SessionIDSet self) -> std::set< FIX::SessionID >::size_type"},
-	 { "SessionIDSet_clear", _wrap_SessionIDSet_clear, METH_O, "clear(SessionIDSet self)"},
+	 { "SessionIDSet_empty", _wrap_SessionIDSet_empty, METH_O, "empty(self) -> bool"},
+	 { "SessionIDSet_size", _wrap_SessionIDSet_size, METH_O, "size(self) -> std::set< FIX::SessionID >::size_type"},
+	 { "SessionIDSet_clear", _wrap_SessionIDSet_clear, METH_O, "clear(self)"},
 	 { "SessionIDSet_swap", _wrap_SessionIDSet_swap, METH_VARARGS, "\n"
-		"swap(SessionIDSet self, SessionIDSet v)\n"
+		"swap(self, v)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165582,31 +165582,31 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_count", _wrap_SessionIDSet_count, METH_VARARGS, "\n"
-		"count(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::size_type\n"
+		"count(self, x) -> std::set< FIX::SessionID >::size_type\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::set< FIX::SessionID >::key_type const &\n"
 		"\n"
 		""},
-	 { "SessionIDSet_begin", _wrap_SessionIDSet_begin, METH_O, "begin(SessionIDSet self) -> std::set< FIX::SessionID >::iterator"},
-	 { "SessionIDSet_end", _wrap_SessionIDSet_end, METH_O, "end(SessionIDSet self) -> std::set< FIX::SessionID >::iterator"},
-	 { "SessionIDSet_rbegin", _wrap_SessionIDSet_rbegin, METH_O, "rbegin(SessionIDSet self) -> std::set< FIX::SessionID >::reverse_iterator"},
-	 { "SessionIDSet_rend", _wrap_SessionIDSet_rend, METH_O, "rend(SessionIDSet self) -> std::set< FIX::SessionID >::reverse_iterator"},
+	 { "SessionIDSet_begin", _wrap_SessionIDSet_begin, METH_O, "begin(self) -> std::set< FIX::SessionID >::iterator"},
+	 { "SessionIDSet_end", _wrap_SessionIDSet_end, METH_O, "end(self) -> std::set< FIX::SessionID >::iterator"},
+	 { "SessionIDSet_rbegin", _wrap_SessionIDSet_rbegin, METH_O, "rbegin(self) -> std::set< FIX::SessionID >::reverse_iterator"},
+	 { "SessionIDSet_rend", _wrap_SessionIDSet_rend, METH_O, "rend(self) -> std::set< FIX::SessionID >::reverse_iterator"},
 	 { "SessionIDSet_erase", _wrap_SessionIDSet_erase, METH_VARARGS, "\n"
-		"erase(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::size_type\n"
+		"erase(self, x) -> std::set< FIX::SessionID >::size_type\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"x: std::set< FIX::SessionID >::key_type const &\n"
 		"\n"
-		"erase(SessionIDSet self, std::set< FIX::SessionID >::iterator pos)\n"
+		"erase(self, pos)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pos: std::set< FIX::SessionID >::iterator\n"
 		"\n"
-		"erase(SessionIDSet self, std::set< FIX::SessionID >::iterator first, std::set< FIX::SessionID >::iterator last)\n"
+		"erase(self, first, last)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165615,7 +165615,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_find", _wrap_SessionIDSet_find, METH_VARARGS, "\n"
-		"find(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"find(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165623,7 +165623,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_lower_bound", _wrap_SessionIDSet_lower_bound, METH_VARARGS, "\n"
-		"lower_bound(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"lower_bound(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165631,7 +165631,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_upper_bound", _wrap_SessionIDSet_upper_bound, METH_VARARGS, "\n"
-		"upper_bound(SessionIDSet self, SessionID x) -> std::set< FIX::SessionID >::iterator\n"
+		"upper_bound(self, x) -> std::set< FIX::SessionID >::iterator\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165639,7 +165639,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_equal_range", _wrap_SessionIDSet_equal_range, METH_VARARGS, "\n"
-		"equal_range(SessionIDSet self, SessionID x) -> std::pair< std::set< FIX::SessionID >::iterator,std::set< FIX::SessionID >::iterator >\n"
+		"equal_range(self, x) -> std::pair< std::set< FIX::SessionID >::iterator,std::set< FIX::SessionID >::iterator >\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165647,18 +165647,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionIDSet_insert", _wrap_SessionIDSet_insert, METH_VARARGS, "\n"
-		"insert(SessionIDSet self, SessionID __x) -> std::pair< std::set< FIX::SessionID >::iterator,bool >\n"
+		"insert(self, __x) -> std::pair< std::set< FIX::SessionID >::iterator,bool >\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"__x: std::set< FIX::SessionID >::value_type const &\n"
 		"\n"
 		""},
-	 { "delete_SessionIDSet", _wrap_delete_SessionIDSet, METH_O, "delete_SessionIDSet(SessionIDSet self)"},
+	 { "delete_SessionIDSet", _wrap_delete_SessionIDSet, METH_O, "delete_SessionIDSet(self)"},
 	 { "SessionIDSet_swigregister", SessionIDSet_swigregister, METH_O, NULL},
 	 { "SessionIDSet_swiginit", SessionIDSet_swiginit, METH_VARARGS, NULL},
 	 { "new_FIXException", _wrap_new_FIXException, METH_VARARGS, "\n"
-		"new_FIXException(std::string const & type, std::string const & detail) -> FIXException\n"
+		"new_FIXException(type, detail) -> FIXException\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165666,30 +165666,30 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"detail: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_FIXException", _wrap_delete_FIXException, METH_O, "delete_FIXException(FIXException self)"},
+	 { "delete_FIXException", _wrap_delete_FIXException, METH_O, "delete_FIXException(self)"},
 	 { "FIXException_type_set", _wrap_FIXException_type_set, METH_VARARGS, "\n"
-		"FIXException_type_set(FIXException self, std::string const & type)\n"
+		"FIXException_type_set(self, type)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"type: std::string const &\n"
 		"\n"
 		""},
-	 { "FIXException_type_get", _wrap_FIXException_type_get, METH_O, "FIXException_type_get(FIXException self) -> std::string const &"},
+	 { "FIXException_type_get", _wrap_FIXException_type_get, METH_O, "FIXException_type_get(self) -> std::string const &"},
 	 { "FIXException_detail_set", _wrap_FIXException_detail_set, METH_VARARGS, "\n"
-		"FIXException_detail_set(FIXException self, std::string const & detail)\n"
+		"FIXException_detail_set(self, detail)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"detail: std::string const &\n"
 		"\n"
 		""},
-	 { "FIXException_detail_get", _wrap_FIXException_detail_get, METH_O, "FIXException_detail_get(FIXException self) -> std::string const &"},
-	 { "FIXException___str__", _wrap_FIXException___str__, METH_O, "__str__(FIXException self) -> std::string"},
+	 { "FIXException_detail_get", _wrap_FIXException_detail_get, METH_O, "FIXException_detail_get(self) -> std::string const &"},
+	 { "FIXException___str__", _wrap_FIXException___str__, METH_O, "__str__(self) -> std::string"},
 	 { "FIXException_swigregister", FIXException_swigregister, METH_O, NULL},
 	 { "FIXException_swiginit", FIXException_swiginit, METH_VARARGS, NULL},
 	 { "new_DataDictionaryNotFound", _wrap_new_DataDictionaryNotFound, METH_VARARGS, "\n"
-		"DataDictionaryNotFound(std::string const & version, std::string const & what=\"\")\n"
+		"DataDictionaryNotFound(version, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165697,20 +165697,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DataDictionaryNotFound", _wrap_delete_DataDictionaryNotFound, METH_O, "delete_DataDictionaryNotFound(DataDictionaryNotFound self)"},
+	 { "delete_DataDictionaryNotFound", _wrap_delete_DataDictionaryNotFound, METH_O, "delete_DataDictionaryNotFound(self)"},
 	 { "DataDictionaryNotFound_version_set", _wrap_DataDictionaryNotFound_version_set, METH_VARARGS, "\n"
-		"DataDictionaryNotFound_version_set(DataDictionaryNotFound self, std::string const & version)\n"
+		"DataDictionaryNotFound_version_set(self, version)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"version: std::string const &\n"
 		"\n"
 		""},
-	 { "DataDictionaryNotFound_version_get", _wrap_DataDictionaryNotFound_version_get, METH_O, "DataDictionaryNotFound_version_get(DataDictionaryNotFound self) -> std::string const &"},
+	 { "DataDictionaryNotFound_version_get", _wrap_DataDictionaryNotFound_version_get, METH_O, "DataDictionaryNotFound_version_get(self) -> std::string const &"},
 	 { "DataDictionaryNotFound_swigregister", DataDictionaryNotFound_swigregister, METH_O, NULL},
 	 { "DataDictionaryNotFound_swiginit", DataDictionaryNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldNotFound", _wrap_new_FieldNotFound, METH_VARARGS, "\n"
-		"FieldNotFound(int field=0, std::string const & what=\"\")\n"
+		"FieldNotFound(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165719,74 +165719,74 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldNotFound_field_set", _wrap_FieldNotFound_field_set, METH_VARARGS, "\n"
-		"FieldNotFound_field_set(FieldNotFound self, int field)\n"
+		"FieldNotFound_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "FieldNotFound_field_get", _wrap_FieldNotFound_field_get, METH_O, "FieldNotFound_field_get(FieldNotFound self) -> int"},
-	 { "delete_FieldNotFound", _wrap_delete_FieldNotFound, METH_O, "delete_FieldNotFound(FieldNotFound self)"},
+	 { "FieldNotFound_field_get", _wrap_FieldNotFound_field_get, METH_O, "FieldNotFound_field_get(self) -> int"},
+	 { "delete_FieldNotFound", _wrap_delete_FieldNotFound, METH_O, "delete_FieldNotFound(self)"},
 	 { "FieldNotFound_swigregister", FieldNotFound_swigregister, METH_O, NULL},
 	 { "FieldNotFound_swiginit", FieldNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldConvertError", _wrap_new_FieldConvertError, METH_VARARGS, "\n"
-		"FieldConvertError(std::string const & what=\"\")\n"
+		"FieldConvertError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_FieldConvertError", _wrap_delete_FieldConvertError, METH_O, "delete_FieldConvertError(FieldConvertError self)"},
+	 { "delete_FieldConvertError", _wrap_delete_FieldConvertError, METH_O, "delete_FieldConvertError(self)"},
 	 { "FieldConvertError_swigregister", FieldConvertError_swigregister, METH_O, NULL},
 	 { "FieldConvertError_swiginit", FieldConvertError_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageParseError", _wrap_new_MessageParseError, METH_VARARGS, "\n"
-		"MessageParseError(std::string const & what=\"\")\n"
+		"MessageParseError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_MessageParseError", _wrap_delete_MessageParseError, METH_O, "delete_MessageParseError(MessageParseError self)"},
+	 { "delete_MessageParseError", _wrap_delete_MessageParseError, METH_O, "delete_MessageParseError(self)"},
 	 { "MessageParseError_swigregister", MessageParseError_swigregister, METH_O, NULL},
 	 { "MessageParseError_swiginit", MessageParseError_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidMessage", _wrap_new_InvalidMessage, METH_VARARGS, "\n"
-		"InvalidMessage(std::string const & what=\"\")\n"
+		"InvalidMessage(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_InvalidMessage", _wrap_delete_InvalidMessage, METH_O, "delete_InvalidMessage(InvalidMessage self)"},
+	 { "delete_InvalidMessage", _wrap_delete_InvalidMessage, METH_O, "delete_InvalidMessage(self)"},
 	 { "InvalidMessage_swigregister", InvalidMessage_swigregister, METH_O, NULL},
 	 { "InvalidMessage_swiginit", InvalidMessage_swiginit, METH_VARARGS, NULL},
 	 { "new_ConfigError", _wrap_new_ConfigError, METH_VARARGS, "\n"
-		"ConfigError(std::string const & what=\"\")\n"
+		"ConfigError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_ConfigError", _wrap_delete_ConfigError, METH_O, "delete_ConfigError(ConfigError self)"},
+	 { "delete_ConfigError", _wrap_delete_ConfigError, METH_O, "delete_ConfigError(self)"},
 	 { "ConfigError_swigregister", ConfigError_swigregister, METH_O, NULL},
 	 { "ConfigError_swiginit", ConfigError_swiginit, METH_VARARGS, NULL},
 	 { "new_RuntimeError", _wrap_new_RuntimeError, METH_VARARGS, "\n"
-		"RuntimeError(std::string const & what=\"\")\n"
+		"RuntimeError(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_RuntimeError", _wrap_delete_RuntimeError, METH_O, "delete_RuntimeError(RuntimeError self)"},
+	 { "delete_RuntimeError", _wrap_delete_RuntimeError, METH_O, "delete_RuntimeError(self)"},
 	 { "RuntimeError_swigregister", RuntimeError_swigregister, METH_O, NULL},
 	 { "RuntimeError_swiginit", RuntimeError_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidTagNumber", _wrap_new_InvalidTagNumber, METH_VARARGS, "\n"
-		"InvalidTagNumber(int field=0, std::string const & what=\"\")\n"
+		"InvalidTagNumber(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165795,19 +165795,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "InvalidTagNumber_field_set", _wrap_InvalidTagNumber_field_set, METH_VARARGS, "\n"
-		"InvalidTagNumber_field_set(InvalidTagNumber self, int field)\n"
+		"InvalidTagNumber_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "InvalidTagNumber_field_get", _wrap_InvalidTagNumber_field_get, METH_O, "InvalidTagNumber_field_get(InvalidTagNumber self) -> int"},
-	 { "delete_InvalidTagNumber", _wrap_delete_InvalidTagNumber, METH_O, "delete_InvalidTagNumber(InvalidTagNumber self)"},
+	 { "InvalidTagNumber_field_get", _wrap_InvalidTagNumber_field_get, METH_O, "InvalidTagNumber_field_get(self) -> int"},
+	 { "delete_InvalidTagNumber", _wrap_delete_InvalidTagNumber, METH_O, "delete_InvalidTagNumber(self)"},
 	 { "InvalidTagNumber_swigregister", InvalidTagNumber_swigregister, METH_O, NULL},
 	 { "InvalidTagNumber_swiginit", InvalidTagNumber_swiginit, METH_VARARGS, NULL},
 	 { "new_RequiredTagMissing", _wrap_new_RequiredTagMissing, METH_VARARGS, "\n"
-		"RequiredTagMissing(int field=0, std::string const & what=\"\")\n"
+		"RequiredTagMissing(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165816,19 +165816,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "RequiredTagMissing_field_set", _wrap_RequiredTagMissing_field_set, METH_VARARGS, "\n"
-		"RequiredTagMissing_field_set(RequiredTagMissing self, int field)\n"
+		"RequiredTagMissing_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RequiredTagMissing_field_get", _wrap_RequiredTagMissing_field_get, METH_O, "RequiredTagMissing_field_get(RequiredTagMissing self) -> int"},
-	 { "delete_RequiredTagMissing", _wrap_delete_RequiredTagMissing, METH_O, "delete_RequiredTagMissing(RequiredTagMissing self)"},
+	 { "RequiredTagMissing_field_get", _wrap_RequiredTagMissing_field_get, METH_O, "RequiredTagMissing_field_get(self) -> int"},
+	 { "delete_RequiredTagMissing", _wrap_delete_RequiredTagMissing, METH_O, "delete_RequiredTagMissing(self)"},
 	 { "RequiredTagMissing_swigregister", RequiredTagMissing_swigregister, METH_O, NULL},
 	 { "RequiredTagMissing_swiginit", RequiredTagMissing_swiginit, METH_VARARGS, NULL},
 	 { "new_TagNotDefinedForMessage", _wrap_new_TagNotDefinedForMessage, METH_VARARGS, "\n"
-		"TagNotDefinedForMessage(int field=0, std::string const & what=\"\")\n"
+		"TagNotDefinedForMessage(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165837,19 +165837,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "TagNotDefinedForMessage_field_set", _wrap_TagNotDefinedForMessage_field_set, METH_VARARGS, "\n"
-		"TagNotDefinedForMessage_field_set(TagNotDefinedForMessage self, int field)\n"
+		"TagNotDefinedForMessage_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "TagNotDefinedForMessage_field_get", _wrap_TagNotDefinedForMessage_field_get, METH_O, "TagNotDefinedForMessage_field_get(TagNotDefinedForMessage self) -> int"},
-	 { "delete_TagNotDefinedForMessage", _wrap_delete_TagNotDefinedForMessage, METH_O, "delete_TagNotDefinedForMessage(TagNotDefinedForMessage self)"},
+	 { "TagNotDefinedForMessage_field_get", _wrap_TagNotDefinedForMessage_field_get, METH_O, "TagNotDefinedForMessage_field_get(self) -> int"},
+	 { "delete_TagNotDefinedForMessage", _wrap_delete_TagNotDefinedForMessage, METH_O, "delete_TagNotDefinedForMessage(self)"},
 	 { "TagNotDefinedForMessage_swigregister", TagNotDefinedForMessage_swigregister, METH_O, NULL},
 	 { "TagNotDefinedForMessage_swiginit", TagNotDefinedForMessage_swiginit, METH_VARARGS, NULL},
 	 { "new_NoTagValue", _wrap_new_NoTagValue, METH_VARARGS, "\n"
-		"NoTagValue(int field=0, std::string const & what=\"\")\n"
+		"NoTagValue(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165858,19 +165858,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NoTagValue_field_set", _wrap_NoTagValue_field_set, METH_VARARGS, "\n"
-		"NoTagValue_field_set(NoTagValue self, int field)\n"
+		"NoTagValue_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "NoTagValue_field_get", _wrap_NoTagValue_field_get, METH_O, "NoTagValue_field_get(NoTagValue self) -> int"},
-	 { "delete_NoTagValue", _wrap_delete_NoTagValue, METH_O, "delete_NoTagValue(NoTagValue self)"},
+	 { "NoTagValue_field_get", _wrap_NoTagValue_field_get, METH_O, "NoTagValue_field_get(self) -> int"},
+	 { "delete_NoTagValue", _wrap_delete_NoTagValue, METH_O, "delete_NoTagValue(self)"},
 	 { "NoTagValue_swigregister", NoTagValue_swigregister, METH_O, NULL},
 	 { "NoTagValue_swiginit", NoTagValue_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectTagValue", _wrap_new_IncorrectTagValue, METH_VARARGS, "\n"
-		"IncorrectTagValue(int field=0, std::string const & what=\"\")\n"
+		"IncorrectTagValue(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165879,19 +165879,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "IncorrectTagValue_field_set", _wrap_IncorrectTagValue_field_set, METH_VARARGS, "\n"
-		"IncorrectTagValue_field_set(IncorrectTagValue self, int field)\n"
+		"IncorrectTagValue_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "IncorrectTagValue_field_get", _wrap_IncorrectTagValue_field_get, METH_O, "IncorrectTagValue_field_get(IncorrectTagValue self) -> int"},
-	 { "delete_IncorrectTagValue", _wrap_delete_IncorrectTagValue, METH_O, "delete_IncorrectTagValue(IncorrectTagValue self)"},
+	 { "IncorrectTagValue_field_get", _wrap_IncorrectTagValue_field_get, METH_O, "IncorrectTagValue_field_get(self) -> int"},
+	 { "delete_IncorrectTagValue", _wrap_delete_IncorrectTagValue, METH_O, "delete_IncorrectTagValue(self)"},
 	 { "IncorrectTagValue_swigregister", IncorrectTagValue_swigregister, METH_O, NULL},
 	 { "IncorrectTagValue_swiginit", IncorrectTagValue_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectDataFormat", _wrap_new_IncorrectDataFormat, METH_VARARGS, "\n"
-		"IncorrectDataFormat(int field=0, std::string const & what=\"\")\n"
+		"IncorrectDataFormat(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165900,74 +165900,74 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "IncorrectDataFormat_field_set", _wrap_IncorrectDataFormat_field_set, METH_VARARGS, "\n"
-		"IncorrectDataFormat_field_set(IncorrectDataFormat self, int field)\n"
+		"IncorrectDataFormat_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "IncorrectDataFormat_field_get", _wrap_IncorrectDataFormat_field_get, METH_O, "IncorrectDataFormat_field_get(IncorrectDataFormat self) -> int"},
-	 { "delete_IncorrectDataFormat", _wrap_delete_IncorrectDataFormat, METH_O, "delete_IncorrectDataFormat(IncorrectDataFormat self)"},
+	 { "IncorrectDataFormat_field_get", _wrap_IncorrectDataFormat_field_get, METH_O, "IncorrectDataFormat_field_get(self) -> int"},
+	 { "delete_IncorrectDataFormat", _wrap_delete_IncorrectDataFormat, METH_O, "delete_IncorrectDataFormat(self)"},
 	 { "IncorrectDataFormat_swigregister", IncorrectDataFormat_swigregister, METH_O, NULL},
 	 { "IncorrectDataFormat_swiginit", IncorrectDataFormat_swiginit, METH_VARARGS, NULL},
 	 { "new_IncorrectMessageStructure", _wrap_new_IncorrectMessageStructure, METH_VARARGS, "\n"
-		"IncorrectMessageStructure(std::string const & what=\"\")\n"
+		"IncorrectMessageStructure(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_IncorrectMessageStructure", _wrap_delete_IncorrectMessageStructure, METH_O, "delete_IncorrectMessageStructure(IncorrectMessageStructure self)"},
+	 { "delete_IncorrectMessageStructure", _wrap_delete_IncorrectMessageStructure, METH_O, "delete_IncorrectMessageStructure(self)"},
 	 { "IncorrectMessageStructure_swigregister", IncorrectMessageStructure_swigregister, METH_O, NULL},
 	 { "IncorrectMessageStructure_swiginit", IncorrectMessageStructure_swiginit, METH_VARARGS, NULL},
 	 { "new_DuplicateFieldNumber", _wrap_new_DuplicateFieldNumber, METH_VARARGS, "\n"
-		"DuplicateFieldNumber(std::string const & what=\"\")\n"
+		"DuplicateFieldNumber(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DuplicateFieldNumber", _wrap_delete_DuplicateFieldNumber, METH_O, "delete_DuplicateFieldNumber(DuplicateFieldNumber self)"},
+	 { "delete_DuplicateFieldNumber", _wrap_delete_DuplicateFieldNumber, METH_O, "delete_DuplicateFieldNumber(self)"},
 	 { "DuplicateFieldNumber_swigregister", DuplicateFieldNumber_swigregister, METH_O, NULL},
 	 { "DuplicateFieldNumber_swiginit", DuplicateFieldNumber_swiginit, METH_VARARGS, NULL},
 	 { "new_InvalidMessageType", _wrap_new_InvalidMessageType, METH_VARARGS, "\n"
-		"InvalidMessageType(std::string const & what=\"\")\n"
+		"InvalidMessageType(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_InvalidMessageType", _wrap_delete_InvalidMessageType, METH_O, "delete_InvalidMessageType(InvalidMessageType self)"},
+	 { "delete_InvalidMessageType", _wrap_delete_InvalidMessageType, METH_O, "delete_InvalidMessageType(self)"},
 	 { "InvalidMessageType_swigregister", InvalidMessageType_swigregister, METH_O, NULL},
 	 { "InvalidMessageType_swiginit", InvalidMessageType_swiginit, METH_VARARGS, NULL},
 	 { "new_UnsupportedMessageType", _wrap_new_UnsupportedMessageType, METH_VARARGS, "\n"
-		"UnsupportedMessageType(std::string const & what=\"\")\n"
+		"UnsupportedMessageType(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_UnsupportedMessageType", _wrap_delete_UnsupportedMessageType, METH_O, "delete_UnsupportedMessageType(UnsupportedMessageType self)"},
+	 { "delete_UnsupportedMessageType", _wrap_delete_UnsupportedMessageType, METH_O, "delete_UnsupportedMessageType(self)"},
 	 { "UnsupportedMessageType_swigregister", UnsupportedMessageType_swigregister, METH_O, NULL},
 	 { "UnsupportedMessageType_swiginit", UnsupportedMessageType_swiginit, METH_VARARGS, NULL},
 	 { "new_UnsupportedVersion", _wrap_new_UnsupportedVersion, METH_VARARGS, "\n"
-		"UnsupportedVersion(std::string const & what=\"\")\n"
+		"UnsupportedVersion(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_UnsupportedVersion", _wrap_delete_UnsupportedVersion, METH_O, "delete_UnsupportedVersion(UnsupportedVersion self)"},
+	 { "delete_UnsupportedVersion", _wrap_delete_UnsupportedVersion, METH_O, "delete_UnsupportedVersion(self)"},
 	 { "UnsupportedVersion_swigregister", UnsupportedVersion_swigregister, METH_O, NULL},
 	 { "UnsupportedVersion_swiginit", UnsupportedVersion_swiginit, METH_VARARGS, NULL},
 	 { "new_TagOutOfOrder", _wrap_new_TagOutOfOrder, METH_VARARGS, "\n"
-		"TagOutOfOrder(int field=0, std::string const & what=\"\")\n"
+		"TagOutOfOrder(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165976,19 +165976,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "TagOutOfOrder_field_set", _wrap_TagOutOfOrder_field_set, METH_VARARGS, "\n"
-		"TagOutOfOrder_field_set(TagOutOfOrder self, int field)\n"
+		"TagOutOfOrder_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "TagOutOfOrder_field_get", _wrap_TagOutOfOrder_field_get, METH_O, "TagOutOfOrder_field_get(TagOutOfOrder self) -> int"},
-	 { "delete_TagOutOfOrder", _wrap_delete_TagOutOfOrder, METH_O, "delete_TagOutOfOrder(TagOutOfOrder self)"},
+	 { "TagOutOfOrder_field_get", _wrap_TagOutOfOrder_field_get, METH_O, "TagOutOfOrder_field_get(self) -> int"},
+	 { "delete_TagOutOfOrder", _wrap_delete_TagOutOfOrder, METH_O, "delete_TagOutOfOrder(self)"},
 	 { "TagOutOfOrder_swigregister", TagOutOfOrder_swigregister, METH_O, NULL},
 	 { "TagOutOfOrder_swiginit", TagOutOfOrder_swiginit, METH_VARARGS, NULL},
 	 { "new_RepeatedTag", _wrap_new_RepeatedTag, METH_VARARGS, "\n"
-		"RepeatedTag(int field=0, std::string const & what=\"\")\n"
+		"RepeatedTag(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -165997,19 +165997,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "RepeatedTag_field_set", _wrap_RepeatedTag_field_set, METH_VARARGS, "\n"
-		"RepeatedTag_field_set(RepeatedTag self, int field)\n"
+		"RepeatedTag_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RepeatedTag_field_get", _wrap_RepeatedTag_field_get, METH_O, "RepeatedTag_field_get(RepeatedTag self) -> int"},
-	 { "delete_RepeatedTag", _wrap_delete_RepeatedTag, METH_O, "delete_RepeatedTag(RepeatedTag self)"},
+	 { "RepeatedTag_field_get", _wrap_RepeatedTag_field_get, METH_O, "RepeatedTag_field_get(self) -> int"},
+	 { "delete_RepeatedTag", _wrap_delete_RepeatedTag, METH_O, "delete_RepeatedTag(self)"},
 	 { "RepeatedTag_swigregister", RepeatedTag_swigregister, METH_O, NULL},
 	 { "RepeatedTag_swiginit", RepeatedTag_swiginit, METH_VARARGS, NULL},
 	 { "new_RepeatingGroupCountMismatch", _wrap_new_RepeatingGroupCountMismatch, METH_VARARGS, "\n"
-		"RepeatingGroupCountMismatch(int field=0, std::string const & what=\"\")\n"
+		"RepeatingGroupCountMismatch(field=0, what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166018,64 +166018,64 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "RepeatingGroupCountMismatch_field_set", _wrap_RepeatingGroupCountMismatch_field_set, METH_VARARGS, "\n"
-		"RepeatingGroupCountMismatch_field_set(RepeatingGroupCountMismatch self, int field)\n"
+		"RepeatingGroupCountMismatch_field_set(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
 		""},
-	 { "RepeatingGroupCountMismatch_field_get", _wrap_RepeatingGroupCountMismatch_field_get, METH_O, "RepeatingGroupCountMismatch_field_get(RepeatingGroupCountMismatch self) -> int"},
-	 { "delete_RepeatingGroupCountMismatch", _wrap_delete_RepeatingGroupCountMismatch, METH_O, "delete_RepeatingGroupCountMismatch(RepeatingGroupCountMismatch self)"},
+	 { "RepeatingGroupCountMismatch_field_get", _wrap_RepeatingGroupCountMismatch_field_get, METH_O, "RepeatingGroupCountMismatch_field_get(self) -> int"},
+	 { "delete_RepeatingGroupCountMismatch", _wrap_delete_RepeatingGroupCountMismatch, METH_O, "delete_RepeatingGroupCountMismatch(self)"},
 	 { "RepeatingGroupCountMismatch_swigregister", RepeatingGroupCountMismatch_swigregister, METH_O, NULL},
 	 { "RepeatingGroupCountMismatch_swiginit", RepeatingGroupCountMismatch_swiginit, METH_VARARGS, NULL},
 	 { "new_DoNotSend", _wrap_new_DoNotSend, METH_VARARGS, "\n"
-		"DoNotSend(std::string const & what=\"\")\n"
+		"DoNotSend(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_DoNotSend", _wrap_delete_DoNotSend, METH_O, "delete_DoNotSend(DoNotSend self)"},
+	 { "delete_DoNotSend", _wrap_delete_DoNotSend, METH_O, "delete_DoNotSend(self)"},
 	 { "DoNotSend_swigregister", DoNotSend_swigregister, METH_O, NULL},
 	 { "DoNotSend_swiginit", DoNotSend_swiginit, METH_VARARGS, NULL},
 	 { "new_RejectLogon", _wrap_new_RejectLogon, METH_VARARGS, "\n"
-		"RejectLogon(std::string const & what=\"\")\n"
+		"RejectLogon(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_RejectLogon", _wrap_delete_RejectLogon, METH_O, "delete_RejectLogon(RejectLogon self)"},
+	 { "delete_RejectLogon", _wrap_delete_RejectLogon, METH_O, "delete_RejectLogon(self)"},
 	 { "RejectLogon_swigregister", RejectLogon_swigregister, METH_O, NULL},
 	 { "RejectLogon_swiginit", RejectLogon_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionNotFound", _wrap_new_SessionNotFound, METH_VARARGS, "\n"
-		"SessionNotFound(std::string const & what=\"\")\n"
+		"SessionNotFound(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SessionNotFound", _wrap_delete_SessionNotFound, METH_O, "delete_SessionNotFound(SessionNotFound self)"},
+	 { "delete_SessionNotFound", _wrap_delete_SessionNotFound, METH_O, "delete_SessionNotFound(self)"},
 	 { "SessionNotFound_swigregister", SessionNotFound_swigregister, METH_O, NULL},
 	 { "SessionNotFound_swiginit", SessionNotFound_swiginit, METH_VARARGS, NULL},
 	 { "new_IOException", _wrap_new_IOException, METH_VARARGS, "\n"
-		"IOException(std::string const & what=\"\")\n"
+		"IOException(what=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_IOException", _wrap_delete_IOException, METH_O, "delete_IOException(IOException self)"},
+	 { "delete_IOException", _wrap_delete_IOException, METH_O, "delete_IOException(self)"},
 	 { "IOException_swigregister", IOException_swigregister, METH_O, NULL},
 	 { "IOException_swiginit", IOException_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketException", _wrap_new_SocketException, METH_VARARGS, "\n"
 		"SocketException()\n"
-		"new_SocketException(std::string const & what) -> SocketException\n"
+		"new_SocketException(what) -> SocketException\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166083,78 +166083,78 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SocketException_errorToWhat", _wrap_SocketException_errorToWhat, METH_NOARGS, "errorToWhat() -> std::string"},
-	 { "delete_SocketException", _wrap_delete_SocketException, METH_O, "delete_SocketException(SocketException self)"},
+	 { "delete_SocketException", _wrap_delete_SocketException, METH_O, "delete_SocketException(self)"},
 	 { "SocketException_swigregister", SocketException_swigregister, METH_O, NULL},
 	 { "SocketException_swiginit", SocketException_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketSendFailed", _wrap_new_SocketSendFailed, METH_VARARGS, "\n"
 		"SocketSendFailed()\n"
-		"new_SocketSendFailed(std::string const & what) -> SocketSendFailed\n"
+		"new_SocketSendFailed(what) -> SocketSendFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketSendFailed", _wrap_delete_SocketSendFailed, METH_O, "delete_SocketSendFailed(SocketSendFailed self)"},
+	 { "delete_SocketSendFailed", _wrap_delete_SocketSendFailed, METH_O, "delete_SocketSendFailed(self)"},
 	 { "SocketSendFailed_swigregister", SocketSendFailed_swigregister, METH_O, NULL},
 	 { "SocketSendFailed_swiginit", SocketSendFailed_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketRecvFailed", _wrap_new_SocketRecvFailed, METH_VARARGS, "\n"
-		"SocketRecvFailed(ssize_t size)\n"
+		"SocketRecvFailed(size)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"size: ssize_t\n"
 		"\n"
-		"new_SocketRecvFailed(std::string const & what) -> SocketRecvFailed\n"
+		"new_SocketRecvFailed(what) -> SocketRecvFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketRecvFailed", _wrap_delete_SocketRecvFailed, METH_O, "delete_SocketRecvFailed(SocketRecvFailed self)"},
+	 { "delete_SocketRecvFailed", _wrap_delete_SocketRecvFailed, METH_O, "delete_SocketRecvFailed(self)"},
 	 { "SocketRecvFailed_swigregister", SocketRecvFailed_swigregister, METH_O, NULL},
 	 { "SocketRecvFailed_swiginit", SocketRecvFailed_swiginit, METH_VARARGS, NULL},
 	 { "new_SocketCloseFailed", _wrap_new_SocketCloseFailed, METH_VARARGS, "\n"
 		"SocketCloseFailed()\n"
-		"new_SocketCloseFailed(std::string const & what) -> SocketCloseFailed\n"
+		"new_SocketCloseFailed(what) -> SocketCloseFailed\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"what: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SocketCloseFailed", _wrap_delete_SocketCloseFailed, METH_O, "delete_SocketCloseFailed(SocketCloseFailed self)"},
+	 { "delete_SocketCloseFailed", _wrap_delete_SocketCloseFailed, METH_O, "delete_SocketCloseFailed(self)"},
 	 { "SocketCloseFailed_swigregister", SocketCloseFailed_swigregister, METH_O, NULL},
 	 { "SocketCloseFailed_swiginit", SocketCloseFailed_swiginit, METH_VARARGS, NULL},
 	 { "DateTime_m_date_set", _wrap_DateTime_m_date_set, METH_VARARGS, "\n"
-		"DateTime_m_date_set(DateTime self, int m_date)\n"
+		"DateTime_m_date_set(self, m_date)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_date: int\n"
 		"\n"
 		""},
-	 { "DateTime_m_date_get", _wrap_DateTime_m_date_get, METH_O, "DateTime_m_date_get(DateTime self) -> int"},
+	 { "DateTime_m_date_get", _wrap_DateTime_m_date_get, METH_O, "DateTime_m_date_get(self) -> int"},
 	 { "DateTime_m_time_set", _wrap_DateTime_m_time_set, METH_VARARGS, "\n"
-		"DateTime_m_time_set(DateTime self, int64_t m_time)\n"
+		"DateTime_m_time_set(self, m_time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_time: int64_t\n"
 		"\n"
 		""},
-	 { "DateTime_m_time_get", _wrap_DateTime_m_time_get, METH_O, "DateTime_m_time_get(DateTime self) -> int64_t"},
+	 { "DateTime_m_time_get", _wrap_DateTime_m_time_get, METH_O, "DateTime_m_time_get(self) -> int64_t"},
 	 { "new_DateTime", _wrap_new_DateTime, METH_VARARGS, "\n"
 		"DateTime()\n"
-		"DateTime(int date, int64_t time)\n"
+		"DateTime(date, time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"date: int\n"
 		"time: int64_t\n"
 		"\n"
-		"DateTime(int year, int month, int day, int hour, int minute, int second, int millis)\n"
+		"DateTime(year, month, day, hour, minute, second, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166166,7 +166166,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millis: int\n"
 		"\n"
-		"new_DateTime(int year, int month, int day, int hour, int minute, int second, int fraction, int precision) -> DateTime\n"
+		"new_DateTime(year, month, day, hour, minute, second, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166180,31 +166180,31 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "delete_DateTime", _wrap_delete_DateTime, METH_O, "delete_DateTime(DateTime self)"},
-	 { "DateTime_getYear", _wrap_DateTime_getYear, METH_O, "getYear(DateTime self) -> int"},
-	 { "DateTime_getMonth", _wrap_DateTime_getMonth, METH_O, "getMonth(DateTime self) -> int"},
-	 { "DateTime_getDay", _wrap_DateTime_getDay, METH_O, "getDay(DateTime self) -> int"},
-	 { "DateTime_getDate", _wrap_DateTime_getDate, METH_O, "getDate(DateTime self) -> int"},
-	 { "DateTime_getJulianDate", _wrap_DateTime_getJulianDate, METH_O, "getJulianDate(DateTime self) -> int"},
-	 { "DateTime_getHour", _wrap_DateTime_getHour, METH_O, "getHour(DateTime self) -> int"},
-	 { "DateTime_getMinute", _wrap_DateTime_getMinute, METH_O, "getMinute(DateTime self) -> int"},
-	 { "DateTime_getSecond", _wrap_DateTime_getSecond, METH_O, "getSecond(DateTime self) -> int"},
-	 { "DateTime_getMillisecond", _wrap_DateTime_getMillisecond, METH_O, "getMillisecond(DateTime self) -> int"},
-	 { "DateTime_getMicrosecond", _wrap_DateTime_getMicrosecond, METH_O, "getMicrosecond(DateTime self) -> int"},
-	 { "DateTime_getNanosecond", _wrap_DateTime_getNanosecond, METH_O, "getNanosecond(DateTime self) -> unsigned int"},
+	 { "delete_DateTime", _wrap_delete_DateTime, METH_O, "delete_DateTime(self)"},
+	 { "DateTime_getYear", _wrap_DateTime_getYear, METH_O, "getYear(self) -> int"},
+	 { "DateTime_getMonth", _wrap_DateTime_getMonth, METH_O, "getMonth(self) -> int"},
+	 { "DateTime_getDay", _wrap_DateTime_getDay, METH_O, "getDay(self) -> int"},
+	 { "DateTime_getDate", _wrap_DateTime_getDate, METH_O, "getDate(self) -> int"},
+	 { "DateTime_getJulianDate", _wrap_DateTime_getJulianDate, METH_O, "getJulianDate(self) -> int"},
+	 { "DateTime_getHour", _wrap_DateTime_getHour, METH_O, "getHour(self) -> int"},
+	 { "DateTime_getMinute", _wrap_DateTime_getMinute, METH_O, "getMinute(self) -> int"},
+	 { "DateTime_getSecond", _wrap_DateTime_getSecond, METH_O, "getSecond(self) -> int"},
+	 { "DateTime_getMillisecond", _wrap_DateTime_getMillisecond, METH_O, "getMillisecond(self) -> int"},
+	 { "DateTime_getMicrosecond", _wrap_DateTime_getMicrosecond, METH_O, "getMicrosecond(self) -> int"},
+	 { "DateTime_getNanosecond", _wrap_DateTime_getNanosecond, METH_O, "getNanosecond(self) -> unsigned int"},
 	 { "DateTime_getFraction", _wrap_DateTime_getFraction, METH_VARARGS, "\n"
-		"getFraction(DateTime self, int precision) -> int\n"
+		"getFraction(self, precision) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"precision: int\n"
 		"\n"
 		""},
-	 { "DateTime_getWeekDay", _wrap_DateTime_getWeekDay, METH_O, "getWeekDay(DateTime self) -> int"},
-	 { "DateTime_getTimeT", _wrap_DateTime_getTimeT, METH_O, "getTimeT(DateTime self) -> time_t"},
-	 { "DateTime_getTmUtc", _wrap_DateTime_getTmUtc, METH_O, "getTmUtc(DateTime self) -> tm"},
+	 { "DateTime_getWeekDay", _wrap_DateTime_getWeekDay, METH_O, "getWeekDay(self) -> int"},
+	 { "DateTime_getTimeT", _wrap_DateTime_getTimeT, METH_O, "getTimeT(self) -> time_t"},
+	 { "DateTime_getTmUtc", _wrap_DateTime_getTmUtc, METH_O, "getTmUtc(self) -> tm"},
 	 { "DateTime_setYMD", _wrap_DateTime_setYMD, METH_VARARGS, "\n"
-		"setYMD(DateTime self, int year, int month, int day)\n"
+		"setYMD(self, year, month, day)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166214,7 +166214,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setHMS", _wrap_DateTime_setHMS, METH_VARARGS, "\n"
-		"setHMS(DateTime self, int hour, int minute, int second, int millis)\n"
+		"setHMS(self, hour, minute, second, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166223,7 +166223,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millis: int\n"
 		"\n"
-		"setHMS(DateTime self, int hour, int minute, int second, int fraction, int precision)\n"
+		"setHMS(self, hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166235,7 +166235,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setHour", _wrap_DateTime_setHour, METH_VARARGS, "\n"
-		"setHour(DateTime self, int hour)\n"
+		"setHour(self, hour)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166243,7 +166243,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setMinute", _wrap_DateTime_setMinute, METH_VARARGS, "\n"
-		"setMinute(DateTime self, int min)\n"
+		"setMinute(self, min)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166251,7 +166251,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setSecond", _wrap_DateTime_setSecond, METH_VARARGS, "\n"
-		"setSecond(DateTime self, int sec)\n"
+		"setSecond(self, sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166259,7 +166259,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setMillisecond", _wrap_DateTime_setMillisecond, METH_VARARGS, "\n"
-		"setMillisecond(DateTime self, int millis)\n"
+		"setMillisecond(self, millis)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166267,7 +166267,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setMicrosecond", _wrap_DateTime_setMicrosecond, METH_VARARGS, "\n"
-		"setMicrosecond(DateTime self, int micros)\n"
+		"setMicrosecond(self, micros)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166275,7 +166275,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setNanosecond", _wrap_DateTime_setNanosecond, METH_VARARGS, "\n"
-		"setNanosecond(DateTime self, int nanos)\n"
+		"setNanosecond(self, nanos)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166283,7 +166283,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_setFraction", _wrap_DateTime_setFraction, METH_VARARGS, "\n"
-		"setFraction(DateTime self, int fraction, int precision)\n"
+		"setFraction(self, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166291,17 +166291,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "DateTime_clearDate", _wrap_DateTime_clearDate, METH_O, "clearDate(DateTime self)"},
-	 { "DateTime_clearTime", _wrap_DateTime_clearTime, METH_O, "clearTime(DateTime self)"},
+	 { "DateTime_clearDate", _wrap_DateTime_clearDate, METH_O, "clearDate(self)"},
+	 { "DateTime_clearTime", _wrap_DateTime_clearTime, METH_O, "clearTime(self)"},
 	 { "DateTime_set", _wrap_DateTime_set, METH_VARARGS, "\n"
-		"set(DateTime self, int date, int64_t time)\n"
+		"set(self, date, time)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"date: int\n"
 		"time: int64_t\n"
 		"\n"
-		"set(DateTime self, DateTime other)\n"
+		"set(self, other)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166309,7 +166309,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime___iadd__", _wrap_DateTime___iadd__, METH_VARARGS, "\n"
-		"__iadd__(DateTime self, int seconds)\n"
+		"__iadd__(self, seconds)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166317,7 +166317,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_convertToNanos", _wrap_DateTime_convertToNanos, METH_VARARGS, "\n"
-		"convertToNanos(int fraction, int precision) -> int\n"
+		"convertToNanos(fraction, precision) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166326,7 +166326,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_makeHMS", _wrap_DateTime_makeHMS, METH_VARARGS, "\n"
-		"makeHMS(int hour, int minute, int second, int nanos) -> int64_t\n"
+		"makeHMS(hour, minute, second, nanos) -> int64_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166339,14 +166339,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "DateTime_nowUtc", _wrap_DateTime_nowUtc, METH_NOARGS, "nowUtc() -> DateTime"},
 	 { "DateTime_nowLocal", _wrap_DateTime_nowLocal, METH_NOARGS, "nowLocal() -> DateTime"},
 	 { "DateTime_fromUtcTimeT", _wrap_DateTime_fromUtcTimeT, METH_VARARGS, "\n"
-		"fromUtcTimeT(time_t t, int millis=0) -> DateTime\n"
+		"fromUtcTimeT(t, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"t: time_t\n"
 		"millis: int\n"
 		"\n"
-		"fromUtcTimeT(time_t t, int fraction, int precision) -> DateTime\n"
+		"fromUtcTimeT(t, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166356,14 +166356,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_fromLocalTimeT", _wrap_DateTime_fromLocalTimeT, METH_VARARGS, "\n"
-		"fromLocalTimeT(time_t t, int millis=0) -> DateTime\n"
+		"fromLocalTimeT(t, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"t: time_t\n"
 		"millis: int\n"
 		"\n"
-		"fromLocalTimeT(time_t t, int fraction, int precision) -> DateTime\n"
+		"fromLocalTimeT(t, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166373,14 +166373,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_fromTm", _wrap_DateTime_fromTm, METH_VARARGS, "\n"
-		"fromTm(tm const & tm, int millis=0) -> DateTime\n"
+		"fromTm(tm, millis=0) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tm: tm const &\n"
 		"millis: int\n"
 		"\n"
-		"fromTm(tm const & tm, int fraction, int precision) -> DateTime\n"
+		"fromTm(tm, fraction, precision) -> DateTime\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166390,7 +166390,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DateTime_julianDate", _wrap_DateTime_julianDate, METH_VARARGS, "\n"
-		"julianDate(int year, int month, int day) -> int\n"
+		"julianDate(year, month, day) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166402,7 +166402,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "DateTime_swigregister", DateTime_swigregister, METH_O, NULL},
 	 { "DateTime_swiginit", DateTime_swiginit, METH_VARARGS, NULL},
 	 { "__sub__", _wrap___sub__, METH_VARARGS, "\n"
-		"__sub__(DateTime lhs, DateTime rhs) -> int\n"
+		"__sub__(lhs, rhs) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166413,13 +166413,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "UtcTimeStamp_now", _wrap_UtcTimeStamp_now, METH_NOARGS, "now() -> UtcTimeStamp"},
 	 { "new_UtcTimeStamp", _wrap_new_UtcTimeStamp, METH_VARARGS, "\n"
 		"UtcTimeStamp()\n"
-		"UtcTimeStamp(DateTime dateTime)\n"
+		"UtcTimeStamp(dateTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dateTime: FIX::DateTime\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int millisecond=0)\n"
+		"UtcTimeStamp(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166428,7 +166428,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int fraction, int precision)\n"
+		"UtcTimeStamp(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166438,7 +166438,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int date, int month, int year)\n"
+		"UtcTimeStamp(hour, minute, second, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166449,7 +166449,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int millisecond, int date, int month, int year)\n"
+		"UtcTimeStamp(hour, minute, second, millisecond, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166461,7 +166461,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcTimeStamp(int hour, int minute, int second, int fraction, int date, int month, int year, int precision)\n"
+		"UtcTimeStamp(hour, minute, second, fraction, date, month, year, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166474,14 +166474,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"year: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(time_t time, int millisecond=0)\n"
+		"UtcTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeStamp(time_t time, int fraction, int precision)\n"
+		"UtcTimeStamp(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166489,14 +166489,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStamp(tm const * time, int millisecond=0)\n"
+		"UtcTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_UtcTimeStamp(tm const * time, int fraction, int precision) -> UtcTimeStamp\n"
+		"new_UtcTimeStamp(time, fraction, precision) -> UtcTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166505,14 +166505,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "UtcTimeStamp_setCurrent", _wrap_UtcTimeStamp_setCurrent, METH_O, "setCurrent(UtcTimeStamp self)"},
-	 { "UtcTimeStamp_getDateTime", _wrap_UtcTimeStamp_getDateTime, METH_O, "getDateTime(UtcTimeStamp self) -> PyObject *"},
-	 { "delete_UtcTimeStamp", _wrap_delete_UtcTimeStamp, METH_O, "delete_UtcTimeStamp(UtcTimeStamp self)"},
+	 { "UtcTimeStamp_setCurrent", _wrap_UtcTimeStamp_setCurrent, METH_O, "setCurrent(self)"},
+	 { "UtcTimeStamp_getDateTime", _wrap_UtcTimeStamp_getDateTime, METH_O, "getDateTime(self) -> PyObject *"},
+	 { "delete_UtcTimeStamp", _wrap_delete_UtcTimeStamp, METH_O, "delete_UtcTimeStamp(self)"},
 	 { "UtcTimeStamp_swigregister", UtcTimeStamp_swigregister, METH_O, NULL},
 	 { "UtcTimeStamp_swiginit", UtcTimeStamp_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalTimeStamp", _wrap_new_LocalTimeStamp, METH_VARARGS, "\n"
 		"LocalTimeStamp()\n"
-		"LocalTimeStamp(int hour, int minute, int second, int millisecond=0)\n"
+		"LocalTimeStamp(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166521,7 +166521,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int fraction, int precision)\n"
+		"LocalTimeStamp(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166531,7 +166531,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int date, int month, int year)\n"
+		"LocalTimeStamp(hour, minute, second, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166542,7 +166542,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int millisecond, int date, int month, int year)\n"
+		"LocalTimeStamp(hour, minute, second, millisecond, date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166554,7 +166554,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalTimeStamp(int hour, int minute, int second, int fraction, int date, int month, int year, int precision)\n"
+		"LocalTimeStamp(hour, minute, second, fraction, date, month, year, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166567,14 +166567,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"year: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(time_t time, int millisecond=0)\n"
+		"LocalTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeStamp(time_t time, int fraction, int precision)\n"
+		"LocalTimeStamp(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166582,14 +166582,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeStamp(tm const * time, int millisecond=0)\n"
+		"LocalTimeStamp(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_LocalTimeStamp(tm const * time, int fraction, int precision) -> LocalTimeStamp\n"
+		"new_LocalTimeStamp(time, fraction, precision) -> LocalTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166598,19 +166598,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "LocalTimeStamp_setCurrent", _wrap_LocalTimeStamp_setCurrent, METH_O, "setCurrent(LocalTimeStamp self)"},
-	 { "delete_LocalTimeStamp", _wrap_delete_LocalTimeStamp, METH_O, "delete_LocalTimeStamp(LocalTimeStamp self)"},
+	 { "LocalTimeStamp_setCurrent", _wrap_LocalTimeStamp_setCurrent, METH_O, "setCurrent(self)"},
+	 { "delete_LocalTimeStamp", _wrap_delete_LocalTimeStamp, METH_O, "delete_LocalTimeStamp(self)"},
 	 { "LocalTimeStamp_swigregister", LocalTimeStamp_swigregister, METH_O, NULL},
 	 { "LocalTimeStamp_swiginit", LocalTimeStamp_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeOnly", _wrap_new_UtcTimeOnly, METH_VARARGS, "\n"
 		"UtcTimeOnly()\n"
-		"UtcTimeOnly(DateTime val)\n"
+		"UtcTimeOnly(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"UtcTimeOnly(int hour, int minute, int second, int millisecond=0)\n"
+		"UtcTimeOnly(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166619,7 +166619,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeOnly(int hour, int minute, int second, int fraction, int precision)\n"
+		"UtcTimeOnly(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166629,14 +166629,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnly(time_t time, int millisecond=0)\n"
+		"UtcTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"UtcTimeOnly(time_t time, int fraction, int precision)\n"
+		"UtcTimeOnly(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166644,14 +166644,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnly(tm const * time, int millisecond=0)\n"
+		"UtcTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_UtcTimeOnly(tm const * time, int fraction, int precision) -> UtcTimeOnly\n"
+		"new_UtcTimeOnly(time, fraction, precision) -> UtcTimeOnly\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166660,19 +166660,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "UtcTimeOnly_setCurrent", _wrap_UtcTimeOnly_setCurrent, METH_O, "setCurrent(UtcTimeOnly self)"},
-	 { "delete_UtcTimeOnly", _wrap_delete_UtcTimeOnly, METH_O, "delete_UtcTimeOnly(UtcTimeOnly self)"},
+	 { "UtcTimeOnly_setCurrent", _wrap_UtcTimeOnly_setCurrent, METH_O, "setCurrent(self)"},
+	 { "delete_UtcTimeOnly", _wrap_delete_UtcTimeOnly, METH_O, "delete_UtcTimeOnly(self)"},
 	 { "UtcTimeOnly_swigregister", UtcTimeOnly_swigregister, METH_O, NULL},
 	 { "UtcTimeOnly_swiginit", UtcTimeOnly_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalTimeOnly", _wrap_new_LocalTimeOnly, METH_VARARGS, "\n"
 		"LocalTimeOnly()\n"
-		"LocalTimeOnly(DateTime val)\n"
+		"LocalTimeOnly(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"LocalTimeOnly(int hour, int minute, int second, int millisecond=0)\n"
+		"LocalTimeOnly(hour, minute, second, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166681,7 +166681,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"second: int\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeOnly(int hour, int minute, int second, int fraction, int precision)\n"
+		"LocalTimeOnly(hour, minute, second, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166691,14 +166691,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeOnly(time_t time, int millisecond=0)\n"
+		"LocalTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: time_t\n"
 		"millisecond: int\n"
 		"\n"
-		"LocalTimeOnly(time_t time, int fraction, int precision)\n"
+		"LocalTimeOnly(time, fraction, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166706,14 +166706,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"fraction: int\n"
 		"precision: int\n"
 		"\n"
-		"LocalTimeOnly(tm const * time, int millisecond=0)\n"
+		"LocalTimeOnly(time, millisecond=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"millisecond: int\n"
 		"\n"
-		"new_LocalTimeOnly(tm const * time, int fraction, int precision) -> LocalTimeOnly\n"
+		"new_LocalTimeOnly(time, fraction, precision) -> LocalTimeOnly\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166722,19 +166722,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"precision: int\n"
 		"\n"
 		""},
-	 { "LocalTimeOnly_setCurrent", _wrap_LocalTimeOnly_setCurrent, METH_O, "setCurrent(LocalTimeOnly self)"},
-	 { "delete_LocalTimeOnly", _wrap_delete_LocalTimeOnly, METH_O, "delete_LocalTimeOnly(LocalTimeOnly self)"},
+	 { "LocalTimeOnly_setCurrent", _wrap_LocalTimeOnly_setCurrent, METH_O, "setCurrent(self)"},
+	 { "delete_LocalTimeOnly", _wrap_delete_LocalTimeOnly, METH_O, "delete_LocalTimeOnly(self)"},
 	 { "LocalTimeOnly_swigregister", LocalTimeOnly_swigregister, METH_O, NULL},
 	 { "LocalTimeOnly_swiginit", LocalTimeOnly_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcDate", _wrap_new_UtcDate, METH_VARARGS, "\n"
 		"UtcDate()\n"
-		"UtcDate(DateTime val)\n"
+		"UtcDate(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"UtcDate(int date, int month, int year)\n"
+		"UtcDate(date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166742,32 +166742,32 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"UtcDate(int sec)\n"
+		"UtcDate(sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sec: int\n"
 		"\n"
-		"new_UtcDate(tm const * time) -> UtcDate\n"
+		"new_UtcDate(time) -> UtcDate\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"\n"
 		""},
-	 { "UtcDate_setCurrent", _wrap_UtcDate_setCurrent, METH_O, "setCurrent(UtcDate self)"},
-	 { "delete_UtcDate", _wrap_delete_UtcDate, METH_O, "delete_UtcDate(UtcDate self)"},
+	 { "UtcDate_setCurrent", _wrap_UtcDate_setCurrent, METH_O, "setCurrent(self)"},
+	 { "delete_UtcDate", _wrap_delete_UtcDate, METH_O, "delete_UtcDate(self)"},
 	 { "UtcDate_swigregister", UtcDate_swigregister, METH_O, NULL},
 	 { "UtcDate_swiginit", UtcDate_swiginit, METH_VARARGS, NULL},
 	 { "new_LocalDate", _wrap_new_LocalDate, METH_VARARGS, "\n"
 		"LocalDate()\n"
-		"LocalDate(DateTime val)\n"
+		"LocalDate(val)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"val: FIX::DateTime const &\n"
 		"\n"
-		"LocalDate(int date, int month, int year)\n"
+		"LocalDate(date, month, year)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166775,33 +166775,33 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"month: int\n"
 		"year: int\n"
 		"\n"
-		"LocalDate(int sec)\n"
+		"LocalDate(sec)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sec: int\n"
 		"\n"
-		"new_LocalDate(tm const * time) -> LocalDate\n"
+		"new_LocalDate(time) -> LocalDate\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"time: tm const *\n"
 		"\n"
 		""},
-	 { "LocalDate_setCurrent", _wrap_LocalDate_setCurrent, METH_O, "setCurrent(LocalDate self)"},
-	 { "delete_LocalDate", _wrap_delete_LocalDate, METH_O, "delete_LocalDate(LocalDate self)"},
+	 { "LocalDate_setCurrent", _wrap_LocalDate_setCurrent, METH_O, "setCurrent(self)"},
+	 { "delete_LocalDate", _wrap_delete_LocalDate, METH_O, "delete_LocalDate(self)"},
 	 { "LocalDate_swigregister", LocalDate_swigregister, METH_O, NULL},
 	 { "LocalDate_swiginit", LocalDate_swiginit, METH_VARARGS, NULL},
-	 { "delete_FieldBase", _wrap_delete_FieldBase, METH_O, "delete_FieldBase(FieldBase self)"},
+	 { "delete_FieldBase", _wrap_delete_FieldBase, METH_O, "delete_FieldBase(self)"},
 	 { "new_FieldBase", _wrap_new_FieldBase, METH_VARARGS, "\n"
-		"FieldBase(int tag, std::string const & string)\n"
+		"FieldBase(tag, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"string: std::string const &\n"
 		"\n"
-		"new_FieldBase(FieldBase rhs) -> FieldBase\n"
+		"new_FieldBase(rhs) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166809,7 +166809,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldBase_swap", _wrap_FieldBase_swap, METH_VARARGS, "\n"
-		"swap(FieldBase self, FieldBase rhs)\n"
+		"swap(self, rhs)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166817,7 +166817,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldBase_setTag", _wrap_FieldBase_setTag, METH_VARARGS, "\n"
-		"setTag(FieldBase self, int tag)\n"
+		"setTag(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166825,7 +166825,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldBase_setField", _wrap_FieldBase_setField, METH_VARARGS, "\n"
-		"setField(FieldBase self, int field)\n"
+		"setField(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166833,32 +166833,32 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldBase_setString", _wrap_FieldBase_setString, METH_VARARGS, "\n"
-		"setString(FieldBase self, std::string const & string)\n"
+		"setString(self, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"\n"
 		""},
-	 { "FieldBase_getTag", _wrap_FieldBase_getTag, METH_O, "getTag(FieldBase self) -> int"},
-	 { "FieldBase_getField", _wrap_FieldBase_getField, METH_O, "getField(FieldBase self) -> int"},
-	 { "FieldBase_getString", _wrap_FieldBase_getString, METH_O, "getString(FieldBase self) -> std::string const &"},
-	 { "FieldBase_getFixString", _wrap_FieldBase_getFixString, METH_O, "getFixString(FieldBase self) -> std::string const &"},
-	 { "FieldBase_getLength", _wrap_FieldBase_getLength, METH_O, "getLength(FieldBase self) -> int"},
-	 { "FieldBase_getTotal", _wrap_FieldBase_getTotal, METH_O, "getTotal(FieldBase self) -> int"},
+	 { "FieldBase_getTag", _wrap_FieldBase_getTag, METH_O, "getTag(self) -> int"},
+	 { "FieldBase_getField", _wrap_FieldBase_getField, METH_O, "getField(self) -> int"},
+	 { "FieldBase_getString", _wrap_FieldBase_getString, METH_O, "getString(self) -> std::string const &"},
+	 { "FieldBase_getFixString", _wrap_FieldBase_getFixString, METH_O, "getFixString(self) -> std::string const &"},
+	 { "FieldBase_getLength", _wrap_FieldBase_getLength, METH_O, "getLength(self) -> int"},
+	 { "FieldBase_getTotal", _wrap_FieldBase_getTotal, METH_O, "getTotal(self) -> int"},
 	 { "FieldBase___lt__", _wrap_FieldBase___lt__, METH_VARARGS, "\n"
-		"__lt__(FieldBase self, FieldBase field) -> bool\n"
+		"__lt__(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
 		""},
-	 { "FieldBase___str__", _wrap_FieldBase___str__, METH_O, "__str__(FieldBase self) -> std::string"},
+	 { "FieldBase___str__", _wrap_FieldBase___str__, METH_O, "__str__(self) -> std::string"},
 	 { "FieldBase_swigregister", FieldBase_swigregister, METH_O, NULL},
 	 { "FieldBase_swiginit", FieldBase_swiginit, METH_VARARGS, NULL},
 	 { "swap", _wrap_swap, METH_VARARGS, "\n"
-		"swap(FieldBase lhs, FieldBase rhs)\n"
+		"swap(lhs, rhs)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166867,14 +166867,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_StringField", _wrap_new_StringField, METH_VARARGS, "\n"
-		"StringField(int field, std::string const & data)\n"
+		"StringField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: std::string const &\n"
 		"\n"
-		"new_StringField(int field) -> StringField\n"
+		"new_StringField(field) -> StringField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166882,16 +166882,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField_setValue", _wrap_StringField_setValue, METH_VARARGS, "\n"
-		"setValue(StringField self, std::string const & value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: std::string const &\n"
 		"\n"
 		""},
-	 { "StringField_getValue", _wrap_StringField_getValue, METH_O, "getValue(StringField self) -> std::string const &"},
+	 { "StringField_getValue", _wrap_StringField_getValue, METH_O, "getValue(self) -> std::string const &"},
 	 { "StringField___lt__", _wrap_StringField___lt__, METH_VARARGS, "\n"
-		"__lt__(StringField self, StringField rhs) -> bool\n"
+		"__lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166899,7 +166899,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField___gt__", _wrap_StringField___gt__, METH_VARARGS, "\n"
-		"__gt__(StringField self, StringField rhs) -> bool\n"
+		"__gt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166907,7 +166907,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField___eq__", _wrap_StringField___eq__, METH_VARARGS, "\n"
-		"__eq__(StringField self, StringField rhs) -> bool\n"
+		"__eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166915,7 +166915,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField___ne__", _wrap_StringField___ne__, METH_VARARGS, "\n"
-		"__ne__(StringField self, StringField rhs) -> bool\n"
+		"__ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166923,7 +166923,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField___le__", _wrap_StringField___le__, METH_VARARGS, "\n"
-		"__le__(StringField self, StringField rhs) -> bool\n"
+		"__le__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166931,7 +166931,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "StringField___ge__", _wrap_StringField___ge__, METH_VARARGS, "\n"
-		"__ge__(StringField self, StringField rhs) -> bool\n"
+		"__ge__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166939,35 +166939,35 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__gt__", _wrap___gt__, METH_VARARGS, "\n"
-		"__gt__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__gt__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__gt__(StringField arg1, char const * arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__gt__(char const * arg1, StringField arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__gt__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__gt__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__gt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -166976,35 +166976,35 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__le__", _wrap___le__, METH_VARARGS, "\n"
-		"__le__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__le__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__le__(StringField arg1, char const * arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__le__(char const * arg1, StringField arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__le__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__le__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__le__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167013,35 +167013,35 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__ge__", _wrap___ge__, METH_VARARGS, "\n"
-		"__ge__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__ge__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__ge__(StringField arg1, char const * arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__ge__(char const * arg1, StringField arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ge__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__ge__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__ge__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167049,18 +167049,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::StringField const &\n"
 		"\n"
 		""},
-	 { "delete_StringField", _wrap_delete_StringField, METH_O, "delete_StringField(StringField self)"},
+	 { "delete_StringField", _wrap_delete_StringField, METH_O, "delete_StringField(self)"},
 	 { "StringField_swigregister", StringField_swigregister, METH_O, NULL},
 	 { "StringField_swiginit", StringField_swiginit, METH_VARARGS, NULL},
 	 { "new_CharField", _wrap_new_CharField, METH_VARARGS, "\n"
-		"CharField(int field, char data)\n"
+		"CharField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: char\n"
 		"\n"
-		"new_CharField(int field) -> CharField\n"
+		"new_CharField(field) -> CharField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167068,19 +167068,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "CharField_setValue", _wrap_CharField_setValue, METH_VARARGS, "\n"
-		"setValue(CharField self, char value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: char\n"
 		"\n"
 		""},
-	 { "CharField_getValue", _wrap_CharField_getValue, METH_O, "getValue(CharField self) -> char"},
-	 { "delete_CharField", _wrap_delete_CharField, METH_O, "delete_CharField(CharField self)"},
+	 { "CharField_getValue", _wrap_CharField_getValue, METH_O, "getValue(self) -> char"},
+	 { "delete_CharField", _wrap_delete_CharField, METH_O, "delete_CharField(self)"},
 	 { "CharField_swigregister", CharField_swigregister, METH_O, NULL},
 	 { "CharField_swiginit", CharField_swiginit, METH_VARARGS, NULL},
 	 { "new_DoubleField", _wrap_new_DoubleField, METH_VARARGS, "\n"
-		"DoubleField(int field, double data, int padding=0)\n"
+		"DoubleField(field, data, padding=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167088,7 +167088,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"data: double\n"
 		"padding: int\n"
 		"\n"
-		"new_DoubleField(int field) -> DoubleField\n"
+		"new_DoubleField(field) -> DoubleField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167096,7 +167096,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DoubleField_setValue", _wrap_DoubleField_setValue, METH_VARARGS, "\n"
-		"setValue(DoubleField self, double value, int padding=0)\n"
+		"setValue(self, value, padding=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167104,19 +167104,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"padding: int\n"
 		"\n"
 		""},
-	 { "DoubleField_getValue", _wrap_DoubleField_getValue, METH_O, "getValue(DoubleField self) -> double"},
-	 { "delete_DoubleField", _wrap_delete_DoubleField, METH_O, "delete_DoubleField(DoubleField self)"},
+	 { "DoubleField_getValue", _wrap_DoubleField_getValue, METH_O, "getValue(self) -> double"},
+	 { "delete_DoubleField", _wrap_delete_DoubleField, METH_O, "delete_DoubleField(self)"},
 	 { "DoubleField_swigregister", DoubleField_swigregister, METH_O, NULL},
 	 { "DoubleField_swiginit", DoubleField_swiginit, METH_VARARGS, NULL},
 	 { "new_IntField", _wrap_new_IntField, METH_VARARGS, "\n"
-		"IntField(int field, int data)\n"
+		"IntField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int\n"
 		"\n"
-		"new_IntField(int field) -> IntField\n"
+		"new_IntField(field) -> IntField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167124,26 +167124,26 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "IntField_setValue", _wrap_IntField_setValue, METH_VARARGS, "\n"
-		"setValue(IntField self, int value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "IntField_getValue", _wrap_IntField_getValue, METH_O, "getValue(IntField self) -> int"},
-	 { "delete_IntField", _wrap_delete_IntField, METH_O, "delete_IntField(IntField self)"},
+	 { "IntField_getValue", _wrap_IntField_getValue, METH_O, "getValue(self) -> int"},
+	 { "delete_IntField", _wrap_delete_IntField, METH_O, "delete_IntField(self)"},
 	 { "IntField_swigregister", IntField_swigregister, METH_O, NULL},
 	 { "IntField_swiginit", IntField_swiginit, METH_VARARGS, NULL},
 	 { "new_Int64Field", _wrap_new_Int64Field, METH_VARARGS, "\n"
-		"Int64Field(int field, int64_t data)\n"
+		"Int64Field(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int64_t\n"
 		"\n"
-		"new_Int64Field(int field) -> Int64Field\n"
+		"new_Int64Field(field) -> Int64Field\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167151,26 +167151,26 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Int64Field_setValue", _wrap_Int64Field_setValue, METH_VARARGS, "\n"
-		"setValue(Int64Field self, int64_t value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int64_t\n"
 		"\n"
 		""},
-	 { "Int64Field_getValue", _wrap_Int64Field_getValue, METH_O, "getValue(Int64Field self) -> int64_t"},
-	 { "delete_Int64Field", _wrap_delete_Int64Field, METH_O, "delete_Int64Field(Int64Field self)"},
+	 { "Int64Field_getValue", _wrap_Int64Field_getValue, METH_O, "getValue(self) -> int64_t"},
+	 { "delete_Int64Field", _wrap_delete_Int64Field, METH_O, "delete_Int64Field(self)"},
 	 { "Int64Field_swigregister", Int64Field_swigregister, METH_O, NULL},
 	 { "Int64Field_swiginit", Int64Field_swiginit, METH_VARARGS, NULL},
 	 { "new_UInt64Field", _wrap_new_UInt64Field, METH_VARARGS, "\n"
-		"UInt64Field(int field, uint64_t data)\n"
+		"UInt64Field(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: uint64_t\n"
 		"\n"
-		"new_UInt64Field(int field) -> UInt64Field\n"
+		"new_UInt64Field(field) -> UInt64Field\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167178,26 +167178,26 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UInt64Field_setValue", _wrap_UInt64Field_setValue, METH_VARARGS, "\n"
-		"setValue(UInt64Field self, uint64_t value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: uint64_t\n"
 		"\n"
 		""},
-	 { "UInt64Field_getValue", _wrap_UInt64Field_getValue, METH_O, "getValue(UInt64Field self) -> uint64_t"},
-	 { "delete_UInt64Field", _wrap_delete_UInt64Field, METH_O, "delete_UInt64Field(UInt64Field self)"},
+	 { "UInt64Field_getValue", _wrap_UInt64Field_getValue, METH_O, "getValue(self) -> uint64_t"},
+	 { "delete_UInt64Field", _wrap_delete_UInt64Field, METH_O, "delete_UInt64Field(self)"},
 	 { "UInt64Field_swigregister", UInt64Field_swigregister, METH_O, NULL},
 	 { "UInt64Field_swiginit", UInt64Field_swiginit, METH_VARARGS, NULL},
 	 { "new_BoolField", _wrap_new_BoolField, METH_VARARGS, "\n"
-		"BoolField(int field, bool data)\n"
+		"BoolField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: bool\n"
 		"\n"
-		"new_BoolField(int field) -> BoolField\n"
+		"new_BoolField(field) -> BoolField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167205,20 +167205,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "BoolField_setValue", _wrap_BoolField_setValue, METH_VARARGS, "\n"
-		"setValue(BoolField self, bool value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "BoolField_getValue", _wrap_BoolField_getValue, METH_O, "getValue(BoolField self) -> bool"},
-	 { "BoolField___nonzero__", _wrap_BoolField___nonzero__, METH_O, "__nonzero__(BoolField self) -> bool"},
-	 { "delete_BoolField", _wrap_delete_BoolField, METH_O, "delete_BoolField(BoolField self)"},
+	 { "BoolField_getValue", _wrap_BoolField_getValue, METH_O, "getValue(self) -> bool"},
+	 { "BoolField___nonzero__", _wrap_BoolField___nonzero__, METH_O, "__nonzero__(self) -> bool"},
+	 { "delete_BoolField", _wrap_delete_BoolField, METH_O, "delete_BoolField(self)"},
 	 { "BoolField_swigregister", BoolField_swigregister, METH_O, NULL},
 	 { "BoolField_swiginit", BoolField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeStampField", _wrap_new_UtcTimeStampField, METH_VARARGS, "\n"
-		"UtcTimeStampField(int field, UtcTimeStamp data, int precision=0)\n"
+		"UtcTimeStampField(field, data, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167226,7 +167226,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"data: FIX::UtcTimeStamp const &\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeStampField(int field, int precision=0)\n"
+		"UtcTimeStampField(field, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167235,16 +167235,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField_setValue", _wrap_UtcTimeStampField_setValue, METH_VARARGS, "\n"
-		"setValue(UtcTimeStampField self, UtcTimeStamp value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "UtcTimeStampField_getValue", _wrap_UtcTimeStampField_getValue, METH_O, "getValue(UtcTimeStampField self) -> UtcTimeStamp"},
+	 { "UtcTimeStampField_getValue", _wrap_UtcTimeStampField_getValue, METH_O, "getValue(self) -> UtcTimeStamp"},
 	 { "UtcTimeStampField___lt__", _wrap_UtcTimeStampField___lt__, METH_VARARGS, "\n"
-		"__lt__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"__lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167252,7 +167252,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField___eq__", _wrap_UtcTimeStampField___eq__, METH_VARARGS, "\n"
-		"__eq__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"__eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167260,25 +167260,25 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeStampField___ne__", _wrap_UtcTimeStampField___ne__, METH_VARARGS, "\n"
-		"__ne__(UtcTimeStampField self, UtcTimeStampField rhs) -> bool\n"
+		"__ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcTimeStampField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcTimeStampField", _wrap_delete_UtcTimeStampField, METH_O, "delete_UtcTimeStampField(UtcTimeStampField self)"},
+	 { "delete_UtcTimeStampField", _wrap_delete_UtcTimeStampField, METH_O, "delete_UtcTimeStampField(self)"},
 	 { "UtcTimeStampField_swigregister", UtcTimeStampField_swigregister, METH_O, NULL},
 	 { "UtcTimeStampField_swiginit", UtcTimeStampField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcDateField", _wrap_new_UtcDateField, METH_VARARGS, "\n"
-		"UtcDateField(int field, UtcDate data)\n"
+		"UtcDateField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: FIX::UtcDate const &\n"
 		"\n"
-		"new_UtcDateField(int field) -> UtcDateField\n"
+		"new_UtcDateField(field) -> UtcDateField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167286,16 +167286,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcDateField_setValue", _wrap_UtcDateField_setValue, METH_VARARGS, "\n"
-		"setValue(UtcDateField self, UtcDate value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcDate const &\n"
 		"\n"
 		""},
-	 { "UtcDateField_getValue", _wrap_UtcDateField_getValue, METH_O, "getValue(UtcDateField self) -> UtcDate"},
+	 { "UtcDateField_getValue", _wrap_UtcDateField_getValue, METH_O, "getValue(self) -> UtcDate"},
 	 { "UtcDateField___lt__", _wrap_UtcDateField___lt__, METH_VARARGS, "\n"
-		"__lt__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"__lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167303,7 +167303,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcDateField___eq__", _wrap_UtcDateField___eq__, METH_VARARGS, "\n"
-		"__eq__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"__eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167311,18 +167311,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcDateField___ne__", _wrap_UtcDateField___ne__, METH_VARARGS, "\n"
-		"__ne__(UtcDateField self, UtcDateField rhs) -> bool\n"
+		"__ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcDateField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcDateField", _wrap_delete_UtcDateField, METH_O, "delete_UtcDateField(UtcDateField self)"},
+	 { "delete_UtcDateField", _wrap_delete_UtcDateField, METH_O, "delete_UtcDateField(self)"},
 	 { "UtcDateField_swigregister", UtcDateField_swigregister, METH_O, NULL},
 	 { "UtcDateField_swiginit", UtcDateField_swiginit, METH_VARARGS, NULL},
 	 { "new_UtcTimeOnlyField", _wrap_new_UtcTimeOnlyField, METH_VARARGS, "\n"
-		"UtcTimeOnlyField(int field, UtcTimeOnly data, int precision=0)\n"
+		"UtcTimeOnlyField(field, data, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167330,7 +167330,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"data: FIX::UtcTimeOnly const &\n"
 		"precision: int\n"
 		"\n"
-		"UtcTimeOnlyField(int field, int precision=0)\n"
+		"UtcTimeOnlyField(field, precision=0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167339,16 +167339,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField_setValue", _wrap_UtcTimeOnlyField_setValue, METH_VARARGS, "\n"
-		"setValue(UtcTimeOnlyField self, UtcTimeOnly value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::UtcTimeOnly const &\n"
 		"\n"
 		""},
-	 { "UtcTimeOnlyField_getValue", _wrap_UtcTimeOnlyField_getValue, METH_O, "getValue(UtcTimeOnlyField self) -> UtcTimeOnly"},
+	 { "UtcTimeOnlyField_getValue", _wrap_UtcTimeOnlyField_getValue, METH_O, "getValue(self) -> UtcTimeOnly"},
 	 { "UtcTimeOnlyField___lt__", _wrap_UtcTimeOnlyField___lt__, METH_VARARGS, "\n"
-		"__lt__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"__lt__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167356,7 +167356,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField___eq__", _wrap_UtcTimeOnlyField___eq__, METH_VARARGS, "\n"
-		"__eq__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"__eq__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167364,25 +167364,25 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "UtcTimeOnlyField___ne__", _wrap_UtcTimeOnlyField___ne__, METH_VARARGS, "\n"
-		"__ne__(UtcTimeOnlyField self, UtcTimeOnlyField rhs) -> bool\n"
+		"__ne__(self, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::UtcTimeOnlyField const &\n"
 		"\n"
 		""},
-	 { "delete_UtcTimeOnlyField", _wrap_delete_UtcTimeOnlyField, METH_O, "delete_UtcTimeOnlyField(UtcTimeOnlyField self)"},
+	 { "delete_UtcTimeOnlyField", _wrap_delete_UtcTimeOnlyField, METH_O, "delete_UtcTimeOnlyField(self)"},
 	 { "UtcTimeOnlyField_swigregister", UtcTimeOnlyField_swigregister, METH_O, NULL},
 	 { "UtcTimeOnlyField_swiginit", UtcTimeOnlyField_swiginit, METH_VARARGS, NULL},
 	 { "new_CheckSumField", _wrap_new_CheckSumField, METH_VARARGS, "\n"
-		"CheckSumField(int field, int data)\n"
+		"CheckSumField(field, data)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"data: int\n"
 		"\n"
-		"new_CheckSumField(int field) -> CheckSumField\n"
+		"new_CheckSumField(field) -> CheckSumField\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167390,53 +167390,53 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "CheckSumField_setValue", _wrap_CheckSumField_setValue, METH_VARARGS, "\n"
-		"setValue(CheckSumField self, int value)\n"
+		"setValue(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "CheckSumField_getValue", _wrap_CheckSumField_getValue, METH_O, "getValue(CheckSumField self) -> int"},
-	 { "delete_CheckSumField", _wrap_delete_CheckSumField, METH_O, "delete_CheckSumField(CheckSumField self)"},
+	 { "CheckSumField_getValue", _wrap_CheckSumField_getValue, METH_O, "getValue(self) -> int"},
+	 { "delete_CheckSumField", _wrap_delete_CheckSumField, METH_O, "delete_CheckSumField(self)"},
 	 { "CheckSumField_swigregister", CheckSumField_swigregister, METH_O, NULL},
 	 { "CheckSumField_swiginit", CheckSumField_swiginit, METH_VARARGS, NULL},
 	 { "new_FieldMap", _wrap_new_FieldMap, METH_VARARGS, "\n"
-		"FieldMap(message_order const & order=message_order(message_order::normal))\n"
+		"FieldMap(order=message_order(message_order::normal))\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"order: message_order const &\n"
 		"\n"
-		"FieldMap(int const [] order)\n"
+		"FieldMap(order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"order: int const []\n"
 		"\n"
-		"FieldMap(FieldMap copy)\n"
+		"FieldMap(copy)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::FieldMap const &\n"
 		"\n"
-		"new_FieldMap(FieldMap rhs) -> FieldMap\n"
+		"new_FieldMap(rhs) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"rhs: FIX::FieldMap &&\n"
 		"\n"
 		""},
-	 { "delete_FieldMap", _wrap_delete_FieldMap, METH_O, "delete_FieldMap(FieldMap self)"},
+	 { "delete_FieldMap", _wrap_delete_FieldMap, METH_O, "delete_FieldMap(self)"},
 	 { "FieldMap_setField", _wrap_FieldMap_setField, METH_VARARGS, "\n"
-		"setField(FieldMap self, FieldBase field, bool overwrite=True)\n"
+		"setField(self, field, overwrite=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"overwrite: bool\n"
 		"\n"
-		"setField(FieldMap self, int tag, std::string const & value)\n"
+		"setField(self, tag, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167445,7 +167445,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldIfSet", _wrap_FieldMap_getFieldIfSet, METH_VARARGS, "\n"
-		"getFieldIfSet(FieldMap self, FieldBase field) -> bool\n"
+		"getFieldIfSet(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167453,13 +167453,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getField", _wrap_FieldMap_getField, METH_VARARGS, "\n"
-		"getField(FieldMap self, FieldBase field) -> FieldBase\n"
+		"getField(self, field) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase &\n"
 		"\n"
-		"getField(FieldMap self, int tag) -> std::string const &\n"
+		"getField(self, tag) -> std::string const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167467,7 +167467,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldRef", _wrap_FieldMap_getFieldRef, METH_VARARGS, "\n"
-		"getFieldRef(FieldMap self, int tag) -> FieldBase\n"
+		"getFieldRef(self, tag) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167475,7 +167475,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getFieldPtr", _wrap_FieldMap_getFieldPtr, METH_VARARGS, "\n"
-		"getFieldPtr(FieldMap self, int tag) -> FieldBase\n"
+		"getFieldPtr(self, tag) -> FieldBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167483,13 +167483,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_isSetField", _wrap_FieldMap_isSetField, METH_VARARGS, "\n"
-		"isSetField(FieldMap self, FieldBase field) -> bool\n"
+		"isSetField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
-		"isSetField(FieldMap self, int tag) -> bool\n"
+		"isSetField(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167497,7 +167497,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_removeField", _wrap_FieldMap_removeField, METH_VARARGS, "\n"
-		"removeField(FieldMap self, int tag)\n"
+		"removeField(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167505,7 +167505,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_addGroup", _wrap_FieldMap_addGroup, METH_VARARGS, "\n"
-		"addGroup(FieldMap self, int tag, FieldMap group, bool setCount=True)\n"
+		"addGroup(self, tag, group, setCount=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167515,7 +167515,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_addGroupPtr", _wrap_FieldMap_addGroupPtr, METH_VARARGS, "\n"
-		"addGroupPtr(FieldMap self, int tag, FieldMap group, bool setCount=True)\n"
+		"addGroupPtr(self, tag, group, setCount=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167525,7 +167525,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_replaceGroup", _wrap_FieldMap_replaceGroup, METH_VARARGS, "\n"
-		"replaceGroup(FieldMap self, int num, int tag, FieldMap group)\n"
+		"replaceGroup(self, num, tag, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167535,7 +167535,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroup", _wrap_FieldMap_getGroup, METH_VARARGS, "\n"
-		"getGroup(FieldMap self, int num, int tag, FieldMap group) -> FieldMap\n"
+		"getGroup(self, num, tag, group) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167545,7 +167545,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroupRef", _wrap_FieldMap_getGroupRef, METH_VARARGS, "\n"
-		"getGroupRef(FieldMap self, int num, int tag) -> FieldMap\n"
+		"getGroupRef(self, num, tag) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167554,7 +167554,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_getGroupPtr", _wrap_FieldMap_getGroupPtr, METH_VARARGS, "\n"
-		"getGroupPtr(FieldMap self, int num, int tag) -> FieldMap\n"
+		"getGroupPtr(self, num, tag) -> FieldMap\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167562,16 +167562,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"tag: int\n"
 		"\n"
 		""},
-	 { "FieldMap_groups", _wrap_FieldMap_groups, METH_O, "groups(FieldMap self) -> FIX::FieldMap::Groups const &"},
+	 { "FieldMap_groups", _wrap_FieldMap_groups, METH_O, "groups(self) -> FIX::FieldMap::Groups const &"},
 	 { "FieldMap_removeGroup", _wrap_FieldMap_removeGroup, METH_VARARGS, "\n"
-		"removeGroup(FieldMap self, int num, int tag)\n"
+		"removeGroup(self, num, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: int\n"
 		"tag: int\n"
 		"\n"
-		"removeGroup(FieldMap self, int tag)\n"
+		"removeGroup(self, tag)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167579,13 +167579,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_hasGroup", _wrap_FieldMap_hasGroup, METH_VARARGS, "\n"
-		"hasGroup(FieldMap self, int tag) -> bool\n"
+		"hasGroup(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"\n"
-		"hasGroup(FieldMap self, int num, int tag) -> bool\n"
+		"hasGroup(self, num, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167594,18 +167594,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_groupCount", _wrap_FieldMap_groupCount, METH_VARARGS, "\n"
-		"groupCount(FieldMap self, int tag) -> size_t\n"
+		"groupCount(self, tag) -> size_t\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"tag: int\n"
 		"\n"
 		""},
-	 { "FieldMap_clear", _wrap_FieldMap_clear, METH_O, "clear(FieldMap self)"},
-	 { "FieldMap_isEmpty", _wrap_FieldMap_isEmpty, METH_O, "isEmpty(FieldMap self) -> bool"},
-	 { "FieldMap_totalFields", _wrap_FieldMap_totalFields, METH_O, "totalFields(FieldMap self) -> size_t"},
+	 { "FieldMap_clear", _wrap_FieldMap_clear, METH_O, "clear(self)"},
+	 { "FieldMap_isEmpty", _wrap_FieldMap_isEmpty, METH_O, "isEmpty(self) -> bool"},
+	 { "FieldMap_totalFields", _wrap_FieldMap_totalFields, METH_O, "totalFields(self) -> size_t"},
 	 { "FieldMap_calculateString", _wrap_FieldMap_calculateString, METH_VARARGS, "\n"
-		"calculateString(FieldMap self, std::string & arg2) -> std::string &\n"
+		"calculateString(self, arg2) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167613,7 +167613,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_calculateLength", _wrap_FieldMap_calculateLength, METH_VARARGS, "\n"
-		"calculateLength(FieldMap self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> int\n"
+		"calculateLength(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167623,7 +167623,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_calculateTotal", _wrap_FieldMap_calculateTotal, METH_VARARGS, "\n"
-		"calculateTotal(FieldMap self, int checkSumField=FIELD::CheckSum) -> int\n"
+		"calculateTotal(self, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167631,26 +167631,26 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FieldMap_begin", _wrap_FieldMap_begin, METH_VARARGS, "\n"
-		"begin(FieldMap self) -> FIX::FieldMap::iterator\n"
-		"begin(FieldMap self) -> FIX::FieldMap::const_iterator\n"
+		"begin(self) -> FIX::FieldMap::iterator\n"
+		"begin(self) -> FIX::FieldMap::const_iterator\n"
 		""},
 	 { "FieldMap_end", _wrap_FieldMap_end, METH_VARARGS, "\n"
-		"end(FieldMap self) -> FIX::FieldMap::iterator\n"
-		"end(FieldMap self) -> FIX::FieldMap::const_iterator\n"
+		"end(self) -> FIX::FieldMap::iterator\n"
+		"end(self) -> FIX::FieldMap::const_iterator\n"
 		""},
 	 { "FieldMap_g_begin", _wrap_FieldMap_g_begin, METH_VARARGS, "\n"
-		"g_begin(FieldMap self) -> FIX::FieldMap::g_iterator\n"
-		"g_begin(FieldMap self) -> FIX::FieldMap::g_const_iterator\n"
+		"g_begin(self) -> FIX::FieldMap::g_iterator\n"
+		"g_begin(self) -> FIX::FieldMap::g_const_iterator\n"
 		""},
 	 { "FieldMap_g_end", _wrap_FieldMap_g_end, METH_VARARGS, "\n"
-		"g_end(FieldMap self) -> FIX::FieldMap::g_iterator\n"
-		"g_end(FieldMap self) -> FIX::FieldMap::g_const_iterator\n"
+		"g_end(self) -> FIX::FieldMap::g_iterator\n"
+		"g_end(self) -> FIX::FieldMap::g_const_iterator\n"
 		""},
 	 { "FieldMap_swigregister", FieldMap_swigregister, METH_O, NULL},
 	 { "FieldMap_swiginit", FieldMap_swiginit, METH_VARARGS, NULL},
 	 { "new_Header", _wrap_new_Header, METH_VARARGS, "\n"
 		"Header()\n"
-		"new_Header(message_order const & order) -> Header\n"
+		"new_Header(order) -> Header\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167658,7 +167658,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Header_addGroup", _wrap_Header_addGroup, METH_VARARGS, "\n"
-		"addGroup(Header self, Group group)\n"
+		"addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167666,7 +167666,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Header_replaceGroup", _wrap_Header_replaceGroup, METH_VARARGS, "\n"
-		"replaceGroup(Header self, unsigned int num, Group group)\n"
+		"replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167675,7 +167675,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Header_getGroup", _wrap_Header_getGroup, METH_VARARGS, "\n"
-		"getGroup(Header self, unsigned int num, Group group) -> Group &\n"
+		"getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167684,14 +167684,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Header_removeGroup", _wrap_Header_removeGroup, METH_VARARGS, "\n"
-		"removeGroup(Header self, unsigned int num, Group group)\n"
+		"removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"removeGroup(Header self, Group group)\n"
+		"removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167699,13 +167699,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Header_hasGroup", _wrap_Header_hasGroup, METH_VARARGS, "\n"
-		"hasGroup(Header self, Group group) -> bool\n"
+		"hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"hasGroup(Header self, unsigned int num, Group group) -> bool\n"
+		"hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167713,12 +167713,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Header", _wrap_delete_Header, METH_O, "delete_Header(Header self)"},
+	 { "delete_Header", _wrap_delete_Header, METH_O, "delete_Header(self)"},
 	 { "Header_swigregister", Header_swigregister, METH_O, NULL},
 	 { "Header_swiginit", Header_swiginit, METH_VARARGS, NULL},
 	 { "new_Trailer", _wrap_new_Trailer, METH_VARARGS, "\n"
 		"Trailer()\n"
-		"new_Trailer(message_order const & order) -> Trailer\n"
+		"new_Trailer(order) -> Trailer\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167726,7 +167726,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Trailer_addGroup", _wrap_Trailer_addGroup, METH_VARARGS, "\n"
-		"addGroup(Trailer self, Group group)\n"
+		"addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167734,7 +167734,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Trailer_replaceGroup", _wrap_Trailer_replaceGroup, METH_VARARGS, "\n"
-		"replaceGroup(Trailer self, unsigned int num, Group group)\n"
+		"replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167743,7 +167743,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Trailer_getGroup", _wrap_Trailer_getGroup, METH_VARARGS, "\n"
-		"getGroup(Trailer self, unsigned int num, Group group) -> Group &\n"
+		"getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167752,14 +167752,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Trailer_removeGroup", _wrap_Trailer_removeGroup, METH_VARARGS, "\n"
-		"removeGroup(Trailer self, unsigned int num, Group group)\n"
+		"removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"removeGroup(Trailer self, Group group)\n"
+		"removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167767,13 +167767,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Trailer_hasGroup", _wrap_Trailer_hasGroup, METH_VARARGS, "\n"
-		"hasGroup(Trailer self, Group group) -> bool\n"
+		"hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"hasGroup(Trailer self, unsigned int num, Group group) -> bool\n"
+		"hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167781,12 +167781,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Trailer", _wrap_delete_Trailer, METH_O, "delete_Trailer(Trailer self)"},
+	 { "delete_Trailer", _wrap_delete_Trailer, METH_O, "delete_Trailer(self)"},
 	 { "Trailer_swigregister", Trailer_swigregister, METH_O, NULL},
 	 { "Trailer_swiginit", Trailer_swiginit, METH_VARARGS, NULL},
 	 { "new_Message", _wrap_new_Message, METH_VARARGS, "\n"
 		"Message()\n"
-		"Message(message_order const & hdrOrder, message_order const & trlOrder, message_order const & order)\n"
+		"Message(hdrOrder, trlOrder, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167794,14 +167794,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"trlOrder: message_order const &\n"
 		"order: message_order const &\n"
 		"\n"
-		"Message(std::string const & string, bool validate=True)\n"
+		"Message(string, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(std::string const & string, DataDictionary dataDictionary, bool validate=True)\n"
+		"Message(string, dataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167809,7 +167809,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"dataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(std::string const & string, DataDictionary sessionDataDictionary, DataDictionary applicationDataDictionary, bool validate=True)\n"
+		"Message(string, sessionDataDictionary, applicationDataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167818,7 +167818,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"applicationDataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(message_order const & headerOrder, message_order const & trailerOrder, message_order const & order, std::string const & string, DataDictionary dataDictionary, bool validate=True)\n"
+		"Message(headerOrder, trailerOrder, order, string, dataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167829,7 +167829,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"dataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(message_order const & headerOrder, message_order const & trailerOrder, message_order const & order, std::string const & string, DataDictionary sessionDataDictionary, DataDictionary applicationDataDictionary, bool validate=True)\n"
+		"Message(headerOrder, trailerOrder, order, string, sessionDataDictionary, applicationDataDictionary, validate=True)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167841,22 +167841,22 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"applicationDataDictionary: FIX::DataDictionary const &\n"
 		"validate: bool\n"
 		"\n"
-		"Message(Message arg1)\n"
+		"Message(arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::Message const &\n"
 		"\n"
-		"new_Message(Message arg1) -> Message\n"
+		"new_Message(arg1) -> Message\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::Message &&\n"
 		"\n"
 		""},
-	 { "delete_Message", _wrap_delete_Message, METH_O, "delete_Message(Message self)"},
+	 { "delete_Message", _wrap_delete_Message, METH_O, "delete_Message(self)"},
 	 { "Message_InitializeXML", _wrap_Message_InitializeXML, METH_O, "\n"
-		"InitializeXML(std::string const & string) -> bool\n"
+		"InitializeXML(string) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167864,7 +167864,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_addGroup", _wrap_Message_addGroup, METH_VARARGS, "\n"
-		"addGroup(Message self, Group group)\n"
+		"addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167872,7 +167872,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_replaceGroup", _wrap_Message_replaceGroup, METH_VARARGS, "\n"
-		"replaceGroup(Message self, unsigned int num, Group group)\n"
+		"replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167881,7 +167881,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_getGroup", _wrap_Message_getGroup, METH_VARARGS, "\n"
-		"getGroup(Message self, unsigned int num, Group group) -> Group &\n"
+		"getGroup(self, num, group) -> Group &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167890,14 +167890,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_removeGroup", _wrap_Message_removeGroup, METH_VARARGS, "\n"
-		"removeGroup(Message self, unsigned int num, Group group)\n"
+		"removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"removeGroup(Message self, Group group)\n"
+		"removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167905,13 +167905,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_hasGroup", _wrap_Message_hasGroup, METH_VARARGS, "\n"
-		"hasGroup(Message self, Group group) -> bool\n"
+		"hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"hasGroup(Message self, unsigned int num, Group group) -> bool\n"
+		"hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167920,7 +167920,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_toString", _wrap_Message_toString, METH_VARARGS, "\n"
-		"toString(Message self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> std::string\n"
+		"toString(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167928,7 +167928,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"bodyLengthField: int\n"
 		"checkSumField: int\n"
 		"\n"
-		"toString(Message self, std::string & arg2, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> std::string\n"
+		"toString(self, arg2, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167939,8 +167939,8 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_toXML", _wrap_Message_toXML, METH_VARARGS, "\n"
-		"toXML(Message self) -> std::string\n"
-		"toXML(Message self, std::string & arg2) -> std::string &\n"
+		"toXML(self) -> std::string\n"
+		"toXML(self, arg2) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167948,7 +167948,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_reverseRoute", _wrap_Message_reverseRoute, METH_VARARGS, "\n"
-		"reverseRoute(Message self, Header arg2)\n"
+		"reverseRoute(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167956,20 +167956,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_setString", _wrap_Message_setString, METH_VARARGS, "\n"
-		"setString(Message self, std::string const & string)\n"
+		"setString(self, string)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"\n"
-		"setString(Message self, std::string const & string, bool validate)\n"
+		"setString(self, string, validate)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"string: std::string const &\n"
 		"validate: bool\n"
 		"\n"
-		"setString(Message self, std::string const & string, bool validate, DataDictionary pDataDictionary)\n"
+		"setString(self, string, validate, pDataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167977,7 +167977,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"validate: bool\n"
 		"pDataDictionary: FIX::DataDictionary const *\n"
 		"\n"
-		"setString(Message self, std::string const & string, bool validate, DataDictionary pSessionDataDictionary, DataDictionary pApplicationDataDictionary)\n"
+		"setString(self, string, validate, pSessionDataDictionary, pApplicationDataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -167988,7 +167988,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_setGroup", _wrap_Message_setGroup, METH_VARARGS, "\n"
-		"setGroup(Message self, std::string const & msg, FieldBase field, std::string const & string, std::string::size_type & pos, FieldMap map, DataDictionary const & dataDictionary)\n"
+		"setGroup(self, msg, field, string, pos, map, dataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168001,7 +168001,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_setStringHeader", _wrap_Message_setStringHeader, METH_VARARGS, "\n"
-		"setStringHeader(Message self, std::string const & string) -> bool\n"
+		"setStringHeader(self, string) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168009,15 +168009,15 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_getHeader", _wrap_Message_getHeader, METH_VARARGS, "\n"
-		"getHeader(Message self) -> Header\n"
-		"getHeader(Message self) -> Header\n"
+		"getHeader(self) -> Header\n"
+		"getHeader(self) -> Header\n"
 		""},
 	 { "Message_getTrailer", _wrap_Message_getTrailer, METH_VARARGS, "\n"
-		"getTrailer(Message self) -> Trailer\n"
-		"getTrailer(Message self) -> Trailer\n"
+		"getTrailer(self) -> Trailer\n"
+		"getTrailer(self) -> Trailer\n"
 		""},
 	 { "Message_hasValidStructure", _wrap_Message_hasValidStructure, METH_VARARGS, "\n"
-		"hasValidStructure(Message self, int & tag) -> bool\n"
+		"hasValidStructure(self, tag) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168025,7 +168025,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_bodyLength", _wrap_Message_bodyLength, METH_VARARGS, "\n"
-		"bodyLength(Message self, int beginStringField=FIELD::BeginString, int bodyLengthField=FIELD::BodyLength, int checkSumField=FIELD::CheckSum) -> int\n"
+		"bodyLength(self, beginStringField=FIELD::BeginString, bodyLengthField=FIELD::BodyLength, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168035,19 +168035,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_checkSum", _wrap_Message_checkSum, METH_VARARGS, "\n"
-		"checkSum(Message self, int checkSumField=FIELD::CheckSum) -> int\n"
+		"checkSum(self, checkSumField=FIELD::CheckSum) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"checkSumField: int\n"
 		"\n"
 		""},
-	 { "Message_isAdmin", _wrap_Message_isAdmin, METH_O, "isAdmin(Message self) -> bool"},
-	 { "Message_isApp", _wrap_Message_isApp, METH_O, "isApp(Message self) -> bool"},
-	 { "Message_isEmpty", _wrap_Message_isEmpty, METH_O, "isEmpty(Message self) -> bool"},
-	 { "Message_clear", _wrap_Message_clear, METH_O, "clear(Message self)"},
+	 { "Message_isAdmin", _wrap_Message_isAdmin, METH_O, "isAdmin(self) -> bool"},
+	 { "Message_isApp", _wrap_Message_isApp, METH_O, "isApp(self) -> bool"},
+	 { "Message_isEmpty", _wrap_Message_isEmpty, METH_O, "isEmpty(self) -> bool"},
+	 { "Message_clear", _wrap_Message_clear, METH_O, "clear(self)"},
 	 { "Message_isAdminMsgType", _wrap_Message_isAdminMsgType, METH_O, "\n"
-		"isAdminMsgType(MsgType const & msgType) -> bool\n"
+		"isAdminMsgType(msgType) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168055,7 +168055,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_toApplVerID", _wrap_Message_toApplVerID, METH_O, "\n"
-		"toApplVerID(BeginString const & value) -> ApplVerID\n"
+		"toApplVerID(value) -> ApplVerID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168063,7 +168063,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_toBeginString", _wrap_Message_toBeginString, METH_O, "\n"
-		"toBeginString(ApplVerID const & applVerID) -> BeginString\n"
+		"toBeginString(applVerID) -> BeginString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168071,20 +168071,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_isHeaderField", _wrap_Message_isHeaderField, METH_VARARGS, "\n"
-		"isHeaderField(int field) -> bool\n"
+		"isHeaderField(field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
-		"isHeaderField(FieldBase field, DataDictionary const * pD=None) -> bool\n"
+		"isHeaderField(field, pD=None) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"pD: DataDictionary const *\n"
 		"\n"
-		"isHeaderField(int field, DataDictionary const * pD) -> bool\n"
+		"isHeaderField(field, pD) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168093,20 +168093,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_isTrailerField", _wrap_Message_isTrailerField, METH_VARARGS, "\n"
-		"isTrailerField(int field) -> bool\n"
+		"isTrailerField(field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"\n"
-		"isTrailerField(FieldBase field, DataDictionary const * pD=None) -> bool\n"
+		"isTrailerField(field, pD=None) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: FIX::FieldBase const &\n"
 		"pD: DataDictionary const *\n"
 		"\n"
-		"isTrailerField(int field, DataDictionary const * pD) -> bool\n"
+		"isTrailerField(field, pD) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168115,7 +168115,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_getSessionID", _wrap_Message_getSessionID, METH_VARARGS, "\n"
-		"getSessionID(Message self, std::string const & qualifier=\"\") -> SessionID\n"
+		"getSessionID(self, qualifier=\"\") -> SessionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168123,18 +168123,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Message_setSessionID", _wrap_Message_setSessionID, METH_VARARGS, "\n"
-		"setSessionID(Message self, SessionID const & sessionID)\n"
+		"setSessionID(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sessionID: SessionID const &\n"
 		"\n"
 		""},
-	 { "Message___str__", _wrap_Message___str__, METH_O, "__str__(Message self) -> std::string"},
+	 { "Message___str__", _wrap_Message___str__, METH_O, "__str__(self) -> std::string"},
 	 { "Message_swigregister", Message_swigregister, METH_O, NULL},
 	 { "Message_swiginit", Message_swiginit, METH_VARARGS, NULL},
 	 { "identifyType", _wrap_identifyType, METH_O, "\n"
-		"identifyType(std::string const & message) -> MsgType\n"
+		"identifyType(message) -> MsgType\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168142,14 +168142,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_Group", _wrap_new_Group, METH_VARARGS, "\n"
-		"Group(int field, int delim)\n"
+		"Group(field, delim)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"field: int\n"
 		"delim: int\n"
 		"\n"
-		"Group(int field, int delim, int const [] order)\n"
+		"Group(field, delim, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168157,7 +168157,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"delim: int\n"
 		"order: int const []\n"
 		"\n"
-		"Group(int field, int delim, message_order const & order)\n"
+		"Group(field, delim, order)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168165,17 +168165,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"delim: int\n"
 		"order: message_order const &\n"
 		"\n"
-		"new_Group(Group copy) -> Group\n"
+		"new_Group(copy) -> Group\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "Group_field", _wrap_Group_field, METH_O, "field(Group self) -> int"},
-	 { "Group_delim", _wrap_Group_delim, METH_O, "delim(Group self) -> int"},
+	 { "Group_field", _wrap_Group_field, METH_O, "field(self) -> int"},
+	 { "Group_delim", _wrap_Group_delim, METH_O, "delim(self) -> int"},
 	 { "Group_addGroup", _wrap_Group_addGroup, METH_VARARGS, "\n"
-		"addGroup(Group self, Group group)\n"
+		"addGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168183,7 +168183,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Group_replaceGroup", _wrap_Group_replaceGroup, METH_VARARGS, "\n"
-		"replaceGroup(Group self, unsigned int num, Group group)\n"
+		"replaceGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168192,7 +168192,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Group_getGroup", _wrap_Group_getGroup, METH_VARARGS, "\n"
-		"getGroup(Group self, unsigned int num, Group group) -> Group\n"
+		"getGroup(self, num, group) -> Group\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168201,14 +168201,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Group_removeGroup", _wrap_Group_removeGroup, METH_VARARGS, "\n"
-		"removeGroup(Group self, unsigned int num, Group group)\n"
+		"removeGroup(self, num, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: unsigned int\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"removeGroup(Group self, Group group)\n"
+		"removeGroup(self, group)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168216,13 +168216,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Group_hasGroup", _wrap_Group_hasGroup, METH_VARARGS, "\n"
-		"hasGroup(Group self, Group group) -> bool\n"
+		"hasGroup(self, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"group: FIX::Group const &\n"
 		"\n"
-		"hasGroup(Group self, unsigned int num, Group group) -> bool\n"
+		"hasGroup(self, num, group) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168230,48 +168230,48 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"group: FIX::Group const &\n"
 		"\n"
 		""},
-	 { "delete_Group", _wrap_delete_Group, METH_O, "delete_Group(Group self)"},
+	 { "delete_Group", _wrap_delete_Group, METH_O, "delete_Group(self)"},
 	 { "Group_swigregister", Group_swigregister, METH_O, NULL},
 	 { "Group_swiginit", Group_swiginit, METH_VARARGS, NULL},
 	 { "new_BeginString", _wrap_new_BeginString, METH_VARARGS, "\n"
 		"BeginString()\n"
-		"new_BeginString(FIX::STRING const & value) -> BeginString\n"
+		"new_BeginString(value) -> BeginString\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_BeginString", _wrap_delete_BeginString, METH_O, "delete_BeginString(BeginString self)"},
+	 { "delete_BeginString", _wrap_delete_BeginString, METH_O, "delete_BeginString(self)"},
 	 { "BeginString_swigregister", BeginString_swigregister, METH_O, NULL},
 	 { "BeginString_swiginit", BeginString_swiginit, METH_VARARGS, NULL},
 	 { "new_SenderCompID", _wrap_new_SenderCompID, METH_VARARGS, "\n"
 		"SenderCompID()\n"
-		"new_SenderCompID(FIX::STRING const & value) -> SenderCompID\n"
+		"new_SenderCompID(value) -> SenderCompID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_SenderCompID", _wrap_delete_SenderCompID, METH_O, "delete_SenderCompID(SenderCompID self)"},
+	 { "delete_SenderCompID", _wrap_delete_SenderCompID, METH_O, "delete_SenderCompID(self)"},
 	 { "SenderCompID_swigregister", SenderCompID_swigregister, METH_O, NULL},
 	 { "SenderCompID_swiginit", SenderCompID_swiginit, METH_VARARGS, NULL},
 	 { "new_TargetCompID", _wrap_new_TargetCompID, METH_VARARGS, "\n"
 		"TargetCompID()\n"
-		"new_TargetCompID(FIX::STRING const & value) -> TargetCompID\n"
+		"new_TargetCompID(value) -> TargetCompID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::STRING const &\n"
 		"\n"
 		""},
-	 { "delete_TargetCompID", _wrap_delete_TargetCompID, METH_O, "delete_TargetCompID(TargetCompID self)"},
+	 { "delete_TargetCompID", _wrap_delete_TargetCompID, METH_O, "delete_TargetCompID(self)"},
 	 { "TargetCompID_swigregister", TargetCompID_swigregister, METH_O, NULL},
 	 { "TargetCompID_swiginit", TargetCompID_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionID", _wrap_new_SessionID, METH_VARARGS, "\n"
 		"SessionID()\n"
-		"SessionID(std::string const & beginString, std::string const & senderCompID, std::string const & targetCompID, std::string const & sessionQualifier=\"\")\n"
+		"SessionID(beginString, senderCompID, targetCompID, sessionQualifier=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168281,14 +168281,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"sessionQualifier: std::string const &\n"
 		"\n"
 		""},
-	 { "SessionID_getBeginString", _wrap_SessionID_getBeginString, METH_O, "getBeginString(SessionID self) -> BeginString"},
-	 { "SessionID_getSenderCompID", _wrap_SessionID_getSenderCompID, METH_O, "getSenderCompID(SessionID self) -> SenderCompID"},
-	 { "SessionID_getTargetCompID", _wrap_SessionID_getTargetCompID, METH_O, "getTargetCompID(SessionID self) -> TargetCompID"},
-	 { "SessionID_getSessionQualifier", _wrap_SessionID_getSessionQualifier, METH_O, "getSessionQualifier(SessionID self) -> std::string const &"},
-	 { "SessionID_isFIXT", _wrap_SessionID_isFIXT, METH_O, "isFIXT(SessionID self) -> bool const"},
-	 { "SessionID_toStringFrozen", _wrap_SessionID_toStringFrozen, METH_O, "toStringFrozen(SessionID self) -> std::string const &"},
+	 { "SessionID_getBeginString", _wrap_SessionID_getBeginString, METH_O, "getBeginString(self) -> BeginString"},
+	 { "SessionID_getSenderCompID", _wrap_SessionID_getSenderCompID, METH_O, "getSenderCompID(self) -> SenderCompID"},
+	 { "SessionID_getTargetCompID", _wrap_SessionID_getTargetCompID, METH_O, "getTargetCompID(self) -> TargetCompID"},
+	 { "SessionID_getSessionQualifier", _wrap_SessionID_getSessionQualifier, METH_O, "getSessionQualifier(self) -> std::string const &"},
+	 { "SessionID_isFIXT", _wrap_SessionID_isFIXT, METH_O, "isFIXT(self) -> bool const"},
+	 { "SessionID_toStringFrozen", _wrap_SessionID_toStringFrozen, METH_O, "toStringFrozen(self) -> std::string const &"},
 	 { "SessionID_fromString", _wrap_SessionID_fromString, METH_VARARGS, "\n"
-		"fromString(SessionID self, std::string const & str)\n"
+		"fromString(self, str)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168296,21 +168296,21 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionID_toString", _wrap_SessionID_toString, METH_VARARGS, "\n"
-		"toString(SessionID self) -> std::string\n"
-		"toString(SessionID self, std::string & str) -> std::string &\n"
+		"toString(self) -> std::string\n"
+		"toString(self, str) -> std::string &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"str: std::string &\n"
 		"\n"
 		""},
-	 { "SessionID___invert__", _wrap_SessionID___invert__, METH_O, "__invert__(SessionID self) -> SessionID"},
-	 { "SessionID___str__", _wrap_SessionID___str__, METH_O, "__str__(SessionID self) -> std::string"},
-	 { "delete_SessionID", _wrap_delete_SessionID, METH_O, "delete_SessionID(SessionID self)"},
+	 { "SessionID___invert__", _wrap_SessionID___invert__, METH_O, "__invert__(self) -> SessionID"},
+	 { "SessionID___str__", _wrap_SessionID___str__, METH_O, "__str__(self) -> std::string"},
+	 { "delete_SessionID", _wrap_delete_SessionID, METH_O, "delete_SessionID(self)"},
 	 { "SessionID_swigregister", SessionID_swigregister, METH_O, NULL},
 	 { "SessionID_swiginit", SessionID_swiginit, METH_VARARGS, NULL},
 	 { "new_Dictionary", _wrap_new_Dictionary, METH_VARARGS, "\n"
-		"Dictionary(std::string const & name)\n"
+		"Dictionary(name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168318,11 +168318,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		"new_Dictionary() -> Dictionary\n"
 		""},
-	 { "delete_Dictionary", _wrap_delete_Dictionary, METH_O, "delete_Dictionary(Dictionary self)"},
-	 { "Dictionary_getName", _wrap_Dictionary_getName, METH_O, "getName(Dictionary self) -> std::string"},
-	 { "Dictionary_size", _wrap_Dictionary_size, METH_O, "size(Dictionary self) -> size_t"},
+	 { "delete_Dictionary", _wrap_delete_Dictionary, METH_O, "delete_Dictionary(self)"},
+	 { "Dictionary_getName", _wrap_Dictionary_getName, METH_O, "getName(self) -> std::string"},
+	 { "Dictionary_size", _wrap_Dictionary_size, METH_O, "size(self) -> size_t"},
 	 { "Dictionary_getString", _wrap_Dictionary_getString, METH_VARARGS, "\n"
-		"getString(Dictionary self, std::string const & arg2, bool capitalize=False) -> std::string\n"
+		"getString(self, arg2, capitalize=False) -> std::string\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168331,7 +168331,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_getInt", _wrap_Dictionary_getInt, METH_VARARGS, "\n"
-		"getInt(Dictionary self, std::string const & arg2) -> int\n"
+		"getInt(self, arg2) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168339,7 +168339,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_getDouble", _wrap_Dictionary_getDouble, METH_VARARGS, "\n"
-		"getDouble(Dictionary self, std::string const & arg2) -> double\n"
+		"getDouble(self, arg2) -> double\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168347,7 +168347,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_getBool", _wrap_Dictionary_getBool, METH_VARARGS, "\n"
-		"getBool(Dictionary self, std::string const & arg2) -> bool\n"
+		"getBool(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168355,7 +168355,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_getDay", _wrap_Dictionary_getDay, METH_VARARGS, "\n"
-		"getDay(Dictionary self, std::string const & arg2) -> int\n"
+		"getDay(self, arg2) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168363,7 +168363,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_setString", _wrap_Dictionary_setString, METH_VARARGS, "\n"
-		"setString(Dictionary self, std::string const & arg2, std::string const & arg3)\n"
+		"setString(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168372,7 +168372,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_setInt", _wrap_Dictionary_setInt, METH_VARARGS, "\n"
-		"setInt(Dictionary self, std::string const & arg2, int arg3)\n"
+		"setInt(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168381,7 +168381,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_setDouble", _wrap_Dictionary_setDouble, METH_VARARGS, "\n"
-		"setDouble(Dictionary self, std::string const & arg2, double arg3)\n"
+		"setDouble(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168390,7 +168390,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_setBool", _wrap_Dictionary_setBool, METH_VARARGS, "\n"
-		"setBool(Dictionary self, std::string const & arg2, bool arg3)\n"
+		"setBool(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168399,7 +168399,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_setDay", _wrap_Dictionary_setDay, METH_VARARGS, "\n"
-		"setDay(Dictionary self, std::string const & arg2, int arg3)\n"
+		"setDay(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168408,7 +168408,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_has", _wrap_Dictionary_has, METH_VARARGS, "\n"
-		"has(Dictionary self, std::string const & arg2) -> bool\n"
+		"has(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168416,27 +168416,27 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Dictionary_merge", _wrap_Dictionary_merge, METH_VARARGS, "\n"
-		"merge(Dictionary self, Dictionary arg2)\n"
+		"merge(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Dictionary const &\n"
 		"\n"
 		""},
-	 { "Dictionary_begin", _wrap_Dictionary_begin, METH_O, "begin(Dictionary self) -> FIX::Dictionary::iterator"},
-	 { "Dictionary_end", _wrap_Dictionary_end, METH_O, "end(Dictionary self) -> FIX::Dictionary::iterator"},
+	 { "Dictionary_begin", _wrap_Dictionary_begin, METH_O, "begin(self) -> FIX::Dictionary::iterator"},
+	 { "Dictionary_end", _wrap_Dictionary_end, METH_O, "end(self) -> FIX::Dictionary::iterator"},
 	 { "Dictionary_swigregister", Dictionary_swigregister, METH_O, NULL},
 	 { "Dictionary_swiginit", Dictionary_swiginit, METH_VARARGS, NULL},
 	 { "new_SessionSettings", _wrap_new_SessionSettings, METH_VARARGS, "\n"
 		"SessionSettings()\n"
-		"SessionSettings(std::istream & stream, bool resolveEnvVars=False)\n"
+		"SessionSettings(stream, resolveEnvVars=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"resolveEnvVars: bool\n"
 		"\n"
-		"SessionSettings(std::string const & file, bool resolveEnvVars=False)\n"
+		"SessionSettings(file, resolveEnvVars=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168445,7 +168445,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionSettings_has", _wrap_SessionSettings_has, METH_VARARGS, "\n"
-		"has(SessionSettings self, SessionID arg2) -> bool const\n"
+		"has(self, arg2) -> bool const\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168453,40 +168453,40 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionSettings_get", _wrap_SessionSettings_get, METH_VARARGS, "\n"
-		"get(SessionSettings self, SessionID arg2) -> Dictionary\n"
+		"get(self, arg2) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"get(SessionSettings self) -> Dictionary\n"
+		"get(self) -> Dictionary\n"
 		""},
 	 { "SessionSettings_set", _wrap_SessionSettings_set, METH_VARARGS, "\n"
-		"set(SessionSettings self, SessionID arg2, Dictionary arg3)\n"
+		"set(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SessionID const &\n"
 		"arg3: FIX::Dictionary\n"
 		"\n"
-		"set(SessionSettings self, Dictionary defaults)\n"
+		"set(self, defaults)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"defaults: FIX::Dictionary const &\n"
 		"\n"
 		""},
-	 { "SessionSettings_size", _wrap_SessionSettings_size, METH_O, "size(SessionSettings self) -> size_t"},
-	 { "SessionSettings_getSessions", _wrap_SessionSettings_getSessions, METH_O, "getSessions(SessionSettings self) -> SessionIDSet"},
+	 { "SessionSettings_size", _wrap_SessionSettings_size, METH_O, "size(self) -> size_t"},
+	 { "SessionSettings_getSessions", _wrap_SessionSettings_getSessions, METH_O, "getSessions(self) -> SessionIDSet"},
 	 { "__rshift__", _wrap___rshift__, METH_VARARGS, "\n"
-		"__rshift__(std::istream & arg1, SessionID arg2) -> std::istream\n"
+		"__rshift__(arg1, arg2) -> std::istream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::istream &\n"
 		"arg2: FIX::SessionID &\n"
 		"\n"
-		"__rshift__(std::istream & arg1, SessionSettings arg2) -> std::istream &\n"
+		"__rshift__(arg1, arg2) -> std::istream &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168495,28 +168495,28 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__lshift__", _wrap___lshift__, METH_VARARGS, "\n"
-		"__lshift__(std::ostream & stream, FieldBase field) -> std::ostream\n"
+		"__lshift__(stream, field) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::ostream &\n"
 		"field: FIX::FieldBase const &\n"
 		"\n"
-		"__lshift__(std::ostream & stream, Message message) -> std::ostream\n"
+		"__lshift__(stream, message) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::ostream &\n"
 		"message: FIX::Message const &\n"
 		"\n"
-		"__lshift__(std::ostream & arg1, SessionID arg2) -> std::ostream\n"
+		"__lshift__(arg1, arg2) -> std::ostream\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::ostream &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__lshift__(std::ostream & arg1, SessionSettings arg2) -> std::ostream &\n"
+		"__lshift__(arg1, arg2) -> std::ostream &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168525,18 +168525,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SessionSettings_setFromString", _wrap_SessionSettings_setFromString, METH_VARARGS, "\n"
-		"setFromString(SessionSettings self, std::string const & str)\n"
+		"setFromString(self, str)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"str: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_SessionSettings", _wrap_delete_SessionSettings, METH_O, "delete_SessionSettings(SessionSettings self)"},
+	 { "delete_SessionSettings", _wrap_delete_SessionSettings, METH_O, "delete_SessionSettings(self)"},
 	 { "SessionSettings_swigregister", SessionSettings_swigregister, METH_O, NULL},
 	 { "SessionSettings_swiginit", SessionSettings_swiginit, METH_VARARGS, NULL},
 	 { "new_Session", _wrap_new_Session, METH_VARARGS, "\n"
-		"new_Session(std::function< FIX::UtcTimeStamp () > timestamper, Application & arg2, MessageStoreFactory & arg3, SessionID arg4, DataDictionaryProvider const & arg5, TimeRange const & arg6, int heartBtInt, LogFactory * pLogFactory) -> Session\n"
+		"new_Session(timestamper, arg2, arg3, arg4, arg5, arg6, heartBtInt, pLogFactory) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168550,25 +168550,25 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"pLogFactory: LogFactory *\n"
 		"\n"
 		""},
-	 { "delete_Session", _wrap_delete_Session, METH_O, "delete_Session(Session self)"},
-	 { "Session_logon", _wrap_Session_logon, METH_O, "logon(Session self)"},
+	 { "delete_Session", _wrap_delete_Session, METH_O, "delete_Session(self)"},
+	 { "Session_logon", _wrap_Session_logon, METH_O, "logon(self)"},
 	 { "Session_logout", _wrap_Session_logout, METH_VARARGS, "\n"
-		"logout(Session self, std::string const & reason=\"\")\n"
+		"logout(self, reason=\"\")\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"reason: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_isEnabled", _wrap_Session_isEnabled, METH_O, "isEnabled(Session self) -> bool"},
-	 { "Session_sentLogon", _wrap_Session_sentLogon, METH_O, "sentLogon(Session self) -> bool"},
-	 { "Session_sentLogout", _wrap_Session_sentLogout, METH_O, "sentLogout(Session self) -> bool"},
-	 { "Session_receivedLogon", _wrap_Session_receivedLogon, METH_O, "receivedLogon(Session self) -> bool"},
-	 { "Session_isLoggedOn", _wrap_Session_isLoggedOn, METH_O, "isLoggedOn(Session self) -> bool"},
-	 { "Session_reset", _wrap_Session_reset, METH_O, "reset(Session self)"},
-	 { "Session_refresh", _wrap_Session_refresh, METH_O, "refresh(Session self)"},
+	 { "Session_isEnabled", _wrap_Session_isEnabled, METH_O, "isEnabled(self) -> bool"},
+	 { "Session_sentLogon", _wrap_Session_sentLogon, METH_O, "sentLogon(self) -> bool"},
+	 { "Session_sentLogout", _wrap_Session_sentLogout, METH_O, "sentLogout(self) -> bool"},
+	 { "Session_receivedLogon", _wrap_Session_receivedLogon, METH_O, "receivedLogon(self) -> bool"},
+	 { "Session_isLoggedOn", _wrap_Session_isLoggedOn, METH_O, "isLoggedOn(self) -> bool"},
+	 { "Session_reset", _wrap_Session_reset, METH_O, "reset(self)"},
+	 { "Session_refresh", _wrap_Session_refresh, METH_O, "refresh(self)"},
 	 { "Session_setNextSenderMsgSeqNum", _wrap_Session_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(Session self, FIX::SEQNUM num)\n"
+		"setNextSenderMsgSeqNum(self, num)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168576,39 +168576,39 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_setNextTargetMsgSeqNum", _wrap_Session_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(Session self, FIX::SEQNUM num)\n"
+		"setNextTargetMsgSeqNum(self, num)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"num: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "Session_getSessionID", _wrap_Session_getSessionID, METH_O, "getSessionID(Session self) -> SessionID"},
+	 { "Session_getSessionID", _wrap_Session_getSessionID, METH_O, "getSessionID(self) -> SessionID"},
 	 { "Session_setDataDictionaryProvider", _wrap_Session_setDataDictionaryProvider, METH_VARARGS, "\n"
-		"setDataDictionaryProvider(Session self, DataDictionaryProvider const & dataDictionaryProvider)\n"
+		"setDataDictionaryProvider(self, dataDictionaryProvider)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dataDictionaryProvider: DataDictionaryProvider const &\n"
 		"\n"
 		""},
-	 { "Session_getDataDictionaryProvider", _wrap_Session_getDataDictionaryProvider, METH_O, "getDataDictionaryProvider(Session self) -> DataDictionaryProvider const &"},
+	 { "Session_getDataDictionaryProvider", _wrap_Session_getDataDictionaryProvider, METH_O, "getDataDictionaryProvider(self) -> DataDictionaryProvider const &"},
 	 { "Session_sendToTarget", _wrap_Session_sendToTarget, METH_VARARGS, "\n"
-		"sendToTarget(Message message, std::string const & qualifier=\"\") -> bool\n"
+		"sendToTarget(message, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message &\n"
 		"qualifier: std::string const &\n"
 		"\n"
-		"sendToTarget(Message message, SessionID sessionID) -> bool\n"
+		"sendToTarget(message, sessionID) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message &\n"
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
-		"sendToTarget(Message arg1, SenderCompID senderCompID, TargetCompID targetCompID, std::string const & qualifier=\"\") -> bool\n"
+		"sendToTarget(arg1, senderCompID, targetCompID, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168617,7 +168617,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"targetCompID: FIX::TargetCompID const &\n"
 		"qualifier: std::string const &\n"
 		"\n"
-		"sendToTarget(Message message, std::string const & senderCompID, std::string const & targetCompID, std::string const & qualifier=\"\") -> bool\n"
+		"sendToTarget(message, senderCompID, targetCompID, qualifier=\"\") -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168629,7 +168629,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "Session_getSessions", _wrap_Session_getSessions, METH_NOARGS, "getSessions() -> SessionIDSet"},
 	 { "Session_doesSessionExist", _wrap_Session_doesSessionExist, METH_O, "\n"
-		"doesSessionExist(SessionID arg1) -> bool\n"
+		"doesSessionExist(arg1) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168637,13 +168637,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_lookupSession", _wrap_Session_lookupSession, METH_VARARGS, "\n"
-		"lookupSession(SessionID arg1) -> Session\n"
+		"lookupSession(arg1) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"\n"
-		"lookupSession(std::string const & arg1, bool reverse=False) -> Session\n"
+		"lookupSession(arg1, reverse=False) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168652,7 +168652,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_isSessionRegistered", _wrap_Session_isSessionRegistered, METH_O, "\n"
-		"isSessionRegistered(SessionID arg1) -> bool\n"
+		"isSessionRegistered(arg1) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168660,7 +168660,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_registerSession", _wrap_Session_registerSession, METH_O, "\n"
-		"registerSession(SessionID arg1) -> Session\n"
+		"registerSession(arg1) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168668,7 +168668,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_unregisterSession", _wrap_Session_unregisterSession, METH_O, "\n"
-		"unregisterSession(SessionID arg1)\n"
+		"unregisterSession(arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168677,7 +168677,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "Session_numSessions", _wrap_Session_numSessions, METH_NOARGS, "numSessions() -> size_t"},
 	 { "Session_isSessionTime", _wrap_Session_isSessionTime, METH_VARARGS, "\n"
-		"isSessionTime(Session self, UtcTimeStamp now) -> bool\n"
+		"isSessionTime(self, now) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168685,198 +168685,198 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_isLogonTime", _wrap_Session_isLogonTime, METH_VARARGS, "\n"
-		"isLogonTime(Session self, UtcTimeStamp now) -> bool\n"
+		"isLogonTime(self, now) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "Session_isInitiator", _wrap_Session_isInitiator, METH_O, "isInitiator(Session self) -> bool"},
-	 { "Session_isAcceptor", _wrap_Session_isAcceptor, METH_O, "isAcceptor(Session self) -> bool"},
-	 { "Session_getLogonTime", _wrap_Session_getLogonTime, METH_O, "getLogonTime(Session self) -> TimeRange const &"},
+	 { "Session_isInitiator", _wrap_Session_isInitiator, METH_O, "isInitiator(self) -> bool"},
+	 { "Session_isAcceptor", _wrap_Session_isAcceptor, METH_O, "isAcceptor(self) -> bool"},
+	 { "Session_getLogonTime", _wrap_Session_getLogonTime, METH_O, "getLogonTime(self) -> TimeRange const &"},
 	 { "Session_setLogonTime", _wrap_Session_setLogonTime, METH_VARARGS, "\n"
-		"setLogonTime(Session self, TimeRange const & value)\n"
+		"setLogonTime(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: TimeRange const &\n"
 		"\n"
 		""},
-	 { "Session_getSenderDefaultApplVerID", _wrap_Session_getSenderDefaultApplVerID, METH_O, "getSenderDefaultApplVerID(Session self) -> std::string const &"},
+	 { "Session_getSenderDefaultApplVerID", _wrap_Session_getSenderDefaultApplVerID, METH_O, "getSenderDefaultApplVerID(self) -> std::string const &"},
 	 { "Session_setSenderDefaultApplVerID", _wrap_Session_setSenderDefaultApplVerID, METH_VARARGS, "\n"
-		"setSenderDefaultApplVerID(Session self, std::string const & senderDefaultApplVerID)\n"
+		"setSenderDefaultApplVerID(self, senderDefaultApplVerID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"senderDefaultApplVerID: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getTargetDefaultApplVerID", _wrap_Session_getTargetDefaultApplVerID, METH_O, "getTargetDefaultApplVerID(Session self) -> std::string const &"},
+	 { "Session_getTargetDefaultApplVerID", _wrap_Session_getTargetDefaultApplVerID, METH_O, "getTargetDefaultApplVerID(self) -> std::string const &"},
 	 { "Session_setTargetDefaultApplVerID", _wrap_Session_setTargetDefaultApplVerID, METH_VARARGS, "\n"
-		"setTargetDefaultApplVerID(Session self, std::string const & targetDefaultApplVerID)\n"
+		"setTargetDefaultApplVerID(self, targetDefaultApplVerID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"targetDefaultApplVerID: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getSendRedundantResendRequests", _wrap_Session_getSendRedundantResendRequests, METH_O, "getSendRedundantResendRequests(Session self) -> bool"},
+	 { "Session_getSendRedundantResendRequests", _wrap_Session_getSendRedundantResendRequests, METH_O, "getSendRedundantResendRequests(self) -> bool"},
 	 { "Session_setSendRedundantResendRequests", _wrap_Session_setSendRedundantResendRequests, METH_VARARGS, "\n"
-		"setSendRedundantResendRequests(Session self, bool value)\n"
+		"setSendRedundantResendRequests(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getCheckCompId", _wrap_Session_getCheckCompId, METH_O, "getCheckCompId(Session self) -> bool"},
+	 { "Session_getCheckCompId", _wrap_Session_getCheckCompId, METH_O, "getCheckCompId(self) -> bool"},
 	 { "Session_setCheckCompId", _wrap_Session_setCheckCompId, METH_VARARGS, "\n"
-		"setCheckCompId(Session self, bool value)\n"
+		"setCheckCompId(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getCheckLatency", _wrap_Session_getCheckLatency, METH_O, "getCheckLatency(Session self) -> bool"},
+	 { "Session_getCheckLatency", _wrap_Session_getCheckLatency, METH_O, "getCheckLatency(self) -> bool"},
 	 { "Session_setCheckLatency", _wrap_Session_setCheckLatency, METH_VARARGS, "\n"
-		"setCheckLatency(Session self, bool value)\n"
+		"setCheckLatency(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getMaxLatency", _wrap_Session_getMaxLatency, METH_O, "getMaxLatency(Session self) -> int"},
+	 { "Session_getMaxLatency", _wrap_Session_getMaxLatency, METH_O, "getMaxLatency(self) -> int"},
 	 { "Session_setMaxLatency", _wrap_Session_setMaxLatency, METH_VARARGS, "\n"
-		"setMaxLatency(Session self, int value)\n"
+		"setMaxLatency(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getLogonTimeout", _wrap_Session_getLogonTimeout, METH_O, "getLogonTimeout(Session self) -> int"},
+	 { "Session_getLogonTimeout", _wrap_Session_getLogonTimeout, METH_O, "getLogonTimeout(self) -> int"},
 	 { "Session_setLogonTimeout", _wrap_Session_setLogonTimeout, METH_VARARGS, "\n"
-		"setLogonTimeout(Session self, int value)\n"
+		"setLogonTimeout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getLogoutTimeout", _wrap_Session_getLogoutTimeout, METH_O, "getLogoutTimeout(Session self) -> int"},
+	 { "Session_getLogoutTimeout", _wrap_Session_getLogoutTimeout, METH_O, "getLogoutTimeout(self) -> int"},
 	 { "Session_setLogoutTimeout", _wrap_Session_setLogoutTimeout, METH_VARARGS, "\n"
-		"setLogoutTimeout(Session self, int value)\n"
+		"setLogoutTimeout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: int\n"
 		"\n"
 		""},
-	 { "Session_getResetOnLogon", _wrap_Session_getResetOnLogon, METH_O, "getResetOnLogon(Session self) -> bool"},
+	 { "Session_getResetOnLogon", _wrap_Session_getResetOnLogon, METH_O, "getResetOnLogon(self) -> bool"},
 	 { "Session_setResetOnLogon", _wrap_Session_setResetOnLogon, METH_VARARGS, "\n"
-		"setResetOnLogon(Session self, bool value)\n"
+		"setResetOnLogon(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getResetOnLogout", _wrap_Session_getResetOnLogout, METH_O, "getResetOnLogout(Session self) -> bool"},
+	 { "Session_getResetOnLogout", _wrap_Session_getResetOnLogout, METH_O, "getResetOnLogout(self) -> bool"},
 	 { "Session_setResetOnLogout", _wrap_Session_setResetOnLogout, METH_VARARGS, "\n"
-		"setResetOnLogout(Session self, bool value)\n"
+		"setResetOnLogout(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getResetOnDisconnect", _wrap_Session_getResetOnDisconnect, METH_O, "getResetOnDisconnect(Session self) -> bool"},
+	 { "Session_getResetOnDisconnect", _wrap_Session_getResetOnDisconnect, METH_O, "getResetOnDisconnect(self) -> bool"},
 	 { "Session_setResetOnDisconnect", _wrap_Session_setResetOnDisconnect, METH_VARARGS, "\n"
-		"setResetOnDisconnect(Session self, bool value)\n"
+		"setResetOnDisconnect(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getRefreshOnLogon", _wrap_Session_getRefreshOnLogon, METH_O, "getRefreshOnLogon(Session self) -> bool"},
+	 { "Session_getRefreshOnLogon", _wrap_Session_getRefreshOnLogon, METH_O, "getRefreshOnLogon(self) -> bool"},
 	 { "Session_setRefreshOnLogon", _wrap_Session_setRefreshOnLogon, METH_VARARGS, "\n"
-		"setRefreshOnLogon(Session self, bool value)\n"
+		"setRefreshOnLogon(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getMillisecondsInTimeStamp", _wrap_Session_getMillisecondsInTimeStamp, METH_O, "getMillisecondsInTimeStamp(Session self) -> bool"},
+	 { "Session_getMillisecondsInTimeStamp", _wrap_Session_getMillisecondsInTimeStamp, METH_O, "getMillisecondsInTimeStamp(self) -> bool"},
 	 { "Session_setMillisecondsInTimeStamp", _wrap_Session_setMillisecondsInTimeStamp, METH_VARARGS, "\n"
-		"setMillisecondsInTimeStamp(Session self, bool value)\n"
+		"setMillisecondsInTimeStamp(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getTimestampPrecision", _wrap_Session_getTimestampPrecision, METH_O, "getTimestampPrecision(Session self) -> int"},
+	 { "Session_getTimestampPrecision", _wrap_Session_getTimestampPrecision, METH_O, "getTimestampPrecision(self) -> int"},
 	 { "Session_setTimestampPrecision", _wrap_Session_setTimestampPrecision, METH_VARARGS, "\n"
-		"setTimestampPrecision(Session self, int precision)\n"
+		"setTimestampPrecision(self, precision)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"precision: int\n"
 		"\n"
 		""},
-	 { "Session_getSupportedTimestampPrecision", _wrap_Session_getSupportedTimestampPrecision, METH_O, "getSupportedTimestampPrecision(Session self) -> int"},
+	 { "Session_getSupportedTimestampPrecision", _wrap_Session_getSupportedTimestampPrecision, METH_O, "getSupportedTimestampPrecision(self) -> int"},
 	 { "Session_supportsSubSecondTimestamps", _wrap_Session_supportsSubSecondTimestamps, METH_O, "\n"
-		"supportsSubSecondTimestamps(std::string const & beginString) -> bool\n"
+		"supportsSubSecondTimestamps(beginString) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"beginString: std::string const &\n"
 		"\n"
 		""},
-	 { "Session_getPersistMessages", _wrap_Session_getPersistMessages, METH_O, "getPersistMessages(Session self) -> bool"},
+	 { "Session_getPersistMessages", _wrap_Session_getPersistMessages, METH_O, "getPersistMessages(self) -> bool"},
 	 { "Session_setPersistMessages", _wrap_Session_setPersistMessages, METH_VARARGS, "\n"
-		"setPersistMessages(Session self, bool value)\n"
+		"setPersistMessages(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getValidateLengthAndChecksum", _wrap_Session_getValidateLengthAndChecksum, METH_O, "getValidateLengthAndChecksum(Session self) -> bool"},
+	 { "Session_getValidateLengthAndChecksum", _wrap_Session_getValidateLengthAndChecksum, METH_O, "getValidateLengthAndChecksum(self) -> bool"},
 	 { "Session_setValidateLengthAndChecksum", _wrap_Session_setValidateLengthAndChecksum, METH_VARARGS, "\n"
-		"setValidateLengthAndChecksum(Session self, bool value)\n"
+		"setValidateLengthAndChecksum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getSendNextExpectedMsgSeqNum", _wrap_Session_getSendNextExpectedMsgSeqNum, METH_O, "getSendNextExpectedMsgSeqNum(Session self) -> bool"},
+	 { "Session_getSendNextExpectedMsgSeqNum", _wrap_Session_getSendNextExpectedMsgSeqNum, METH_O, "getSendNextExpectedMsgSeqNum(self) -> bool"},
 	 { "Session_setSendNextExpectedMsgSeqNum", _wrap_Session_setSendNextExpectedMsgSeqNum, METH_VARARGS, "\n"
-		"setSendNextExpectedMsgSeqNum(Session self, bool value)\n"
+		"setSendNextExpectedMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getIsNonStopSession", _wrap_Session_getIsNonStopSession, METH_O, "getIsNonStopSession(Session self) -> bool"},
+	 { "Session_getIsNonStopSession", _wrap_Session_getIsNonStopSession, METH_O, "getIsNonStopSession(self) -> bool"},
 	 { "Session_setIsNonStopSession", _wrap_Session_setIsNonStopSession, METH_VARARGS, "\n"
-		"setIsNonStopSession(Session self, bool value)\n"
+		"setIsNonStopSession(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "Session_getAllowedRemoteAddresses", _wrap_Session_getAllowedRemoteAddresses, METH_O, "getAllowedRemoteAddresses(Session self) -> std::set< std::string,std::less< std::string >,std::allocator< std::string > > const &"},
+	 { "Session_getAllowedRemoteAddresses", _wrap_Session_getAllowedRemoteAddresses, METH_O, "getAllowedRemoteAddresses(self) -> std::set< std::string,std::less< std::string >,std::allocator< std::string > > const &"},
 	 { "Session_setAllowedRemoteAddresses", _wrap_Session_setAllowedRemoteAddresses, METH_VARARGS, "\n"
-		"setAllowedRemoteAddresses(Session self, std::set< std::string,std::less< std::string >,std::allocator< std::string > > const & value)\n"
+		"setAllowedRemoteAddresses(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168884,7 +168884,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_inAllowedRemoteAddresses", _wrap_Session_inAllowedRemoteAddresses, METH_VARARGS, "\n"
-		"inAllowedRemoteAddresses(Session self, std::string const & value) -> bool\n"
+		"inAllowedRemoteAddresses(self, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168892,7 +168892,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_setResponder", _wrap_Session_setResponder, METH_VARARGS, "\n"
-		"setResponder(Session self, Responder * pR)\n"
+		"setResponder(self, pR)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168900,7 +168900,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_send", _wrap_Session_send, METH_VARARGS, "\n"
-		"send(Session self, Message arg2) -> bool\n"
+		"send(self, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168908,13 +168908,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Session_next", _wrap_Session_next, METH_VARARGS, "\n"
-		"next(Session self, UtcTimeStamp now)\n"
+		"next(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
-		"next(Session self, std::string const & arg2, UtcTimeStamp now, bool queued=False)\n"
+		"next(self, arg2, now, queued=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168922,7 +168922,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"now: FIX::UtcTimeStamp const &\n"
 		"queued: bool\n"
 		"\n"
-		"next(Session self, Message arg2, UtcTimeStamp now, bool queued=False)\n"
+		"next(self, arg2, now, queued=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168931,17 +168931,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"queued: bool\n"
 		"\n"
 		""},
-	 { "Session_disconnect", _wrap_Session_disconnect, METH_O, "disconnect(Session self)"},
-	 { "Session_getExpectedSenderNum", _wrap_Session_getExpectedSenderNum, METH_O, "getExpectedSenderNum(Session self) -> FIX::SEQNUM"},
-	 { "Session_getExpectedTargetNum", _wrap_Session_getExpectedTargetNum, METH_O, "getExpectedTargetNum(Session self) -> FIX::SEQNUM"},
-	 { "Session_getLog", _wrap_Session_getLog, METH_O, "getLog(Session self) -> Log *"},
-	 { "Session_getStore", _wrap_Session_getStore, METH_O, "getStore(Session self) -> MessageStore const *"},
+	 { "Session_disconnect", _wrap_Session_disconnect, METH_O, "disconnect(self)"},
+	 { "Session_getExpectedSenderNum", _wrap_Session_getExpectedSenderNum, METH_O, "getExpectedSenderNum(self) -> FIX::SEQNUM"},
+	 { "Session_getExpectedTargetNum", _wrap_Session_getExpectedTargetNum, METH_O, "getExpectedTargetNum(self) -> FIX::SEQNUM"},
+	 { "Session_getLog", _wrap_Session_getLog, METH_O, "getLog(self) -> Log *"},
+	 { "Session_getStore", _wrap_Session_getStore, METH_O, "getStore(self) -> MessageStore const *"},
 	 { "Session_swigregister", Session_swigregister, METH_O, NULL},
 	 { "Session_swiginit", Session_swiginit, METH_VARARGS, NULL},
-	 { "delete_LogFactory", _wrap_delete_LogFactory, METH_O, "delete_LogFactory(LogFactory self)"},
+	 { "delete_LogFactory", _wrap_delete_LogFactory, METH_O, "delete_LogFactory(self)"},
 	 { "LogFactory_create", _wrap_LogFactory_create, METH_VARARGS, "\n"
-		"create(LogFactory self) -> Log\n"
-		"create(LogFactory self, SessionID arg0) -> Log\n"
+		"create(self) -> Log\n"
+		"create(self, arg0) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168949,7 +168949,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "LogFactory_destroy", _wrap_LogFactory_destroy, METH_VARARGS, "\n"
-		"destroy(LogFactory self, Log arg0)\n"
+		"destroy(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168957,7 +168957,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_LogFactory", _wrap_new_LogFactory, METH_O, "\n"
-		"new_LogFactory(PyObject * _self) -> LogFactory\n"
+		"new_LogFactory(_self) -> LogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168968,13 +168968,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "LogFactory_swigregister", LogFactory_swigregister, METH_O, NULL},
 	 { "LogFactory_swiginit", LogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_ScreenLogFactory", _wrap_new_ScreenLogFactory, METH_VARARGS, "\n"
-		"ScreenLogFactory(SessionSettings settings)\n"
+		"ScreenLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings\n"
 		"\n"
-		"new_ScreenLogFactory(bool incoming, bool outgoing, bool event) -> ScreenLogFactory\n"
+		"new_ScreenLogFactory(incoming, outgoing, event) -> ScreenLogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168984,8 +168984,8 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "ScreenLogFactory_create", _wrap_ScreenLogFactory_create, METH_VARARGS, "\n"
-		"create(ScreenLogFactory self) -> Log\n"
-		"create(ScreenLogFactory self, SessionID arg2) -> Log\n"
+		"create(self) -> Log\n"
+		"create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -168993,21 +168993,21 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "ScreenLogFactory_destroy", _wrap_ScreenLogFactory_destroy, METH_VARARGS, "\n"
-		"destroy(ScreenLogFactory self, Log log)\n"
+		"destroy(self, log)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"log: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_ScreenLogFactory", _wrap_delete_ScreenLogFactory, METH_O, "delete_ScreenLogFactory(ScreenLogFactory self)"},
+	 { "delete_ScreenLogFactory", _wrap_delete_ScreenLogFactory, METH_O, "delete_ScreenLogFactory(self)"},
 	 { "ScreenLogFactory_swigregister", ScreenLogFactory_swigregister, METH_O, NULL},
 	 { "ScreenLogFactory_swiginit", ScreenLogFactory_swiginit, METH_VARARGS, NULL},
-	 { "delete_Log", _wrap_delete_Log, METH_O, "delete_Log(Log self)"},
-	 { "Log_clear", _wrap_Log_clear, METH_O, "clear(Log self)"},
-	 { "Log_backup", _wrap_Log_backup, METH_O, "backup(Log self)"},
+	 { "delete_Log", _wrap_delete_Log, METH_O, "delete_Log(self)"},
+	 { "Log_clear", _wrap_Log_clear, METH_O, "clear(self)"},
+	 { "Log_backup", _wrap_Log_backup, METH_O, "backup(self)"},
 	 { "Log_onIncoming", _wrap_Log_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(Log self, std::string const & arg0)\n"
+		"onIncoming(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169015,7 +169015,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Log_onOutgoing", _wrap_Log_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(Log self, std::string const & arg0)\n"
+		"onOutgoing(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169023,7 +169023,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Log_onEvent", _wrap_Log_onEvent, METH_VARARGS, "\n"
-		"onEvent(Log self, std::string const & arg0)\n"
+		"onEvent(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169031,7 +169031,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_Log", _wrap_new_Log, METH_O, "\n"
-		"new_Log(PyObject * _self) -> Log\n"
+		"new_Log(_self) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169041,10 +169041,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "disown_Log", _wrap_disown_Log, METH_O, NULL},
 	 { "Log_swigregister", Log_swigregister, METH_O, NULL},
 	 { "Log_swiginit", Log_swiginit, METH_VARARGS, NULL},
-	 { "NullLog_clear", _wrap_NullLog_clear, METH_O, "clear(NullLog self)"},
-	 { "NullLog_backup", _wrap_NullLog_backup, METH_O, "backup(NullLog self)"},
+	 { "NullLog_clear", _wrap_NullLog_clear, METH_O, "clear(self)"},
+	 { "NullLog_backup", _wrap_NullLog_backup, METH_O, "backup(self)"},
 	 { "NullLog_onIncoming", _wrap_NullLog_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(NullLog self, std::string const & arg2)\n"
+		"onIncoming(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169052,7 +169052,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullLog_onOutgoing", _wrap_NullLog_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(NullLog self, std::string const & arg2)\n"
+		"onOutgoing(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169060,7 +169060,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullLog_onEvent", _wrap_NullLog_onEvent, METH_VARARGS, "\n"
-		"onEvent(NullLog self, std::string const & arg2)\n"
+		"onEvent(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169068,11 +169068,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_NullLog", _wrap_new_NullLog, METH_NOARGS, "new_NullLog() -> NullLog"},
-	 { "delete_NullLog", _wrap_delete_NullLog, METH_O, "delete_NullLog(NullLog self)"},
+	 { "delete_NullLog", _wrap_delete_NullLog, METH_O, "delete_NullLog(self)"},
 	 { "NullLog_swigregister", NullLog_swigregister, METH_O, NULL},
 	 { "NullLog_swiginit", NullLog_swiginit, METH_VARARGS, NULL},
 	 { "new_ScreenLog", _wrap_new_ScreenLog, METH_VARARGS, "\n"
-		"ScreenLog(bool incoming, bool outgoing, bool event)\n"
+		"ScreenLog(incoming, outgoing, event)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169080,7 +169080,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"outgoing: bool\n"
 		"event: bool\n"
 		"\n"
-		"new_ScreenLog(SessionID sessionID, bool incoming, bool outgoing, bool event) -> ScreenLog\n"
+		"new_ScreenLog(sessionID, incoming, outgoing, event) -> ScreenLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169090,10 +169090,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"event: bool\n"
 		"\n"
 		""},
-	 { "ScreenLog_clear", _wrap_ScreenLog_clear, METH_O, "clear(ScreenLog self)"},
-	 { "ScreenLog_backup", _wrap_ScreenLog_backup, METH_O, "backup(ScreenLog self)"},
+	 { "ScreenLog_clear", _wrap_ScreenLog_clear, METH_O, "clear(self)"},
+	 { "ScreenLog_backup", _wrap_ScreenLog_backup, METH_O, "backup(self)"},
 	 { "ScreenLog_onIncoming", _wrap_ScreenLog_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(ScreenLog self, std::string const & value)\n"
+		"onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169101,7 +169101,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "ScreenLog_onOutgoing", _wrap_ScreenLog_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(ScreenLog self, std::string const & value)\n"
+		"onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169109,30 +169109,30 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "ScreenLog_onEvent", _wrap_ScreenLog_onEvent, METH_VARARGS, "\n"
-		"onEvent(ScreenLog self, std::string const & value)\n"
+		"onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_ScreenLog", _wrap_delete_ScreenLog, METH_O, "delete_ScreenLog(ScreenLog self)"},
+	 { "delete_ScreenLog", _wrap_delete_ScreenLog, METH_O, "delete_ScreenLog(self)"},
 	 { "ScreenLog_swigregister", ScreenLog_swigregister, METH_O, NULL},
 	 { "ScreenLog_swiginit", ScreenLog_swiginit, METH_VARARGS, NULL},
 	 { "new_FileLogFactory", _wrap_new_FileLogFactory, METH_VARARGS, "\n"
-		"FileLogFactory(SessionSettings settings)\n"
+		"FileLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"FileLogFactory(std::string const & path)\n"
+		"FileLogFactory(path)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"\n"
-		"new_FileLogFactory(std::string const & path, std::string const & backupPath) -> FileLogFactory\n"
+		"new_FileLogFactory(path, backupPath) -> FileLogFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169141,8 +169141,8 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileLogFactory_create", _wrap_FileLogFactory_create, METH_VARARGS, "\n"
-		"create(FileLogFactory self) -> Log\n"
-		"create(FileLogFactory self, SessionID arg2) -> Log\n"
+		"create(self) -> Log\n"
+		"create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169150,38 +169150,38 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileLogFactory_destroy", _wrap_FileLogFactory_destroy, METH_VARARGS, "\n"
-		"destroy(FileLogFactory self, Log log)\n"
+		"destroy(self, log)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"log: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_FileLogFactory", _wrap_delete_FileLogFactory, METH_O, "delete_FileLogFactory(FileLogFactory self)"},
+	 { "delete_FileLogFactory", _wrap_delete_FileLogFactory, METH_O, "delete_FileLogFactory(self)"},
 	 { "FileLogFactory_swigregister", FileLogFactory_swigregister, METH_O, NULL},
 	 { "FileLogFactory_swiginit", FileLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_FileLog", _wrap_new_FileLog, METH_VARARGS, "\n"
-		"FileLog(std::string const & path)\n"
+		"FileLog(path)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"\n"
-		"FileLog(std::string const & path, std::string const & backupPath)\n"
+		"FileLog(path, backupPath)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"backupPath: std::string const &\n"
 		"\n"
-		"FileLog(std::string const & path, SessionID sessionID)\n"
+		"FileLog(path, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"path: std::string const &\n"
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
-		"new_FileLog(std::string const & path, std::string const & backupPath, SessionID sessionID) -> FileLog\n"
+		"new_FileLog(path, backupPath, sessionID) -> FileLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169190,11 +169190,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "delete_FileLog", _wrap_delete_FileLog, METH_O, "delete_FileLog(FileLog self)"},
-	 { "FileLog_clear", _wrap_FileLog_clear, METH_O, "clear(FileLog self)"},
-	 { "FileLog_backup", _wrap_FileLog_backup, METH_O, "backup(FileLog self)"},
+	 { "delete_FileLog", _wrap_delete_FileLog, METH_O, "delete_FileLog(self)"},
+	 { "FileLog_clear", _wrap_FileLog_clear, METH_O, "clear(self)"},
+	 { "FileLog_backup", _wrap_FileLog_backup, METH_O, "backup(self)"},
 	 { "FileLog_onIncoming", _wrap_FileLog_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(FileLog self, std::string const & value)\n"
+		"onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169202,7 +169202,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileLog_onOutgoing", _wrap_FileLog_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(FileLog self, std::string const & value)\n"
+		"onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169210,7 +169210,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileLog_onEvent", _wrap_FileLog_onEvent, METH_VARARGS, "\n"
-		"onEvent(FileLog self, std::string const & value)\n"
+		"onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169219,9 +169219,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "FileLog_swigregister", FileLog_swigregister, METH_O, NULL},
 	 { "FileLog_swiginit", FileLog_swiginit, METH_VARARGS, NULL},
-	 { "delete_MessageStoreFactory", _wrap_delete_MessageStoreFactory, METH_O, "delete_MessageStoreFactory(MessageStoreFactory self)"},
+	 { "delete_MessageStoreFactory", _wrap_delete_MessageStoreFactory, METH_O, "delete_MessageStoreFactory(self)"},
 	 { "MessageStoreFactory_create", _wrap_MessageStoreFactory_create, METH_VARARGS, "\n"
-		"create(MessageStoreFactory self, UtcTimeStamp now, SessionID arg3) -> MessageStore\n"
+		"create(self, now, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169230,7 +169230,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactory_destroy", _wrap_MessageStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(MessageStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169239,7 +169239,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		""},
 	 { "MessageStoreFactory_swigregister", MessageStoreFactory_swigregister, METH_O, NULL},
 	 { "MemoryStoreFactory_create", _wrap_MemoryStoreFactory_create, METH_VARARGS, "\n"
-		"create(MemoryStoreFactory self, UtcTimeStamp now, SessionID arg3) -> MessageStore\n"
+		"create(self, now, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169248,7 +169248,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MemoryStoreFactory_destroy", _wrap_MemoryStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(MemoryStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169256,12 +169256,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_MemoryStoreFactory", _wrap_new_MemoryStoreFactory, METH_NOARGS, "new_MemoryStoreFactory() -> MemoryStoreFactory"},
-	 { "delete_MemoryStoreFactory", _wrap_delete_MemoryStoreFactory, METH_O, "delete_MemoryStoreFactory(MemoryStoreFactory self)"},
+	 { "delete_MemoryStoreFactory", _wrap_delete_MemoryStoreFactory, METH_O, "delete_MemoryStoreFactory(self)"},
 	 { "MemoryStoreFactory_swigregister", MemoryStoreFactory_swigregister, METH_O, NULL},
 	 { "MemoryStoreFactory_swiginit", MemoryStoreFactory_swiginit, METH_VARARGS, NULL},
-	 { "delete_MessageStore", _wrap_delete_MessageStore, METH_O, "delete_MessageStore(MessageStore self)"},
+	 { "delete_MessageStore", _wrap_delete_MessageStore, METH_O, "delete_MessageStore(self)"},
 	 { "MessageStore_set", _wrap_MessageStore_set, METH_VARARGS, "\n"
-		"set(MessageStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169270,7 +169270,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStore_get", _wrap_MessageStore_get, METH_VARARGS, "\n"
-		"get(MessageStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169279,10 +169279,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MessageStore_getNextSenderMsgSeqNum", _wrap_MessageStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(MessageStore self) -> FIX::SEQNUM"},
-	 { "MessageStore_getNextTargetMsgSeqNum", _wrap_MessageStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(MessageStore self) -> FIX::SEQNUM"},
+	 { "MessageStore_getNextSenderMsgSeqNum", _wrap_MessageStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MessageStore_getNextTargetMsgSeqNum", _wrap_MessageStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MessageStore_setNextSenderMsgSeqNum", _wrap_MessageStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(MessageStore self, FIX::SEQNUM arg2)\n"
+		"setNextSenderMsgSeqNum(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169290,28 +169290,28 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStore_setNextTargetMsgSeqNum", _wrap_MessageStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(MessageStore self, FIX::SEQNUM arg2)\n"
+		"setNextTargetMsgSeqNum(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MessageStore_incrNextSenderMsgSeqNum", _wrap_MessageStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(MessageStore self)"},
-	 { "MessageStore_incrNextTargetMsgSeqNum", _wrap_MessageStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(MessageStore self)"},
-	 { "MessageStore_getCreationTime", _wrap_MessageStore_getCreationTime, METH_O, "getCreationTime(MessageStore self) -> UtcTimeStamp"},
+	 { "MessageStore_incrNextSenderMsgSeqNum", _wrap_MessageStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "MessageStore_incrNextTargetMsgSeqNum", _wrap_MessageStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
+	 { "MessageStore_getCreationTime", _wrap_MessageStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "MessageStore_reset", _wrap_MessageStore_reset, METH_VARARGS, "\n"
-		"reset(MessageStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MessageStore_refresh", _wrap_MessageStore_refresh, METH_O, "refresh(MessageStore self)"},
+	 { "MessageStore_refresh", _wrap_MessageStore_refresh, METH_O, "refresh(self)"},
 	 { "MessageStore_swigregister", MessageStore_swigregister, METH_O, NULL},
 	 { "new_MemoryStore", _wrap_new_MemoryStore, METH_O, "\n"
-		"new_MemoryStore(UtcTimeStamp now) -> MemoryStore\n"
+		"new_MemoryStore(now) -> MemoryStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169319,7 +169319,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MemoryStore_set", _wrap_MemoryStore_set, METH_VARARGS, "\n"
-		"set(MemoryStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169328,7 +169328,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MemoryStore_get", _wrap_MemoryStore_get, METH_VARARGS, "\n"
-		"get(MemoryStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169337,10 +169337,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MemoryStore_getNextSenderMsgSeqNum", _wrap_MemoryStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(MemoryStore self) -> FIX::SEQNUM"},
-	 { "MemoryStore_getNextTargetMsgSeqNum", _wrap_MemoryStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(MemoryStore self) -> FIX::SEQNUM"},
+	 { "MemoryStore_getNextSenderMsgSeqNum", _wrap_MemoryStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MemoryStore_getNextTargetMsgSeqNum", _wrap_MemoryStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MemoryStore_setNextSenderMsgSeqNum", _wrap_MemoryStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(MemoryStore self, FIX::SEQNUM value)\n"
+		"setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169348,38 +169348,38 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MemoryStore_setNextTargetMsgSeqNum", _wrap_MemoryStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(MemoryStore self, FIX::SEQNUM value)\n"
+		"setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MemoryStore_incrNextSenderMsgSeqNum", _wrap_MemoryStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(MemoryStore self)"},
-	 { "MemoryStore_incrNextTargetMsgSeqNum", _wrap_MemoryStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(MemoryStore self)"},
+	 { "MemoryStore_incrNextSenderMsgSeqNum", _wrap_MemoryStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "MemoryStore_incrNextTargetMsgSeqNum", _wrap_MemoryStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
 	 { "MemoryStore_setCreationTime", _wrap_MemoryStore_setCreationTime, METH_VARARGS, "\n"
-		"setCreationTime(MemoryStore self, UtcTimeStamp creationTime)\n"
+		"setCreationTime(self, creationTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"creationTime: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MemoryStore_getCreationTime", _wrap_MemoryStore_getCreationTime, METH_O, "getCreationTime(MemoryStore self) -> UtcTimeStamp"},
+	 { "MemoryStore_getCreationTime", _wrap_MemoryStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "MemoryStore_reset", _wrap_MemoryStore_reset, METH_VARARGS, "\n"
-		"reset(MemoryStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MemoryStore_refresh", _wrap_MemoryStore_refresh, METH_O, "refresh(MemoryStore self)"},
-	 { "delete_MemoryStore", _wrap_delete_MemoryStore, METH_O, "delete_MemoryStore(MemoryStore self)"},
+	 { "MemoryStore_refresh", _wrap_MemoryStore_refresh, METH_O, "refresh(self)"},
+	 { "delete_MemoryStore", _wrap_delete_MemoryStore, METH_O, "delete_MemoryStore(self)"},
 	 { "MemoryStore_swigregister", MemoryStore_swigregister, METH_O, NULL},
 	 { "MemoryStore_swiginit", MemoryStore_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageStoreFactoryExceptionWrapper", _wrap_new_MessageStoreFactoryExceptionWrapper, METH_O, "\n"
-		"new_MessageStoreFactoryExceptionWrapper(MessageStoreFactory pFactory) -> MessageStoreFactoryExceptionWrapper\n"
+		"new_MessageStoreFactoryExceptionWrapper(pFactory) -> MessageStoreFactoryExceptionWrapper\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169387,7 +169387,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactoryExceptionWrapper_create", _wrap_MessageStoreFactoryExceptionWrapper_create, METH_VARARGS, "\n"
-		"create(MessageStoreFactoryExceptionWrapper self, UtcTimeStamp now, SessionID arg3, bool & arg4, ConfigError arg5) -> MessageStore\n"
+		"create(self, now, arg3, arg4, arg5) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169398,27 +169398,27 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreFactoryExceptionWrapper_destroy", _wrap_MessageStoreFactoryExceptionWrapper_destroy, METH_VARARGS, "\n"
-		"destroy(MessageStoreFactoryExceptionWrapper self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MessageStoreFactoryExceptionWrapper", _wrap_delete_MessageStoreFactoryExceptionWrapper, METH_O, "delete_MessageStoreFactoryExceptionWrapper(MessageStoreFactoryExceptionWrapper self)"},
+	 { "delete_MessageStoreFactoryExceptionWrapper", _wrap_delete_MessageStoreFactoryExceptionWrapper, METH_O, "delete_MessageStoreFactoryExceptionWrapper(self)"},
 	 { "MessageStoreFactoryExceptionWrapper_swigregister", MessageStoreFactoryExceptionWrapper_swigregister, METH_O, NULL},
 	 { "MessageStoreFactoryExceptionWrapper_swiginit", MessageStoreFactoryExceptionWrapper_swiginit, METH_VARARGS, NULL},
 	 { "new_MessageStoreExceptionWrapper", _wrap_new_MessageStoreExceptionWrapper, METH_O, "\n"
-		"new_MessageStoreExceptionWrapper(MessageStore pStore) -> MessageStoreExceptionWrapper\n"
+		"new_MessageStoreExceptionWrapper(pStore) -> MessageStoreExceptionWrapper\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pStore: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MessageStoreExceptionWrapper", _wrap_delete_MessageStoreExceptionWrapper, METH_O, "delete_MessageStoreExceptionWrapper(MessageStoreExceptionWrapper self)"},
+	 { "delete_MessageStoreExceptionWrapper", _wrap_delete_MessageStoreExceptionWrapper, METH_O, "delete_MessageStoreExceptionWrapper(self)"},
 	 { "MessageStoreExceptionWrapper_set", _wrap_MessageStoreExceptionWrapper_set, METH_VARARGS, "\n"
-		"set(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, std::string const & arg3, bool & arg4, IOException arg5) -> bool\n"
+		"set(self, arg2, arg3, arg4, arg5) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169429,7 +169429,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_get", _wrap_MessageStoreExceptionWrapper_get, METH_VARARGS, "\n"
-		"get(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4, bool & arg5, IOException arg6)\n"
+		"get(self, arg2, arg3, arg4, arg5, arg6)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169441,7 +169441,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_getNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"getNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> FIX::SEQNUM\n"
+		"getNextSenderMsgSeqNum(self, arg2, arg3) -> FIX::SEQNUM\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169450,7 +169450,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_getNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"getNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> FIX::SEQNUM\n"
+		"getNextTargetMsgSeqNum(self, arg2, arg3) -> FIX::SEQNUM\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169459,7 +169459,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_setNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, bool & arg3, IOException arg4)\n"
+		"setNextSenderMsgSeqNum(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169469,7 +169469,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_setNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, FIX::SEQNUM arg2, bool & arg3, IOException arg4)\n"
+		"setNextTargetMsgSeqNum(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169479,7 +169479,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum", _wrap_MessageStoreExceptionWrapper_incrNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"incrNextSenderMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"incrNextSenderMsgSeqNum(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169488,7 +169488,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum", _wrap_MessageStoreExceptionWrapper_incrNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"incrNextTargetMsgSeqNum(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"incrNextTargetMsgSeqNum(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169497,7 +169497,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_getCreationTime", _wrap_MessageStoreExceptionWrapper_getCreationTime, METH_VARARGS, "\n"
-		"getCreationTime(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3) -> UtcTimeStamp\n"
+		"getCreationTime(self, arg2, arg3) -> UtcTimeStamp\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169506,7 +169506,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_reset", _wrap_MessageStoreExceptionWrapper_reset, METH_VARARGS, "\n"
-		"reset(MessageStoreExceptionWrapper self, UtcTimeStamp arg2, bool & arg3, IOException arg4)\n"
+		"reset(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169516,7 +169516,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MessageStoreExceptionWrapper_refresh", _wrap_MessageStoreExceptionWrapper_refresh, METH_VARARGS, "\n"
-		"refresh(MessageStoreExceptionWrapper self, bool & arg2, IOException arg3)\n"
+		"refresh(self, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169527,13 +169527,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "MessageStoreExceptionWrapper_swigregister", MessageStoreExceptionWrapper_swigregister, METH_O, NULL},
 	 { "MessageStoreExceptionWrapper_swiginit", MessageStoreExceptionWrapper_swiginit, METH_VARARGS, NULL},
 	 { "new_FileStoreFactory", _wrap_new_FileStoreFactory, METH_VARARGS, "\n"
-		"FileStoreFactory(SessionSettings settings)\n"
+		"FileStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"new_FileStoreFactory(std::string const & path) -> FileStoreFactory\n"
+		"new_FileStoreFactory(path) -> FileStoreFactory\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169541,7 +169541,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileStoreFactory_create", _wrap_FileStoreFactory_create, METH_VARARGS, "\n"
-		"create(FileStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169550,18 +169550,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileStoreFactory_destroy", _wrap_FileStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(FileStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_FileStoreFactory", _wrap_delete_FileStoreFactory, METH_O, "delete_FileStoreFactory(FileStoreFactory self)"},
+	 { "delete_FileStoreFactory", _wrap_delete_FileStoreFactory, METH_O, "delete_FileStoreFactory(self)"},
 	 { "FileStoreFactory_swigregister", FileStoreFactory_swigregister, METH_O, NULL},
 	 { "FileStoreFactory_swiginit", FileStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_FileStore", _wrap_new_FileStore, METH_VARARGS, "\n"
-		"new_FileStore(UtcTimeStamp now, std::string arg2, SessionID sessionID) -> FileStore\n"
+		"new_FileStore(now, arg2, sessionID) -> FileStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169570,9 +169570,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"sessionID: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "delete_FileStore", _wrap_delete_FileStore, METH_O, "delete_FileStore(FileStore self)"},
+	 { "delete_FileStore", _wrap_delete_FileStore, METH_O, "delete_FileStore(self)"},
 	 { "FileStore_set", _wrap_FileStore_set, METH_VARARGS, "\n"
-		"set(FileStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169581,7 +169581,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileStore_get", _wrap_FileStore_get, METH_VARARGS, "\n"
-		"get(FileStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169590,10 +169590,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "FileStore_getNextSenderMsgSeqNum", _wrap_FileStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(FileStore self) -> FIX::SEQNUM"},
-	 { "FileStore_getNextTargetMsgSeqNum", _wrap_FileStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(FileStore self) -> FIX::SEQNUM"},
+	 { "FileStore_getNextSenderMsgSeqNum", _wrap_FileStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "FileStore_getNextTargetMsgSeqNum", _wrap_FileStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "FileStore_setNextSenderMsgSeqNum", _wrap_FileStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(FileStore self, FIX::SEQNUM value)\n"
+		"setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169601,30 +169601,30 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "FileStore_setNextTargetMsgSeqNum", _wrap_FileStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(FileStore self, FIX::SEQNUM value)\n"
+		"setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "FileStore_incrNextSenderMsgSeqNum", _wrap_FileStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(FileStore self)"},
-	 { "FileStore_incrNextTargetMsgSeqNum", _wrap_FileStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(FileStore self)"},
-	 { "FileStore_getCreationTime", _wrap_FileStore_getCreationTime, METH_O, "getCreationTime(FileStore self) -> UtcTimeStamp"},
+	 { "FileStore_incrNextSenderMsgSeqNum", _wrap_FileStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "FileStore_incrNextTargetMsgSeqNum", _wrap_FileStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
+	 { "FileStore_getCreationTime", _wrap_FileStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "FileStore_reset", _wrap_FileStore_reset, METH_VARARGS, "\n"
-		"reset(FileStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "FileStore_refresh", _wrap_FileStore_refresh, METH_O, "refresh(FileStore self)"},
+	 { "FileStore_refresh", _wrap_FileStore_refresh, METH_O, "refresh(self)"},
 	 { "FileStore_swigregister", FileStore_swigregister, METH_O, NULL},
 	 { "FileStore_swiginit", FileStore_swiginit, METH_VARARGS, NULL},
-	 { "delete_Application", _wrap_delete_Application, METH_O, "delete_Application(Application self)"},
+	 { "delete_Application", _wrap_delete_Application, METH_O, "delete_Application(self)"},
 	 { "Application_onCreate", _wrap_Application_onCreate, METH_VARARGS, "\n"
-		"onCreate(Application self, SessionID arg0)\n"
+		"onCreate(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169632,7 +169632,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_onLogon", _wrap_Application_onLogon, METH_VARARGS, "\n"
-		"onLogon(Application self, SessionID arg0)\n"
+		"onLogon(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169640,7 +169640,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_onLogout", _wrap_Application_onLogout, METH_VARARGS, "\n"
-		"onLogout(Application self, SessionID arg0)\n"
+		"onLogout(self, arg0)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169648,7 +169648,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_toAdmin", _wrap_Application_toAdmin, METH_VARARGS, "\n"
-		"toAdmin(Application self, Message arg0, SessionID arg1)\n"
+		"toAdmin(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169657,7 +169657,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_toApp", _wrap_Application_toApp, METH_VARARGS, "\n"
-		"toApp(Application self, Message arg0, SessionID arg1)\n"
+		"toApp(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169666,7 +169666,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_fromAdmin", _wrap_Application_fromAdmin, METH_VARARGS, "\n"
-		"fromAdmin(Application self, Message arg0, SessionID arg1)\n"
+		"fromAdmin(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169675,7 +169675,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Application_fromApp", _wrap_Application_fromApp, METH_VARARGS, "\n"
-		"fromApp(Application self, Message arg0, SessionID arg1)\n"
+		"fromApp(self, arg0, arg1)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169684,7 +169684,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_Application", _wrap_new_Application, METH_O, "\n"
-		"new_Application(PyObject * _self) -> Application\n"
+		"new_Application(_self) -> Application\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169695,7 +169695,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "Application_swigregister", Application_swigregister, METH_O, NULL},
 	 { "Application_swiginit", Application_swiginit, METH_VARARGS, NULL},
 	 { "new_SynchronizedApplication", _wrap_new_SynchronizedApplication, METH_O, "\n"
-		"new_SynchronizedApplication(Application app) -> SynchronizedApplication\n"
+		"new_SynchronizedApplication(app) -> SynchronizedApplication\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169703,7 +169703,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onCreate", _wrap_SynchronizedApplication_onCreate, METH_VARARGS, "\n"
-		"onCreate(SynchronizedApplication self, SessionID sessionID)\n"
+		"onCreate(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169711,7 +169711,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onLogon", _wrap_SynchronizedApplication_onLogon, METH_VARARGS, "\n"
-		"onLogon(SynchronizedApplication self, SessionID sessionID)\n"
+		"onLogon(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169719,7 +169719,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_onLogout", _wrap_SynchronizedApplication_onLogout, METH_VARARGS, "\n"
-		"onLogout(SynchronizedApplication self, SessionID sessionID)\n"
+		"onLogout(self, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169727,7 +169727,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_toAdmin", _wrap_SynchronizedApplication_toAdmin, METH_VARARGS, "\n"
-		"toAdmin(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"toAdmin(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169736,7 +169736,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_toApp", _wrap_SynchronizedApplication_toApp, METH_VARARGS, "\n"
-		"toApp(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"toApp(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169745,7 +169745,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_fromAdmin", _wrap_SynchronizedApplication_fromAdmin, METH_VARARGS, "\n"
-		"fromAdmin(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"fromAdmin(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169754,7 +169754,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_fromApp", _wrap_SynchronizedApplication_fromApp, METH_VARARGS, "\n"
-		"fromApp(SynchronizedApplication self, Message message, SessionID sessionID)\n"
+		"fromApp(self, message, sessionID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169763,54 +169763,54 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SynchronizedApplication_m_mutex_set", _wrap_SynchronizedApplication_m_mutex_set, METH_VARARGS, "\n"
-		"SynchronizedApplication_m_mutex_set(SynchronizedApplication self, Mutex m_mutex)\n"
+		"SynchronizedApplication_m_mutex_set(self, m_mutex)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_mutex: Mutex\n"
 		"\n"
 		""},
-	 { "SynchronizedApplication_m_mutex_get", _wrap_SynchronizedApplication_m_mutex_get, METH_O, "SynchronizedApplication_m_mutex_get(SynchronizedApplication self) -> Mutex"},
-	 { "SynchronizedApplication_app", _wrap_SynchronizedApplication_app, METH_O, "app(SynchronizedApplication self) -> Application"},
+	 { "SynchronizedApplication_m_mutex_get", _wrap_SynchronizedApplication_m_mutex_get, METH_O, "SynchronizedApplication_m_mutex_get(self) -> Mutex"},
+	 { "SynchronizedApplication_app", _wrap_SynchronizedApplication_app, METH_O, "app(self) -> Application"},
 	 { "SynchronizedApplication_m_app_set", _wrap_SynchronizedApplication_m_app_set, METH_VARARGS, "\n"
-		"SynchronizedApplication_m_app_set(SynchronizedApplication self, Application m_app)\n"
+		"SynchronizedApplication_m_app_set(self, m_app)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"m_app: FIX::Application &\n"
 		"\n"
 		""},
-	 { "SynchronizedApplication_m_app_get", _wrap_SynchronizedApplication_m_app_get, METH_O, "SynchronizedApplication_m_app_get(SynchronizedApplication self) -> Application"},
-	 { "delete_SynchronizedApplication", _wrap_delete_SynchronizedApplication, METH_O, "delete_SynchronizedApplication(SynchronizedApplication self)"},
+	 { "SynchronizedApplication_m_app_get", _wrap_SynchronizedApplication_m_app_get, METH_O, "SynchronizedApplication_m_app_get(self) -> Application"},
+	 { "delete_SynchronizedApplication", _wrap_delete_SynchronizedApplication, METH_O, "delete_SynchronizedApplication(self)"},
 	 { "SynchronizedApplication_swigregister", SynchronizedApplication_swigregister, METH_O, NULL},
 	 { "SynchronizedApplication_swiginit", SynchronizedApplication_swiginit, METH_VARARGS, NULL},
 	 { "new_NullApplication", _wrap_new_NullApplication, METH_NOARGS, "new_NullApplication() -> NullApplication"},
-	 { "delete_NullApplication", _wrap_delete_NullApplication, METH_O, "delete_NullApplication(NullApplication self)"},
+	 { "delete_NullApplication", _wrap_delete_NullApplication, METH_O, "delete_NullApplication(self)"},
 	 { "NullApplication_swigregister", NullApplication_swigregister, METH_O, NULL},
 	 { "NullApplication_swiginit", NullApplication_swiginit, METH_VARARGS, NULL},
-	 { "delete_Initiator", _wrap_delete_Initiator, METH_O, "delete_Initiator(Initiator self)"},
-	 { "Initiator_start", _wrap_Initiator_start, METH_O, "start(Initiator self)"},
-	 { "Initiator_block", _wrap_Initiator_block, METH_O, "block(Initiator self)"},
-	 { "Initiator_poll", _wrap_Initiator_poll, METH_O, "poll(Initiator self) -> bool"},
+	 { "delete_Initiator", _wrap_delete_Initiator, METH_O, "delete_Initiator(self)"},
+	 { "Initiator_start", _wrap_Initiator_start, METH_O, "start(self)"},
+	 { "Initiator_block", _wrap_Initiator_block, METH_O, "block(self)"},
+	 { "Initiator_poll", _wrap_Initiator_poll, METH_O, "poll(self) -> bool"},
 	 { "Initiator_stop", _wrap_Initiator_stop, METH_VARARGS, "\n"
-		"stop(Initiator self, bool force=False)\n"
+		"stop(self, force=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"force: bool\n"
 		"\n"
 		""},
-	 { "Initiator_isLoggedOn", _wrap_Initiator_isLoggedOn, METH_O, "isLoggedOn(Initiator self) -> bool"},
-	 { "Initiator_getSessions", _wrap_Initiator_getSessions, METH_O, "getSessions(Initiator self) -> SessionIDSet"},
+	 { "Initiator_isLoggedOn", _wrap_Initiator_isLoggedOn, METH_O, "isLoggedOn(self) -> bool"},
+	 { "Initiator_getSessions", _wrap_Initiator_getSessions, METH_O, "getSessions(self) -> SessionIDSet"},
 	 { "Initiator_getSession", _wrap_Initiator_getSession, METH_VARARGS, "\n"
-		"getSession(Initiator self, SessionID sessionID, Responder & arg3) -> Session\n"
+		"getSession(self, sessionID, arg3) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"sessionID: FIX::SessionID const &\n"
 		"arg3: Responder &\n"
 		"\n"
-		"getSession(Initiator self, SessionID sessionID) -> Session\n"
+		"getSession(self, sessionID) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169818,7 +169818,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Initiator_getSessionSettings", _wrap_Initiator_getSessionSettings, METH_VARARGS, "\n"
-		"getSessionSettings(Initiator self, SessionID sessionID) -> Dictionary\n"
+		"getSessionSettings(self, sessionID) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169826,20 +169826,20 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Initiator_has", _wrap_Initiator_has, METH_VARARGS, "\n"
-		"has(Initiator self, SessionID id) -> bool\n"
+		"has(self, id) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "Initiator_isStopped", _wrap_Initiator_isStopped, METH_O, "isStopped(Initiator self) -> bool"},
-	 { "Initiator_getApplication", _wrap_Initiator_getApplication, METH_O, "getApplication(Initiator self) -> Application"},
-	 { "Initiator_getMessageStoreFactory", _wrap_Initiator_getMessageStoreFactory, METH_O, "getMessageStoreFactory(Initiator self) -> MessageStoreFactory"},
-	 { "Initiator_getLog", _wrap_Initiator_getLog, METH_O, "getLog(Initiator self) -> Log"},
+	 { "Initiator_isStopped", _wrap_Initiator_isStopped, METH_O, "isStopped(self) -> bool"},
+	 { "Initiator_getApplication", _wrap_Initiator_getApplication, METH_O, "getApplication(self) -> Application"},
+	 { "Initiator_getMessageStoreFactory", _wrap_Initiator_getMessageStoreFactory, METH_O, "getMessageStoreFactory(self) -> MessageStoreFactory"},
+	 { "Initiator_getLog", _wrap_Initiator_getLog, METH_O, "getLog(self) -> Log"},
 	 { "Initiator_swigregister", Initiator_swigregister, METH_O, NULL},
 	 { "new_SocketInitiatorBase", _wrap_new_SocketInitiatorBase, METH_VARARGS, "\n"
-		"SocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169847,7 +169847,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SocketInitiatorBase\n"
+		"new_SocketInitiatorBase(arg1, arg2, arg3, arg4) -> SocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169857,33 +169857,33 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SocketInitiatorBase", _wrap_delete_SocketInitiatorBase, METH_O, "delete_SocketInitiatorBase(SocketInitiatorBase self)"},
+	 { "delete_SocketInitiatorBase", _wrap_delete_SocketInitiatorBase, METH_O, "delete_SocketInitiatorBase(self)"},
 	 { "SocketInitiatorBase_swigregister", SocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "SocketInitiatorBase_swiginit", SocketInitiatorBase_swiginit, METH_VARARGS, NULL},
-	 { "delete_Acceptor", _wrap_delete_Acceptor, METH_O, "delete_Acceptor(Acceptor self)"},
-	 { "Acceptor_getLog", _wrap_Acceptor_getLog, METH_O, "getLog(Acceptor self) -> Log"},
-	 { "Acceptor_start", _wrap_Acceptor_start, METH_O, "start(Acceptor self)"},
-	 { "Acceptor_block", _wrap_Acceptor_block, METH_O, "block(Acceptor self)"},
-	 { "Acceptor_poll", _wrap_Acceptor_poll, METH_O, "poll(Acceptor self) -> bool"},
+	 { "delete_Acceptor", _wrap_delete_Acceptor, METH_O, "delete_Acceptor(self)"},
+	 { "Acceptor_getLog", _wrap_Acceptor_getLog, METH_O, "getLog(self) -> Log"},
+	 { "Acceptor_start", _wrap_Acceptor_start, METH_O, "start(self)"},
+	 { "Acceptor_block", _wrap_Acceptor_block, METH_O, "block(self)"},
+	 { "Acceptor_poll", _wrap_Acceptor_poll, METH_O, "poll(self) -> bool"},
 	 { "Acceptor_stop", _wrap_Acceptor_stop, METH_VARARGS, "\n"
-		"stop(Acceptor self, bool force=False)\n"
+		"stop(self, force=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"force: bool\n"
 		"\n"
 		""},
-	 { "Acceptor_isLoggedOn", _wrap_Acceptor_isLoggedOn, METH_O, "isLoggedOn(Acceptor self) -> bool"},
-	 { "Acceptor_getSessions", _wrap_Acceptor_getSessions, METH_O, "getSessions(Acceptor self) -> SessionIDSet"},
+	 { "Acceptor_isLoggedOn", _wrap_Acceptor_isLoggedOn, METH_O, "isLoggedOn(self) -> bool"},
+	 { "Acceptor_getSessions", _wrap_Acceptor_getSessions, METH_O, "getSessions(self) -> SessionIDSet"},
 	 { "Acceptor_getSession", _wrap_Acceptor_getSession, METH_VARARGS, "\n"
-		"getSession(Acceptor self, std::string const & msg, Responder & arg3) -> Session\n"
+		"getSession(self, msg, arg3) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"msg: std::string const &\n"
 		"arg3: Responder &\n"
 		"\n"
-		"getSession(Acceptor self, SessionID sessionID) -> Session\n"
+		"getSession(self, sessionID) -> Session\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169891,7 +169891,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Acceptor_getSessionSettings", _wrap_Acceptor_getSessionSettings, METH_VARARGS, "\n"
-		"getSessionSettings(Acceptor self, SessionID sessionID) -> Dictionary\n"
+		"getSessionSettings(self, sessionID) -> Dictionary\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169899,19 +169899,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "Acceptor_has", _wrap_Acceptor_has, METH_VARARGS, "\n"
-		"has(Acceptor self, SessionID id) -> bool\n"
+		"has(self, id) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::SessionID const &\n"
 		"\n"
 		""},
-	 { "Acceptor_isStopped", _wrap_Acceptor_isStopped, METH_O, "isStopped(Acceptor self) -> bool"},
-	 { "Acceptor_getApplication", _wrap_Acceptor_getApplication, METH_O, "getApplication(Acceptor self) -> Application"},
-	 { "Acceptor_getMessageStoreFactory", _wrap_Acceptor_getMessageStoreFactory, METH_O, "getMessageStoreFactory(Acceptor self) -> MessageStoreFactory"},
+	 { "Acceptor_isStopped", _wrap_Acceptor_isStopped, METH_O, "isStopped(self) -> bool"},
+	 { "Acceptor_getApplication", _wrap_Acceptor_getApplication, METH_O, "getApplication(self) -> Application"},
+	 { "Acceptor_getMessageStoreFactory", _wrap_Acceptor_getMessageStoreFactory, METH_O, "getMessageStoreFactory(self) -> MessageStoreFactory"},
 	 { "Acceptor_swigregister", Acceptor_swigregister, METH_O, NULL},
 	 { "new_SocketAcceptorBase", _wrap_new_SocketAcceptorBase, METH_VARARGS, "\n"
-		"SocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169919,7 +169919,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SocketAcceptorBase\n"
+		"new_SocketAcceptorBase(arg1, arg2, arg3, arg4) -> SocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169929,26 +169929,26 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SocketAcceptorBase", _wrap_delete_SocketAcceptorBase, METH_O, "delete_SocketAcceptorBase(SocketAcceptorBase self)"},
-	 { "SocketAcceptorBase_sessionToPort", _wrap_SocketAcceptorBase_sessionToPort, METH_O, "sessionToPort(SocketAcceptorBase self) -> FIX::SocketAcceptor::SessionToPort const &"},
+	 { "delete_SocketAcceptorBase", _wrap_delete_SocketAcceptorBase, METH_O, "delete_SocketAcceptorBase(self)"},
+	 { "SocketAcceptorBase_sessionToPort", _wrap_SocketAcceptorBase_sessionToPort, METH_O, "sessionToPort(self) -> FIX::SocketAcceptor::SessionToPort const &"},
 	 { "SocketAcceptorBase_swigregister", SocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "SocketAcceptorBase_swiginit", SocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_DataDictionary", _wrap_new_DataDictionary, METH_VARARGS, "\n"
 		"DataDictionary()\n"
-		"DataDictionary(DataDictionary copy)\n"
+		"DataDictionary(copy)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"copy: FIX::DataDictionary const &\n"
 		"\n"
-		"DataDictionary(std::istream & stream, bool preserveMsgFldsOrder=False)\n"
+		"DataDictionary(stream, preserveMsgFldsOrder=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"preserveMsgFldsOrder: bool\n"
 		"\n"
-		"DataDictionary(std::string const & url, bool preserveMsgFldsOrder=False)\n"
+		"DataDictionary(url, preserveMsgFldsOrder=False)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169956,9 +169956,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"preserveMsgFldsOrder: bool\n"
 		"\n"
 		""},
-	 { "delete_DataDictionary", _wrap_delete_DataDictionary, METH_O, "delete_DataDictionary(DataDictionary self)"},
+	 { "delete_DataDictionary", _wrap_delete_DataDictionary, METH_O, "delete_DataDictionary(self)"},
 	 { "DataDictionary_readFromURL", _wrap_DataDictionary_readFromURL, METH_VARARGS, "\n"
-		"readFromURL(DataDictionary self, std::string const & url)\n"
+		"readFromURL(self, url)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169966,7 +169966,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_readFromDocument", _wrap_DataDictionary_readFromDocument, METH_VARARGS, "\n"
-		"readFromDocument(DataDictionary self, DOMDocumentPtr const & pDoc)\n"
+		"readFromDocument(self, pDoc)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169974,18 +169974,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_readFromStream", _wrap_DataDictionary_readFromStream, METH_VARARGS, "\n"
-		"readFromStream(DataDictionary self, std::istream & stream)\n"
+		"readFromStream(self, stream)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"stream: std::istream &\n"
 		"\n"
 		""},
-	 { "DataDictionary_getOrderedFields", _wrap_DataDictionary_getOrderedFields, METH_O, "getOrderedFields(DataDictionary self) -> message_order const &"},
-	 { "DataDictionary_getHeaderOrderedFields", _wrap_DataDictionary_getHeaderOrderedFields, METH_O, "getHeaderOrderedFields(DataDictionary self) -> message_order const &"},
-	 { "DataDictionary_getTrailerOrderedFields", _wrap_DataDictionary_getTrailerOrderedFields, METH_O, "getTrailerOrderedFields(DataDictionary self) -> message_order const &"},
+	 { "DataDictionary_getOrderedFields", _wrap_DataDictionary_getOrderedFields, METH_O, "getOrderedFields(self) -> message_order const &"},
+	 { "DataDictionary_getHeaderOrderedFields", _wrap_DataDictionary_getHeaderOrderedFields, METH_O, "getHeaderOrderedFields(self) -> message_order const &"},
+	 { "DataDictionary_getTrailerOrderedFields", _wrap_DataDictionary_getTrailerOrderedFields, METH_O, "getTrailerOrderedFields(self) -> message_order const &"},
 	 { "DataDictionary_getMessageOrderedFields", _wrap_DataDictionary_getMessageOrderedFields, METH_VARARGS, "\n"
-		"getMessageOrderedFields(DataDictionary self, std::string const & msgType) -> message_order const &\n"
+		"getMessageOrderedFields(self, msgType) -> message_order const &\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -169993,16 +169993,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_setVersion", _wrap_DataDictionary_setVersion, METH_VARARGS, "\n"
-		"setVersion(DataDictionary self, std::string const & beginString)\n"
+		"setVersion(self, beginString)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"beginString: std::string const &\n"
 		"\n"
 		""},
-	 { "DataDictionary_getVersion", _wrap_DataDictionary_getVersion, METH_O, "getVersion(DataDictionary self) -> std::string"},
+	 { "DataDictionary_getVersion", _wrap_DataDictionary_getVersion, METH_O, "getVersion(self) -> std::string"},
 	 { "DataDictionary_addField", _wrap_DataDictionary_addField, METH_VARARGS, "\n"
-		"addField(DataDictionary self, int field)\n"
+		"addField(self, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170010,7 +170010,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldName", _wrap_DataDictionary_addFieldName, METH_VARARGS, "\n"
-		"addFieldName(DataDictionary self, int field, std::string const & name)\n"
+		"addFieldName(self, field, name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170019,7 +170019,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldName", _wrap_DataDictionary_getFieldName, METH_VARARGS, "\n"
-		"getFieldName(DataDictionary self, int field, std::string & name) -> bool\n"
+		"getFieldName(self, field, name) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170028,7 +170028,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldTag", _wrap_DataDictionary_getFieldTag, METH_VARARGS, "\n"
-		"getFieldTag(DataDictionary self, std::string const & name, int & field) -> bool\n"
+		"getFieldTag(self, name, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170037,7 +170037,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addValueName", _wrap_DataDictionary_addValueName, METH_VARARGS, "\n"
-		"addValueName(DataDictionary self, int field, std::string const & value, std::string const & name)\n"
+		"addValueName(self, field, value, name)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170047,7 +170047,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getValueName", _wrap_DataDictionary_getValueName, METH_VARARGS, "\n"
-		"getValueName(DataDictionary self, int field, std::string const & value, std::string & name) -> bool\n"
+		"getValueName(self, field, value, name) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170057,7 +170057,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getNameValue", _wrap_DataDictionary_getNameValue, METH_VARARGS, "\n"
-		"getNameValue(DataDictionary self, int field, std::string const & name, std::string & value) -> bool\n"
+		"getNameValue(self, field, name, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170067,7 +170067,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isField", _wrap_DataDictionary_isField, METH_VARARGS, "\n"
-		"isField(DataDictionary self, int field) -> bool\n"
+		"isField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170075,7 +170075,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addMsgType", _wrap_DataDictionary_addMsgType, METH_VARARGS, "\n"
-		"addMsgType(DataDictionary self, std::string const & msgType)\n"
+		"addMsgType(self, msgType)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170083,7 +170083,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMsgType", _wrap_DataDictionary_isMsgType, METH_VARARGS, "\n"
-		"isMsgType(DataDictionary self, std::string const & msgType) -> bool\n"
+		"isMsgType(self, msgType) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170091,7 +170091,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addMsgField", _wrap_DataDictionary_addMsgField, METH_VARARGS, "\n"
-		"addMsgField(DataDictionary self, std::string const & msgType, int field)\n"
+		"addMsgField(self, msgType, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170100,7 +170100,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMsgField", _wrap_DataDictionary_isMsgField, METH_VARARGS, "\n"
-		"isMsgField(DataDictionary self, std::string const & msgType, int field) -> bool\n"
+		"isMsgField(self, msgType, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170109,7 +170109,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addHeaderField", _wrap_DataDictionary_addHeaderField, METH_VARARGS, "\n"
-		"addHeaderField(DataDictionary self, int field, bool required)\n"
+		"addHeaderField(self, field, required)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170118,7 +170118,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isHeaderField", _wrap_DataDictionary_isHeaderField, METH_VARARGS, "\n"
-		"isHeaderField(DataDictionary self, int field) -> bool\n"
+		"isHeaderField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170126,7 +170126,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addTrailerField", _wrap_DataDictionary_addTrailerField, METH_VARARGS, "\n"
-		"addTrailerField(DataDictionary self, int field, bool required)\n"
+		"addTrailerField(self, field, required)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170135,7 +170135,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isTrailerField", _wrap_DataDictionary_isTrailerField, METH_VARARGS, "\n"
-		"isTrailerField(DataDictionary self, int field) -> bool\n"
+		"isTrailerField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170143,7 +170143,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldType", _wrap_DataDictionary_addFieldType, METH_VARARGS, "\n"
-		"addFieldType(DataDictionary self, int field, FIX::TYPE::Type type)\n"
+		"addFieldType(self, field, type)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170152,7 +170152,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getFieldType", _wrap_DataDictionary_getFieldType, METH_VARARGS, "\n"
-		"getFieldType(DataDictionary self, int field, FIX::TYPE::Type & type) -> bool\n"
+		"getFieldType(self, field, type) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170161,7 +170161,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addRequiredField", _wrap_DataDictionary_addRequiredField, METH_VARARGS, "\n"
-		"addRequiredField(DataDictionary self, std::string const & msgType, int field)\n"
+		"addRequiredField(self, msgType, field)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170170,7 +170170,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isRequiredField", _wrap_DataDictionary_isRequiredField, METH_VARARGS, "\n"
-		"isRequiredField(DataDictionary self, std::string const & msgType, int field) -> bool\n"
+		"isRequiredField(self, msgType, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170179,7 +170179,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addFieldValue", _wrap_DataDictionary_addFieldValue, METH_VARARGS, "\n"
-		"addFieldValue(DataDictionary self, int field, std::string const & value)\n"
+		"addFieldValue(self, field, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170188,7 +170188,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_hasFieldValue", _wrap_DataDictionary_hasFieldValue, METH_VARARGS, "\n"
-		"hasFieldValue(DataDictionary self, int field) -> bool\n"
+		"hasFieldValue(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170196,7 +170196,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isFieldValue", _wrap_DataDictionary_isFieldValue, METH_VARARGS, "\n"
-		"isFieldValue(DataDictionary self, int field, std::string const & value) -> bool\n"
+		"isFieldValue(self, field, value) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170205,7 +170205,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_addGroup", _wrap_DataDictionary_addGroup, METH_VARARGS, "\n"
-		"addGroup(DataDictionary self, std::string const & msg, int field, int delim, DataDictionary dataDictionary)\n"
+		"addGroup(self, msg, field, delim, dataDictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170216,7 +170216,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isGroup", _wrap_DataDictionary_isGroup, METH_VARARGS, "\n"
-		"isGroup(DataDictionary self, std::string const & msg, int field) -> bool\n"
+		"isGroup(self, msg, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170225,7 +170225,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_getGroup", _wrap_DataDictionary_getGroup, METH_VARARGS, "\n"
-		"getGroup(DataDictionary self, std::string const & msg, int field, int & delim, FIX::DataDictionary const *& pDataDictionary) -> bool\n"
+		"getGroup(self, msg, field, delim, pDataDictionary) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170236,7 +170236,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isDataField", _wrap_DataDictionary_isDataField, METH_VARARGS, "\n"
-		"isDataField(DataDictionary self, int field) -> bool\n"
+		"isDataField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170244,7 +170244,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_isMultipleValueField", _wrap_DataDictionary_isMultipleValueField, METH_VARARGS, "\n"
-		"isMultipleValueField(DataDictionary self, int field) -> bool\n"
+		"isMultipleValueField(self, field) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170252,7 +170252,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkFieldsOutOfOrder", _wrap_DataDictionary_checkFieldsOutOfOrder, METH_VARARGS, "\n"
-		"checkFieldsOutOfOrder(DataDictionary self, bool value)\n"
+		"checkFieldsOutOfOrder(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170260,7 +170260,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkFieldsHaveValues", _wrap_DataDictionary_checkFieldsHaveValues, METH_VARARGS, "\n"
-		"checkFieldsHaveValues(DataDictionary self, bool value)\n"
+		"checkFieldsHaveValues(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170268,7 +170268,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_checkUserDefinedFields", _wrap_DataDictionary_checkUserDefinedFields, METH_VARARGS, "\n"
-		"checkUserDefinedFields(DataDictionary self, bool value)\n"
+		"checkUserDefinedFields(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170276,7 +170276,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_allowUnknownMsgFields", _wrap_DataDictionary_allowUnknownMsgFields, METH_VARARGS, "\n"
-		"allowUnknownMsgFields(DataDictionary self, bool value)\n"
+		"allowUnknownMsgFields(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170284,16 +170284,16 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "DataDictionary_preserveMessageFieldsOrder", _wrap_DataDictionary_preserveMessageFieldsOrder, METH_VARARGS, "\n"
-		"preserveMessageFieldsOrder(DataDictionary self, bool value)\n"
+		"preserveMessageFieldsOrder(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: bool\n"
 		"\n"
 		""},
-	 { "DataDictionary_isMessageFieldsOrderPreserved", _wrap_DataDictionary_isMessageFieldsOrderPreserved, METH_O, "isMessageFieldsOrderPreserved(DataDictionary self) -> bool"},
+	 { "DataDictionary_isMessageFieldsOrderPreserved", _wrap_DataDictionary_isMessageFieldsOrderPreserved, METH_O, "isMessageFieldsOrderPreserved(self) -> bool"},
 	 { "DataDictionary_validate", _wrap_DataDictionary_validate, METH_VARARGS, "\n"
-		"validate(DataDictionary self, Message message, DataDictionary pSessionDD, DataDictionary pAppID)\n"
+		"validate(self, message, pSessionDD, pAppID)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170301,13 +170301,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"pSessionDD: FIX::DataDictionary const *const\n"
 		"pAppID: FIX::DataDictionary const *const\n"
 		"\n"
-		"validate(DataDictionary self, Message message)\n"
+		"validate(self, message)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"message: FIX::Message const &\n"
 		"\n"
-		"validate(DataDictionary self, Message message, bool bodyOnly)\n"
+		"validate(self, message, bodyOnly)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170318,7 +170318,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "DataDictionary_swigregister", DataDictionary_swigregister, METH_O, NULL},
 	 { "DataDictionary_swiginit", DataDictionary_swiginit, METH_VARARGS, NULL},
 	 { "new_SSLSocketAcceptorBase", _wrap_new_SSLSocketAcceptorBase, METH_VARARGS, "\n"
-		"SSLSocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SSLSocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170326,7 +170326,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SSLSocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SSLSocketAcceptorBase\n"
+		"new_SSLSocketAcceptorBase(arg1, arg2, arg3, arg4) -> SSLSocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170336,9 +170336,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SSLSocketAcceptorBase", _wrap_delete_SSLSocketAcceptorBase, METH_O, "delete_SSLSocketAcceptorBase(SSLSocketAcceptorBase self)"},
+	 { "delete_SSLSocketAcceptorBase", _wrap_delete_SSLSocketAcceptorBase, METH_O, "delete_SSLSocketAcceptorBase(self)"},
 	 { "SSLSocketAcceptorBase_setPassword", _wrap_SSLSocketAcceptorBase_setPassword, METH_VARARGS, "\n"
-		"setPassword(SSLSocketAcceptorBase self, std::string const & pwd)\n"
+		"setPassword(self, pwd)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170346,7 +170346,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SSLSocketAcceptorBase_passwordHandleCallback", _wrap_SSLSocketAcceptorBase_passwordHandleCallback, METH_VARARGS, "\n"
-		"passwordHandleCallback(SSLSocketAcceptorBase self, char * buf, size_t bufsize, int verify) -> int\n"
+		"passwordHandleCallback(self, buf, bufsize, verify) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170356,7 +170356,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SSLSocketAcceptorBase_passPhraseHandleCB", _wrap_SSLSocketAcceptorBase_passPhraseHandleCB, METH_VARARGS, "\n"
-		"passPhraseHandleCB(char * buf, int bufsize, int verify, void * instance) -> int\n"
+		"passPhraseHandleCB(buf, bufsize, verify, instance) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170369,7 +170369,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "SSLSocketAcceptorBase_swigregister", SSLSocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "SSLSocketAcceptorBase_swiginit", SSLSocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_SSLSocketInitiatorBase", _wrap_new_SSLSocketInitiatorBase, METH_VARARGS, "\n"
-		"SSLSocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"SSLSocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170377,7 +170377,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_SSLSocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> SSLSocketInitiatorBase\n"
+		"new_SSLSocketInitiatorBase(arg1, arg2, arg3, arg4) -> SSLSocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170387,9 +170387,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_SSLSocketInitiatorBase", _wrap_delete_SSLSocketInitiatorBase, METH_O, "delete_SSLSocketInitiatorBase(SSLSocketInitiatorBase self)"},
+	 { "delete_SSLSocketInitiatorBase", _wrap_delete_SSLSocketInitiatorBase, METH_O, "delete_SSLSocketInitiatorBase(self)"},
 	 { "SSLSocketInitiatorBase_setPassword", _wrap_SSLSocketInitiatorBase_setPassword, METH_VARARGS, "\n"
-		"setPassword(SSLSocketInitiatorBase self, std::string const & pwd)\n"
+		"setPassword(self, pwd)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170397,7 +170397,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_setCertAndKey", _wrap_SSLSocketInitiatorBase_setCertAndKey, METH_VARARGS, "\n"
-		"setCertAndKey(SSLSocketInitiatorBase self, X509 * cert, RSA * key)\n"
+		"setCertAndKey(self, cert, key)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170406,7 +170406,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_passwordHandleCallback", _wrap_SSLSocketInitiatorBase_passwordHandleCallback, METH_VARARGS, "\n"
-		"passwordHandleCallback(SSLSocketInitiatorBase self, char * buf, size_t bufsize, int verify) -> int\n"
+		"passwordHandleCallback(self, buf, bufsize, verify) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170416,7 +170416,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "SSLSocketInitiatorBase_passwordHandleCB", _wrap_SSLSocketInitiatorBase_passwordHandleCB, METH_VARARGS, "\n"
-		"passwordHandleCB(char * buf, int bufsize, int verify, void * instance) -> int\n"
+		"passwordHandleCB(buf, bufsize, verify, instance) -> int\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170429,7 +170429,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "SSLSocketInitiatorBase_swigregister", SSLSocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "SSLSocketInitiatorBase_swiginit", SSLSocketInitiatorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_DatabaseConnectionID", _wrap_new_DatabaseConnectionID, METH_VARARGS, "\n"
-		"new_DatabaseConnectionID(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> DatabaseConnectionID\n"
+		"new_DatabaseConnectionID(database, user, password, host, port) -> DatabaseConnectionID\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170441,49 +170441,49 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__lt__", _wrap___lt__, METH_VARARGS, "\n"
-		"__lt__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__lt__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__lt__(StringField arg1, char const * arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__lt__(char const * arg1, StringField arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__lt__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__lt__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__lt__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__lt__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__lt__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170492,49 +170492,49 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__eq__", _wrap___eq__, METH_VARARGS, "\n"
-		"__eq__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__eq__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__eq__(StringField arg1, char const * arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__eq__(char const * arg1, StringField arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__eq__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__eq__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__eq__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__eq__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__eq__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170543,49 +170543,49 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "__ne__", _wrap___ne__, METH_VARARGS, "\n"
-		"__ne__(DateTime lhs, DateTime rhs) -> bool\n"
+		"__ne__(lhs, rhs) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"lhs: FIX::DateTime const &\n"
 		"rhs: FIX::DateTime const &\n"
 		"\n"
-		"__ne__(StringField arg1, char const * arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: char const *\n"
 		"\n"
-		"__ne__(char const * arg1, StringField arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: char const *\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ne__(StringField arg1, std::string const & arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::StringField const &\n"
 		"arg2: std::string const &\n"
 		"\n"
-		"__ne__(std::string const & arg1, StringField arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: std::string const &\n"
 		"arg2: FIX::StringField const &\n"
 		"\n"
-		"__ne__(SessionID arg1, SessionID arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg1: FIX::SessionID const &\n"
 		"arg2: FIX::SessionID const &\n"
 		"\n"
-		"__ne__(DatabaseConnectionID arg1, DatabaseConnectionID arg2) -> bool\n"
+		"__ne__(arg1, arg2) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170593,36 +170593,36 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::DatabaseConnectionID const &\n"
 		"\n"
 		""},
-	 { "DatabaseConnectionID_getDatabase", _wrap_DatabaseConnectionID_getDatabase, METH_O, "getDatabase(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getUser", _wrap_DatabaseConnectionID_getUser, METH_O, "getUser(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getPassword", _wrap_DatabaseConnectionID_getPassword, METH_O, "getPassword(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getHost", _wrap_DatabaseConnectionID_getHost, METH_O, "getHost(DatabaseConnectionID self) -> std::string const &"},
-	 { "DatabaseConnectionID_getPort", _wrap_DatabaseConnectionID_getPort, METH_O, "getPort(DatabaseConnectionID self) -> short"},
-	 { "delete_DatabaseConnectionID", _wrap_delete_DatabaseConnectionID, METH_O, "delete_DatabaseConnectionID(DatabaseConnectionID self)"},
+	 { "DatabaseConnectionID_getDatabase", _wrap_DatabaseConnectionID_getDatabase, METH_O, "getDatabase(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getUser", _wrap_DatabaseConnectionID_getUser, METH_O, "getUser(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getPassword", _wrap_DatabaseConnectionID_getPassword, METH_O, "getPassword(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getHost", _wrap_DatabaseConnectionID_getHost, METH_O, "getHost(self) -> std::string const &"},
+	 { "DatabaseConnectionID_getPort", _wrap_DatabaseConnectionID_getPort, METH_O, "getPort(self) -> short"},
+	 { "delete_DatabaseConnectionID", _wrap_delete_DatabaseConnectionID, METH_O, "delete_DatabaseConnectionID(self)"},
 	 { "DatabaseConnectionID_swigregister", DatabaseConnectionID_swigregister, METH_O, NULL},
 	 { "DatabaseConnectionID_swiginit", DatabaseConnectionID_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLQuery", _wrap_new_MySQLQuery, METH_O, "\n"
-		"new_MySQLQuery(std::string const & query) -> MySQLQuery\n"
+		"new_MySQLQuery(query) -> MySQLQuery\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"query: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_MySQLQuery", _wrap_delete_MySQLQuery, METH_O, "delete_MySQLQuery(MySQLQuery self)"},
+	 { "delete_MySQLQuery", _wrap_delete_MySQLQuery, METH_O, "delete_MySQLQuery(self)"},
 	 { "MySQLQuery_execute", _wrap_MySQLQuery_execute, METH_VARARGS, "\n"
-		"execute(MySQLQuery self, MYSQL * pConnection) -> bool\n"
+		"execute(self, pConnection) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pConnection: MYSQL *\n"
 		"\n"
 		""},
-	 { "MySQLQuery_success", _wrap_MySQLQuery_success, METH_O, "success(MySQLQuery self) -> bool"},
-	 { "MySQLQuery_rows", _wrap_MySQLQuery_rows, METH_O, "rows(MySQLQuery self) -> int"},
-	 { "MySQLQuery_reason", _wrap_MySQLQuery_reason, METH_O, "reason(MySQLQuery self) -> std::string const &"},
+	 { "MySQLQuery_success", _wrap_MySQLQuery_success, METH_O, "success(self) -> bool"},
+	 { "MySQLQuery_rows", _wrap_MySQLQuery_rows, METH_O, "rows(self) -> int"},
+	 { "MySQLQuery_reason", _wrap_MySQLQuery_reason, METH_O, "reason(self) -> std::string const &"},
 	 { "MySQLQuery_getValue", _wrap_MySQLQuery_getValue, METH_VARARGS, "\n"
-		"getValue(MySQLQuery self, int row, int column) -> char *\n"
+		"getValue(self, row, column) -> char *\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170630,17 +170630,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"column: int\n"
 		"\n"
 		""},
-	 { "MySQLQuery_throwException", _wrap_MySQLQuery_throwException, METH_O, "throwException(MySQLQuery self)"},
+	 { "MySQLQuery_throwException", _wrap_MySQLQuery_throwException, METH_O, "throwException(self)"},
 	 { "MySQLQuery_swigregister", MySQLQuery_swigregister, METH_O, NULL},
 	 { "MySQLQuery_swiginit", MySQLQuery_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLConnection", _wrap_new_MySQLConnection, METH_VARARGS, "\n"
-		"MySQLConnection(DatabaseConnectionID id)\n"
+		"MySQLConnection(id)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::DatabaseConnectionID const &\n"
 		"\n"
-		"new_MySQLConnection(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLConnection\n"
+		"new_MySQLConnection(database, user, password, host, port) -> MySQLConnection\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170651,12 +170651,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLConnection", _wrap_delete_MySQLConnection, METH_O, "delete_MySQLConnection(MySQLConnection self)"},
-	 { "MySQLConnection_connectionID", _wrap_MySQLConnection_connectionID, METH_O, "connectionID(MySQLConnection self) -> DatabaseConnectionID"},
-	 { "MySQLConnection_connected", _wrap_MySQLConnection_connected, METH_O, "connected(MySQLConnection self) -> bool"},
-	 { "MySQLConnection_reconnect", _wrap_MySQLConnection_reconnect, METH_O, "reconnect(MySQLConnection self) -> bool"},
+	 { "delete_MySQLConnection", _wrap_delete_MySQLConnection, METH_O, "delete_MySQLConnection(self)"},
+	 { "MySQLConnection_connectionID", _wrap_MySQLConnection_connectionID, METH_O, "connectionID(self) -> DatabaseConnectionID"},
+	 { "MySQLConnection_connected", _wrap_MySQLConnection_connected, METH_O, "connected(self) -> bool"},
+	 { "MySQLConnection_reconnect", _wrap_MySQLConnection_reconnect, METH_O, "reconnect(self) -> bool"},
 	 { "MySQLConnection_execute", _wrap_MySQLConnection_execute, METH_VARARGS, "\n"
-		"execute(MySQLConnection self, MySQLQuery pQuery) -> bool\n"
+		"execute(self, pQuery) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170666,19 +170666,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "MySQLConnection_swigregister", MySQLConnection_swigregister, METH_O, NULL},
 	 { "MySQLConnection_swiginit", MySQLConnection_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLStoreFactory", _wrap_new_MySQLStoreFactory, METH_VARARGS, "\n"
-		"MySQLStoreFactory(SessionSettings settings)\n"
+		"MySQLStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"MySQLStoreFactory(Dictionary dictionary)\n"
+		"MySQLStoreFactory(dictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dictionary: FIX::Dictionary const &\n"
 		"\n"
-		"MySQLStoreFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLStoreFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170691,7 +170691,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"new_MySQLStoreFactory() -> MySQLStoreFactory\n"
 		""},
 	 { "MySQLStoreFactory_create", _wrap_MySQLStoreFactory_create, METH_VARARGS, "\n"
-		"create(MySQLStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170700,18 +170700,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLStoreFactory_destroy", _wrap_MySQLStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(MySQLStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_MySQLStoreFactory", _wrap_delete_MySQLStoreFactory, METH_O, "delete_MySQLStoreFactory(MySQLStoreFactory self)"},
+	 { "delete_MySQLStoreFactory", _wrap_delete_MySQLStoreFactory, METH_O, "delete_MySQLStoreFactory(self)"},
 	 { "MySQLStoreFactory_swigregister", MySQLStoreFactory_swigregister, METH_O, NULL},
 	 { "MySQLStoreFactory_swiginit", MySQLStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLStore", _wrap_new_MySQLStore, METH_VARARGS, "\n"
-		"MySQLStore(UtcTimeStamp now, SessionID sessionID, DatabaseConnectionID connection, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLStore(now, sessionID, connection, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170720,7 +170720,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"connection: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"new_MySQLStore(UtcTimeStamp now, SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLStore\n"
+		"new_MySQLStore(now, sessionID, database, user, password, host, port) -> MySQLStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170733,9 +170733,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLStore", _wrap_delete_MySQLStore, METH_O, "delete_MySQLStore(MySQLStore self)"},
+	 { "delete_MySQLStore", _wrap_delete_MySQLStore, METH_O, "delete_MySQLStore(self)"},
 	 { "MySQLStore_set", _wrap_MySQLStore_set, METH_VARARGS, "\n"
-		"set(MySQLStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170744,7 +170744,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLStore_get", _wrap_MySQLStore_get, METH_VARARGS, "\n"
-		"get(MySQLStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170753,10 +170753,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "MySQLStore_getNextSenderMsgSeqNum", _wrap_MySQLStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(MySQLStore self) -> FIX::SEQNUM"},
-	 { "MySQLStore_getNextTargetMsgSeqNum", _wrap_MySQLStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(MySQLStore self) -> FIX::SEQNUM"},
+	 { "MySQLStore_getNextSenderMsgSeqNum", _wrap_MySQLStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "MySQLStore_getNextTargetMsgSeqNum", _wrap_MySQLStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "MySQLStore_setNextSenderMsgSeqNum", _wrap_MySQLStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(MySQLStore self, FIX::SEQNUM value)\n"
+		"setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170764,29 +170764,29 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLStore_setNextTargetMsgSeqNum", _wrap_MySQLStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(MySQLStore self, FIX::SEQNUM value)\n"
+		"setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "MySQLStore_incrNextSenderMsgSeqNum", _wrap_MySQLStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(MySQLStore self)"},
-	 { "MySQLStore_incrNextTargetMsgSeqNum", _wrap_MySQLStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(MySQLStore self)"},
-	 { "MySQLStore_getCreationTime", _wrap_MySQLStore_getCreationTime, METH_O, "getCreationTime(MySQLStore self) -> UtcTimeStamp"},
+	 { "MySQLStore_incrNextSenderMsgSeqNum", _wrap_MySQLStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "MySQLStore_incrNextTargetMsgSeqNum", _wrap_MySQLStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
+	 { "MySQLStore_getCreationTime", _wrap_MySQLStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "MySQLStore_reset", _wrap_MySQLStore_reset, METH_VARARGS, "\n"
-		"reset(MySQLStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "MySQLStore_refresh", _wrap_MySQLStore_refresh, METH_O, "refresh(MySQLStore self)"},
+	 { "MySQLStore_refresh", _wrap_MySQLStore_refresh, METH_O, "refresh(self)"},
 	 { "MySQLStore_swigregister", MySQLStore_swigregister, METH_O, NULL},
 	 { "MySQLStore_swiginit", MySQLStore_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLLog", _wrap_new_MySQLLog, METH_VARARGS, "\n"
-		"MySQLLog(SessionID sessionID, DatabaseConnectionID connectionID, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLLog(sessionID, connectionID, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170794,14 +170794,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"connectionID: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"MySQLLog(DatabaseConnectionID connectionID, FIX::MySQLConnectionPool * pool)\n"
+		"MySQLLog(connectionID, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"connectionID: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::MySQLConnectionPool *\n"
 		"\n"
-		"MySQLLog(SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLLog(sessionID, database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170812,7 +170812,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"host: std::string const &\n"
 		"port: short\n"
 		"\n"
-		"new_MySQLLog(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> MySQLLog\n"
+		"new_MySQLLog(database, user, password, host, port) -> MySQLLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170823,11 +170823,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_MySQLLog", _wrap_delete_MySQLLog, METH_O, "delete_MySQLLog(MySQLLog self)"},
-	 { "MySQLLog_clear", _wrap_MySQLLog_clear, METH_O, "clear(MySQLLog self)"},
-	 { "MySQLLog_backup", _wrap_MySQLLog_backup, METH_O, "backup(MySQLLog self)"},
+	 { "delete_MySQLLog", _wrap_delete_MySQLLog, METH_O, "delete_MySQLLog(self)"},
+	 { "MySQLLog_clear", _wrap_MySQLLog_clear, METH_O, "clear(self)"},
+	 { "MySQLLog_backup", _wrap_MySQLLog_backup, METH_O, "backup(self)"},
 	 { "MySQLLog_setIncomingTable", _wrap_MySQLLog_setIncomingTable, METH_VARARGS, "\n"
-		"setIncomingTable(MySQLLog self, std::string const & incomingTable)\n"
+		"setIncomingTable(self, incomingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170835,7 +170835,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLog_setOutgoingTable", _wrap_MySQLLog_setOutgoingTable, METH_VARARGS, "\n"
-		"setOutgoingTable(MySQLLog self, std::string const & outgoingTable)\n"
+		"setOutgoingTable(self, outgoingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170843,7 +170843,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLog_setEventTable", _wrap_MySQLLog_setEventTable, METH_VARARGS, "\n"
-		"setEventTable(MySQLLog self, std::string const & eventTable)\n"
+		"setEventTable(self, eventTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170851,7 +170851,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onIncoming", _wrap_MySQLLog_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(MySQLLog self, std::string const & value)\n"
+		"onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170859,7 +170859,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onOutgoing", _wrap_MySQLLog_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(MySQLLog self, std::string const & value)\n"
+		"onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170867,7 +170867,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLog_onEvent", _wrap_MySQLLog_onEvent, METH_VARARGS, "\n"
-		"onEvent(MySQLLog self, std::string const & value)\n"
+		"onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170877,13 +170877,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "MySQLLog_swigregister", MySQLLog_swigregister, METH_O, NULL},
 	 { "MySQLLog_swiginit", MySQLLog_swiginit, METH_VARARGS, NULL},
 	 { "new_MySQLLogFactory", _wrap_new_MySQLLogFactory, METH_VARARGS, "\n"
-		"MySQLLogFactory(SessionSettings settings)\n"
+		"MySQLLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"MySQLLogFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"MySQLLogFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170896,8 +170896,8 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"new_MySQLLogFactory() -> MySQLLogFactory\n"
 		""},
 	 { "MySQLLogFactory_create", _wrap_MySQLLogFactory_create, METH_VARARGS, "\n"
-		"create(MySQLLogFactory self) -> Log\n"
-		"create(MySQLLogFactory self, SessionID arg2) -> Log\n"
+		"create(self) -> Log\n"
+		"create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170905,38 +170905,38 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "MySQLLogFactory_destroy", _wrap_MySQLLogFactory_destroy, METH_VARARGS, "\n"
-		"destroy(MySQLLogFactory self, Log arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_MySQLLogFactory", _wrap_delete_MySQLLogFactory, METH_O, "delete_MySQLLogFactory(MySQLLogFactory self)"},
+	 { "delete_MySQLLogFactory", _wrap_delete_MySQLLogFactory, METH_O, "delete_MySQLLogFactory(self)"},
 	 { "MySQLLogFactory_swigregister", MySQLLogFactory_swigregister, METH_O, NULL},
 	 { "MySQLLogFactory_swiginit", MySQLLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLQuery", _wrap_new_PostgreSQLQuery, METH_O, "\n"
-		"new_PostgreSQLQuery(std::string const & query) -> PostgreSQLQuery\n"
+		"new_PostgreSQLQuery(query) -> PostgreSQLQuery\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"query: std::string const &\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLQuery", _wrap_delete_PostgreSQLQuery, METH_O, "delete_PostgreSQLQuery(PostgreSQLQuery self)"},
+	 { "delete_PostgreSQLQuery", _wrap_delete_PostgreSQLQuery, METH_O, "delete_PostgreSQLQuery(self)"},
 	 { "PostgreSQLQuery_execute", _wrap_PostgreSQLQuery_execute, METH_VARARGS, "\n"
-		"execute(PostgreSQLQuery self, PGconn * pConnection) -> bool\n"
+		"execute(self, pConnection) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"pConnection: PGconn *\n"
 		"\n"
 		""},
-	 { "PostgreSQLQuery_success", _wrap_PostgreSQLQuery_success, METH_O, "success(PostgreSQLQuery self) -> bool"},
-	 { "PostgreSQLQuery_rows", _wrap_PostgreSQLQuery_rows, METH_O, "rows(PostgreSQLQuery self) -> int"},
-	 { "PostgreSQLQuery_reason", _wrap_PostgreSQLQuery_reason, METH_O, "reason(PostgreSQLQuery self) -> char *"},
+	 { "PostgreSQLQuery_success", _wrap_PostgreSQLQuery_success, METH_O, "success(self) -> bool"},
+	 { "PostgreSQLQuery_rows", _wrap_PostgreSQLQuery_rows, METH_O, "rows(self) -> int"},
+	 { "PostgreSQLQuery_reason", _wrap_PostgreSQLQuery_reason, METH_O, "reason(self) -> char *"},
 	 { "PostgreSQLQuery_getValue", _wrap_PostgreSQLQuery_getValue, METH_VARARGS, "\n"
-		"getValue(PostgreSQLQuery self, int row, int column) -> char *\n"
+		"getValue(self, row, column) -> char *\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170944,17 +170944,17 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"column: int\n"
 		"\n"
 		""},
-	 { "PostgreSQLQuery_throwException", _wrap_PostgreSQLQuery_throwException, METH_O, "throwException(PostgreSQLQuery self)"},
+	 { "PostgreSQLQuery_throwException", _wrap_PostgreSQLQuery_throwException, METH_O, "throwException(self)"},
 	 { "PostgreSQLQuery_swigregister", PostgreSQLQuery_swigregister, METH_O, NULL},
 	 { "PostgreSQLQuery_swiginit", PostgreSQLQuery_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLConnection", _wrap_new_PostgreSQLConnection, METH_VARARGS, "\n"
-		"PostgreSQLConnection(DatabaseConnectionID id)\n"
+		"PostgreSQLConnection(id)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"id: FIX::DatabaseConnectionID const &\n"
 		"\n"
-		"new_PostgreSQLConnection(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLConnection\n"
+		"new_PostgreSQLConnection(database, user, password, host, port) -> PostgreSQLConnection\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170965,12 +170965,12 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLConnection", _wrap_delete_PostgreSQLConnection, METH_O, "delete_PostgreSQLConnection(PostgreSQLConnection self)"},
-	 { "PostgreSQLConnection_connectionID", _wrap_PostgreSQLConnection_connectionID, METH_O, "connectionID(PostgreSQLConnection self) -> DatabaseConnectionID"},
-	 { "PostgreSQLConnection_connected", _wrap_PostgreSQLConnection_connected, METH_O, "connected(PostgreSQLConnection self) -> bool"},
-	 { "PostgreSQLConnection_reconnect", _wrap_PostgreSQLConnection_reconnect, METH_O, "reconnect(PostgreSQLConnection self) -> bool"},
+	 { "delete_PostgreSQLConnection", _wrap_delete_PostgreSQLConnection, METH_O, "delete_PostgreSQLConnection(self)"},
+	 { "PostgreSQLConnection_connectionID", _wrap_PostgreSQLConnection_connectionID, METH_O, "connectionID(self) -> DatabaseConnectionID"},
+	 { "PostgreSQLConnection_connected", _wrap_PostgreSQLConnection_connected, METH_O, "connected(self) -> bool"},
+	 { "PostgreSQLConnection_reconnect", _wrap_PostgreSQLConnection_reconnect, METH_O, "reconnect(self) -> bool"},
 	 { "PostgreSQLConnection_execute", _wrap_PostgreSQLConnection_execute, METH_VARARGS, "\n"
-		"execute(PostgreSQLConnection self, PostgreSQLQuery pQuery) -> bool\n"
+		"execute(self, pQuery) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -170980,19 +170980,19 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "PostgreSQLConnection_swigregister", PostgreSQLConnection_swigregister, METH_O, NULL},
 	 { "PostgreSQLConnection_swiginit", PostgreSQLConnection_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLStoreFactory", _wrap_new_PostgreSQLStoreFactory, METH_VARARGS, "\n"
-		"PostgreSQLStoreFactory(SessionSettings settings)\n"
+		"PostgreSQLStoreFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"PostgreSQLStoreFactory(Dictionary dictionary)\n"
+		"PostgreSQLStoreFactory(dictionary)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"dictionary: FIX::Dictionary const &\n"
 		"\n"
-		"PostgreSQLStoreFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLStoreFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171005,7 +171005,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"new_PostgreSQLStoreFactory() -> PostgreSQLStoreFactory\n"
 		""},
 	 { "PostgreSQLStoreFactory_create", _wrap_PostgreSQLStoreFactory_create, METH_VARARGS, "\n"
-		"create(PostgreSQLStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171014,18 +171014,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStoreFactory_destroy", _wrap_PostgreSQLStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(PostgreSQLStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::MessageStore *\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLStoreFactory", _wrap_delete_PostgreSQLStoreFactory, METH_O, "delete_PostgreSQLStoreFactory(PostgreSQLStoreFactory self)"},
+	 { "delete_PostgreSQLStoreFactory", _wrap_delete_PostgreSQLStoreFactory, METH_O, "delete_PostgreSQLStoreFactory(self)"},
 	 { "PostgreSQLStoreFactory_swigregister", PostgreSQLStoreFactory_swigregister, METH_O, NULL},
 	 { "PostgreSQLStoreFactory_swiginit", PostgreSQLStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLStore", _wrap_new_PostgreSQLStore, METH_VARARGS, "\n"
-		"PostgreSQLStore(UtcTimeStamp now, SessionID sessionID, DatabaseConnectionID connection, FIX::PostgreSQLConnectionPool * pool)\n"
+		"PostgreSQLStore(now, sessionID, connection, pool)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171034,7 +171034,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"connection: FIX::DatabaseConnectionID const &\n"
 		"pool: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"new_PostgreSQLStore(UtcTimeStamp now, SessionID sessionID, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLStore\n"
+		"new_PostgreSQLStore(now, sessionID, database, user, password, host, port) -> PostgreSQLStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171047,9 +171047,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLStore", _wrap_delete_PostgreSQLStore, METH_O, "delete_PostgreSQLStore(PostgreSQLStore self)"},
+	 { "delete_PostgreSQLStore", _wrap_delete_PostgreSQLStore, METH_O, "delete_PostgreSQLStore(self)"},
 	 { "PostgreSQLStore_set", _wrap_PostgreSQLStore_set, METH_VARARGS, "\n"
-		"set(PostgreSQLStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171058,7 +171058,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStore_get", _wrap_PostgreSQLStore_get, METH_VARARGS, "\n"
-		"get(PostgreSQLStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171067,10 +171067,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_getNextSenderMsgSeqNum", _wrap_PostgreSQLStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(PostgreSQLStore self) -> FIX::SEQNUM"},
-	 { "PostgreSQLStore_getNextTargetMsgSeqNum", _wrap_PostgreSQLStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(PostgreSQLStore self) -> FIX::SEQNUM"},
+	 { "PostgreSQLStore_getNextSenderMsgSeqNum", _wrap_PostgreSQLStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "PostgreSQLStore_getNextTargetMsgSeqNum", _wrap_PostgreSQLStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "PostgreSQLStore_setNextSenderMsgSeqNum", _wrap_PostgreSQLStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(PostgreSQLStore self, FIX::SEQNUM value)\n"
+		"setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171078,29 +171078,29 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLStore_setNextTargetMsgSeqNum", _wrap_PostgreSQLStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(PostgreSQLStore self, FIX::SEQNUM value)\n"
+		"setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_incrNextSenderMsgSeqNum", _wrap_PostgreSQLStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(PostgreSQLStore self)"},
-	 { "PostgreSQLStore_incrNextTargetMsgSeqNum", _wrap_PostgreSQLStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(PostgreSQLStore self)"},
-	 { "PostgreSQLStore_getCreationTime", _wrap_PostgreSQLStore_getCreationTime, METH_O, "getCreationTime(PostgreSQLStore self) -> UtcTimeStamp"},
+	 { "PostgreSQLStore_incrNextSenderMsgSeqNum", _wrap_PostgreSQLStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "PostgreSQLStore_incrNextTargetMsgSeqNum", _wrap_PostgreSQLStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
+	 { "PostgreSQLStore_getCreationTime", _wrap_PostgreSQLStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "PostgreSQLStore_reset", _wrap_PostgreSQLStore_reset, METH_VARARGS, "\n"
-		"reset(PostgreSQLStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "PostgreSQLStore_refresh", _wrap_PostgreSQLStore_refresh, METH_O, "refresh(PostgreSQLStore self)"},
+	 { "PostgreSQLStore_refresh", _wrap_PostgreSQLStore_refresh, METH_O, "refresh(self)"},
 	 { "PostgreSQLStore_swigregister", PostgreSQLStore_swigregister, METH_O, NULL},
 	 { "PostgreSQLStore_swiginit", PostgreSQLStore_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLLog", _wrap_new_PostgreSQLLog, METH_VARARGS, "\n"
-		"PostgreSQLLog(SessionID s, DatabaseConnectionID d, FIX::PostgreSQLConnectionPool * p)\n"
+		"PostgreSQLLog(s, d, p)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171108,14 +171108,14 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"d: FIX::DatabaseConnectionID const &\n"
 		"p: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"PostgreSQLLog(DatabaseConnectionID d, FIX::PostgreSQLConnectionPool * p)\n"
+		"PostgreSQLLog(d, p)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"d: FIX::DatabaseConnectionID const &\n"
 		"p: FIX::PostgreSQLConnectionPool *\n"
 		"\n"
-		"PostgreSQLLog(SessionID s, std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLLog(s, database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171126,7 +171126,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"host: std::string const &\n"
 		"port: short\n"
 		"\n"
-		"new_PostgreSQLLog(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port) -> PostgreSQLLog\n"
+		"new_PostgreSQLLog(database, user, password, host, port) -> PostgreSQLLog\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171137,11 +171137,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"port: short\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLLog", _wrap_delete_PostgreSQLLog, METH_O, "delete_PostgreSQLLog(PostgreSQLLog self)"},
-	 { "PostgreSQLLog_clear", _wrap_PostgreSQLLog_clear, METH_O, "clear(PostgreSQLLog self)"},
-	 { "PostgreSQLLog_backup", _wrap_PostgreSQLLog_backup, METH_O, "backup(PostgreSQLLog self)"},
+	 { "delete_PostgreSQLLog", _wrap_delete_PostgreSQLLog, METH_O, "delete_PostgreSQLLog(self)"},
+	 { "PostgreSQLLog_clear", _wrap_PostgreSQLLog_clear, METH_O, "clear(self)"},
+	 { "PostgreSQLLog_backup", _wrap_PostgreSQLLog_backup, METH_O, "backup(self)"},
 	 { "PostgreSQLLog_setIncomingTable", _wrap_PostgreSQLLog_setIncomingTable, METH_VARARGS, "\n"
-		"setIncomingTable(PostgreSQLLog self, std::string const & incomingTable)\n"
+		"setIncomingTable(self, incomingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171149,7 +171149,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_setOutgoingTable", _wrap_PostgreSQLLog_setOutgoingTable, METH_VARARGS, "\n"
-		"setOutgoingTable(PostgreSQLLog self, std::string const & outgoingTable)\n"
+		"setOutgoingTable(self, outgoingTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171157,7 +171157,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_setEventTable", _wrap_PostgreSQLLog_setEventTable, METH_VARARGS, "\n"
-		"setEventTable(PostgreSQLLog self, std::string const & eventTable)\n"
+		"setEventTable(self, eventTable)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171165,7 +171165,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onIncoming", _wrap_PostgreSQLLog_onIncoming, METH_VARARGS, "\n"
-		"onIncoming(PostgreSQLLog self, std::string const & value)\n"
+		"onIncoming(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171173,7 +171173,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onOutgoing", _wrap_PostgreSQLLog_onOutgoing, METH_VARARGS, "\n"
-		"onOutgoing(PostgreSQLLog self, std::string const & value)\n"
+		"onOutgoing(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171181,7 +171181,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLog_onEvent", _wrap_PostgreSQLLog_onEvent, METH_VARARGS, "\n"
-		"onEvent(PostgreSQLLog self, std::string const & value)\n"
+		"onEvent(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171191,13 +171191,13 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 	 { "PostgreSQLLog_swigregister", PostgreSQLLog_swigregister, METH_O, NULL},
 	 { "PostgreSQLLog_swiginit", PostgreSQLLog_swiginit, METH_VARARGS, NULL},
 	 { "new_PostgreSQLLogFactory", _wrap_new_PostgreSQLLogFactory, METH_VARARGS, "\n"
-		"PostgreSQLLogFactory(SessionSettings settings)\n"
+		"PostgreSQLLogFactory(settings)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"settings: FIX::SessionSettings const &\n"
 		"\n"
-		"PostgreSQLLogFactory(std::string const & database, std::string const & user, std::string const & password, std::string const & host, short port)\n"
+		"PostgreSQLLogFactory(database, user, password, host, port)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171210,8 +171210,8 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"new_PostgreSQLLogFactory() -> PostgreSQLLogFactory\n"
 		""},
 	 { "PostgreSQLLogFactory_create", _wrap_PostgreSQLLogFactory_create, METH_VARARGS, "\n"
-		"create(PostgreSQLLogFactory self) -> Log\n"
-		"create(PostgreSQLLogFactory self, SessionID arg2) -> Log\n"
+		"create(self) -> Log\n"
+		"create(self, arg2) -> Log\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171219,18 +171219,18 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "PostgreSQLLogFactory_destroy", _wrap_PostgreSQLLogFactory_destroy, METH_VARARGS, "\n"
-		"destroy(PostgreSQLLogFactory self, Log arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"arg2: FIX::Log *\n"
 		"\n"
 		""},
-	 { "delete_PostgreSQLLogFactory", _wrap_delete_PostgreSQLLogFactory, METH_O, "delete_PostgreSQLLogFactory(PostgreSQLLogFactory self)"},
+	 { "delete_PostgreSQLLogFactory", _wrap_delete_PostgreSQLLogFactory, METH_O, "delete_PostgreSQLLogFactory(self)"},
 	 { "PostgreSQLLogFactory_swigregister", PostgreSQLLogFactory_swigregister, METH_O, NULL},
 	 { "PostgreSQLLogFactory_swiginit", PostgreSQLLogFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_ThreadedSocketAcceptorBase", _wrap_new_ThreadedSocketAcceptorBase, METH_VARARGS, "\n"
-		"ThreadedSocketAcceptor(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"ThreadedSocketAcceptor(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171238,7 +171238,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_ThreadedSocketAcceptorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> ThreadedSocketAcceptorBase\n"
+		"new_ThreadedSocketAcceptorBase(arg1, arg2, arg3, arg4) -> ThreadedSocketAcceptorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171248,11 +171248,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_ThreadedSocketAcceptorBase", _wrap_delete_ThreadedSocketAcceptorBase, METH_O, "delete_ThreadedSocketAcceptorBase(ThreadedSocketAcceptorBase self)"},
+	 { "delete_ThreadedSocketAcceptorBase", _wrap_delete_ThreadedSocketAcceptorBase, METH_O, "delete_ThreadedSocketAcceptorBase(self)"},
 	 { "ThreadedSocketAcceptorBase_swigregister", ThreadedSocketAcceptorBase_swigregister, METH_O, NULL},
 	 { "ThreadedSocketAcceptorBase_swiginit", ThreadedSocketAcceptorBase_swiginit, METH_VARARGS, NULL},
 	 { "new_ThreadedSocketInitiatorBase", _wrap_new_ThreadedSocketInitiatorBase, METH_VARARGS, "\n"
-		"ThreadedSocketInitiator(Application arg1, MessageStoreFactory arg2, SessionSettings arg3)\n"
+		"ThreadedSocketInitiator(arg1, arg2, arg3)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171260,7 +171260,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg2: FIX::MessageStoreFactory &\n"
 		"arg3: FIX::SessionSettings const &\n"
 		"\n"
-		"new_ThreadedSocketInitiatorBase(Application arg1, MessageStoreFactory arg2, SessionSettings arg3, LogFactory arg4) -> ThreadedSocketInitiatorBase\n"
+		"new_ThreadedSocketInitiatorBase(arg1, arg2, arg3, arg4) -> ThreadedSocketInitiatorBase\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171270,11 +171270,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: FIX::LogFactory &\n"
 		"\n"
 		""},
-	 { "delete_ThreadedSocketInitiatorBase", _wrap_delete_ThreadedSocketInitiatorBase, METH_O, "delete_ThreadedSocketInitiatorBase(ThreadedSocketInitiatorBase self)"},
+	 { "delete_ThreadedSocketInitiatorBase", _wrap_delete_ThreadedSocketInitiatorBase, METH_O, "delete_ThreadedSocketInitiatorBase(self)"},
 	 { "ThreadedSocketInitiatorBase_swigregister", ThreadedSocketInitiatorBase_swigregister, METH_O, NULL},
 	 { "ThreadedSocketInitiatorBase_swiginit", ThreadedSocketInitiatorBase_swiginit, METH_VARARGS, NULL},
 	 { "NullStoreFactory_create", _wrap_NullStoreFactory_create, METH_VARARGS, "\n"
-		"create(NullStoreFactory self, UtcTimeStamp arg2, SessionID arg3) -> MessageStore\n"
+		"create(self, arg2, arg3) -> MessageStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171283,7 +171283,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullStoreFactory_destroy", _wrap_NullStoreFactory_destroy, METH_VARARGS, "\n"
-		"destroy(NullStoreFactory self, MessageStore arg2)\n"
+		"destroy(self, arg2)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171291,11 +171291,11 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "new_NullStoreFactory", _wrap_new_NullStoreFactory, METH_NOARGS, "new_NullStoreFactory() -> NullStoreFactory"},
-	 { "delete_NullStoreFactory", _wrap_delete_NullStoreFactory, METH_O, "delete_NullStoreFactory(NullStoreFactory self)"},
+	 { "delete_NullStoreFactory", _wrap_delete_NullStoreFactory, METH_O, "delete_NullStoreFactory(self)"},
 	 { "NullStoreFactory_swigregister", NullStoreFactory_swigregister, METH_O, NULL},
 	 { "NullStoreFactory_swiginit", NullStoreFactory_swiginit, METH_VARARGS, NULL},
 	 { "new_NullStore", _wrap_new_NullStore, METH_O, "\n"
-		"new_NullStore(UtcTimeStamp now) -> NullStore\n"
+		"new_NullStore(now) -> NullStore\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171303,7 +171303,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullStore_set", _wrap_NullStore_set, METH_VARARGS, "\n"
-		"set(NullStore self, FIX::SEQNUM arg2, std::string const & arg3) -> bool\n"
+		"set(self, arg2, arg3) -> bool\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171312,7 +171312,7 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullStore_get", _wrap_NullStore_get, METH_VARARGS, "\n"
-		"get(NullStore self, FIX::SEQNUM arg2, FIX::SEQNUM arg3, VectorString arg4)\n"
+		"get(self, arg2, arg3, arg4)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171321,10 +171321,10 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"arg4: std::vector< std::string,std::allocator< std::string > > &\n"
 		"\n"
 		""},
-	 { "NullStore_getNextSenderMsgSeqNum", _wrap_NullStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(NullStore self) -> FIX::SEQNUM"},
-	 { "NullStore_getNextTargetMsgSeqNum", _wrap_NullStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(NullStore self) -> FIX::SEQNUM"},
+	 { "NullStore_getNextSenderMsgSeqNum", _wrap_NullStore_getNextSenderMsgSeqNum, METH_O, "getNextSenderMsgSeqNum(self) -> FIX::SEQNUM"},
+	 { "NullStore_getNextTargetMsgSeqNum", _wrap_NullStore_getNextTargetMsgSeqNum, METH_O, "getNextTargetMsgSeqNum(self) -> FIX::SEQNUM"},
 	 { "NullStore_setNextSenderMsgSeqNum", _wrap_NullStore_setNextSenderMsgSeqNum, METH_VARARGS, "\n"
-		"setNextSenderMsgSeqNum(NullStore self, FIX::SEQNUM value)\n"
+		"setNextSenderMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
@@ -171332,34 +171332,34 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 		"\n"
 		""},
 	 { "NullStore_setNextTargetMsgSeqNum", _wrap_NullStore_setNextTargetMsgSeqNum, METH_VARARGS, "\n"
-		"setNextTargetMsgSeqNum(NullStore self, FIX::SEQNUM value)\n"
+		"setNextTargetMsgSeqNum(self, value)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"value: FIX::SEQNUM\n"
 		"\n"
 		""},
-	 { "NullStore_incrNextSenderMsgSeqNum", _wrap_NullStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(NullStore self)"},
-	 { "NullStore_incrNextTargetMsgSeqNum", _wrap_NullStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(NullStore self)"},
+	 { "NullStore_incrNextSenderMsgSeqNum", _wrap_NullStore_incrNextSenderMsgSeqNum, METH_O, "incrNextSenderMsgSeqNum(self)"},
+	 { "NullStore_incrNextTargetMsgSeqNum", _wrap_NullStore_incrNextTargetMsgSeqNum, METH_O, "incrNextTargetMsgSeqNum(self)"},
 	 { "NullStore_setCreationTime", _wrap_NullStore_setCreationTime, METH_VARARGS, "\n"
-		"setCreationTime(NullStore self, UtcTimeStamp creationTime)\n"
+		"setCreationTime(self, creationTime)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"creationTime: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "NullStore_getCreationTime", _wrap_NullStore_getCreationTime, METH_O, "getCreationTime(NullStore self) -> UtcTimeStamp"},
+	 { "NullStore_getCreationTime", _wrap_NullStore_getCreationTime, METH_O, "getCreationTime(self) -> UtcTimeStamp"},
 	 { "NullStore_reset", _wrap_NullStore_reset, METH_VARARGS, "\n"
-		"reset(NullStore self, UtcTimeStamp now)\n"
+		"reset(self, now)\n"
 		"\n"
 		"Parameters\n"
 		"----------\n"
 		"now: FIX::UtcTimeStamp const &\n"
 		"\n"
 		""},
-	 { "NullStore_refresh", _wrap_NullStore_refresh, METH_O, "refresh(NullStore self)"},
-	 { "delete_NullStore", _wrap_delete_NullStore, METH_O, "delete_NullStore(NullStore self)"},
+	 { "NullStore_refresh", _wrap_NullStore_refresh, METH_O, "refresh(self)"},
+	 { "delete_NullStore", _wrap_delete_NullStore, METH_O, "delete_NullStore(self)"},
 	 { "NullStore_swigregister", NullStore_swigregister, METH_O, NULL},
 	 { "NullStore_swiginit", NullStore_swiginit, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
