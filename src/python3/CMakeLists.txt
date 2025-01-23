@@ -19,7 +19,14 @@ endif()
 
 set_target_properties(${quickfix_python_lib_name} PROPERTIES VERSION ${quickfix_python_VERSION} SOVERSION ${quickfix_python_VERSION_MAJOR} PREFIX "")
 
+if (NOT IS_PYTHON_PACKAGE_BUILD)
 install(TARGETS ${quickfix_python_lib_name} DESTINATION lib/python3)
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION lib/python3
         FILES_MATCHING PATTERN "quickfix*.py"
         PATTERN test EXCLUDE)
+else()
+install(TARGETS ${quickfix_python_lib_name} DESTINATION ${SKBUILD_PROJECT_NAME})
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
+        FILES_MATCHING PATTERN "quickfix*.py"
+        PATTERN test EXCLUDE)
+endif()
