@@ -26,7 +26,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION lib/python3
         PATTERN test EXCLUDE)
 else()
 install(TARGETS ${quickfix_python_lib_name} DESTINATION ${SKBUILD_PROJECT_NAME})
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python3/ DESTINATION ${SKBUILD_PROJECT_NAME}
         FILES_MATCHING PATTERN "quickfix*.py"
         PATTERN test EXCLUDE)
 endif()
