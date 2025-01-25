@@ -29,4 +29,6 @@ install(TARGETS ${quickfix_python_lib_name} DESTINATION ${SKBUILD_PROJECT_NAME})
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
         FILES_MATCHING PATTERN "quickfix*.py"
         PATTERN test EXCLUDE)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
+        FILES_MATCHING PATTERN "__init__.py")
 endif()
