@@ -25,15 +25,25 @@ if (NOT SKBUILD_PROJECT_NAME)
         FILES_MATCHING PATTERN "quickfix*.py"
         PATTERN test EXCLUDE)
 else()
-  file(READ ${PROJECT_SOURCE_DIR}/src/python/__init__.py TEXT)
-  string(REPLACE "quickfix." "${SKBUILD_PROJECT_NAME}." TEXT "${TEXT}")
-  file(GENERATE OUTPUT ${PROJECT_SOURCE_DIR}/src/python/__init__.py CONTENT "${TEXT}")
-  set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS ${PROJECT_SOURCE_DIR}/src/python/__init__.py)
+  file(GLOB MY_PY_TEMPLATES "${PROJECT_SOURCE_DIR}/src/python/*.py.in")
+
+  foreach(py_in_file IN LISTS MY_PY_TEMPLATES)
+    get_filename_component(py_name "${py_in_file}" NAME_WE)
+	set(py_out_file "${PROJECT_SOURCE_DIR}/src/python/${py_name}.py")
+
+    configure_file(
+        "${py_in_file}"
+        "${py_out_file}"
+        @ONLY
+    )
+  endforeach()
+
 
   install(TARGETS ${quickfix_python_lib_name} DESTINATION ${SKBUILD_PROJECT_NAME})
   install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
-          FILES_MATCHING PATTERN "quickfix*.py"
-          PATTERN test EXCLUDE)
+	      FILES_MATCHING PATTERN "quickfix*.py"
+		  PATTERN _fields EXCLUDE
+		  PATTERN test EXCLUDE)
   install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/python/ DESTINATION ${SKBUILD_PROJECT_NAME}
           FILES_MATCHING PATTERN "__init__.py")
 endif()

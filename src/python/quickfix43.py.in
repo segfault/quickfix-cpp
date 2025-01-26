@@ -1,4 +1,4 @@
-import quickfix as fix
+import @SKBUILD_PROJECT_NAME@ as fix
 
 class Message(fix.Message):
 	def __init__(self):
